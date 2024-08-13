@@ -84,21 +84,21 @@
 }
 
 .description {
-  font: 0.68em "Times New Romans", sans-serif;
+  font: 12px "Times New Romans", sans-serif;
   color: rgb(31, 28, 28);
-  height: 123px;
-  text-overflow: ellipsis;
+  height: 125px;
   overflow: hidden;
-  padding: 0 7px;
+  text-overflow: ellipsis;
+  margin: -2px 0 0 7px;
 }
 
 .view {
   position: absolute;
-  font: 0.68em "Microsoft yahei", sans-serif;
+  font: 12px "Microsoft yahei", sans-serif;
   font-size: bold;
   color: rgb(82, 100, 218);
-  right: 5.4px;
-  bottom: 3.7px;
+  right: 4.4px;
+  bottom: 3.8px;
   background-color: white;
   border-left: 3px solid rgb(255, 255, 255);
 }
@@ -116,7 +116,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 0px;
 }
 
 .Btn {
@@ -133,15 +133,15 @@
   overflow: hidden;
   transition-duration: .3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.15);
   opacity: .9999999999999999;
 }
 
 .exit {
   position: absolute;
   width: 100%;
-  top: 14.6px;
-  left: 2.5px;
+  top: 14.4px;
+  left: 2.08px;
   transition-duration: .3s;
   display: flex;
   align-items: center;
@@ -182,7 +182,7 @@
 }
 
 .Btn:hover .text {
-  top: 11.75px;
+  top: 10.83px;
   opacity: 1;
   width: 60%;
   transition-duration: .3s;
@@ -202,7 +202,7 @@
   justify-content: center;
   align-self: center;
   box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
-  border-radius: 10.1px;
+  border-radius: 15px;
   background-color: white;
   overflow: scroll;
   display: none;
@@ -214,13 +214,13 @@
 }
 
 .viewmore-heading {
-  margin: 5px 0 0 20px;
-  font-size: 1.8em;
+  margin: 0.4em 20px -0.25em 20px;
+  font-size: 1.6em;
   font: 600 "calibri", sans-serif;
 }
 
 .viewmore-content {
-  margin: 0 20px 0 20px;
+  margin: -0.5em 20px -1em 20px;
 }
 
 .viewmore-imgleft {
@@ -235,4 +235,30 @@
   width: 50%;
   border-radius: 4px;
   margin-left: 20px;
+}
+
+.viewmore-img {
+  border-radius: 8px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.viewmore-imgfull {
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.viewmore-imgwhole {
+  width: 100%;
+}
+
+.bodyover-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
 }

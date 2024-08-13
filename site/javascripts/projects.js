@@ -3,19 +3,20 @@ window.onload = function () {
         data = res;
         viewmoreidx = -1;
     });
+    setInterval(clock, 1000);
 }
 
 if (window.location.href.includes('projects')) {
-    setInterval(clock, 1000);
     document.getElementById('viewmore').addEventListener('scroll', () => {
         document.getElementById('viewmore-exit').style.top = (document.getElementById('viewmore').scrollTop) + 'px';
     });
+    render();
 }
 
 function clock() {
     var t = new Date().toLocaleTimeString();
     // check if the grid is empty
-    if (document.getElementById('overview-grid').innerHTML.length < 3) {
+    if (window.location.href.includes('projects') && document.getElementById('overview-grid').innerHTML.length < 3) {
         console.log(t, "rerendered");
         render();
         document.getElementById('viewmore').addEventListener('scroll', () => {
@@ -28,6 +29,11 @@ function render() {
     // fullfill the grid with cards
     let element = document.getElementById('overview-grid');
     element.innerHTML = '';
+    try {
+        console.log(data);
+    } catch (e) {
+        return;
+    }
     for (let i = 0; i < data.length; i++) {
         element.innerHTML += `
             <div class="card">
@@ -65,6 +71,15 @@ function render() {
 }
 
 function viewmore(idx) {
+    if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/Mobi/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        window.alert("for a better experience, please visit this page on a desktop browser or switch to desktop mode");
+    }
     viewmoreidx = idx;
     document.getElementById('viewmore').innerHTML = `
         <img src=${data[idx].image} class="viewmore-cover">
@@ -83,15 +98,15 @@ function viewmore(idx) {
     }
     document.getElementById('viewmore').style.display = 'grid';
     document.getElementById('viewmore-exit').style.marginLeft = (document.getElementById('viewmore').offsetWidth - 55) + 'px';
+    document.getElementById('bodyover-container').style.display = 'block';
 }
 
 function viewless() {
     viewmoreidx = -1;
     document.getElementById('viewmore').innerHTML = '';
     document.getElementById('viewmore').style.display = 'none';
+    document.getElementById('bodyover-container').style.display = 'none';
 }
-
-
 
 window.onresize = function () {
     if (viewmoreidx > -1) {

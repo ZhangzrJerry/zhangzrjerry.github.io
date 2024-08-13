@@ -22,11 +22,11 @@ hide:
 <div class="education">
     <div class="education-bachelor">
         <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+            <div style="width:49%;text-align:left;">
                 <b> The HONG Kong University of Science and Technology </b>
                 <br> BEng
             </div>
-            <div style="width:50%;text-align:right;">
+            <div style="width:49%;text-align:right;">
                 <b> Hong Kong, China </b>
                 <br> Sep. 2024 - Jul. 2028 (expected)
             </div>    
@@ -39,18 +39,18 @@ hide:
     </div>
     <div class="education-secondary">
         <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+            <div style="width:49%;text-align:left;">
                 <b> Guangzhou No.2 High School </b>
                 <br> Senior Secondary School
             </div>
-            <div style="width:50%;text-align:right;">
+            <div style="width:49%;text-align:right;">
                 <b> Guangzhou, China </b>
                 <br> Sep. 2021 - Jun. 2024
             </div>
         </div>
         <div>
             <ul>
-                <li>CNCEE: 658/750 (Gaokao)</li>
+                <li>CNCEE: 658/749 (Gaokao)</li>
             </ul>
         </div>
     </div>
@@ -61,11 +61,11 @@ hide:
 <div class="experience">
     <div class="experience-makerx">
         <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+            <div style="width:49%;text-align:left;">
                 <b> MakerX Technology Co., Ltd. </b>
-                <br> Founder
+                <br> Control Systems Engineer, Finance Manager, Founder
             </div>
-            <div style="width:50%;text-align:right;">
+            <div style="width:49%;text-align:right;">
                 <b> Guangzhou, China </b>
                 <br> Aug. 2024 - Present
             </div>
@@ -80,11 +80,11 @@ hide:
 <div class="involvement">
     <div class="involvement-frc6399">
         <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+            <div style="width:49%;text-align:left;">
                 <b> FIRST Robotics Competition Team 6399 </b>
                 <br> Program Mentor
             </div>
-            <div style="width:50%;text-align:right;">
+            <div style="width:49%;text-align:right;">
                 <b> Jinan, China </b>
                 <br> Jun. 2024 - Present
             </div>
@@ -99,11 +99,11 @@ hide:
     </div>
     <div class="involvement-frc8811">
         <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+            <div style="width:49%;text-align:left;">
                 <b> FIRST Robotics Competition Team 8811 </b>
                 <br> Founder, Youth Mentor, Team Leader
             </div>
-            <div style="width:50%;text-align:right;">
+            <div style="width:49%;text-align:right;">
                 <b> Guangzhou, China </b>
                 <br> Sep. 2021 - Jun. 2024
             </div>
@@ -114,18 +114,18 @@ hide:
                 Established the team in my senior high school, <b>raised over $13,000</b> by contacting FIRST, my senior high school, and five technological companies.
                 </li>
                 <li>
-                Held 50 weekly studies and 3 holiday training programs for our team and finally won the <b>3rd Prize</b> in 2023 FRC Off-season China. 
+                Conducted over 60 weekly studies and 3 holiday training programs for our team and finally won the <b>3rd Prize</b> in 2023 FRC Off-season China. 
                 </li>
             </ul>
         </div>
     </div>
     <div class="involvement-frc8011">
         <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+            <div style="width:49%;text-align:left;">
                 <b> FIRST Robotics Competition Team 8011 </b>
                 <br> Team Captain, Program Leader
             </div>
-            <div style="width:50%;text-align:right;">
+            <div style="width:49%;text-align:right;">
                 <b> Guangzhou, China </b>
                 <br> Sep. 2019 - Jun. 2023
             </div>

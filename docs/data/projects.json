@@ -15,10 +15,17 @@
         "brief": "Tencent Rhino Bird",
         "heading": "Book Recommendation System",
         "prefix": "With",
-        "author": "Yue PENG",
+        "author": "Yue Peng",
         "date": "Oct. 2023",
         "introduction": [
-            ""
+            "<p>As part of the 2023 Tencent Rhino-Bird Middle School Science Research Training Program, Peng Yue and I developed this project under the mentorship of Professor Chuan Shi from BUPT.</p>",
+            "<img class='viewmore-img' src='../img/projects/book-recommendation-system-render.png'></img>",
+            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-dssm.png'></img>",
+            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-login.png'></img>",
+            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-home.png'></img>",
+            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-timeline.png'></img>",
+            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-analysis.png'></img>",
+            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-recommend.png'></img>"
         ]
     },
     {
@@ -51,7 +58,12 @@
         "author": "ZhangzrJerry",
         "date": "Oct. 2022",
         "introduction": [
-            "<p>It is a drive board design for powering a swerve module which posessing two split motors while one for velocity and another for steering. </p>"
+            "<p>This drive board powers a swerve module with two independent motors: one for velocity, the other for steering.</p>",
+            "<p>Four IR2104 chips drive eight AP2102 MOSFETs, delivering a maximum power of 240W (2 * 12V * 10A). A 74245 chip buffers the signal to protect against reverse current damage.</p>",
+            "<img class='viewmore-imgfull' src='../img/projects/swerve-controller-schematic.png'></img>",
+            "<p>It's been nearly two years since I completed this project and began crafting introductions for each one. Many technical details have faded from memory. Unfortunately, unlike Kylin 2020 and Kylin 2021, which had an engineering journal, and unlike FRC Data Collection Software, which had application software copyright materials, I didn't leave many documents behind when designing the Swerve Controller. Only the project's source files remain. As a result, I can't fully recall the specific thought processes behind the chip selection and circuit layout. I can only share some images with you.</p>",
+            "<img class='viewmore-img' src='../img/projects/swerve-controller-top.png'></img>",
+            "<img class='viewmore-img' src='../img/projects/swerve-controller-bottom.png'></img>"
         ]
     },
     {
@@ -62,7 +74,7 @@
         "author": "SCUT",
         "date": "Aug. 2022",
         "introduction": [
-            ""
+            "<p>This project was delivered by the 2021 Guangzhou Yingcai Middle School Science Research Training Program and Professor Yi Cai in SCUT.</p>"
         ]
     },
     {
@@ -70,7 +82,7 @@
         "brief": "RAPID REACT",
         "heading": "FRC Data Collection Software",
         "prefix": "With",
-        "author": "Yue PENG",
+        "author": "Yue Peng",
         "date": "Apr. 2022",
         "introduction": [
             ""
