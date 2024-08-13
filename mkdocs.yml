@@ -44,6 +44,7 @@ theme:
         name: Switch to light mode
 
 extra_css:
+  - stylesheets/index.css
   - stylesheets/projects.css
 
 extra_javascript:

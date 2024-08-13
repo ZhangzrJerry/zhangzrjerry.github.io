@@ -1,7 +1,18 @@
 [
     {
+        "image": "../img/projects/personal-website.png",
+        "brief": "HAHAHAHAHAHAHA",
+        "heading": "Personal Website",
+        "prefix": "By",
+        "author": "ZhangzrJerry",
+        "date": "Aug. 2024",
+        "introduction": [
+            "<p>This is my personal website, which is designed to showcase my projects and experiences.</p>"
+        ]
+    },
+    {
         "image": "../img/projects/book-recommendation-system.png",
-        "brief": "Rhino Bird",
+        "brief": "Tencent Rhino Bird",
         "heading": "Book Recommendation System",
         "prefix": "With",
         "author": "Yue PENG",
@@ -40,12 +51,12 @@
         "author": "ZhangzrJerry",
         "date": "Oct. 2022",
         "introduction": [
-            "<p>It is a drive board design for powering a swerve module which posess two .</p>"
+            "<p>It is a drive board design for powering a swerve module which posessing two split motors while one for velocity and another for steering. </p>"
         ]
     },
     {
         "image": "../img/projects/knowledge-graph-construction.png",
-        "brief": "YingCai High School",
+        "brief": "YingCai Program",
         "heading": "Knowledge Graph Construction",
         "prefix": "In",
         "author": "SCUT",

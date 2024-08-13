@@ -84,7 +84,7 @@
 }
 
 .description {
-  font: 0.68em "Times New Romans", sans-serif;
+  font: 0.75em "Times New Romans", sans-serif;
   color: rgb(31, 28, 28);
   height: 123px;
   text-overflow: ellipsis;
@@ -94,11 +94,11 @@
 
 .view {
   position: absolute;
-  font: 0.68em "Microsoft yahei", sans-serif;
+  font: 0.75em "Microsoft yahei", sans-serif;
   font-size: bold;
   color: rgb(82, 100, 218);
-  right: 5.4px;
-  bottom: 3.7px;
+  right: 6.6px;
+  bottom: 4.9px;
   background-color: white;
   border-left: 3px solid rgb(255, 255, 255);
 }
@@ -202,7 +202,7 @@
   justify-content: center;
   align-self: center;
   box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
-  border-radius: 10.1px;
+  border-radius: 15px;
   background-color: white;
   overflow: scroll;
   display: none;
@@ -214,13 +214,13 @@
 }
 
 .viewmore-heading {
-  margin: 5px 0 0 20px;
-  font-size: 1.8em;
+  margin: 0.4em 20px -0.25em 20px;
+  font-size: 1.6em;
   font: 600 "calibri", sans-serif;
 }
 
 .viewmore-content {
-  margin: 0 20px 0 20px;
+  margin: -0.5em 20px -1em 20px;
 }
 
 .viewmore-imgleft {
@@ -235,4 +235,14 @@
   width: 50%;
   border-radius: 4px;
   margin-left: 20px;
+}
+
+.bodyover-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
 }

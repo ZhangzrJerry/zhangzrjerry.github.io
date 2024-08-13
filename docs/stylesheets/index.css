@@ -1,0 +1,7 @@
+.home-container {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    width: 60%;
+    min-width: 600px;
+}

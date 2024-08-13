@@ -132,7 +132,7 @@ hide:
         </div>
         <div>
             <ul>
-                <li>Led the team to <b>Championship</b> in the 2020 We RoboStar League as the Program Leader. Simultaneously managed the team's Engineering Journal.
+                <li>Led the team to <b>Championship</b> in the 2020 We RoboStar League as the Program Leader and simultaneously managed the team's Engineering Journal.
                 </li>
                 <li>
                 As team captain, steered the team to <b>Rookie Game Changer Award</b> in the 2021 INFINITE RECHARGE At Home Challenge and <b>Rank 18</b> in the 2021 Robotics Championship China.
