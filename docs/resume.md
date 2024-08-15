@@ -63,7 +63,7 @@ hide:
         <div style="display:flex;">
             <div style="width:49%;text-align:left;">
                 <b> MakerX Technology Co., Ltd. </b>
-                <br> Control Systems Engineer, Finance Manager, Founder
+                <br> Control Systems Engineer, Financial Officer, Founder
             </div>
             <div style="width:49%;text-align:right;">
                 <b> Guangzhou, China </b>

@@ -3,10 +3,13 @@ site_description: "Jerry's personal website"
 
 plugins:
   - glightbox
+  - blog
+
 nav:
-  - Homepage: index.md
+  - Home: index.md
   - Resume: resume.md
-  - Projects:  projects.md
+  - Projects: projects.md
+  - Blogs: blog/index.md
 
 theme:
   name: material
@@ -46,6 +49,7 @@ theme:
 extra_css:
   - stylesheets/index.css
   - stylesheets/projects.css
+  - stylesheets/blog.css
 
 extra_javascript:
   - javascripts/projects.js
@@ -59,7 +63,7 @@ markdown_extensions:
 extra:
     social:
         - icon: fontawesome/regular/envelope
-          link: zhangzrjerry@outlook.com
+          link: https://zhangzrjerry@outlook.com
         - icon: fontawesome/brands/github
           link: https://github.com/ZhangzrJerry
 

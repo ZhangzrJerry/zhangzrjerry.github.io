@@ -1,0 +1,12 @@
+.blog-img {
+    width: 60%;
+    margin-left: 20%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.blog-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Minion Pro', serif;
+}

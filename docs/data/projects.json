@@ -1,17 +1,28 @@
 [
     {
-        "image": "../img/projects/personal-website.png",
-        "brief": "HAHAHAHAHAHAHA",
+        "image": "/img/404.png",
+        "brief": "Crescendo",
+        "heading": "FRC Team Defiant Unrevealed",
+        "prefix": "By",
+        "author": "FRC6399",
+        "date": "Aug. 2024",
+        "introduction": [
+            ""
+        ]
+    },
+    {
+        "image": "/img/projects/personal-website.png",
+        "brief": "Nice To Meet You",
         "heading": "Personal Website",
         "prefix": "By",
         "author": "ZhangzrJerry",
         "date": "Aug. 2024",
         "introduction": [
-            "<p>This is my personal website, which is designed to showcase my projects and experiences.</p>"
+            "<p>This is my personal website, which is designed to showcase my projects and experiences. Nice to meet you here! Haha~</p>"
         ]
     },
     {
-        "image": "../img/projects/book-recommendation-system.png",
+        "image": "/img/projects/book-recommendation-system.png",
         "brief": "Tencent Rhino Bird",
         "heading": "Book Recommendation System",
         "prefix": "With",
@@ -19,17 +30,17 @@
         "date": "Oct. 2023",
         "introduction": [
             "<p>As part of the 2023 Tencent Rhino-Bird Middle School Science Research Training Program, Peng Yue and I developed this project under the mentorship of Professor Chuan Shi from BUPT.</p>",
-            "<img class='viewmore-img' src='../img/projects/book-recommendation-system-render.png'></img>",
-            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-dssm.png'></img>",
-            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-login.png'></img>",
-            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-home.png'></img>",
-            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-timeline.png'></img>",
-            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-analysis.png'></img>",
-            "<img class='viewmore-imgwhole' src='../img/projects/book-recommendation-system-recommend.png'></img>"
+            "<img class='viewmore-img' src='/img/projects/book-recommendation-system-render.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-dssm.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-login.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-home.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-timeline.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-analysis.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-recommend.png'></img>"
         ]
     },
     {
-        "image": "../img/projects/yuan-bot.png",
+        "image": "/img/projects/yuan-bot.png",
         "brief": "RAPID REACT",
         "heading": "Yuan Bot",
         "prefix": "By",
@@ -40,7 +51,7 @@
         ]
     },
     {
-        "image": "../img/projects/kylin-2022.png",
+        "image": "/img/projects/kylin-2022.png",
         "brief": "RAPID REACT",
         "heading": "Kylin 2022",
         "prefix": "By",
@@ -51,7 +62,18 @@
         ]
     },
     {
-        "image": "../img/projects/swerve-controller.png",
+        "image": "/img/projects/lol-prediction/award.png",
+        "brief": "BAIDU AISTUDIO",
+        "heading": "LOL Prediction",
+        "prefix": "By",
+        "author": "ZhangzrJerry",
+        "date": "Feb. 2023",
+        "introduction": [
+            ""
+        ]
+    },
+    {
+        "image": "/img/projects/swerve-controller.png",
         "brief": "Motor Drive Board",
         "heading": "Swerve Controller",
         "prefix": "By",
@@ -60,14 +82,14 @@
         "introduction": [
             "<p>This drive board powers a swerve module with two independent motors: one for velocity, the other for steering.</p>",
             "<p>Four IR2104 chips drive eight AP2102 MOSFETs, delivering a maximum power of 240W (2 * 12V * 10A). A 74245 chip buffers the signal to protect against reverse current damage.</p>",
-            "<img class='viewmore-imgfull' src='../img/projects/swerve-controller-schematic.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/swerve-controller-schematic.png'></img>",
             "<p>It's been nearly two years since I completed this project and began crafting introductions for each one. Many technical details have faded from memory. Unfortunately, unlike Kylin 2020 and Kylin 2021, which had an engineering journal, and unlike FRC Data Collection Software, which had application software copyright materials, I didn't leave many documents behind when designing the Swerve Controller. Only the project's source files remain. As a result, I can't fully recall the specific thought processes behind the chip selection and circuit layout. I can only share some images with you.</p>",
-            "<img class='viewmore-img' src='../img/projects/swerve-controller-top.png'></img>",
-            "<img class='viewmore-img' src='../img/projects/swerve-controller-bottom.png'></img>"
+            "<img class='viewmore-img' src='/img/projects/swerve-controller-top.png'></img>",
+            "<img class='viewmore-img' src='/img/projects/swerve-controller-bottom.png'></img>"
         ]
     },
     {
-        "image": "../img/projects/knowledge-graph-construction.png",
+        "image": "/img/projects/knowledge-graph-construction.png",
         "brief": "YingCai Program",
         "heading": "Knowledge Graph Construction",
         "prefix": "In",
@@ -78,18 +100,24 @@
         ]
     },
     {
-        "image": "../img/projects/frc-data-collection-software.png",
+        "image": "/img/projects/frc-data-collection-software.png",
         "brief": "RAPID REACT",
         "heading": "FRC Data Collection Software",
         "prefix": "With",
         "author": "Yue Peng",
         "date": "Apr. 2022",
         "introduction": [
-            ""
+            "<p>The software provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.</p>",
+            "<p>On the login page, users can enter their team number and password, while the system will automatically save their previous password. We use built-in prompts in the input fields to ensure accessibility, and a minimalist, neumorphic shadow design for the login button to maintain aesthetics.</p>",
+            "<img class='viewmore-imgwhole' src='/img/projects/frc-data-collection-software-gui.png'></img>",
+            "<b>Data Collection</b>",
+            "<p>We've designed a <b>user-friendly</b> data collection page by consolidating all controls onto a single screen. Basic information, including team number, recorder's name, and match number, is easily inputted and can be used for later data analysis. To streamline data entry, we've implemented increment/decrement controls for cargo count, a slider for ascent control, and a text input for overview. The Reset and Upload buttons provide quick and easy ways to clear recent data or submit the data to cloud. Moreover, the system supports copy data in both JSON and CSV formats to clipboard when you have a poor connection.</p>",
+            "<b>Data Analysis</b>",
+            "<p>The system allows users to input two team numbers for comparative analysis, filter results by event type, and export data to Excel. Each record can be viewed in detail and edited. Users can enter team numbers into the top two input boxes and click Compare to initiate the analysis. The Reset button clears the input fields, while Refresh fetches the latest data. The interface provides clear instructions and prompts for a seamless user experience.</p>"
         ]
     },
     {
-        "image": "../img/projects/kylin-2021.png",
+        "image": "/img/projects/kylin-2021.png",
         "brief": "INFINITE RECHARGE",
         "heading": "Kylin 2021",
         "prefix": "By",
@@ -100,7 +128,7 @@
         ]
     },
     {
-        "image": "../img/projects/kylin-2020.png",
+        "image": "/img/projects/kylin-2020.png",
         "brief": "INFINITE RECHARGE",
         "heading": "Kylin 2020",
         "prefix": "By",

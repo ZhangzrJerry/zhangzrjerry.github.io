@@ -1,16 +1,36 @@
 window.onload = function () {
-    fetch("../data/projects.json").then(response => response.json()).then(res => {
+    fetch("/data/projects.json").then(response => response.json()).then(res => {
         data = res;
-        viewmoreidx = -1;
     });
     setInterval(clock, 1000);
+    viewmoreidx = -1;
 }
 
 if (window.location.href.includes('projects')) {
     document.getElementById('viewmore').addEventListener('scroll', () => {
         document.getElementById('viewmore-exit').style.top = (document.getElementById('viewmore').scrollTop) + 'px';
     });
-    render();
+    document.onkeydown = function (e) {
+        if (e.key == 'Escape' && viewmoreidx > -1) {
+            viewless();
+        }
+        if (e.key == 'ArrowRight' && viewmoreidx > -1) {
+            viewmoreidx++;
+            if (viewmoreidx == data.length) viewmoreidx = 0;
+            viewmore(viewmoreidx);
+        }
+        if (e.key == 'ArrowLeft' && viewmoreidx > -1) {
+            viewmoreidx--;
+            if (viewmoreidx == -1) viewmoreidx = data.length - 1;
+            viewmore(viewmoreidx);
+        }
+        if (e.key == 'ArrowUp' && viewmoreidx > -1) {
+
+        }
+        if (e.key == 'ArrowDown' && viewmoreidx > -1) {
+        }
+        render();
+    }
 }
 
 function clock() {
