@@ -221,6 +221,8 @@
 
 .viewmore-content {
   margin: -0.5em 20px -1em 20px;
+  font: 1.1em "minion pro", serif;
+  font-weight: 500;
 }
 
 .viewmore-imgleft {
