@@ -1,0 +1,28 @@
+.resume-brief {
+    display: flex;
+}
+
+.resume-icon {
+    width: 3em;
+    height: 3.6em;
+}
+
+.resume-img {
+    border-radius: 1em;
+    margin-top: 0.15em;
+    width: 3em;
+    height: 3em;
+}
+
+.resume-left {
+    text-align: left;
+    width: 65%;
+    padding-left: 0.5em;
+    line-height: 1.75em;
+}
+
+.resume-right {
+    text-align: right;
+    width: 30%;
+    line-height: 1.75em;
+}
