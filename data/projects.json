@@ -22,7 +22,7 @@
         ]
     },
     {
-        "image": "/img/projects/book-recommendation-system.png",
+        "image": "/img/projects/book-recommendation-system/cover.png",
         "brief": "Tencent Rhino Bird",
         "heading": "Book Recommendation System",
         "prefix": "With",
@@ -30,13 +30,15 @@
         "date": "Oct. 2023",
         "introduction": [
             "<p>As part of the 2023 Tencent Rhino-Bird Middle School Science Research Training Program, Peng Yue and I developed this project under the mentorship of Professor Chuan Shi from BUPT.</p>",
-            "<img class='viewmore-img' src='/img/projects/book-recommendation-system-render.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-dssm.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-login.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-home.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-timeline.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-analysis.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-recommend.png'></img>"
+            "<p>Working together, Peng Yue and I successfully completed the project and won the <b>winning award</b>. Peng Yue took charge of the front-end design, while I focused on model training and logical design.</p>",
+            "<p>repo: <a href='https://github.com/ZhangzrJerry/RhinoBird'>https://github.com/ZhangzrJerry/RhinoBird</a></p>",
+            "<img class='viewmore-img' src='/img/projects/book-recommendation-system/render.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/dssm.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/login.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/home.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/timeline.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/analysis.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/recommend.png'></img>"
         ]
     },
     {
@@ -108,6 +110,7 @@
         "date": "Apr. 2022",
         "introduction": [
             "<p>The software provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.</p>",
+            "<p>Repo: <a href='https://github.com/ZhangzrJerry/FRC_SCOUTING'>https://github.com/ZhangzrJerry/FRC_SCOUTING</a></p>",
             "<p>On the login page, users can enter their team number and password, while the system will automatically save their previous password. We use built-in prompts in the input fields to ensure accessibility, and a minimalist, neumorphic shadow design for the login button to maintain aesthetics.</p>",
             "<img class='viewmore-imgwhole' src='/img/projects/frc-data-collection-software-gui.png'></img>",
             "<b>Data Collection</b>",

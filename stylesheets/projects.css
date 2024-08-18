@@ -215,14 +215,15 @@
 
 .viewmore-heading {
   margin: 0.4em 20px -0.25em 20px;
-  font-size: 1.6em;
-  font: 600 "calibri", sans-serif;
+  font: 1.6em "calibri", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .viewmore-content {
-  margin: -0.5em 20px -1em 20px;
+  margin: 0 20px -1em 20px;
   font: 1.1em "minion pro", serif;
-  font-weight: 500;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .viewmore-imgleft {
