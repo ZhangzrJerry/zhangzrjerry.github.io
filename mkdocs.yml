@@ -34,7 +34,6 @@ theme:
     - content.card
   language: en
   palette:
-    - primary: indigo
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:

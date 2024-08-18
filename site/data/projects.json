@@ -22,7 +22,7 @@
         ]
     },
     {
-        "image": "/img/projects/book-recommendation-system.png",
+        "image": "/img/projects/book-recommendation-system/cover.png",
         "brief": "Tencent Rhino Bird",
         "heading": "Book Recommendation System",
         "prefix": "With",
@@ -30,13 +30,13 @@
         "date": "Oct. 2023",
         "introduction": [
             "<p>As part of the 2023 Tencent Rhino-Bird Middle School Science Research Training Program, Peng Yue and I developed this project under the mentorship of Professor Chuan Shi from BUPT.</p>",
-            "<img class='viewmore-img' src='/img/projects/book-recommendation-system-render.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-dssm.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-login.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-home.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-timeline.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-analysis.png'></img>",
-            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system-recommend.png'></img>"
+            "<img class='viewmore-img' src='/img/projects/book-recommendation-system/render.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/dssm.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/login.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/home.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/timeline.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/analysis.png'></img>",
+            "<img class='viewmore-imgwhole' src='/img/projects/book-recommendation-system/recommend.png'></img>"
         ]
     },
     {
