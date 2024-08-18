@@ -6,7 +6,7 @@ window.onload = function () {
     viewmoreidx = -1;
 }
 
-if (window.location.href.includes('projects')) {
+function listen() {
     document.getElementById('viewmore').addEventListener('scroll', () => {
         document.getElementById('viewmore-exit').style.top = (document.getElementById('viewmore').scrollTop) + 'px';
     });
@@ -36,12 +36,12 @@ if (window.location.href.includes('projects')) {
 function clock() {
     var t = new Date().toLocaleTimeString();
     // check if the grid is empty
-    if (window.location.href.includes('projects') && document.getElementById('overview-grid').innerHTML.length < 3) {
-        console.log(t, "rerendered");
-        render();
-        document.getElementById('viewmore').addEventListener('scroll', () => {
-            document.getElementById('viewmore-exit').style.top = (document.getElementById('viewmore').scrollTop) + 'px';
-        });
+    if (window.location.href.includes('projects')) {
+        if (document.getElementById('overview-grid').innerHTML.length < 3) {
+            console.log(t, "rerendered");
+            render();
+        }
+        listen();
     }
 }
 

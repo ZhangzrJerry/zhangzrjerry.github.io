@@ -19,14 +19,17 @@ hide:
 
 ## Education
 
-<div class="education">
-    <div class="education-bachelor">
-        <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+<div>
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/hkust.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
                 <b> The HONG Kong University of Science and Technology </b>
                 <br> BEng
             </div>
-            <div style="width:50%;text-align:right;">
+            <div class="resume-right">
                 <b> Hong Kong, China </b>
                 <br> Sep. 2024 - Jul. 2028 (expected)
             </div>    
@@ -37,13 +40,16 @@ hide:
             </ul>
         </div>
     </div>
-    <div class="education-secondary">
-        <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/gdgzez.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
                 <b> Guangzhou No.2 High School </b>
                 <br> Senior Secondary School
             </div>
-            <div style="width:50%;text-align:right;">
+            <div class="resume-right">
                 <b> Guangzhou, China </b>
                 <br> Sep. 2021 - Jun. 2024
             </div>
@@ -58,14 +64,17 @@ hide:
 
 ## Professional Experience
 
-<div class="experience">
-    <div class="experience-makerx">
-        <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+<div>
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/makers.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
                 <b> MakerX Technology Co., Ltd. </b>
                 <br> Control Systems Engineer, Financial Officer, Founder
             </div>
-            <div style="width:50%;text-align:right;">
+            <div class="resume-right">
                 <b> Guangzhou, China </b>
                 <br> Aug. 2024 - Present
             </div>
@@ -80,14 +89,17 @@ hide:
 
 ## Community Involvement
 
-<div class="involvement">
-    <div class="involvement-frc6399">
-        <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+<div>
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc6399.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
                 <b> FIRST Robotics Competition Team 6399 </b>
                 <br> Program Mentor
             </div>
-            <div style="width:50%;text-align:right;">
+            <div class="resume-right">
                 <b> Jinan, China </b>
                 <br> Jun. 2024 - Present
             </div>
@@ -100,13 +112,16 @@ hide:
             </ul>
         </div>
     </div>
-    <div class="involvement-frc8811">
-        <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc8811.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
                 <b> FIRST Robotics Competition Team 8811 </b>
                 <br> Founder, Youth Mentor, Team Leader
             </div>
-            <div style="width:50%;text-align:right;">
+            <div class="resume-right">
                 <b> Guangzhou, China </b>
                 <br> Sep. 2021 - Jun. 2024
             </div>
@@ -122,13 +137,16 @@ hide:
             </ul>
         </div>
     </div>
-    <div class="involvement-frc8011">
-        <div style="display:flex;">
-            <div style="width:50%;text-align:left;">
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc8011.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
                 <b> FIRST Robotics Competition Team 8011 </b>
                 <br> Team Captain, Program Leader
             </div>
-            <div style="width:50%;text-align:right;">
+            <div class="resume-right">
                 <b> Guangzhou, China </b>
                 <br> Sep. 2019 - Jun. 2023
             </div>

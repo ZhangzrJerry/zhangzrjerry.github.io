@@ -49,6 +49,7 @@ extra_css:
   - stylesheets/index.css
   - stylesheets/projects.css
   - stylesheets/blog.css
+  - stylesheets/resume.css
 
 extra_javascript:
   - javascripts/projects.js
