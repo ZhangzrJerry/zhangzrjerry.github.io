@@ -26,7 +26,7 @@ hide:
                 <img src="/img/resume/hkust.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
-                <b> The HONG Kong University of Science and Technology </b>
+                <b> The Hong Kong University of Science and Technology </b>
                 <br> BEng
             </div>
             <div class="resume-right">
@@ -34,8 +34,9 @@ hide:
                 <br> Sep. 2024 - Jul. 2028 (expected)
             </div>    
         </div>
-        <div>
+        <div class="resume-detail">
             <ul>
+                <li>With an extended major in Artificial Intelligence</li>
                 <li>GPA: --/4.0</li>
             </ul>
         </div>
@@ -54,7 +55,7 @@ hide:
                 <br> Sep. 2021 - Jun. 2024
             </div>
         </div>
-        <div>
+        <div class="resume-detail">
             <ul>
                 <li>CNCEE: 658/750 (Gaokao)</li>
             </ul>
@@ -72,16 +73,38 @@ hide:
             </div>
             <div class="resume-left">
                 <b> MakerX Technology Co., Ltd. </b>
-                <br> Control Systems Engineer, Financial Officer, Founder
+                <br> Control Systems Engineer, Financial Management, Founder
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
                 <br> Aug. 2024 - Present
             </div>
         </div>
-        <div>
+        <div class="resume-detail">
             <ul>
                 <li>Established the very company that focused on technology and innovation about robots.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/rhinobird.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> Rhino-Bird Middle School Science Research Training Program </b>
+                <br>
+                Team Project, Deep Learning Engineer
+            </div>
+            <div class="resume-right">
+                <b> Guangzhou, China </b>
+                <br> Jun. 2023 - Oct. 2023
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+                <li>For the need for smart middle school libraries, we used the DSSM model and Flask framework to build an Intelligent Book Recommendation and User Interset Analysis System and won the Excellent Award.</li>
+                <li>Mainly took part in model training and backend database developing.</li>
             </ul>
         </div>
     </div>
@@ -93,18 +116,18 @@ hide:
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
-                <img src="/img/resume/frc6399.png" class="resume-img"></img>
+                <img src="/img/resume/frcdefiant.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
-                <b> FIRST Robotics Competition Team 6399 </b>
+                <b> FIRST Robotics Competition Team Defiant </b>
                 <br> Program Mentor
             </div>
             <div class="resume-right">
-                <b> Jinan, China </b>
+                <b> Guangzhou, China </b>
                 <br> Jun. 2024 - Present
             </div>
         </div>
-        <div>
+        <div class="resume-detail">
             <ul>
                 <li>
                 Responsible for the development of the FRC robotics control system, and provided programming instruction to the team.
@@ -126,10 +149,10 @@ hide:
                 <br> Sep. 2021 - Jun. 2024
             </div>
         </div>
-        <div>
+        <div class="resume-detail">
             <ul>
                 <li>
-                Established the team in my senior high school, <b>raised over $13,000</b> by contacting FIRST, my senior high school, and five technological companies.
+                Established the team in my senior high school, <b>raised over $14,000</b> by contacting FIRST, my senior high school, and five technological companies.
                 </li>
                 <li>
                 Conducted over 60 weekly studies and 3 holiday training programs for our team and finally won the <b>3rd Prize</b> in 2023 FRC Off-season China. 
@@ -151,7 +174,7 @@ hide:
                 <br> Sep. 2019 - Jun. 2023
             </div>
         </div>
-        <div>
+        <div class="resume-detail">
             <ul>
                 <li>Led the team to <b>Championship</b> in the 2020 We RoboStar League as the Program Leader and simultaneously managed the team's Engineering Journal.
                 </li>
@@ -184,11 +207,11 @@ hide:
         </li>
         <li>
             <b>2nd Prize</b>;
-            The 8th National Youth Science Popularization Innovation Experiment and Works Competition
+            The 8th National Youth Science Popularization Innovation Experiment and Works Competition (2022)
         </li>
         <li>
             <b>Excellent Award</b>;
-            The 8th China International College Students' "Internet+" Innovation and Entrepreneurship Competition, Seed Track, Guangdong Division
+            The 8th China International College Students' "Internet+" Innovation and Entrepreneurship Competition, Seed Track, Guangdong Division (2022)
         </li>
     </ul>
 </div>

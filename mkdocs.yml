@@ -1,18 +1,28 @@
 site_name: ZhangzrJerry
 site_description: "Jerry's personal website"
 
-plugins:
-  - glightbox
-  - blog
+plugins:  
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 简体中文
+          build: true
+  # - blog
 
 nav:
   - Home: index.md
   - Resume: resume.md
   - Projects: projects.md
-  - Blogs: blog/index.md
+  # - Blogs: blog/index.md
 
 theme:
   name: material
+  language: en
   favicon: img/favicon.ico
   logo: img/favicon.ico
   features:
