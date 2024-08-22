@@ -1,5 +1,5 @@
 window.onload = function () {
-    fetch("/data/projects.json").then(response => response.json()).then(res => {
+    fetch("./projects.json").then(response => response.json()).then(res => {
         data = res;
     });
     setInterval(clock, 1000);
