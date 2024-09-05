@@ -1,8 +1,14 @@
 window.onload = function () {
-    fetch("/data/projects.json").then(response => response.json()).then(res => {
-        data = res;
-    });
     setInterval(clock, 1000);
+    init();
+}
+
+function init() {
+    if (window.location.href.includes('projects')) {
+        fetch("./projects.json").then(response => response.json()).then(res => {
+            data = res;
+        });
+    }
     viewmoreidx = -1;
 }
 
@@ -39,6 +45,7 @@ function clock() {
     if (window.location.href.includes('projects')) {
         if (document.getElementById('overview-grid').innerHTML.length < 3) {
             console.log(t, "rerendered");
+            init();
             render();
         }
         listen();

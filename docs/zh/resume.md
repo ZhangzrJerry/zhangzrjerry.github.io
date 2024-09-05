@@ -12,9 +12,6 @@ hide:
         张子睿
         </b>
     </h2>
-    <text>
-    Email: zhangzrjerry@outlook.com
-    </text>
 </div>
 
 ## 教育经历
@@ -31,13 +28,16 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 香港，中国 </b>
-                <br> Sep. 2024 - Jul. 2028 (expected)
+                <br> 2024.09 - 2028.07 (预计)
             </div>    
         </div>
         <div class="resume-detail">
             <ul>
                 <li>延伸主修人工智能</li>
-                <li>GPA: --/4.0</li>
+                <li>
+                    CGA: --/4.0
+                    <a href="./hkust">[详情]</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -52,13 +52,16 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Sep. 2021 - Jun. 2024
+                <br> 2021.09 - 2024.06
             </div>
         </div>
         <div class="resume-detail">
-            <ul>
-                <li>高考: 658/750</li>
-            </ul>
+            <!-- <ul>
+                <li>
+                    高考: 658/750
+                    <a href="./gdgdzez">[详情]</a>
+                </li>
+            </ul> -->
         </div>
     </div>
 </div>
@@ -66,14 +69,14 @@ hide:
 ## 工作和项目经历
 
 <div>
-    <div class="resume-container">
+    <!-- <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="/img/resume/makers.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
                 <b> 美科盛技术有限公司 </b>
-                <br> 控制系统工程师，财务，创始人
+                <br> 控制系统工程师
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
@@ -85,7 +88,7 @@ hide:
                 <li>创建了这家专注于机器人技术创新的公司</li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -98,7 +101,7 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Jun. 2023 - Oct. 2023
+                <br> 2023.06 - 2023.10
             </div>
         </div>
         <div class="resume-detail">
@@ -113,24 +116,62 @@ hide:
 ## 社区参与
 
 <div>
+    <!-- <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc10183.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> FIRST Robotics Competition Team 10183 </b>
+                <br> 远程导师
+            </div>
+            <div class="resume-right">
+                <b> 拉斯维加斯，美国 </b>
+                <br> Sep. 2024 - Present
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+            </ul>
+        </div>
+    </div>
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
-                <img src="/img/resume/frcdefiant.png" class="resume-img"></img>
+                <img src="/img/resume/frc8214.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
-                <b> FIRST Robotics Competition Team Defiant </b>
+                <b> FIRST Robotics Competition Team 8214 </b>
                 <br> 程序导师
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Jun. 2024 - Present
+                <br> Sep. 2024 - Present
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+            </ul>
+        </div>
+    </div> -->
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc6399.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> FIRST Robotics Competition Team 6399 </b>
+                <br> 程序导师
+            </div>
+            <div class="resume-right">
+                <b> 济南，山东 </b>
+                <br> 2024.07 - 2024.08
             </div>
         </div>
         <div class="resume-detail">
             <ul>
                 <li>
-                负责队伍机器人控制系统开发和日常程序教学
+                负责队伍机器人控制系统开发和日常程序教学，最终带领团队在 2024 世界机器人大赛北京锦标赛 FRC 赛项暨 FRC 中国区季后赛中获得<b>工程启发奖</b> (临时队号：9975)
                 </li>
             </ul>
         </div>
@@ -146,16 +187,16 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Sep. 2021 - Jun. 2024
+                <br> 2021.09 - 2023.08
             </div>
         </div>
         <div class="resume-detail">
             <ul>
                 <li>
-                在我的高中创建了这支队伍，并通过联系我们学校、FIRST 组织和五家科技公司获取了超过￥94,000的赞助
+                在我的高中创建了这支队伍，并通过联系我们学校、FIRST 组织和五家科技公司获取了超过 <b>￥94,000</b> 的赞助
                 </li>
                 <li>
-                举办了超过 60 次周三研学活动和 3 次假期集训，最终在 2023 中国区季后赛中获得三等奖
+                举办了超过 60 次周三研学活动和 3 次假期集训，最终在 2023 中国区季后赛中获得<b>三等奖</b>
                 </li>
             </ul>
         </div>
@@ -171,19 +212,19 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Sep. 2019 - Jun. 2023
+                <br> 2019.09 - 2023.06
             </div>
         </div>
         <div class="resume-detail">
             <ul>
                 <li>
-                以程序组组长身份带领团队在 2020 We RoboStar 联盟赛中获得冠军，同时负责 2020 学年的工程日志撰写
+                以程序组组长身份带领团队在 2020 We RoboStar 联盟赛中获得<b>冠军</b>，同时负责 2020 学年的工程日志撰写
                 </li>
                 <li>
-                以队长身份带领团队在 Infinite Recharge 线上挑战赛中获得新秀比赛变革者奖，在 2021 RCC 资格赛中排名18
+                以队长身份带领团队在 Infinite Recharge 线上挑战赛中获得<b>新秀比赛变革者奖</b>，在 2021 RCC 资格赛中排名 18
                 </li>
                 <li>
-                在 2022 杭州区域赛中和队友一起赢得卓越工程奖
+                在 2022 杭州区域赛中和队友一起赢得<b>卓越工程奖</b>
                 </li>
             </ul>
         </div>
@@ -194,6 +235,10 @@ hide:
 
 <div>
     <ul>
+        <li>
+            <b>工程启发奖</b>;
+            2024 世界机器人大赛北京锦标赛 FRC 赛项暨 FRC 中国区季后赛
+        </li>
         <li>
             <b>优胜奖</b>;
             2023 犀牛鸟中学科学人才培养计划

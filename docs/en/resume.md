@@ -12,9 +12,6 @@ hide:
         Zirui ZHANG
         </b>
     </h2>
-    <text>
-    Email: zhangzrjerry@outlook.com
-    </text>
 </div>
 
 ## Education
@@ -37,7 +34,10 @@ hide:
         <div class="resume-detail">
             <ul>
                 <li>With an extended major in Artificial Intelligence</li>
-                <li>GPA: --/4.0</li>
+                <li>
+                    CGA: --/4.0
+                    <a href="./hkust">[Details]</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -56,9 +56,12 @@ hide:
             </div>
         </div>
         <div class="resume-detail">
-            <ul>
-                <li>CNCEE: 658/750 (Gaokao)</li>
-            </ul>
+            <!-- <ul>
+                <li>
+                    CNCEE: 658/750 (Gaokao)
+                    <a href="./gdgzez">[Details]</a>
+                </li>
+            </ul> -->
         </div>
     </div>
 </div>
@@ -66,18 +69,18 @@ hide:
 ## Professional Experience
 
 <div>
-    <div class="resume-container">
+    <!-- <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="/img/resume/makers.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
                 <b> MakerX Technology Co., Ltd. </b>
-                <br> Control Systems Engineer, Financial Management, Founder
+                <br> Startup, Control Systems Engineer
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
-                <br> Aug. 2024 - Present
+                <br> Aug. 2024 - Aug. 2024
             </div>
         </div>
         <div class="resume-detail">
@@ -85,7 +88,7 @@ hide:
                 <li>Established the very company that focused on technology and innovation about robots.</li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -113,24 +116,62 @@ hide:
 ## Community Involvement
 
 <div>
+    <!-- <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc10183.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> FIRST Robotics Competition Team 10183 </b>
+                <br> Remote Mentor
+            </div>
+            <div class="resume-right">
+                <b> Las Vegas, NV </b>
+                <br> Sep. 2024 - Present
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+            </ul>
+        </div>
+    </div>
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
-                <img src="/img/resume/frcdefiant.png" class="resume-img"></img>
+                <img src="/img/resume/frc8214.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
-                <b> FIRST Robotics Competition Team Defiant </b>
+                <b> FIRST Robotics Competition Team 8214 </b>
                 <br> Program Mentor
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
-                <br> Jun. 2024 - Present
+                <br> Sep. 2024 - Present
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+            </ul>
+        </div>
+    </div> -->
+    <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/frc6399.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> FIRST Robotics Competition Team 6399 </b>
+                <br> Program Mentor
+            </div>
+            <div class="resume-right">
+                <b> Jinan, China </b>
+                <br> Jul. 2024 - Aug. 2024
             </div>
         </div>
         <div class="resume-detail">
             <ul>
                 <li>
-                Responsible for the development of the FRC robotics control system, and provided programming instruction to the team.
+                Responsible for the development of the FRC robotics control system, provided programming instruction to the team, and successfully led the team to <b>Engineering Inspiration Award</b> in the World Robot Contest Championships 2024 - Beijing FRC Program China Offseason Event. (Off-Season Demo Team Number: 9975)
                 </li>
             </ul>
         </div>
@@ -142,11 +183,11 @@ hide:
             </div>
             <div class="resume-left">
                 <b> FIRST Robotics Competition Team 8811 </b>
-                <br> Founder, Youth Mentor, Team Leader
+                <br> Founder, Youth Mentor, Team Captain
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
-                <br> Sep. 2021 - Jun. 2024
+                <br> Sep. 2021 - Aug. 2023
             </div>
         </div>
         <div class="resume-detail">
@@ -179,7 +220,7 @@ hide:
                 <li>Led the team to <b>Championship</b> in the 2020 We RoboStar League as the Program Leader and simultaneously managed the team's Engineering Journal.
                 </li>
                 <li>
-                As team captain, steered the team to <b>Rookie Game Changer Award</b> in the 2021 INFINITE RECHARGE At Home Challenge and <b>Rank 18</b> in the 2021 Robotics Championship China.
+                As team captain, steered the team to <b>Rookie Game Changer Award</b> in the 2021 INFINITE RECHARGE At Home Challenge and Rank 18 in the 2021 Robotics Championship China.
                 </li>
                 <li>
                 Won <b>Excellence in Engineering Award</b> with my teamates in 2022 Hangzhou Regional.
@@ -193,6 +234,10 @@ hide:
 
 <div>
     <ul>
+        <li>
+            <b>Engineering Inspiration Award</b>;
+            World Robot Contest Championships 2024 - Beijing FRC Program China Offseason Event
+        </li>
         <li>
             <b>Excellent Award</b>;
             2023 Tencent Rhino-Bird Middle School Science Research Training Program
