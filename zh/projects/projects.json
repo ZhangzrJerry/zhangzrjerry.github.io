@@ -13,7 +13,7 @@
     {
         "image": "/img/projects/personal-website.png",
         "brief": "Nice To Meet You",
-        "heading": "个人网站开发",
+        "heading": "Personal Website",
         "prefix": "By",
         "author": "ZhangzrJerry",
         "date": "Aug. 2024",
@@ -23,8 +23,8 @@
     },
     {
         "image": "/img/projects/book-recommendation-system/cover.png",
-        "brief": "腾讯犀牛鸟计划",
-        "heading": "智能图书推荐系统",
+        "brief": "Tencent Rhino Bird",
+        "heading": "Book Recommendation System",
         "prefix": "With",
         "author": "Yue Peng",
         "date": "Oct. 2023",
