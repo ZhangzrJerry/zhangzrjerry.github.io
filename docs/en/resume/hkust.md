@@ -14,6 +14,7 @@
 | COMP 2611 Computer Organization | 4 | | CPEG |
 | LANG 1402 English for University Studies | 3 | | CCC |
 | HMAW 1905 Behavioral Foundations of University Education: Habits, Mindsets, and Wellness | 1 | | CCC |
+| LEGL 1000 Legal Education (Basic Law, National Security Law and Safeguarding National Security Ordinance) | 0 | | - |
 | **Term Grade Average (TGA)** | 19 | | - |
 
 <!-- ## Year 1 Spring -->
