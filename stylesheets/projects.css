@@ -1,17 +1,29 @@
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.pool {
+  width: 204px;
+  height: min-content;
+  justify-content: center;
+}
+
 .card {
   width: 190px;
+  height: min-content;
   background: white;
-  padding: .4em;
-  border-radius: 10px;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-bottom: 16px;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 0.4em;
+  border-radius: 12px;
+  margin-bottom: 13px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
-  background-color: rgb(236, 236, 236);
   width: 100%;
   height: 130px;
   border-radius: 6px 6px 0 0;
@@ -66,7 +78,7 @@
 }
 
 .card:hover {
-  transform: rotate(0) scale(1.1);
+  transform: scale(1.07);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -106,14 +118,6 @@
 
 .view:hover {
   cursor: pointer;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -192,7 +196,7 @@
 
 
 .viewmore-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -200,6 +204,7 @@
   min-width: 300px;
   max-width: 600px;
   max-height: 70%;
+  max-height: 600px;
   justify-content: center;
   align-self: center;
   box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
@@ -263,6 +268,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.15);
   display: none;
 }

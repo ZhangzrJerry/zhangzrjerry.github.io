@@ -5,16 +5,20 @@ window.onload = function () {
 
 function init() {
     if (window.location.href.includes('projects')) {
-        fetch("./projects.json").then(response => response.json()).then(res => {
+        fetch("/deploy/projects.json").then(response => response.json()).then(res => {
             data = res;
         });
     }
     viewmoreidx = -1;
+    render();
 }
 
 function listen() {
     document.getElementById('viewmore').addEventListener('scroll', () => {
         document.getElementById('viewmore-exit').style.top = (document.getElementById('viewmore').scrollTop) + 'px';
+    });
+    window.addEventListener('resize', () => {
+        render();
     });
     document.onkeydown = function (e) {
         if (e.key == 'Escape' && viewmoreidx > -1) {
@@ -31,11 +35,9 @@ function listen() {
             viewmore(viewmoreidx);
         }
         if (e.key == 'ArrowUp' && viewmoreidx > -1) {
-
         }
         if (e.key == 'ArrowDown' && viewmoreidx > -1) {
         }
-        render();
     }
 }
 
@@ -46,7 +48,6 @@ function clock() {
         if (document.getElementById('overview-grid').innerHTML.length < 3) {
             console.log(t, "rerendered");
             init();
-            render();
         }
         listen();
     }
@@ -55,14 +56,32 @@ function clock() {
 function render() {
     // fullfill the grid with cards
     let element = document.getElementById('overview-grid');
+    if (!element) return;
     element.innerHTML = '';
     try {
         console.log(data);
     } catch (e) {
         return;
     }
+    // decide how many pools by the width of the window
+    let pools = Math.max((element.scrollWidth - 150) / 200, 1);
+    for (let i = 0; i < pools; i++) {
+        element.innerHTML += `<div class="pool" id="pool-${i}"></div>`;
+    }
+    while (!document.getElementById('pool-0')) { }
     for (let i = 0; i < data.length; i++) {
-        element.innerHTML += `
+        let minHeight = document.getElementById("pool-0").offsetHeight;
+        console.log(minHeight);
+        let pickPool = 0;
+        for (let j = 1; j < pools; j++) {
+            if (document.getElementById("pool-" + j).offsetHeight < minHeight) {
+                minHeight = document.getElementById("pool-" + j).offsetHeight;
+                pickPool = j;
+            }
+            console.log(document.getElementById("pool-" + j).offsetHeight);
+        }
+        console.log(document.getElementById("pool-" + pickPool).offsetHeight);
+        document.getElementById("pool-" + pickPool).innerHTML += `
             <div class="card">
                 <div class="card-image">
                     <img src=${data[i].image} class="card-image">
