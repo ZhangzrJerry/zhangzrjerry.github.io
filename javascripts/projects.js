@@ -35,8 +35,10 @@ function listen() {
             viewmore(viewmoreidx);
         }
         if (e.key == 'ArrowUp' && viewmoreidx > -1) {
+            document.getElementById('viewmore').scrollBy(0, -50);
         }
         if (e.key == 'ArrowDown' && viewmoreidx > -1) {
+            document.getElementById('viewmore').scrollBy(0, 50);
         }
     }
 }

@@ -212,6 +212,7 @@
   background-color: white;
   overflow: scroll;
   display: none;
+  scroll-behavior: smooth;
 }
 
 .viewmore-cover {
