@@ -1,0 +1,52 @@
+.academic-containers {
+    width: 98%;
+    margin-left: 1%;
+}
+
+.academic-container {
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.academic-subtitle {
+    font-size: 1.15em;
+    color: #333;
+}
+
+.academic-text {
+    width: 77%;
+    line-height: 1.35em;
+}
+
+.academic-labels {
+    margin-top: 4px;
+}
+
+.academic-info {
+    margin-top: 0px;
+}
+
+.academic-date {
+    font-style: italic;
+}
+
+.academic-brief {
+    margin-top: 10px;
+    font-weight: 501;
+    font: "Times New Roman", Times, serif;
+}
+
+.academic-imgcontainer {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.academic-img {
+    width: 95%;
+    border-radius: 5%;
+}
