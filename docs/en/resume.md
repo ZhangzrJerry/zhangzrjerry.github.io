@@ -69,6 +69,23 @@ hide:
 ## Professional Experience
 
 <div>
+   <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/ni.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> Next Innovation </b>
+                <br> Control System Developer, Front-End Engineer
+            </div>
+            <div class="resume-right">
+                <b> Guangzhou, China </b>
+                <br> Sep. 2024 - Present
+            </div>
+        </div>
+        <div class="resume-detail">
+        </div>
+    </div>
     <!-- <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -89,28 +106,6 @@ hide:
             </ul>
         </div>
     </div> -->
-    <div class="resume-container">
-        <div class="resume-brief">
-            <div class="resume-icon">
-                <img src="/img/resume/rhinobird.png" class="resume-img"></img>
-            </div>
-            <div class="resume-left">
-                <b> Rhino-Bird Middle School Science Research Training Program </b>
-                <br>
-                Team Project, Deep Learning Engineer
-            </div>
-            <div class="resume-right">
-                <b> Guangzhou, China </b>
-                <br> Jun. 2023 - Oct. 2023
-            </div>
-        </div>
-        <div class="resume-detail">
-            <ul>
-                <li>For the need for smart middle school libraries, we used the DSSM model and Flask framework to build an Intelligent Book Recommendation and User Interset Analysis System and won the Excellent Award.</li>
-                <li>Mainly took part in model training and backend database developing.</li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 ## Community Involvement
@@ -134,7 +129,7 @@ hide:
             <ul>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -153,7 +148,7 @@ hide:
             <ul>
             </ul>
         </div>
-    </div> -->
+    </div>
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">

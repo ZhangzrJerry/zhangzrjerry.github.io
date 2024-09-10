@@ -9,4 +9,9 @@ hide:
   <p class="home-greet">
     Hi! I am @ZhangzrJerry (Zirui, ZHANG)
   </p>
+  <p>
+    <a href="./resume">Resume</a> /
+    <a href="./academics">Academics</a> /
+    <a href="./projects">Projects</a>
+  </p>
 </div>

@@ -22,6 +22,7 @@ plugins:
 nav:
   - Home: index.md
   - Resume: resume.md
+  - Academics: academics.md
   - Projects: projects.md
   # - Blogs: blog/index.md
 
@@ -65,6 +66,7 @@ extra_css:
   - stylesheets/projects.css
   - stylesheets/blog.css
   - stylesheets/resume.css
+  - stylesheets/academics.css
 
 extra_javascript:
   - javascripts/projects.js

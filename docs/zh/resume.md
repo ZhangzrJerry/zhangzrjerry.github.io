@@ -69,6 +69,23 @@ hide:
 ## 工作和项目经历
 
 <div>
+   <div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon">
+                <img src="/img/resume/ni.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> Next Innovation </b>
+                <br> 控制系统工程师，前端工程师
+            </div>
+            <div class="resume-right">
+                <b> 广州，广东 </b>
+                <br> 2024.09 - 至今
+            </div>
+        </div>
+        <div class="resume-detail">
+        </div>
+    </div>
     <!-- <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -80,7 +97,7 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Aug. 2024 - Present
+                <br> 2024.08 - 2024.08
             </div>
         </div>
         <div class="resume-detail">
@@ -89,28 +106,6 @@ hide:
             </ul>
         </div>
     </div> -->
-    <div class="resume-container">
-        <div class="resume-brief">
-            <div class="resume-icon">
-                <img src="/img/resume/rhinobird.png" class="resume-img"></img>
-            </div>
-            <div class="resume-left">
-                <b> 犀牛鸟中学科学人才培养计划 </b>
-                <br>
-                团队项目，深度学习工程师
-            </div>
-            <div class="resume-right">
-                <b> 广州，广东 </b>
-                <br> 2023.06 - 2023.10
-            </div>
-        </div>
-        <div class="resume-detail">
-            <ul>
-                <li>针对中学图书馆智慧化的需求，我们使用 DSSM 模型和 Flask 架构搭建了智能图书推荐和用户兴趣分析系统，项目获得了2023年犀牛鸟中学科学人才培养计划优胜奖</li>
-                <li>主要负责模型训练和后端数据库开发</li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 ## 社区参与
@@ -134,7 +129,7 @@ hide:
             <ul>
             </ul>
         </div>
-    </div>
+    </div> -->
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -146,14 +141,14 @@ hide:
             </div>
             <div class="resume-right">
                 <b> 广州，广东 </b>
-                <br> Sep. 2024 - Present
+                <br> 2024.09 - 至今
             </div>
         </div>
         <div class="resume-detail">
             <ul>
             </ul>
         </div>
-    </div> -->
+    </div>
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
