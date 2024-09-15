@@ -46,8 +46,6 @@
     
       <link rel="stylesheet" href="../../stylesheets/index.css">
     
-      <link rel="stylesheet" href="../../stylesheets/projects.css">
-    
       <link rel="stylesheet" href="../../stylesheets/blog.css">
     
       <link rel="stylesheet" href="../../stylesheets/resume.css">
@@ -152,32 +150,50 @@
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
-      <div class="md-header__option">
-  <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
-    </button>
-    <div class="md-select__inner">
-      <ul class="md-select__list">
+      <label class="md-header__button md-icon" for="__search">
         
-          <li class="md-select__item">
-            <a href="./" hreflang="en" class="md-select__link">
-              English
-            </a>
-          </li>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
-          <li class="md-select__item">
-            <a href="../../zh/resume/hkust/" hreflang="zh" class="md-select__link">
-              简体中文
-            </a>
-          </li>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
-      </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-    
     
     
   </nav>
@@ -227,12 +243,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../academics/" class="md-tabs__link">
+      <a href="../../projects/" class="md-tabs__link">
         
   
     
   
-  Academics
+  Projects
 
       </a>
     </li>
@@ -244,12 +260,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../projects/" class="md-tabs__link">
+      <a href="../../blog/" class="md-tabs__link">
         
   
     
   
-  Projects
+  Blogs
 
       </a>
     </li>
@@ -343,11 +359,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../academics/" class="md-nav__link">
+      <a href="../../projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Academics
+    Projects
   </span>
   
 
@@ -361,13 +377,15 @@
   
   
   
+    
+  
   
     <li class="md-nav__item">
-      <a href="../../projects/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects
+    Blogs
   </span>
   
 
@@ -392,16 +410,110 @@
 
 
 <h1 id="hkust">HKUST</h1>
-<!-- ## Overview -->
-
-<h2 id="timeline">Timeline</h2>
-<h3 id="2024-fall">2024 Fall</h3>
+<h2 id="curriculums">Curriculums</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ELEC</label><label for="__tabbed_1_2">COMP</label><label for="__tabbed_1_3">MATH</label><label for="__tabbed_1_4">Others</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Course</th>
 <th style="text-align: center;">Credit(s)</th>
 <th style="text-align: center;">Grade</th>
+<th style="text-align: center;">Semester</th>
+<th style="text-align: center;">Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ELEC 3210</strong> - Introduction to Mobile Robotics</td>
+<td style="text-align: center;">0(3)</td>
+<td style="text-align: center;">NA</td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;">audit without enrolling <br> <a href="./elec3210">Details</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ELEC 3200</strong> - System Modeling, Analysis and Control</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Total credits</td>
+<td style="text-align: center;"><strong>4(7)</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Course</th>
+<th style="text-align: center;">Credit(s)</th>
+<th style="text-align: center;">Grade</th>
+<th style="text-align: center;">Semester</th>
+<th style="text-align: center;">Remark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>COMP 3711</strong> - Design and Analysis of Algorithms</td>
+<td style="text-align: center;">0(3)</td>
+<td style="text-align: center;">AU(expected)</td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COMP 3511</strong> - Operating System</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/25-spring.svg"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COMP 2711</strong> - Discrete Mathematical Tools for Computer</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COMP 2611</strong> - Computer Organization</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COMP 1021</strong> - Introduction to Computer Science</td>
+<td style="text-align: center;"><del>3</del></td>
+<td style="text-align: center;">NA</td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"><a href="/deploy/hkust/COMP1021-cplacement.pdf">c placement</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">Total credits</td>
+<td style="text-align: center;"><strong>8(11)</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Course</th>
+<th style="text-align: center;">Credit(s)</th>
+<th style="text-align: center;">Grade</th>
+<th style="text-align: center;">Semester</th>
 <th style="text-align: center;">Remark</th>
 </tr>
 </thead>
@@ -410,62 +522,93 @@
 <td style="text-align: left;"><strong>MATH 1013</strong> - Calculus IB</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ELEC 3200</strong> - System Modeling, Analysis and Control</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: left;"><strong>MATH 1014</strong> - Calculus II</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>COMP 2711</strong> - Discrete Mathematical Tools for Computer Science</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/25-spring.svg"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>COMP 2611</strong> - Computer Organization</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: left;">Total credits</td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Course</th>
+<th style="text-align: center;">Credit(s)</th>
+<th style="text-align: center;">Grade</th>
+<th style="text-align: center;">Semester</th>
+<th style="text-align: center;">Remark</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align: left;"><strong>LANG 1402</strong> - English for University Studies</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;">English Language Course<br>Common Core Course</td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>COMP 3711</strong> - Design and Analysis of Algorithms</td>
-<td style="text-align: center;">0(3)</td>
-<td style="text-align: center;">AU(expected)</td>
+<td style="text-align: left;"><strong>LANG 1407</strong> - Academic English for Engineering Studies</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><img src="/img/resume/hkust/25-spring.svg"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>HMAW 1905B</strong> - Behavioral Foundations of University Education: Habits, Mindsets, and Wellness</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">PP(expected)</td>
-<td style="text-align: center;">Common Core Course</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">P(expected)</td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"><br><img src="/img/resume/hkust/25-spring.svg"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>LEGL 1000</strong> - Legal Education (Basic Law, National Security Law and Safeguarding National Security Ordinance)</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">P(expected)</td>
-<td style="text-align: center;">Legal Education</td>
+<td style="text-align: center;"><img src="/img/resume/hkust/24-fall.svg"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Term Grade Average (TGA)</strong></td>
-<td style="text-align: center;">19(22)</td>
-<td style="text-align: center;"><strong>-</strong></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;">Total credits</td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
-<!-- | **ELEC 4220** - Introduction to Robotics: From Mobile Robots to Manipulators | <del>4</del> | AU(expected) | | -->
-<!-- ## Year 1 Spring -->
+</div>
+</div>
+</div>
+<!-- ## Timeline
 
-<!-- ## Year 1 Summer -->
+=== "24 Fall"
+    | Course | Credit(s) | Grade | Remark |
+    | :- | :-: | :-: | :-: |
+    | **MATH 1013** - Calculus IB | 3 | | |
+    | **ELEC 3200** - System Modeling, Analysis and Control | 4 | | |
+    | **COMP 2711** - Discrete Mathematical Tools for Computer Science | 4 | | |
+    | **COMP 2611** - Computer Organization | 4 | | |
+    | **LANG 1402** - English for University Studies | 3 | | English Language Course<br>Common Core Course |
+    | **HMAW 1905B** - Behavioral Foundations of University Education: Habits, Mindsets, and Wellness | 1 | PP(expected) | Common Core Course |
+    | **LEGL 1000** - Legal Education (Basic Law, National Security Law and Safeguarding National Security Ordinance) | 0 | P(expected) | Legal Education |
+    | **Term Grade Average (TGA)** | 19(19) | **-** | - |
+
+=== "25 Spring" -->
 
 
 
@@ -546,12 +689,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path", "navigation.tracking", "navigation.sidebar", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.image.lightbox", "content.card"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path", "navigation.tracking", "navigation.sidebar", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.image.lightbox", "content.card"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
-        <script src="../../javascripts/projects.js"></script>
+        <script src="../../javascripts/index.js"></script>
       
     
   </body>
