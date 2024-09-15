@@ -2,29 +2,15 @@ site_name: ZhangzrJerry
 site_description: "Jerry's personal website"
 
 plugins:  
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: zh
-          name: 简体中文
-          build: true
-      nav_translations:
-        zh:
-          Home: 首页
-          Resume: 简历
-          Projects: 项目
-  # - blog
+  - search
+  - blog
 
 nav:
   - Home: index.md
-  - Resume: resume.md
-  - Academics: academics.md
+  - Resume: resume/index.md
+  # - Academics: academics.md
   - Projects: projects.md
-  # - Blogs: blog/index.md
+  - Blogs: blog/index.md
 
 theme:
   name: material
@@ -32,6 +18,9 @@ theme:
   favicon: img/favicon.ico
   logo: img/favicon.ico
   features:
+    - search.suggest
+    - search.highlight
+    - search.share
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.tabs
@@ -63,17 +52,19 @@ theme:
 
 extra_css:
   - stylesheets/index.css
-  - stylesheets/projects.css
   - stylesheets/blog.css
   - stylesheets/resume.css
   - stylesheets/academics.css
 
 extra_javascript:
-  - javascripts/projects.js
+  - javascripts/index.js
 
 markdown_extensions:
   - attr_list
   - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - codehilite:
       guess_lang: false
 
