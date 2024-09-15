@@ -33,3 +33,21 @@
     margin-top: -0.2em;
     margin-bottom: 1.5em;
 }
+
+.resume-corec-detail {
+    display: none;
+}
+
+.resume-corec-img {
+    width: 16px;
+    margin-left: 5px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.resume-corec-img :hover {
+    cursor: pointer;
+}

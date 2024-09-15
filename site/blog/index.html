@@ -11,6 +11,8 @@
       
       
       
+        <link rel="prev" href="../projects/">
+      
       
       
       <link rel="icon" href="../img/favicon.ico">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Blog - ZhangzrJerry</title>
+        <title>Blogs - ZhangzrJerry</title>
       
     
     
@@ -45,8 +47,6 @@
     
     
       <link rel="stylesheet" href="../stylesheets/index.css">
-    
-      <link rel="stylesheet" href="../stylesheets/projects.css">
     
       <link rel="stylesheet" href="../stylesheets/blog.css">
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blog" class="md-skip">
+        <a href="#blogs" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Blog
+              Blogs
             
           </span>
         </div>
@@ -152,32 +152,50 @@
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
-      <div class="md-header__option">
-  <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="Select language">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
-    </button>
-    <div class="md-select__inner">
-      <ul class="md-select__list">
+      <label class="md-header__button md-icon" for="__search">
         
-          <li class="md-select__item">
-            <a href="./" hreflang="en" class="md-select__link">
-              English
-            </a>
-          </li>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
         
-          <li class="md-select__item">
-            <a href="../zh/blog/" hreflang="zh" class="md-select__link">
-              简体中文
-            </a>
-          </li>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
-      </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-    
     
     
   </nav>
@@ -227,12 +245,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="../academics/" class="md-tabs__link">
+      <a href="../projects/" class="md-tabs__link">
         
   
     
   
-  Academics
+  Projects
 
       </a>
     </li>
@@ -242,14 +260,16 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../projects/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
   
-  Projects
+  Blogs
 
       </a>
     </li>
@@ -273,7 +293,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -343,26 +365,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../academics/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Academics
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../projects/" class="md-nav__link">
         
   
@@ -376,6 +378,40 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+    
+      
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Blogs
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -385,29 +421,119 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-<h1 id="blog">Blog</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
-            </div>
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="blogs">Blogs</h1>
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-09-15 00:00:00">September 15, 2024</time></li>
+        
+        
           
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="big-changes-in-personal-website"><a class="toclink" href="2024/09/15/big-changes-in-personal-website/">Big Changes in Personal Website</a></h2>
+<div class="blog">
+<p><b>No more dynamically rendered pages and waterfall layouts! R.I.P.</b></p>
+<img src="/img/blog/20240915/old-version.png">
+</div>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-24 00:00:00">August 24, 2024</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="_1"><a class="toclink" href="2024/08/24/%E5%B7%A5%E7%A8%8B%E5%90%AF%E5%8F%91%E5%A5%96%E9%A2%81%E5%A5%96%E8%AF%8D/">工程启发奖颁奖词</a></h2>
+<div class="blog">
+<p>
+工程启发奖是一个非常了不起的成就，它反映了团队通过创新思想、团队合作和社区参与，能够激励和激发他人的能力。获得该奖的团队通过对机器人技术的热爱和学习，建设了学校的教室及课程预定系统，将线下工作推动到线上，帮助学校实现数字化转型，务实的行动值得称赞。你们团队的成功不仅是你们辛勤工作和坚持不懈的体现，也是整个 FRC 社区的鼓舞力量。祝贺工程启发奖的获奖队伍 Defiant 9975，他们来自于济南外国语学校，愿这个荣誉成为未来更大成就的基石。</p>
+<p>
+已经过去整整一天多了，还是很激动😭第一次带队拿奖，第一次拿超级大奖😭😭😭<br>
+21年8011获得的新秀比赛变革者奖的颁奖词也还萦绕耳边😭😭😭
+</p><p>
+This award celebrates a rookie team's outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin's swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team Eight O One One Guangzhou wayi from Guangzhou. Congratulations!</p>
+</div>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-15 00:00:00">August 15, 2024</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="casual-writing-before-2024-frc-off-season-china"><a class="toclink" href="2024/08/15/casual-writing-before-2024-frc-off-season-china/">Casual Writing before 2024 FRC Off-season China</a></h2>
+<div class="blog"></p><img  src="/img/blog/20240815/flag.png"></img>
+<p>I remember our young members and the short-lived Tomorrow's Star Program designed for our team's future.</p><p>I remember escaping from Guangzhou No.2 High School with Yue Peng after Guangdong Six-School Alliance Exam and the ridiculous experience of buying unnecessary ticket fot the shuttle bus in the airport.</p><img  src="/img/blog/20240815/studio.png"></img><p>I remember the experience of 9 Air adding baggage fees, landing later than the original flight after rerouting at Pudong Airport.</p><p>I remember a civil engineering graduate from Harbin Institute of Technology, who was working in Guangdong somewhere, sitting to my right by the window. He helped me take photos of the magnificent sunset over the sea of clouds.</p><img  src="/img/blog/20240815/plane.png"></img><p>I remember 8011 providing us with drawings of metric dimension sized swerve module, lending us Falcon motors for the competition, and countless other forms of assistance.</p><p>I remember 8214 lending us Falcon motors for the competition, taking us to find a factory that could cut the wood board, and helping us make the bumpers.</p><p>I remember frequently communicating with 8810, encouraging each other, and sharing a lot of information.</p><img  src="/img/blog/20240815/bumper.png"></img><p>I remember the alumnus from Shenzhen who worked as robot inspector and was about to join the PLA. He shared his FRC experience with us, helped us test our code, repair the robot. And the air tube that kept leaking and eventually burned out due to overheating during pumping.</p><p>I remember the orange-hatted CSAs helping us troubleshoot the pneumatic control module.</p><img  src="/img/blog/20240815/team.png"></img><p>I remember the mentor from 6986, who were unfamiliar to us, coming to our PIT with their team and tools, trying tirelessly help us repair the damaged swerve modules. <b>The professional ethics and the FIRST spirit is truly admirable!</b></p><p>I remember the encourage from the mentor of 6353.</p><p>I remember a team lent us their air compressor to use, though I can't quite recall which team they were.</p><img  src="/img/blog/20240815/package.png"><p>I remember chatting about the events after return to hotel in that very night, feeling a bit melancholy.</p><p>I remember that we were one of the three teams that were not selected by the alliance and did not make it to the elimination rounds.</p><p>I remember staying at the competition venue until the awards ceremony ended but still not winning any awards. Hence, we had to rush to the boarding gate at Hongqiao Airport to catch the flight hurriedly. However, our plane need to change the wheel and finally Air China decide to change the plane after maybe one or two hours.</p><p><img  src="/img/blog/20240815/logo.png"></img></div>
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
+      
+    </div>
+  </div>
+
           
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
@@ -472,12 +598,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path", "navigation.tracking", "navigation.sidebar", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.image.lightbox", "content.card"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.instant.prefetch", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path", "navigation.tracking", "navigation.sidebar", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.image.lightbox", "content.card"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
-        <script src="../javascripts/projects.js"></script>
+        <script src="../javascripts/index.js"></script>
       
     
   </body>
