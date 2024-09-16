@@ -46,7 +46,7 @@ hide:
                 <a href="https://www.bilibili.com/video/BV1pbWCejEUi">Recap</a> /
             </div>
             <div class="academic-brief">
-                For FRC 2024 game rules, the mission of the robot is to collect the note and shoot to speaker or amp.
+                For FRC 2024 game rules, the mission of the robot is to collect the note and shoot to the speaker or to the amp.
             </div>
             <div class="academic-labels">
                 <img class="academic-label" src="/img/tags/frc-6399.svg">
@@ -63,7 +63,7 @@ hide:
                 Intelligent Book Recommendation and User Interest Analysis System based on Factorization Machines
             </b>
             <div class="academic-info">
-                2023 Rhino-Bird Middle School Science Research Training Program
+                2023 Rhino-Bird Middle School Science Research Training Program (<b>Zirui Zhang</b>, Yue Peng)
             </div>
             <div class="academic-date">
                 Jun. 2023 - Oct. 2023
@@ -77,7 +77,6 @@ hide:
             </div>
             <div class="academic-labels">
                 <img class="academic-label" src="/img/tags/rhino-bird.svg">
-                <img class="academic-label" src="/img/tags/dssm.svg">
                 <img class="academic-label" src="/img/tags/paddlepaddle.svg">
                 <img class="academic-label" src="/img/tags/flask.svg">        
             </div>
@@ -133,7 +132,7 @@ hide:
             </div>
             <div class="academic-labels">
                 <img class="academic-label" src="/img/tags/embedded.svg">
-                <img class="academic-label" src="/img/tags/motor-control.svg">
+                <img class="academic-label" src="/img/tags/control.svg">
             </div>
         </div>
         <div class="academic-imgcontainer">
@@ -172,7 +171,7 @@ hide:
                 FRC Data Collection Software
             </b>
             <div class="academic-info">
-                Zirui Zhang, Yue Peng
+                <b>Zirui Zhang</b>, Yue Peng
             </div>
             <div class="academic-date">
                 Mar. 2022 - Aug. 2022
@@ -243,6 +242,33 @@ hide:
         </div>
         <div class="academic-imgcontainer">
             <img class="academic-img" src="/img/projects/kylin-2022.png">
+        </div>
+    </div><div class="academic-container">
+        <div class="academic-text">
+            <b class="academic-subtitle">
+                Balance Swerve - A Single-Wheeled Self-Balancing Omni-directional Mobile Platform
+            </b>
+            <div class="academic-info">
+                Liangyu Cai, Zihan Chen, <b>Zirui Zhang</b>, Junyong Lin, Yingpei Chen, Yiyang Lu, Jiacheng Xiao, Suqing He
+            </div>
+            <div class="academic-date">
+                Sep. 2021 - Mar. 2022
+            </div>
+            <div class="academic-links">
+                <a href="https://patents.google.com/patent/CN115107901A">Patent</a> /
+            </div>
+            <div class="academic-brief">
+                The platform is equipped with an omni-directional wheel, driven by a dual-motor system and a gear transmission assembly. A balancing mechanism ensures stability, while the omni-directional wheel enables omnidirectional movement and rapid steering.
+            </div>
+            <div class="academic-labels">
+                <img class="academic-label" src="/img/tags/frc-8011.svg">
+                <img class="academic-label" src="/img/tags/embedded.svg">
+                <img class="academic-label" src="/img/tags/control.svg">
+                <img class="academic-label" src="/img/tags/cpp.svg">
+            </div>
+        </div>
+        <div class="academic-imgcontainer">
+            <img class="academic-img" src="/img/projects/balance-swerve.png">
         </div>
     </div><div class="academic-container">
         <div class="academic-text">
