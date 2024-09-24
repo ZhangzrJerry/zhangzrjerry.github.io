@@ -11,10 +11,12 @@ nav:
   # - Academics: academics.md
   - Projects: projects.md
   - Blogs: blog/index.md
+  - Connect: connect.md
 
 theme:
   name: material
   language: en
+  custom_dir: overrides
   favicon: img/favicon.ico
   logo: img/favicon.ico
   features:
@@ -58,11 +60,15 @@ extra_css:
 
 extra_javascript:
   - javascripts/index.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 
 markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.tabbed:
       alternate_style: true
   - codehilite:

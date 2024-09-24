@@ -60,10 +60,36 @@ hide:
     </div><div class="academic-container">
         <div class="academic-text">
             <b class="academic-subtitle">
+                Image-Based 3D Modeling
+            </b>
+            <div class="academic-info">
+                Shenlan Xueyuan Course
+            </div>
+            <div class="academic-date">
+                Dec. 2023 - Feb. 2024
+            </div>
+            <div class="academic-links">
+                <a href="https://www.shenlanxueyuan.com/my/course/654">Background</a> /
+            </div>
+            <div class="academic-brief">
+                The course provided by Professor Peng Lu, offers an in-depth exploration of advanced computer vision techniques, focusing on 3D reconstruction. It covers Structure from Motion (SfM), including key algorithms like camera motion estimation and Bundle Adjustment (BA), while differentiating SfM from SLAM.
+            </div>
+            <div class="academic-labels">
+                <img class="academic-label" src="/img/tags/computer-vision.svg">
+                <img class="academic-label" src="/img/tags/opengl.svg">
+                <img class="academic-label" src="/img/tags/cpp.svg">
+            </div>
+        </div>
+        <div class="academic-imgcontainer">
+            <img class="academic-img" src="/img/projects/image-based-3d-modeling.png">
+        </div>
+    </div><div class="academic-container">
+        <div class="academic-text">
+            <b class="academic-subtitle">
                 Intelligent Book Recommendation and User Interest Analysis System based on Factorization Machines
             </b>
             <div class="academic-info">
-                2023 Rhino-Bird Middle School Science Research Training Program (<b>Zirui Zhang</b>, Yue Peng)
+                2023 Rhino-Bird Middle School Science Research Training Program
             </div>
             <div class="academic-date">
                 Jun. 2023 - Oct. 2023

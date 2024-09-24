@@ -38,27 +38,6 @@ hide:
                 </li><li>
                     CGA: --/4.0
                     <a href="./hkust">[Details]</a>
-                </li><li class="resume-corec">
-                    <div style="display:flex">
-                        Core Courses: 
-                        <div class="resume-corec-img" id="resume-corec-img">
-                            <img src="/img/icons/circle-xmark-regular.svg"></img>
-                        </div>
-                    </div><div class="resume-corec-detail" id="resume-corec-detail">
-                        <table>
-                            <tr>
-                                <th>Robotics</th>
-                                <td><b></b>ELEC 3200 - System Modeling, Analysis, and Control
-                                <td><b></b>ELEC 3210 - Introduction to Mobile Robotics</td>
-                            </tr><tr>
-                                <th>Embedded</th>
-                                <td><b></b>COMP 2611 - Computer Organization</td><td></td>
-                            </tr><tr>
-                                <th>Algorithm</th>
-                                <td><b></b>COMP 3711 - Design and Analysis of Algorithms</td><td></td>
-                            </tr>
-                        </table>
-                    </div>
                 </li>
             </ul>
         </div>
