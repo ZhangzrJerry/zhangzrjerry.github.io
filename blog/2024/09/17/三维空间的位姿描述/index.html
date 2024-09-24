@@ -925,6 +925,16 @@ a_z = \frac{r_{21}-r_{12}}{\sqrt{(r_{32}-r_{23})^2+(r_{13}-r_{31})^2+(r_{21}-r_{
 \end{cases}
 \]</div>
 <h4 id="2_4">欧拉角 2 轴角</h4>
+<p>愉快地，我们可以利用 欧拉角 --&gt; 四元数 --&gt; 轴角 的方式得到</p>
+<div class="arithmatex">\[
+\begin{cases}
+\theta=2*\arccos(\cos\gamma\cos\beta\cos\alpha-\sin\gamma\sin\beta\sin\alpha) \\
+a_x=\sin\gamma\sin\beta\cos\alpha+\cos\gamma\cos\beta\sin
+\alpha\\
+a_y=\sin\gamma\cos\beta\cos\alpha+\cos\gamma\sin\beta\sin\alpha\\
+a_z=\cos\gamma\sin\beta\cos\alpha-\sin\gamma\cos\beta\sin\alpha
+\end{cases}
+\]</div>
 <h4 id="2_5">轴角 2 欧拉角</h4>
 <p>直接从轴角转为欧拉角比较困难，我们可以利用 轴角 --&gt; 旋转矩阵 --&gt; 欧拉角 的间接转化方式减少计算难度</p>
 <div class="arithmatex">\[
