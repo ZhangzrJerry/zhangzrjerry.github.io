@@ -51,3 +51,10 @@
 .resume-corec-img :hover {
     cursor: pointer;
 }
+
+.resume-corec-note {
+    margin-top: -23px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin-left: 0.9em;
+}

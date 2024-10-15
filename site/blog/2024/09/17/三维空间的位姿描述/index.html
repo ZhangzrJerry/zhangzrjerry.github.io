@@ -751,7 +751,13 @@
 
   <h1>三维空间的位姿描述</h1>
 
-<p>持续更新中……</p>
+<p>介绍了四种姿态表示方式：<strong>旋转矩阵</strong>、<strong>欧拉角</strong>、<strong>轴角</strong> 和 <strong>四元数</strong>，以及它们之间相互转换关系的推导</p>
+<div class="blog">
+<img src="/img/blog/20240917/v_rot.png">
+</div>
+
+<!-- more -->
+
 <h2 id="_1">位置描述</h2>
 <p>对欧氏三维空间中世界坐标系 <span class="arithmatex">\(\{O\}\)</span> 下一点 <span class="arithmatex">\(P\)</span>，可用 <span class="arithmatex">\(^OP=\begin{pmatrix}p_x\\p_y\\p_z\end{pmatrix}\)</span>，描述其位置</p>
 <h2 id="_2">姿态描述</h2>
@@ -925,6 +931,16 @@ a_z = \frac{r_{21}-r_{12}}{\sqrt{(r_{32}-r_{23})^2+(r_{13}-r_{31})^2+(r_{21}-r_{
 \end{cases}
 \]</div>
 <h4 id="2_4">欧拉角 2 轴角</h4>
+<p>愉快地，我们可以利用 欧拉角 --&gt; 四元数 --&gt; 轴角 的方式得到</p>
+<div class="arithmatex">\[
+\begin{cases}
+\theta=2*\arccos(\cos\gamma\cos\beta\cos\alpha-\sin\gamma\sin\beta\sin\alpha) \\
+a_x=\sin\gamma\sin\beta\cos\alpha+\cos\gamma\cos\beta\sin
+\alpha\\
+a_y=\sin\gamma\cos\beta\cos\alpha+\cos\gamma\sin\beta\sin\alpha\\
+a_z=\cos\gamma\sin\beta\cos\alpha-\sin\gamma\cos\beta\sin\alpha
+\end{cases}
+\]</div>
 <h4 id="2_5">轴角 2 欧拉角</h4>
 <p>直接从轴角转为欧拉角比较困难，我们可以利用 轴角 --&gt; 旋转矩阵 --&gt; 欧拉角 的间接转化方式减少计算难度</p>
 <div class="arithmatex">\[

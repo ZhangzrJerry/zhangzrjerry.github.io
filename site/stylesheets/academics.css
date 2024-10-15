@@ -1,8 +1,19 @@
-.full {
-    width: 98%;
-    margin-left: 1%;
+.academic-full {
     justify-content: center;
     display: flex;
+    flex-flow: wrap;
+}
+
+.academic-half {
+    width: 49%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    min-width: 600px;
+    justify-content: center;
+}
+
+.academic-containers h2 {
+    margin-left: 2.4%;
 }
 
 .academic-container {
