@@ -8,7 +8,6 @@ plugins:
 nav:
   - Home: index.md
   - Resume: resume/index.md
-  # - Academics: academics.md
   - Projects: projects.md
   - Blogs: blog/index.md
   - Connect: connect.md
@@ -81,7 +80,15 @@ markdown_extensions:
 extra:
     social:
         - icon: fontawesome/regular/envelope
-          link: https://zhangzrjerry@outlook.com
+          link: https://zzhangje@connect.ust.hk
+        # - icon: fontawesome/brands/zhihu
+        #   link: https://www.zhihu.com/people/zhang-zi-rui-99-77
+        - icon: fontawesome/brands/bilibili
+          link: https://space.bilibili.com/504273533
+        - icon: fontawesome/brands/linkedin
+          link: https://www.linkedin.com/in/zirui-zhang-924958319/
+        - icon: fontawesome/brands/orcid
+          link: https://orcid.org/0009-0008-4156-1652
         - icon: fontawesome/brands/github
           link: https://github.com/ZhangzrJerry
 

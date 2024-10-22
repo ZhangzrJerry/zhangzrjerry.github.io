@@ -53,8 +53,34 @@
 }
 
 .resume-corec-note {
-    margin-top: -23px;
     font-size: 0.8em;
     line-height: 1.2em;
-    margin-left: 0.9em;
+}
+
+.resume-corec-container {
+    display: flex;
+    width: 100%;
+}
+
+.resume-corec-column {
+    width: 32%;
+    font-size: 0.9em;
+}
+
+.resume-corec-middle {
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+
+.resume-corec-column-detail {
+    font-size: 0.89em;
+}
+
+.resume-corec-split {
+    margin-top: 5px !important;
+    margin-bottom: 3px !important;
 }
