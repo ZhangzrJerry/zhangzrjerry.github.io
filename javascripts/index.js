@@ -2,9 +2,9 @@ window.onload = function () {
     setInterval(clock, 1000);
     listen();
     currentUrl = window.location.href;
-    if (window.screen.availWidth < 768) {
-        window.alert('For a better experience, please visit the website from desktop or switch to `view desktop site`.\n\n为了更好的浏览体验，请使用电脑访问，或者切换到`桌面版网页`。');
-    }
+    // if (window.screen.availWidth < 768) {
+    //     window.alert('For a better experience, please visit the website from desktop or switch to `view desktop site`.\n\n为了更好的浏览体验，请使用电脑访问，或者切换到`桌面版网页`。');
+    // }
 }
 
 function listen() {

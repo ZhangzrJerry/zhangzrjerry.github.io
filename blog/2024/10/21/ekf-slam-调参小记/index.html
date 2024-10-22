@@ -758,7 +758,7 @@ K_t^j=\bar\Sigma_tH_t^{jT}(H_t^j\bar\Sigma_tH_t^{jT}+R_t)^{-1}
 <p>If the feature have never seen before, we just simply expand our feature vector and the covariance matrix to contain it.</p>
 <h2 id="attempts">Attempts</h2>
 <h3 id="alpha">Alpha</h3>
-<p>The mathematica descriptions were mainly given above, but there are still two missing parameters <span class="arithmatex">\(Q_t\)</span> and <span class="arithmatex">\(R_t\)</span>. They are the covariance matrix of the noise of control input <span class="arithmatex">\(u_t\)</span> and the observation model <span class="arithmatex">\(z_t\)</span>. </p>
+<p>The mathematical descriptions were mainly given above, but there are still two missing parameters <span class="arithmatex">\(Q_t\)</span> and <span class="arithmatex">\(R_t\)</span>. They are the covariance matrix of the noise of control input <span class="arithmatex">\(u_t\)</span> and the observation model <span class="arithmatex">\(z_t\)</span>. </p>
 <p>For the observation model, we use Kalman Gain to determine whether the sensor can be trust or not. </p>
 <div class="arithmatex">\[
 K_t^j=\bar\Sigma_tH_t^{jT}(H_t^j\bar\Sigma_tH_t^{jT}+R_t)^{-1}
@@ -766,12 +766,12 @@ K_t^j=\bar\Sigma_tH_t^{jT}(H_t^j\bar\Sigma_tH_t^{jT}+R_t)^{-1}
 <p>When <span class="arithmatex">\(R_t=0\)</span>, <span class="arithmatex">\(K_t^j=\bar\Sigma_tH_t^{jT}(H_t^j\bar\Sigma_tH_t^{jT}+R_t)^{-1}=(H_t^j)^{-1}\)</span> which means we have a perfect sensor is noise free.</p>
 <p>When <span class="arithmatex">\(R_t\to\infty\)</span>, <span class="arithmatex">\(K_t^j=\bar\Sigma_tH_t^{jT}(H_t^j\bar\Sigma_tH_t^{jT}+R_t)^{-1}\to0\)</span> which means we won't believe the result of the horrible sensor.</p>
 <p>In lab's case, I pick <span class="arithmatex">\(R_t=\begin{pmatrix}1.0*10^{-2} &amp; 0 \\ 0 &amp; 1.0*10^{-3}\end{pmatrix}\)</span>, which gave me a good performance.</p>
-<p>Although we don't have a gain or some other things to describe the affect of noise in control input model explicitly, the affect of the <span class="arithmatex">\(Q_t\)</span> to the control input is also intuitively. It would some case decrese the belief of the variable, leads to approximating a slightly different gaussian model. I suppose the control input noise is not so significantly to the system. I randomly pick up 100 as the value of the diagnol, which is <span class="arithmatex">\(Q_t=\begin{pmatrix}100 &amp; 0 \\ 0 &amp; 100\end{pmatrix}\)</span></p>
+<p>Although we don't have a gain or some other things to describe the affect of noise in control input model explicitly, the affect of the <span class="arithmatex">\(Q_t\)</span> to the control input is also intuitively. It would some case decrease the belief of the variable, leads to approximating a slightly different gaussian model. I suppose the control input noise is not so significantly to the system. I randomly pick up 100 as the value of the diagnols, which is <span class="arithmatex">\(Q_t=\begin{pmatrix}100 &amp; 0 \\ 0 &amp; 100\end{pmatrix}\)</span></p>
 <div class="blog">
 <img src="/img/blog/20241021/c.png">
 </div>
 
-<p>As image shown above, an unproper noise covarianve matrix may lead to a little bit mess.</p>
+<p>As image shown above, an improper noise covariance matrix may lead to a little bit mess.</p>
 <h3 id="beta">Beta</h3>
 <p>As we all know, EKF SLAM build the correspondence for the closest pair of feature and landmark. Hence, we need to find a proper threshold to distinguish whether the feature is a new landmark or not. A too large threshold will make the system insensitive to establishing new landmarks, while a too small threshold will make the system too sensitive to establishing new landmarks. A good way to get the proper threshold is printing out the distance matrix, and then find that specific value to classify the distance into two groups. That's how I do so, and I eventually pick 4.0</p>
 <div class="blog">
