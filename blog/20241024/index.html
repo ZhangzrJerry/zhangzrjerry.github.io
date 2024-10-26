@@ -18,7 +18,7 @@
     
     
       
-        <title>Smooth Navigation Path Generation - ZhangzrJerry</title>
+        <title>经典控制理论：从入门到入坟 - ZhangzrJerry</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#system-model" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Smooth Navigation Path Generation
+              经典控制理论：从入门到入坟
             
           </span>
         </div>
@@ -446,39 +446,362 @@
                   
 
 
-  <h1>Smooth Navigation Path Generation</h1>
+<h1 id="_1">经典控制理论：从入门到入坟</h1>
+<!-- Classic Control Theory From Scratch -->
 
-<p>For a group of certain points <span class="arithmatex">\((x_{0,1},x_{0,2},\cdots,x_{0,m}),(x_{1,1},x_{1,2},\cdots,x_{1,m}), (x_{2,1},x_{2,2},\cdots,x_{2,m}), \cdots, (x_{n,1},x_{n,2},\cdots,x_{n,m})\)</span>, we can generate a unique curve by cubic spline, which is talked about in <strong><a href="/blog/2024/10/22/cubic-spline-%E4%B8%89%E6%AC%A1%E6%A0%B7%E6%9D%A1%E6%9B%B2%E7%BA%BF/">Cubic Spline</a></strong>.</p>
-<p>But what if we only have a start point <span class="arithmatex">\(\mathbf{x}_0\)</span>, an end point <span class="arithmatex">\(\mathbf{x}_n\)</span>, and a groups of spheres <span class="arithmatex">\((\mathbf{o}_1,r_1), (\mathbf{o}_2,r_2), \cdots, (\mathbf{o}_l,r_k)\)</span>. How can we find a smooth path that avoid to crash in these spheres and minimize the stretch energy? </p>
-<h2 id="system-model">System Model</h2>
-<p>From <span class="arithmatex">\(\mathbf{x}_0\)</span> to <span class="arithmatex">\(\mathbf{x}_n\)</span>, we can design a series of <strong>control points</strong> <span class="arithmatex">\(\mathbf{x}_1, \mathbf{x}_2, \cdots, \mathbf{x}_{n-1}\)</span>, to get that unique curve. So the problem comes to how do we determine this series of control points? We can design two loss functions, and then find the specific parameter <span class="arithmatex">\(X\)</span> to minimize the sum of them.</p>
+<p>这篇笔记不能取代一本优秀的教科书的位置，它的最初目的是让我总结这个学期学到的经典控制理论内容。当然，我会尽力将它写的更加充实，努力把零散的定理串联成一条线。我希望理清每一个方法为何被引入经典控制理论，阐明它们解决了哪些问题，在哪些场景上遇到了困难。这篇笔记有完整的索引，你也可以把它当作一个速查手册来使用。</p>
+<!-- ```mermaid
+mindmap
+Differential Equation
+    Laplace Transform
+        Classic Control
+``` -->
+
+<p>那么，让我们开始吧！</p>
+<!-- more -->
+
+<!-- This note couldn't take the place of a good textbook. It's original purpose is for me to summarize the material I have learned this semester in ELEC 3200. I would try my best to write it more full, and to string together the fragments as much as possible. -->
+
+<h2 id="differential-equation">微分方程 Differential Equation</h2>
+<h3 id="_2">机车启动</h3>
+<p>我想从机车启动问题开始讲起。机车启动是高中物理中一类非常经典的题型：</p>
+<blockquote>
+<p>假设我们有一辆机车以一定功率 <span class="arithmatex">\(P(t)\)</span> 启动，在启动过程中受到恒定的阻力 <span class="arithmatex">\(f\)</span>，机车的总质量记为 <span class="arithmatex">\(m\)</span>，试分析 <span class="arithmatex">\(a(t)\)</span> 和 <span class="arithmatex">\(v(t)\)</span></p>
+</blockquote>
+<p>记牵引力为 <span class="arithmatex">\(F(t)\)</span>，根据功和功率的定义，我们有</p>
 <div class="arithmatex">\[
-S_i(t)=a_it^3+b_it^2+c_it+d_i, \ \ \ \ t\in[0,1],\ i=0,1,\cdots,n-1
+P(t) = F(t)\cdot v(t)
+\tag{1.1}
 \]</div>
-<h3 id="energy-function">Energy Function</h3>
-<p>To minimize the stretch energy to make the curve as smooth as possible, we define energy function <span class="arithmatex">\(E(\mathbf{x}_k)\)</span> as below.</p>
+<p>由式 <span class="arithmatex">\(1.2\)</span> 推得</p>
 <div class="arithmatex">\[
 \begin{aligned}
-E(\mathbf{x}_k)&amp;=\sum_{i=0}^{n-1}\int_0^1||p_i''(t)||_2^2\mathrm{d}t\\
-&amp;=\sum_{i=0}^{n-1}\int_0^1||6a_it+2b_i||_2^2\mathrm{d}t\\
-&amp;=\sum_{i=0}^{n-1}\int_0^1(36a_i^2t^2+24a_ib_it+4b_i^2)\mathrm{d}t\\
-&amp;=\sum_{i=0}^{n-1}(12a_i^2+12a_ib_i+4b_i^2)\\
-&amp;=4(3x_0^2+7x_1^2+x_2^2-15x_0x_1-5x_1x_2+3x_0x_2)+4(x_{n,k}-x_{n-1,k})^2+\sum_{i=1}^{n-2}4(-x_{i+2,k}+2x_{i+1,k}-x_{i,k})^2\\
+P(t)&amp;=\frac {{\rm d} W}{{\rm d}t}
+\\&amp;=\frac{{\rm d}}{{\rm d}t}\int F(s){\rm d}s
+\\&amp;=\frac{{\rm d}}{{\rm d}t}\int F(s(t))\frac{{\rm d}s}{{\rm d}t}{\rm d}t
+\\&amp;=\frac{{\rm d}}{{\rm d}t}\int F(t)v(t){\rm d}t
+\\&amp;=F(t)\cdot v(t)
 \end{aligned}
+\tag{1.2}
 \]</div>
-<p>We can also define <span class="arithmatex">\(\mathbf{x}_{n+1}=\mathbf{x}_n\)</span>, so that <span class="arithmatex">\(\mathbf{x}_{n+1}-2\mathbf{x}_{n}+\mathbf{x}_{n}=-\mathbf{x}_{n}+\mathbf{x}_{n-1}\)</span>.</p>
+<p>根据牛顿第二运动定律可得</p>
 <div class="arithmatex">\[
-E(\mathbf{x}_k)=4(3x_0^2+7x_1^2+x_2^2-15x_0x_1-5x_1x_2+3x_0x_2)+\sum_{i=1}^{n-1}4(-x_{i+2,k}+2x_{i+1,k}-x_{i,k})^2
+F(t)=f+m\cdot a(t)
+\tag{1.3}
 \]</div>
-<h3 id="potential-function">Potential Function</h3>
-<p>To penalize the crash between the curve and obstacles, we can define potential function <span class="arithmatex">\(P(\bf x)\)</span> as below</p>
+<p>等价的，可以写成</p>
 <div class="arithmatex">\[
-P(\mathbf{x})=1000\sum_{i=1}^{n-1}\sum_{j=1}^l\max(r_j-||\mathbf{x}_i-\mathbf{o}_j||,0)
+F(t)=f+m\cdot{\dot v}(t)
+\tag{1.4}
 \]</div>
-<p>We can also define it as below to ensure the curve balances the obstacles rather than sticks to them.</p>
+<p>在高中物理阶段，机车启动被分为以下两个情境：</p>
+<h4 id="_3">恒定功率启动</h4>
+<p>以恒定功率启动，第一阶段是变加速度运动，<span class="arithmatex">\(a\)</span> 随 <span class="arithmatex">\(v\)</span> 增大而减小，做加速度减小的加速运动；第二阶段是匀速运动，<span class="arithmatex">\(\frac Pv=f\)</span> 时，机车达到最大速度 <span class="arithmatex">\(v_m\)</span> 并保持匀速</p>
+<div class=blog>
+<img src="/img/blog/20241024/1.png">
+</div>
+
+<h4 id="_4">恒定加速度启动</h4>
+<p>以恒定加速度启动，则分为三个阶段：在 <span class="arithmatex">\(Fv&lt;P_额\)</span> 时，速度 <span class="arithmatex">\(v\)</span> 匀速增长；当达到最大功率时则和恒定功率启动一样，先做加速度减小的加速运动，再做匀速运动</p>
+<p><div class=blog>
+<img src="/img/blog/20241024/2.png">
+</div></p>
+<p>联立 <span class="arithmatex">\(1.2\)</span> 和 <span class="arithmatex">\(1.4\)</span>，可以得到</p>
 <div class="arithmatex">\[
-P(\mathbf{x})=\sum_{i=1}^{n-1}\sum_{j=1}^l\max(1000(r_j-||\mathbf{x}_i-\mathbf{o}_j||),\frac1{||\mathbf{x}_i-\mathbf{o}_j||})
+P(t)=f\cdot v(t)+m\cdot {\dot v}(t)\cdot v(t)
+\tag{1.5}
 \]</div>
+<p>这个方程描述了机车启动过程中任意时刻输入 <span class="arithmatex">\(P(t)\)</span> 和输出 <span class="arithmatex">\(v(t)\)</span> 的关系，但由于数学工具的缺乏，我们只能根据加速度恒定或功率恒定的条件对 <span class="arithmatex">\(a(t)\)</span> 和 <span class="arithmatex">\(v(t)\)</span> 定性分析。给定任意一个时间 <span class="arithmatex">\(t\)</span>，我们很难准确地回答出系统的状态。更不要提恒定加速度和恒定功率在现实中并不存在，或者说需要用控制理论让执行器实现恒定功率输出。</p>
+<p>那有没有一种数学工具能够解决这种窘况呢？至今我无法知道第一位把频域引入控制理论的科学家是如何思考的，也许数学史家会知道，不过这不是笔记的重点。重点是当我们把时域函数转换为频域函数后，问题好像一下迎刃而解了，别着急，让我们顺着思路一起往下看。</p>
+<hr />
+<h2 id="laplace-transform">拉普拉斯变换 Laplace Transform</h2>
+<h3 id="_5">数学定义</h3>
+<div class="arithmatex">\[
+{\mathcal L}[f(t)]=F(s)=\int_{-\infty}^\infty e^{-st}f(t){\rm d}t
+\tag{2.1}
+\]</div>
+<p>由于我们通常只研究系统在 <span class="arithmatex">\(t&gt;0\)</span> 的状态，或者我们默认系统在 <span class="arithmatex">\((-\infty,0)\)</span> 上为 <span class="arithmatex">\(0\)</span></p>
+<p>因此，在 <span class="arithmatex">\(f(t)\)</span> 只有单边的情况下，它的拉普拉斯变换也可以写成如下形式</p>
+<div class="arithmatex">\[
+{\mathcal L}[f(t)]=F(s)=\int_{0^-}^\infty e^{-st}f(t){\rm d}t
+\tag{2.2}
+\]</div>
+<p>拉普拉斯变换只对其 <strong>收敛域 Region of Convergence (ROC)</strong> 上的复数有意义，换言之，只有 <span class="arithmatex">\(s\)</span> 处于 ROC 时，拉普拉斯变换才有定义。收敛域是指使 <span class="arithmatex">\(F(s)\)</span> 收敛的 <span class="arithmatex">\(s\)</span> 的集合。</p>
+<p>下表给出常见的函数的拉普拉斯变换</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">函数</th>
+<th style="text-align: center;"><span class="arithmatex">\(x(t)\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(X(s)\)</span></th>
+<th style="text-align: center;">ROC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">冲激函数 Unit impulse</td>
+<td style="text-align: center;"><span class="arithmatex">\(\delta(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\mathbb C\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">阶跃函数 Unit step</td>
+<td style="text-align: center;"><span class="arithmatex">\(\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac1s\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">斜坡函数 Unit ramp</td>
+<td style="text-align: center;"><span class="arithmatex">\(t\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac1{s^2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">指数函数 Exponential</td>
+<td style="text-align: center;"><span class="arithmatex">\(e^{-\alpha t}\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac1{s+\alpha}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;-\alpha\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">正弦函数 Sine</td>
+<td style="text-align: center;"><span class="arithmatex">\((\sin\omega t)\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac{\omega}{s^2+\omega^2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">余弦函数 Cosine</td>
+<td style="text-align: center;"><span class="arithmatex">\((\cos\omega t)\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac{s}{s^2+\omega^2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">阻尼正弦 Damped Sine</td>
+<td style="text-align: center;"><span class="arithmatex">\((e^{-\alpha t}\sin\omega t)\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac{\omega}{(s+\alpha)^2+\omega^2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;-\alpha\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">阻尼余弦 Damped Cosine</td>
+<td style="text-align: center;"><span class="arithmatex">\((e^{-\alpha t}\cos\omega t)\sigma(t)\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\frac{s+\alpha}{(s+\alpha)^2+\omega^2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\({\rm Re}(s)&gt;-\alpha\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>下表给出常见的拉普拉斯变换的性质</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">性质</th>
+<th style="text-align: center;">数学表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">线性定理 Linearity</td>
+<td style="text-align: center;"><span class="arithmatex">\({\mathcal L}[\alpha x(t)+\beta y(t)]=\alpha X(s)+\beta Y(s)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">位移定理 Frequency Shift</td>
+<td style="text-align: center;"><span class="arithmatex">\({\mathcal L}[e^{-\alpha t}x(t)]=X(s+\alpha)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">相似定理 Scaling</td>
+<td style="text-align: center;"><span class="arithmatex">\({\mathcal L}[x(\alpha t)]=\frac1\alpha X(\frac s\alpha)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">微分定理 Derivative</td>
+<td style="text-align: center;"><span class="arithmatex">\({\mathcal L}[{\dot x}(t)]=sX(s)-\lim_{t\to-\infty}x(t)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">积分定理 Integration</td>
+<td style="text-align: center;"><span class="arithmatex">\({\mathcal L}[\int_{-\infty}^tx(\tau){\rm d}\tau]=\frac{X(s)}s+\frac{\lim_{t\to-\infty}f^{(-1)}(t)}s\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">卷积定理 Convolution</td>
+<td style="text-align: center;"><span class="arithmatex">\({\mathcal L}[x(t)\otimes y(t)]=X(s)Y(s)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">时域偏移 Time delay</td>
+<td style="text-align: center;"><span class="arithmatex">\(\mathcal{L}[x(t-t_0)]=e^{-t_0s}X(s)\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">机车启动</h3>
+<p>有了这个强力的数学工具之后，让我们回到式 <span class="arithmatex">\(1.5\)</span>，对两侧同时进行拉普拉斯变换（<span class="arithmatex">\(2.3\)</span> 到 <span class="arithmatex">\(2.13\)</span>是数学推导）</p>
+<div class="arithmatex">\[
+{\mathcal L}[P(t)]={\mathcal L}[f\cdot v(t)+m\cdot {\dot v}(t)\cdot v(t)]
+\tag{2.3}
+\]</div>
+<div class="arithmatex">\[
+P(s)=fV(s)+m{\mathcal L}[{\dot v}(t)v(t)]
+\tag{2.4}
+\]</div>
+<p>根据定义</p>
+<div class="arithmatex">\[
+{\mathcal L}[{\dot v}(t)v(t)]=\int e^{-st}{\dot v}(t)v(t){\rm d}t
+\tag{2.5}
+\]</div>
+<p>对 <span class="arithmatex">\(\int e^{-st}{\dot v}(t)v(t){\rm d}t\)</span> 应用分部积分法 <span class="arithmatex">\(\int u{\rm d}v=uv-\int v{\rm d}u\)</span>，记 <span class="arithmatex">\(u=v(t), {\rm d}v=e^{-st}{\dot v}(t){\rm d}t\)</span></p>
+<p>那么</p>
+<div class="arithmatex">\[
+{\rm d}u=\dot v(t){\rm d}t
+\tag{2.6}
+\]</div>
+<div class="arithmatex">\[
+v=\int e^{-st}\dot v(t){\rm d}t=sV(s)-\lim_{t\to-\infty}v(t)
+\tag{2.7}
+\]</div>
+<p>其中 <span class="arithmatex">\(v(t)=0,t&lt;0\)</span></p>
+<p>那么</p>
+<div class="arithmatex">\[
+{\mathcal L}[{\dot v}(t)v(t)]=v(t)sV(s)-\int sV(s)\dot v(t){\rm d}t 
+\tag{2.8}
+\]</div>
+<p>接下来证明 <span class="arithmatex">\(V(s)\)</span> 不依赖 <span class="arithmatex">\(t\)</span></p>
+<p>不妨记</p>
+<div class="arithmatex">\[
+\hat V(s,t)=\int e^{-st}v(t){\rm d}t
+\tag{2.9}
+\]</div>
+<p>即要证明</p>
+<div class="arithmatex">\[
+\forall s,t_1,t_2,\ \ \hat V(s,t_1)=\hat V(s,t_2)
+\tag{2.10}
+\]</div>
+<p>由 <span class="arithmatex">\(\hat V(s,t)\)</span> 的定义可得，</p>
+<div class="arithmatex">\[
+\hat V(s,t_1)=\int e^{-st}v(t){\rm d}t
+\tag{2.11}
+\]</div>
+<div class="arithmatex">\[
+\hat V(s,t_2)=\int e^{-st}v(t){\rm d}t
+\tag{2.12}
+\]</div>
+<p>因此 <span class="arithmatex">\(\forall s,t_1,t_2,\ \ \hat V(s,t_1)=\hat V(s,t_2)\)</span></p>
+<p>即 <span class="arithmatex">\(V(s)\)</span> 是只关于 <span class="arithmatex">\(s\)</span> 的函数</p>
+<p>所以有</p>
+<div class="arithmatex">\[
+\begin{aligned}
+{\mathcal L}[{\dot v}(t)v(t)]&amp;=v(t)sV(s)-\int sV(s)\dot v(t){\rm d}t\\
+&amp;=sV(s)[v(t)-\int \dot v(t){\rm d}t] \\
+&amp;=sV(s)[v(t)-v(t)] \\
+&amp;=0
+\end{aligned}
+\tag{2.13}
+\]</div>
+<p>最终，我们得到了频域层面表示机车启动的方程，非常简洁，非常的nice，非常的excellent</p>
+<div class="arithmatex">\[
+P(s)=fV(s)
+\tag{2.14}
+\]</div>
+<hr />
+<h2 id="transfer-function">传递函数 Transfer Function</h2>
+<p>对于一个系统，我们将输出 <span class="arithmatex">\(Y(s)\)</span> 和输入 <span class="arithmatex">\(U(s)\)</span> 的比值定义为传递函数 <span class="arithmatex">\(G(s)\)</span>，即</p>
+<div class="arithmatex">\[
+G(s)=\frac{Y(s)}{U(s)}
+\tag{3.1}
+\]</div>
+<p>对于一个 <span class="arithmatex">\(G(s)\)</span>，更普遍地，我们记其为</p>
+<div class="arithmatex">\[
+G(s)=\frac{b(s)}{a(s)}=\frac{b_0s^m+b_1s^{m-1}+\cdots+b_m}{a_0s^n+a_1s^{n-1}+\cdots+a_n}
+\tag{3.2}
+\]</div>
+<p>其中 <span class="arithmatex">\(b(s)\)</span> 与 <span class="arithmatex">\(a(s)\)</span> 互质</p>
+<p>我们还可以把 <span class="arithmatex">\(G(s)\)</span> 写成 <strong>零极点增益 Zero-Pole-Gain</strong> 的形式</p>
+<div class="arithmatex">\[
+G(s)=K\frac{(s-z_1)(s-z_2)\cdots(s-z_m)}{(s-p_1)(s-p_2)\cdots(s-p_n)}
+\tag{3.3}
+\]</div>
+<p>其中 <span class="arithmatex">\(\deg a(s)-\deg b(s)\)</span> 称作 <strong>相对度 Relative Degree</strong>；<span class="arithmatex">\(\deg a(s)\)</span> 称为 <strong>阶数 Order</strong></p>
+<p>对于一个传递函数而言，如果 <span class="arithmatex">\(\deg b(s)\leq\deg a(s)\)</span> 即等价地 <span class="arithmatex">\(|G(\infty)|&lt;\infty\)</span>，那么我们称其为 <strong>适定的 Proper</strong>；如果 <span class="arithmatex">\(\deg b(s)&lt;\deg a(s)\)</span> 即等价地 <span class="arithmatex">\(|G(\infty)|=0\)</span>，那么我们称其为 <strong>严格适定的 Strictly Proper</strong>；如果 <span class="arithmatex">\(\deg b(s)=\deg a(s)\)</span> 即等价地 <span class="arithmatex">\(0&lt;|G(\infty)=|&lt;\infty\)</span>，那么我们称其为 <strong>二重适定的 Bi-proper</strong>；那有可能出现 <span class="arithmatex">\(\deg b(s)&gt;\deg a(s)\)</span> 吗？从数学上似乎是有可能的，但在控制系统中这是无法接受的，这意味着 <span class="arithmatex">\(|G(\infty)|=\infty\)</span>，即一点点的高频信号都会使系统向无穷发散。</p>
+<p>在机车启动这个情境中</p>
+<div class="arithmatex">\[
+\begin{cases}
+U(s)=P(s)\\
+Y(s)=V(s)
+\end{cases}
+\tag{3.4}
+\]</div>
+<p>因此</p>
+<div class="arithmatex">\[
+G(s)=\frac{V(s)}{P(s)}=\frac1f
+\tag{3.5}
+\]</div>
+<p>至此，我们得到了输出 <span class="arithmatex">\(v(t)\)</span> 和输入 <span class="arithmatex">\(P(t)\)</span> 在频域上的关系。这时候你可能会问我们并不生活在频域里，我们更关注的是系统在时域上的表现，有没有一种方法我们能从这条频域的方程得到系统在时域上的表现呢？即给定一个输入 <span class="arithmatex">\(u\)</span>，我们如何求得对应的 <span class="arithmatex">\(y\)</span> 呢？</p>
+<h3 id="linear-and-time-invariant-system">线性时不变系统 Linear and Time-invariant System</h3>
+<p>很遗憾，对于机车启动这个情形并不能做到，因为 <span class="arithmatex">\(1.5\)</span> 中存在非线性项 <span class="arithmatex">\(m\cdot\dot v(t)\cdot v(t)\)</span></p>
+<p>想用接下来提到的冲激响应分析，就必须要求系统 <strong>线性时不变 Linear and Time-invariant</strong></p>
+<p>线性指的是系统必须满足 <strong>叠加原理 Superposition Principle</strong>，即对于一个系统输入 <span class="arithmatex">\(u_1(t)\)</span> 输出 <span class="arithmatex">\(y_1(t)\)</span>，输入 <span class="arithmatex">\(u_2(t)\)</span> 输出 <span class="arithmatex">\(y_2(t)\)</span>，那么对于输入 <span class="arithmatex">\(\alpha_1u_1(t)+\alpha_2u_2(t)\)</span> 而言，会产生输出 <span class="arithmatex">\(\alpha_1y_1(t)+\alpha_2y_2(t)\)</span>. 二极管、运算放大器、钟摆都是常见的非线性系统。</p>
+<p>时不变指的是，对 <span class="arithmatex">\(u(t)\xrightarrow{system}y(t)\)</span> 而言，满足 <span class="arithmatex">\(\forall t_0,u(t-t_0)\xrightarrow{system}y(t-t_0)\)</span></p>
+<p>让我引用 <em>Introduction to feedback control</em> 书中的一个例子来继续后续的分析</p>
+<blockquote>
+<p>这是一个由两个小车和一个弹簧组成的系统，其中这个非理性弹簧系统可以被视作一个理想弹簧和一个阻尼的组合，输入为 <span class="arithmatex">\(f(t)\)</span>，输出为 <span class="arithmatex">\(x_2(t)\)</span></p>
+<p><div class="blog"><img src="/img/blog/20241024/c.jpg"></div></p>
+<p>根据牛顿第二运动定律，我们可以分别为两个小车列出表达式</p>
+<div class="arithmatex">\[
+M_1\frac{{\rm d^2}x_1(t)}{{\rm d}t}=f(t)-K(x_1(t)-x_2(t))-F(\frac{{\rm d}x_1(t)}{{\rm d}t}-\frac{{\rm d}x_2(t)}{{\rm d}t})\tag{3.6}
+\]</div>
+<div class="arithmatex">\[
+M_2\frac{{\rm d^2}x_1(t)}{{\rm d}t}=K(x_1(t)-x_2(t))+F(\frac{{\rm d}x_1(t)}{{\rm d}t}-\frac{{\rm d}x_2(t)}{{\rm d}t})\tag{3.7}
+\]</div>
+<p>对 <span class="arithmatex">\(3.6\)</span> 式和 <span class="arithmatex">\(3.7\)</span> 式分别进行拉普拉斯变换，得到</p>
+<div class="arithmatex">\[
+M_1s^2X_1(s)=F(s)-K(X_1(s)-X_2(s))-Fs(X_1(s)-X_2(s))\tag{3.8}
+\]</div>
+<div class="arithmatex">\[
+M_2s^2X_2(s)=K(X_1(s)-X_2(s))+Fs(X_1(s)-X_2(s))\tag{3.9}
+\]</div>
+<p>进一步</p>
+<div class="arithmatex">\[
+X_1(s)=\frac{F(s)+(K+sF)X_2(s)}{M_1s^2+K+sF}=\frac{(M_2s^2+K+sF)X_2(s)}{K+sF}\tag{3.10}
+\]</div>
+<p>化简得到</p>
+<div class="arithmatex">\[
+(K+sF)F(s)=-[M_1M_2s^4+(M_1+M_2)Fs^3+K(M_1+M_2)s^2]\tag{3.11}
+\]</div>
+<p>则传递函数为</p>
+<div class="arithmatex">\[
+G(s)=\frac{X_2(s)}{F(s)}=-\frac{Fs+K}{M_1M_ss^4+F(M_1+M_2)s^3+K(M_1+M_2)s^2}\tag{3.12}
+\]</div>
+</blockquote>
+<hr />
+<h2 id="impulse-response">冲激响应 Impulse Response</h2>
+<p>在阻尼弹簧系统的背景下，让我们来思考这样一个情形：</p>
+<p>假设我们现在在 <span class="arithmatex">\(t=\tau\)</span> 时有一个单位冲激</p>
+<div class="arithmatex">\[u(t)=\delta(t-\tau)\]</div>
+<p>对于初状态为 <span class="arithmatex">\(0\)</span> 的线性时不变系统，会得到一个冲激响应</p>
+<div class="arithmatex">\[
+y(t)=h(t-\tau)
+\]</div>
+<p>而对于任意输入 <span class="arithmatex">\(u(t)\)</span>，我们都可以将其看作一系列冲激函数的叠加</p>
+<div class="arithmatex">\[
+u(t)=\int_{-\infty}^{+\infty}u(\tau)\delta(t-\tau){\rm d}\tau
+\]</div>
+<p>由于系统是线性的，因此输入和输出之间满足叠加原理，那么对应的输出 <span class="arithmatex">\(y(t)\)</span> 我们可以写为</p>
+<div class="arithmatex">\[
+y(t)=\int_{-\infty}^{+\infty}u(\tau)\underbrace{h(t-\tau)}_{response}{\rm d}\tau
+\]</div>
+<p>其中 <span class="arithmatex">\(h(t-\tau)\)</span> 是系统对单位冲激 <span class="arithmatex">\(u(t-\tau)\)</span> 的响应</p>
+<p>也就是说</p>
+<div class="arithmatex">\[
+y(t)=\int_{-\infty}^{+\infty}u(\tau)\underbrace{h(t-\tau)}_{response}{\rm d}\tau=u(t)\otimes h(t)=h(t)\otimes u(t)
+\]</div>
+<p>由拉普拉斯变换中的卷积定理，我们知道</p>
+<div class="arithmatex">\[
+{\mathcal L}[x(t)\otimes y(t)]=X(s)Y(s)
+\]</div>
+<p>因此</p>
+<div class="arithmatex">\[
+Y(s)=H(s)U(s)
+\]</div>
+<p>其中</p>
+<div class="arithmatex">\[
+H(s)=\int_{-\infty}^{+\infty}h(\tau)e^{-s\tau}{\rm d}\tau
+\]</div>
+<h2 id="reference">参考资料 Reference</h2>
+<p>[1] L. Shi, “ELEC 3200 - System Modeling, Analysis and Control,” The Hong Kong University of Science and Technology.</p>
+<p>[2] L. Qiu and K. Zhou, <em>Introduction to feedback control</em>. Pearson Education, 2011. [Online]. </p>
 
 
 
