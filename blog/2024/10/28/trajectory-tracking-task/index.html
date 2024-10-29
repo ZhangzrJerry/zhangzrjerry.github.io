@@ -593,7 +593,7 @@
 
 <h1 id="trajectory-tracking-task-based-on-nonlinear-model-prediction-and-phr-augmented-lagrange-method">Trajectory Tracking Task based on Nonlinear Model Prediction and PHR Augmented Lagrange Method</h1>
 <div class="blog">
-<img src="/img/blog/20241028/output.gif">
+<img src="/img/blog/20241028/result.gif">
 </div>
 
 <!-- more -->
@@ -700,6 +700,10 @@ v_\min\leq v_i\leq v_\max\\
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">imageio</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
 
 <span class="c1"># function for render dots via cubic spline</span>
 <span class="k">def</span> <span class="nf">draw</span><span class="p">(</span><span class="n">dots</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">linestyle</span><span class="p">,</span> <span class="n">file_dir</span><span class="p">,</span> <span class="n">idx</span><span class="p">):</span>
@@ -832,7 +836,7 @@ v_\min\leq v_i\leq v_\max\\
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">grad_a</span><span class="p">,</span> <span class="n">grad_delta</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># Hyperparameters</span>
-<span class="n">N</span> <span class="o">=</span> <span class="mi">7</span>                      <span class="c1"># predict step</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">5</span>                      <span class="c1"># predict step</span>
 <span class="n">tau</span> <span class="o">=</span> <span class="mi">1</span>                    <span class="c1"># time constant</span>
 <span class="n">epsilon_cons</span> <span class="o">=</span> <span class="mf">1e-3</span>        <span class="c1"># constraint criterion</span>
 <span class="n">epsilon_prec</span> <span class="o">=</span> <span class="mf">1e-3</span>        <span class="c1"># precision criterion</span>
@@ -840,7 +844,7 @@ v_\min\leq v_i\leq v_\max\\
 <span class="n">beta</span> <span class="o">=</span> <span class="mi">5000</span>                <span class="c1"># panalty upper bound</span>
 <span class="n">gamma</span> <span class="o">=</span> <span class="mf">5e-1</span>               <span class="c1"># penalty increase factor</span>
 <span class="n">max_iteration</span> <span class="o">=</span> <span class="mi">150</span>        <span class="c1"># max iteration for a single point</span>
-<span class="n">s_weight</span> <span class="o">=</span> <span class="mi">1</span>                  
+<span class="n">s_weight</span> <span class="o">=</span> <span class="mi">1</span>               <span class="c1"># weight for control points</span>
 <span class="n">a_weight</span> <span class="o">=</span> <span class="mi">2</span>               <span class="c1"># weight for acceleration</span>
 <span class="n">delta_weight</span> <span class="o">=</span> <span class="mi">3</span>           <span class="c1"># weight for steering angle</span>
 
@@ -956,6 +960,19 @@ v_\min\leq v_i\leq v_\max\\
     <span class="n">draw</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">state</span><span class="p">),</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">full_dir</span><span class="p">,</span> <span class="n">predict</span><span class="p">)</span>
     <span class="n">predict</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">loss</span><span class="p">,</span> <span class="n">grad</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+
+<span class="c1"># generate animate</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">full_dir</span>
+<span class="n">fps</span> <span class="o">=</span> <span class="mi">120</span>
+<span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)]</span>
+<span class="n">files</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">x</span><span class="p">))[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">frames</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">files</span><span class="p">):</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">imageio</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>  <span class="c1"># RGB格式的array</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>  <span class="c1"># Resize to (640, 480)</span>
+    <span class="n">frames</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">imageio</span><span class="o">.</span><span class="n">mimsave</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s1">&#39;.gif&#39;</span><span class="p">,</span> <span class="n">frames</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="n">fps</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="reference">Reference</h2>
 <p>[1] Z. Wang, “Numerical Optimization in Robotics.”</p>
