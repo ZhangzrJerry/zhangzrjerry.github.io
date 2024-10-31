@@ -4,9 +4,9 @@ hide:
   - toc
 ---
 
-# Resume
+# 
 
-<div style="text-align:center">
+<div style="text-align:center;margin-top:-35px;">
     <h2>
         <b>
         Zirui ZHANG
@@ -57,13 +57,14 @@ hide:
                                     1. System Model, Analysis and Control (<b>-</b>)<br>
                                     2. Introduction to Mobile Robotics (<b>au</b><sup>2</sup>)<br>
                                     3. Robotics Grasping and Manipulation<sup>*</sup><br>
+                                    4. Unmanned Autonomous Vehicles<sup>*</sup><br>
                                 </div>
                             </div>
                             <div class="resume-corec-column">
                                 <b>Algorithms</b>
                                 <div class="resume-corec-column-detail">
-                                    <!-- 1. Image-based 3D Modeling<sup>*</sup><br> 不记得了 高中学的了 -->
-                                    1. Design and Analysis of Algorithm (<b>AU</b><sup>1</sup>)<br>
+                                    1. Image-based 3D Modeling<sup>*</sup><br>
+                                    2. Design and Analysis of Algorithm (<b>AU</b><sup>1</sup>)<br>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +110,7 @@ hide:
 <div>
    <div class="resume-container">
         <div class="resume-brief">
-            <div class="resume-icon">
+            <div class="resume-icon resume-parttime">
                 <img src="../img/resume/ni.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
@@ -143,31 +144,33 @@ hide:
                 <li>Established the very company that focused on technology and innovation about robots.</li>
             </ul>
         </div>
-    </div> -->
+    </div> --><div class="resume-container">
+        <div class="resume-brief">
+            <div class="resume-icon resume-research">
+                <img src="../img/resume/rhinobird.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> Rhino-Bird Middle School Science Research Training Program </b>
+                <br> Research;
+            </div>
+            <div class="resume-right">
+                <b> Guangzhou, China </b>
+                <br> Jun. 2023 - Oct. 2023
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+                <li>
+                Mainly took part in model training and backend database developing, and my project "<a href="/projects/#2023-rhinobird" style="color:black;"><b>Intelligent Book Recommendation and User Interest Analysis System Based on Factorization Machines</b></a>" won the 2023 Excellent Award.
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 ## Community Involvement
 
 <div>
-    <!-- <div class="resume-container">
-        <div class="resume-brief">
-            <div class="resume-icon">
-                <img src="../img/resume/frc10183.png" class="resume-img"></img>
-            </div>
-            <div class="resume-left">
-                <b> FIRST Robotics Competition Team 10183 </b>
-                <br> Remote Mentor
-            </div>
-            <div class="resume-right">
-                <b> Las Vegas, NV </b>
-                <br> Sep. 2024 - Present
-            </div>
-        </div>
-        <div class="resume-detail">
-            <ul>
-            </ul>
-        </div>
-    </div> -->
     <div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
@@ -263,55 +266,6 @@ hide:
     </div>
 </div>
 
-## Research Projects
-
-<div>
-    <!--<div class="resume-container">
-        <div class="resume-brief">
-            <div class="resume-icon">
-                <img src="../img/resume/shenlan.png" class="resume-img"></img>
-            </div>
-            <div class="resume-left">
-                <b> Shenlan Xueyuan Offline Practice Program </b>
-                <br> Practice Program;
-            </div>
-            <div class="resume-right">
-                <b> Huzhou, China </b>
-                <br> Nov. 2024
-            </div>
-        </div>
-        <div class="resume-detail">
-            <ul>
-                <li>
-                Unmanned Autonomous Vehicles, Huzhou Institute of Zhejiang University
-                </li>
-            </ul>
-        </div>
-    </div>--><div class="resume-container">
-        <div class="resume-brief">
-            <div class="resume-icon">
-                <img src="../img/resume/rhinobird.png" class="resume-img"></img>
-            </div>
-            <div class="resume-left">
-                <b> Rhino-Bird Middle School Science Research Training Program </b>
-                <br> Research Program;
-            </div>
-            <div class="resume-right">
-                <b> Guangzhou, China </b>
-                <br> Jun. 2023 - Oct. 2023
-            </div>
-        </div>
-        <div class="resume-detail">
-            <ul>
-                <li>
-                Mainly took part in model training and backend database developing.
-Community Involvement, and my project "<a href="/projects/#2023-rhinobird" style="color:black;"><b>Intelligent Book Recommendation and User Interest Analysis System Based on Factorization Machines</b></a>" won the 2023 Excellent Award
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 ## Honors and Awards
 
 <div>
@@ -350,3 +304,26 @@ Community Involvement, and my project "<a href="/projects/#2023-rhinobird" style
         </li>
     </ul>
 </div>
+
+<!--<div class="resume-container">
+    <div class="resume-brief">
+        <div class="resume-icon">
+            <img src="../img/resume/shenlan.png" class="resume-img"></img>
+        </div>
+        <div class="resume-left">
+            <b> Shenlan Xueyuan Offline Practice Program </b>
+            <br> Practice Program;
+        </div>
+        <div class="resume-right">
+            <b> Huzhou, China </b>
+            <br> Nov. 2024
+        </div>
+    </div>
+    <div class="resume-detail">
+        <ul>
+            <li>
+            Unmanned Autonomous Vehicles, Huzhou Institute of Zhejiang University
+            </li>
+        </ul>
+    </div>
+</div>-->

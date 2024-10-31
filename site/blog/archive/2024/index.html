@@ -452,12 +452,63 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-10-21 00:00:00">October 21, 2024</time></li>
+          <time datetime="2024-10-31 00:00:00">October 31, 2024</time></li>
         
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E7%AC%94%E8%AE%B0/" class="md-meta__link">笔记</a></li>
+              <a href="../../category/note/" class="md-meta__link">note</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="bayes-filter"><a class="toclink" href="../../2024/10/31/bayes-filter/">Bayes Filter</a></h2>
+<p>We can use such a graph to understand the meaning of Bayes Filter. For a certain moment <span class="arithmatex">\(t\)</span>, we apply a control <span class="arithmatex">\(u_t\)</span> to the system, drive the system's state from <span class="arithmatex">\(x_{t-1}\)</span> to <span class="arithmatex">\(x_t\)</span>. And at this particular moment, we can only obtain the measurement <span class="arithmatex">\(z_t\)</span> rather than directly get <span class="arithmatex">\(x_t\)</span>. So attemp to estimate the state of the system for given input and measurement is the purpose of Bayes Filter.</p>
+<pre class="mermaid"><code>graph LR
+    L("x(0)") --&gt; J(...)
+    J--&gt; B
+    A("u(t-1)") --&gt; B("x(t-1)")
+    B --&gt; C("z(t-1)")
+    B --&gt; E
+    D("u(t)") --&gt; E("x(t)")
+    E --&gt; F("z(t)")
+    E --&gt; H
+    G("u(t+1)") --&gt; H("x(t+1)")
+    H --&gt; I("z(t+1)")
+    H --&gt; K(...)</code></pre>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2024/10/31/bayes-filter/">
+          Continue reading
+        </a>
+      </nav>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-29 00:00:00">October 29, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/casual/" class="md-meta__link">casual</a></li>
         
         
           
@@ -472,15 +523,11 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="ekf-slam"><a class="toclink" href="../../2024/10/21/ekf-slam-%E8%B0%83%E5%8F%82%E5%B0%8F%E8%AE%B0/">EKF SLAM 调参小记</a></h2>
-<div class="blog">
-<img src="/img/blog/20241021/d.png">
-</div>
-
+    <h2 id="_1"><a class="toclink" href="../../2024/10/29/mpc-phr-debug-note/">非线性模型预测控制调参小记</a></h2>
 
     
       <nav class="md-post__action">
-        <a href="../../2024/10/21/ekf-slam-%E8%B0%83%E5%8F%82%E5%B0%8F%E8%AE%B0/">
+        <a href="../../2024/10/29/mpc-phr-debug-note/">
           Continue reading
         </a>
       </nav>
@@ -494,19 +541,18 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2024-10-19 00:00:00">October 19, 2024</time></li>
+          <time datetime="2024-10-28 00:00:00">October 28, 2024</time></li>
         
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E6%95%B0%E5%AD%A6/" class="md-meta__link">数学</a>, 
-              <a href="../../category/%E7%AC%94%E8%AE%B0/" class="md-meta__link">笔记</a></li>
+              <a href="../../category/note/" class="md-meta__link">note</a></li>
         
         
           
           <li class="md-meta__item">
             
-              1 min read
+              9 min read
             
           </li>
         
@@ -515,12 +561,101 @@
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="_1"><a class="toclink" href="../../2024/10/19/%E6%95%B0%E5%80%BC%E4%BC%98%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2%E8%AE%B0%E5%BD%95/">数值优化学习大纲记录</a></h2>
-<p>记录一下学到的优化算法</p>
+    <h2 id="trajectory-tracking-task-based-on-nonlinear-model-prediction-and-phr-augmented-lagrange-method"><a class="toclink" href="../../2024/10/28/trajectory-tracking-task/">Trajectory Tracking Task based on Nonlinear Model Prediction and PHR Augmented Lagrange Method</a></h2>
+<div class="blog">
+<img src="/img/blog/20241028/result.gif">
+</div>
+
 
     
       <nav class="md-post__action">
-        <a href="../../2024/10/19/%E6%95%B0%E5%80%BC%E4%BC%98%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2%E8%AE%B0%E5%BD%95/">
+        <a href="../../2024/10/28/trajectory-tracking-task/">
+          Continue reading
+        </a>
+      </nav>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-22 00:00:00">October 22, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/note/" class="md-meta__link">note</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              7 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="cubic-spline"><a class="toclink" href="../../2024/10/22/cubic-spline/">Cubic Spline 三次样条曲线</a></h2>
+<h3 id="system-model"><a class="toclink" href="../../2024/10/22/cubic-spline/#system-model">System Model</a></h3>
+<p>For a group of certain points <span class="arithmatex">\((x_{0,1},x_{0,2},\cdots,x_{0,m}),(x_{1,1},x_{1,2},\cdots,x_{1,m}), (x_{2,1},x_{2,2},\cdots,x_{2,m}), \cdots, (x_{n,1},x_{n,2},\cdots,x_{n,m})\)</span>, we want to find a smooth enough curve that passes all these points to achieve the interpolation goal. To do so, we can use piecewise cubic functions to fitting the points.</p>
+<div class="blog">
+<img src="/img/blog/20241022/d.png">
+</div>
+
+
+    
+      <nav class="md-post__action">
+        <a href="../../2024/10/22/cubic-spline/">
+          Continue reading
+        </a>
+      </nav>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-21 00:00:00">October 21, 2024</time></li>
+        
+          <li class="md-meta__item">
+            in
+            
+              <a href="../../category/note/" class="md-meta__link">note</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              7 min read
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="ekf-slam"><a class="toclink" href="../../2024/10/21/ekf-slam/">EKF SLAM 调参小记</a></h2>
+<div class="blog">
+<img src="/img/blog/20241021/d.png">
+</div>
+
+
+    
+      <nav class="md-post__action">
+        <a href="../../2024/10/21/ekf-slam/">
           Continue reading
         </a>
       </nav>
@@ -539,7 +674,7 @@
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E8%A7%84%E5%88%92/" class="md-meta__link">规划</a></li>
+              <a href="../../category/plan/" class="md-meta__link">plan</a></li>
         
         
           
@@ -578,7 +713,7 @@
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E8%A7%84%E5%88%92/" class="md-meta__link">规划</a></li>
+              <a href="../../category/plan/" class="md-meta__link">plan</a></li>
         
         
           
@@ -617,8 +752,8 @@
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E7%AC%94%E8%AE%B0/" class="md-meta__link">笔记</a>, 
-              <a href="../../category/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/" class="md-meta__link">机器人学</a></li>
+              <a href="../../category/note/" class="md-meta__link">note</a>, 
+              <a href="../../category/kinematics/" class="md-meta__link">kinematics</a></li>
         
         
           
@@ -661,7 +796,7 @@
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E9%9A%8F%E7%AC%94/" class="md-meta__link">随笔</a></li>
+              <a href="../../category/casual/" class="md-meta__link">casual</a></li>
         
         
           
@@ -699,7 +834,7 @@
           <li class="md-meta__item">
             in
             
-              <a href="../../category/%E9%9A%8F%E7%AC%94/" class="md-meta__link">随笔</a></li>
+              <a href="../../category/casual/" class="md-meta__link">casual</a></li>
         
         
           

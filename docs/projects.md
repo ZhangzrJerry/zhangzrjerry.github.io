@@ -4,6 +4,8 @@ hide:
   - toc
 ---
 
+# 
+
 <div class="academic-full">
     <div class="academic-half">
         <!-- <div class="academic-containers" id="personal-projects">
@@ -270,7 +272,8 @@ hide:
                     </div>
                     <div class="academic-links">
                         <a href="https://seng.hkust.edu.hk/sites/default/files/IMCE/UG/Course%20Syllabus/Fall%202024-2025/ELEC%203210_Fall%202024-25.pdf">Background</a> /
-                        <a href="https://github.com/ZhangzrJerry/elec3210">Code</a> /
+                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics">Code</a> /
+                        <a href="/blog/2024/10/21/ekf-slam-%E8%B0%83%E5%8F%82%E5%B0%8F%E8%AE%B0/"> Blog: EKF SLAM</a> /
                     </div>
                     <div class="academic-brief">
                         There are three main projects through the course: Iterative Closest Points (ICP) Odometry, Extended Kalman Filter Simultaneous Localization and Mapping (EKF SLAM), and Path Planning, which cover the basic algorithms of mobile robotics.
@@ -284,7 +287,7 @@ hide:
                 <div class="academic-imgcontainer">
                     <img class="academic-img" src="../img/projects/elec-3210.png">
                 </div>
-            </div><div class="academic-container" id="2023-ibm">
+            </div><div class="academic-container" id="2023-ib3m">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         Image-Based 3D Modeling

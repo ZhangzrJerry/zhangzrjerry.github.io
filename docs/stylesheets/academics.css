@@ -2,6 +2,7 @@
     justify-content: center;
     display: flex;
     flex-flow: wrap;
+    margin-top: -90px;
 }
 
 .academic-half {
