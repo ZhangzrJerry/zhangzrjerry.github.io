@@ -1,3 +1,5 @@
+currentUrl = '';
+
 window.onload = function () {
     setInterval(clock, 1000);
     listen();
@@ -22,6 +24,24 @@ function listen() {
     if (window.location.href.includes('projects')) {
         if (window.screen.availWidth < 768) {
             document.getElementsByClassName('academic-half').style.minWidth = 'none';
+        }
+        x = document.getElementsByClassName('academic-img');
+        for (i = 0; i < x.length; i++) {
+            const id = x[i].getAttribute('id');
+            const element = document.getElementById(id);
+            if (element == null) {
+                continue;
+            }
+            element.addEventListener('mouseover', () => {
+                value = element.getAttribute('value');
+                element.setAttribute('value', element.getAttribute('src'));
+                element.setAttribute('src', value);
+            });
+            element.addEventListener('mouseout', () => {
+                value = element.getAttribute('value');
+                element.setAttribute('value', element.getAttribute('src'));
+                element.setAttribute('src', value);
+            });
         }
     }
 }
