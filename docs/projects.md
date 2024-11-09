@@ -63,7 +63,7 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/book-recommendation-system.png">
+                    <img class="academic-img" id="2023-rhinobird-img" src="../img/projects/2023-rhinobird-1.png" value="../img/projects/2023-rhinobird-2.png">
                 </div>
             </div><div class="academic-container" id="2022-controller">
                 <div class="academic-text">
@@ -77,9 +77,9 @@ hide:
                         Sep. 2022 - Oct. 2022
                     </div>
                     <div class="academic-links">
-                        <a href="../img/projects/swerve-controller-schematic.png">Schematic</a> /
-                        <a href="../img/projects/swerve-controller-top.png">Layout</a> /
-                        <a href="../img/projects/swerve-controller-bottom.png">Layout (bottom)</a> /
+                        <a href="../img/projects/2022-controller-schematic.png">Schematic</a> /
+                        <a href="../img/projects/2022-controller-top.png">Layout</a> /
+                        <a href="../img/projects/2022-controller-bottom.png">Layout (bottom)</a> /
                     </div>
                     <div class="academic-brief">
                         This drive board powers a swerve module with two independent motors: one for velocity, the other for steering, delivering a maximum power of 240W (2 * 12V * 10A).
@@ -90,34 +90,7 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/swerve-controller.png">
-                </div>
-            </div><div class="academic-container" id="2022-paddle">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        LOL Prediction - AI Studio Learning Competition
-                    </b>
-                    <div class="academic-info">
-                        Zirui Zhang
-                    </div>
-                    <div class="academic-date">
-                        Jul. 2022 - Mar. 2023
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://aistudio.baidu.com/competition/detail/247">Background</a> /
-                        <a href="https://github.com/zhangzrjerry/paddle-lolmp">Code</a> /
-                    </div>
-                    <div class="academic-brief">
-                        This project aims to solve the PaddlePaddle Learning Competition: League of Legends Master Prediction Challenge.
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/ai-studio.svg">
-                        <img class="academic-label" src="../img/tags/paddlepaddle.svg">
-                        <img class="academic-label" src="../img/tags/python.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/lol-prediction.png">
+                    <img class="academic-img" id="2022-controller-img" src="../img/projects/2022-controller.png" value="../img/projects/2022-controller-top.png">
                 </div>
             </div><div class="academic-container" id="2022-scout">
                 <div class="academic-text">
@@ -177,13 +150,69 @@ hide:
                 </div>
             </div>
         </div>
+        <!-- <div class="academic-containers" id="demo-projects">
+            <h2>Demos</h2>
+            <div class="academic-container" id="2022-paddle">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        LOL Prediction - AI Studio Learning Competition
+                    </b>
+                    <div class="academic-info">
+                        Zirui Zhang
+                    </div>
+                    <div class="academic-date">
+                        Jul. 2022 - Mar. 2023
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://aistudio.baidu.com/competition/detail/247">Background</a> /
+                        <a href="https://github.com/zhangzrjerry/paddle-lolmp">Code</a> /
+                    </div>
+                    <div class="academic-brief">
+                        This project aims to solve the PaddlePaddle Learning Competition: League of Legends Master Prediction Challenge.
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/ai-studio.svg">
+                        <img class="academic-label" src="../img/tags/paddlepaddle.svg">
+                        <img class="academic-label" src="../img/tags/python.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/lol-prediction.png">
+                </div>
+            </div>
+        </div> -->
     </div><div class="academic-half">
         <div class="academic-containers" id="course-projects">
             <h2>Course Projects</h2>
             <div class="academic-container" id="2024-uav">
                 <div class="academic-text">
                     <b class="academic-subtitle">
-                        Unmanned Autonomous Vehicles⭐
+                        Advanced Visual SLAM⭐
+                    </b>
+                    <div class="academic-info">
+                        Shenlan Xueyuan Offline Course<br>
+                        Supervisor: Dr. Yijia He, Postdoc. Xiang Gao
+                    </div>
+                    <div class="academic-date">
+                        Nov. 2024 - Dec. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://www.shenlanxueyuan.com/course/606">Background</a> /
+                    </div>
+                    <div class="academic-brief">
+                        To Be Released
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/cpp.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-avs.png">
+                </div>
+            </div><div class="academic-container" id="2024-uav">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Unmanned Autonomous Vehicles
                     </b>
                     <div class="academic-info">
                         Shenlan Xueyuan Offline Course<br>
@@ -193,7 +222,7 @@ hide:
                         Oct. 2024 - Nov. 2024
                     </div>
                     <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/my/course/729">Background</a> /
+                        <a href="https://www.shenlanxueyuan.com/course/729">Background</a> /
                     </div>
                     <div class="academic-brief">
                         To Be Released
@@ -209,17 +238,17 @@ hide:
             </div><div class="academic-container" id="2024-rgm">
                 <div class="academic-text">
                     <b class="academic-subtitle">
-                        Robotics Grasping and Manipulation⭐
+                        Robotics Grasping and Manipulation
                     </b>
                     <div class="academic-info">
                         Shenlan Xueyuan Online Course<br>
                         Supervisor: Dr. Wei Jing
                     </div>
                     <div class="academic-date">
-                        Oct. 2024 - Present
+                        Oct. 2024 - Dec. 2024
                     </div>
                     <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/my/course/727">Background</a> /
+                        <a href="https://www.shenlanxueyuan.com/course/727">Background</a> /
                     </div>
                     <div class="academic-brief">
                         To Be Released
@@ -241,14 +270,13 @@ hide:
                         Supervisor: Prof. Fei Gao, Dr. Zhepei Wang
                     </div>
                     <div class="academic-date">
-                        Oct. 2024 - Present
+                        Oct. 2024 - Dec. 2024
                     </div>
                     <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/my/course/726">Background</a> /
+                        <a href="https://www.shenlanxueyuan.com/course/726">Background</a> /
                     </div>
                     <div class="academic-brief">
-                        To Be Released
-                        <!-- The course led by Professor Fei Gao in Zhejiang University and taught by Doctor Zhepei Wang in ZJU Fast Lab, offers an in-depth exploration of  -->
+                        The course led by Professor Fei Gao and Doctor Zhepei Wang in ZJU Fast Lab, offers an in-depth exploration of Unconstrained Optimization (Quasi-Newton and Newton-CG), Constrained Optimization via Sequential Unconstrained Optimization (Penalty Method, Barrier Method, Lagrangian Relaxation), and Constrained Optimization (LDLP, LDQP, SOCP, PHR Augmented Lagrangian)
                     </div>
                     <div class="academic-labels">
                         <img class="academic-label" src="../img/tags/cpp.svg">
@@ -256,7 +284,7 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/numerical-optimization-in-robotics.png">
+                    <img class="academic-img" id="2024-nor-img" src="../img/projects/2024-nor.png" value="../img/projects/2024-nor-alm.gif">
                 </div>
             </div><div class="academic-container" id="2024-imr">
                 <div class="academic-text">
@@ -276,7 +304,7 @@ hide:
                         <a href="/blog/2024/10/21/ekf-slam-%E8%B0%83%E5%8F%82%E5%B0%8F%E8%AE%B0/"> Blog: EKF SLAM</a> /
                     </div>
                     <div class="academic-brief">
-                        There are three main projects through the course: Iterative Closest Points (ICP) Odometry, Extended Kalman Filter Simultaneous Localization and Mapping (EKF SLAM), and Path Planning, which cover the basic algorithms of mobile robotics.
+                        There are three main projects through the course: Iterative Closest Points (ICP) Odometry, Extended Kalman Filter Simultaneous Localization and Mapping (EKF SLAM), and Path Planning (A Star), which cover the basic algorithms of mobile robotics.
                     </div>
                     <div class="academic-labels">
                         <img class="academic-label" src="../img/tags/hkust.svg">
@@ -300,7 +328,7 @@ hide:
                         Dec. 2023 - Feb. 2024
                     </div>
                     <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/my/course/654">Background</a> /
+                        <a href="https://www.shenlanxueyuan.com/course/654">Background</a> /
                     </div>
                     <div class="academic-brief">
                         The course provided by Professor Peng Lu, offers an in-depth exploration of Structured From Motrion algorithm, Dense Point Cloud Reconstruction, and Surface Reconstruction.
@@ -311,7 +339,7 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/image-based-3d-modeling.png">
+                    <img class="academic-img" id="2023-ib3m-img" src="../img/projects/2023-ib3m.png" value="../img/projects/2023-ib3m-ransac.png">
                 </div>
             </div><div class="academic-container" id="2022-yingcai">
                 <div class="academic-text">

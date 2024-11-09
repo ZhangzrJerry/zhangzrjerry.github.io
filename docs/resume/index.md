@@ -58,6 +58,7 @@ hide:
                                     2. Introduction to Mobile Robotics (<b>au</b><sup>2</sup>)<br>
                                     3. Robotics Grasping and Manipulation<sup>*</sup><br>
                                     4. Unmanned Autonomous Vehicles<sup>*</sup><br>
+                                    5. Advanced Visual SLAM<sup>*</sup><br>
                                 </div>
                             </div>
                             <div class="resume-corec-column">
