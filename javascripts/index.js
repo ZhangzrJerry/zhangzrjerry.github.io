@@ -4,22 +4,23 @@ window.onload = function () {
     setInterval(clock, 1000);
     listen();
     currentUrl = window.location.href;
-    // if (window.screen.availWidth < 768) {
-    //     window.alert('For a better experience, please visit the website from desktop or switch to `view desktop site`.\n\n为了更好的浏览体验，请使用电脑访问，或者切换到`桌面版网页`。');
-    // }
 }
 
 function listen() {
     if (window.location.href.includes('resume')) {
-        document.getElementById('resume-corec-img').addEventListener('click', () => {
-            if (document.getElementById('resume-corec-detail').style.display === 'block') {
-                document.getElementById('resume-corec-detail').style.display = 'none';
-                document.getElementById('resume-corec-img').style.transform = 'rotate(45deg)';
-            } else {
-                document.getElementById('resume-corec-detail').style.display = 'block';
-                document.getElementById('resume-corec-img').style.transform = 'rotate(0deg)';
-            }
-        });
+        if (document.getElementById('resume-corec-detail')) {
+            document.getElementById('resume-corec-img').addEventListener('click', () => {
+                if (document.getElementById('resume-corec-detail').style.display === 'block') {
+                    document.getElementById('resume-corec-detail').style.display = 'none';
+                    document.getElementById('resume-corec-img').style.transform = 'rotate(45deg)';
+                    print(0, 'resume-corec-img', 'collapsed');
+                } else {
+                    document.getElementById('resume-corec-detail').style.display = 'block';
+                    document.getElementById('resume-corec-img').style.transform = 'rotate(0deg)';
+                    print(0, 'resume-corec-img', 'expanded');
+                }
+            });
+        }
     }
     if (window.location.href.includes('projects')) {
         if (window.screen.availWidth < 768) {
@@ -36,21 +37,38 @@ function listen() {
                 value = element.getAttribute('value');
                 element.setAttribute('value', element.getAttribute('src'));
                 element.setAttribute('src', value);
+                print(0, id, 'mouse over');
             });
             element.addEventListener('mouseout', () => {
                 value = element.getAttribute('value');
                 element.setAttribute('value', element.getAttribute('src'));
                 element.setAttribute('src', value);
+                print(0, id, 'mouse out');
             });
         }
     }
 }
 
 function clock() {
-    var t = new Date().toLocaleTimeString();
+    var t = time();
     if (currentUrl != window.location.href) {
+        print(1, currentUrl, 'URL changed to ' + window.location.href);
         currentUrl = window.location.href;
-        console.log(t, 'redirected');
         listen();
+    }
+}
+
+function time() {
+    return new Date().toLocaleTimeString();
+}
+
+function print(type, object, message) {
+    switch (type) {
+        case 0:
+            console.log(time(), '[', object, ']', message);
+            break;
+        case 1:
+            console.error(time(), '{', object, '}', message);
+            break;
     }
 }
