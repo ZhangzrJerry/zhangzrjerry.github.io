@@ -109,7 +109,7 @@ hide:
 ## Professional Experience
 
 <div>
-   <div class="resume-container">
+   <div class="resume-container" id="ni">
         <div class="resume-brief">
             <div class="resume-icon resume-parttime">
                 <img src="../img/resume/ni.png" class="resume-img"></img>
@@ -146,7 +146,7 @@ hide:
             </ul>
         </div>
     </div> --><div class="resume-container">
-        <div class="resume-brief">
+        <div class="resume-brief" id="rb">
             <div class="resume-icon resume-research">
                 <img src="../img/resume/rhinobird.png" class="resume-img"></img>
             </div>
@@ -172,7 +172,7 @@ hide:
 ## Community Involvement
 
 <div>
-    <div class="resume-container">
+    <div class="resume-container" id="frc8214">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="../img/resume/frc8214.png" class="resume-img"></img>
@@ -191,7 +191,7 @@ hide:
             </ul>
         </div>
     </div>
-    <div class="resume-container">
+    <div class="resume-container" id="frc6399">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="../img/resume/frc6399.png" class="resume-img"></img>
@@ -213,7 +213,7 @@ hide:
             </ul>
         </div>
     </div>
-    <div class="resume-container">
+    <div class="resume-container" id="frc8811">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="../img/resume/frc8811.png" class="resume-img"></img>
@@ -238,7 +238,7 @@ hide:
             </ul>
         </div>
     </div>
-    <div class="resume-container">
+    <div class="resume-container" id="frc8011">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="../img/resume/frc8011.png" class="resume-img"></img>

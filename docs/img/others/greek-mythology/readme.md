@@ -1,0 +1,1 @@
+Greek Mythology icons made by max.icons from [www.flaticon.com](www.flaticon.com)

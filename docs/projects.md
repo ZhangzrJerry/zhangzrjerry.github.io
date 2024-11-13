@@ -233,7 +233,7 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/unmanned-autonomous-vehicles.png">
+                    <img class="academic-img" id="2024-uav-img" src="../img/projects/unmanned-autonomous-vehicles.png" value="../img/projects/2024-uav.png">
                 </div>
             </div><div class="academic-container" id="2024-rgm">
                 <div class="academic-text">

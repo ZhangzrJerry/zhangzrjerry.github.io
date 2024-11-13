@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Next Innovation",
+        "content": "[2024.09] <b>Robotics Engineer</b> from Sep. 2024 to May. 2025 (Part-time)",
+        "sub_title": "2024 SEP",
+        "icon": "../img/others/greek-mythology/hephaestus.png"
+    },
+    {
+        "title": "Undergraduate Project",
+        "content": "[2024.10] <b>Course</b> in Advanced Visual SLAM, Unmanned Autonomous Vehicles, Robotics Grasping and Manipulation, Numerical Optimization in Robotics",
+        "sub_title": "2024 SEP",
+        "icon": "../img/others/greek-mythology/pegasus.png"
+    },
+    {
+        "title": "The Hong Kong University of Science and Technology",
+        "content": "[2024.09] <b>Course</b> in Introduction to Mobile Robotics, \"System Modeling, Analysis and Control\", Design and Analysis of Algorithms, Computer Organization, Discrete Mathematical Tools",
+        "sub_title": "2024 SEP",
+        "icon": "../img/others/greek-mythology/titan.png"
+    },
+    {
+        "title": "FIRST Robotics Competition Team 8214",
+        "content": "[2024.09] <b>Program Mentor</b> from Sep. 2024 to May. 2025",
+        "sub_title": "2024 SEP",
+        "icon": "../img/others/greek-mythology/themis.png"
+    },
+    {
+        "title": "FIRST Robotics Competition Team 6399",
+        "content": "[2024.08] <b>Engineering Inspiration Award</b> in World Robot Contest Championships 2024 - Beijing FRC Program China Offseason Event<br>[2024.07] <b>Program Mentor</b> from Jul. 2024 to Aug. 2024",
+        "sub_title": "2024 JUL",
+        "icon": "../img/others/greek-mythology/poseidon.png"
+    },
+    {
+        "title": "Rhino-Bird Middle School Science Research Training Program",
+        "content": "[2023.10] <b>Excellent Award</b> in 2023 Rhino-Bird Middle School Science Research Training Program<br>[2023.07] <b>Project</b> in Intelligent Book Recommendation and User Interest Analysis System based on Factorization Machines<br>[2023.06] <b>Research</b> from Jun. 2023 to Oct. 2023",
+        "sub_title": "2023 JUN",
+        "icon": "../img/others/greek-mythology/atlas.png"
+    },
+    {
+        "title": "Guangzhou No.2 High School",
+        "content": "[2023.12] <b>Course</b> in Image-Based 3D Modelings<br>[2022.08] <b>2nd Prize</b> in the 8th National Youth Science Popularization Innovation Experiment and Works Competition<br>[2022.06] <b>Excellent Award</b> in the 8th China International College Students' \"Internet+\" Innovation and Entrepreneurship Competition, Seed Track, Guangdong Division<br>[2022.01] <b>Research</b> in 2021 Guangzhou Yingcai Middle School Science Research Training Program<br>[2021.09] <b>Student</b> from Sep. 2021 to Jun. 2024",
+        "sub_title": "2021 SEP",
+        "icon": "../img/others/greek-mythology/athena.png"
+    },
+    {
+        "title": "FIRST Robotics Competition Team 8811",
+        "content": "[2022.08] <b>3rd Prize</b> in 2023 Indiemicro Robotics Competition Exchange Event<br>[2022.03] <b>Project</b> in FRC Data Collection Software<br>[2021.09] <b>Youth Mentor</b> from Sep.2021 to Aug. 2023<br>[2021.09] <b>Founder</b> of Team 8811, raised over $14,000",
+        "sub_title": "2021 SEP",
+        "icon": "../img/others/greek-mythology/ares.png"
+    },
+    {
+        "title": "FIRST Robotics Competition Team 8011",
+        "content": "[2022.12] <b>Excellence in Engineering Award</b> in 2022 Hangzhou Regional<br>[2022.09] <b>Project</b> in Swerve Controller<br>[2021.09] <b>Project</b> in Balance Swerve<br>[2021.05] <b>Rank 18</b> in 2021 Robotics Championship China<br>[2021.03] <b>Rookie Game Changer Award</b> in 2021 INFINITE RECHARGE At Home Challenge<br>[2021.02] <b>Team Captain</b> from Feb. 2021 to Jan. 2022<br>[2020.12] <b>Championship</b> in 2020 We RoboStar.<br>[2020.09] <b>Program Leader</b> from Sep. 2020 to Jan. 2021",
+        "sub_title": "2019 SEP",
+        "icon": "../img/others/greek-mythology/apollo.png"
+    }
+]
