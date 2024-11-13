@@ -1781,7 +1781,24 @@
   justify-content: center !important;
 }
 
+/* overwrite */
+
 .nt-timeline {
   width: 75% !important;
   margin-left: 12.5% !important;
+}
+
+.nt-timeline-dot.bigger {
+  width: 55px;
+  height: 55px;
+  padding: 4px;
+}
+
+.nt-timeline.vertical.left .nt-timeline-dot.bigger {
+  top: -7.5px;
+  left: 2.5px;
+}
+
+.icon {
+  border-radius: 100%;
 }

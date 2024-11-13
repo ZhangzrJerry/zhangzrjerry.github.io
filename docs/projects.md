@@ -184,7 +184,7 @@ hide:
     </div><div class="academic-half">
         <div class="academic-containers" id="course-projects">
             <h2>Course Projects</h2>
-            <div class="academic-container" id="2024-uav">
+            <div class="academic-container" id="2024-avs">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         Advanced Visual SLAM⭐
@@ -216,7 +216,7 @@ hide:
                     </b>
                     <div class="academic-info">
                         Shenlan Xueyuan Offline Course<br>
-                        Supervisor: 
+                        Supervisor: Mphil. Qian Ren, Mphil. Xianjing Zhang, MPhil. Chengyu Shi
                     </div>
                     <div class="academic-date">
                         Oct. 2024 - Nov. 2024
@@ -225,11 +225,12 @@ hide:
                         <a href="https://www.shenlanxueyuan.com/course/729">Background</a> /
                     </div>
                     <div class="academic-brief">
-                        To Be Released
+                        The course offers an in-depth practices in sensor calibration, sensor fusion, planning and control, etc.
                     </div>
                     <div class="academic-labels">
                         <img class="academic-label" src="../img/tags/cpp.svg">
                         <img class="academic-label" src="../img/tags/apollo.svg">
+                        <img class="academic-label" src="../img/tags/ros.svg">
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
