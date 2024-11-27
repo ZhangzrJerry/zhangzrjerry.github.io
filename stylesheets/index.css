@@ -14,6 +14,8 @@
 
 .home-greet {
     font-size: 1.1em;
+    margin-top: 27px;
+    margin-bottom: 0;
     font-weight: bold;
 }
 
@@ -22,4 +24,34 @@
     font-style: italic;
     font: 100 "Times New Roman", Times, serif;
     width: 500px;
+}
+
+.home-link {
+    margin-top: 7px;
+}
+
+/* .jvectormap-container {
+    border-radius: 20px;
+}
+
+.index-map {
+    margin-top: 10px;
+    width: 250px !important;
+    height: 123px;
+}
+
+.index-link {
+    margin-top: 5px;
+} */
+
+.connect-map {
+    width: 400px !important;
+    border-radius: 20px;
+}
+
+.connect {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
 }
