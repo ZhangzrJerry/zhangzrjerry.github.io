@@ -1801,4 +1801,5 @@
 
 .icon {
   border-radius: 100%;
+  top: 0px !important;
 }

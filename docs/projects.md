@@ -13,6 +13,34 @@ hide:
         </div> -->
         <div class="academic-containers" id="personal-projects">
             <h2>Personal Projects</h2>
+            <div class="academic-container" id="2024-cotimo">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        CoTiMo
+                    </b>
+                    <div class="academic-info">
+                        Zirui Zhang
+                    </div>
+                    <div class="academic-date">
+                        Oct. 2024 - Nov. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://github.com/ZhangzrJerry/CoTiMo">Code</a> /
+                        <a href="./blog/2024/11/24/cotimo">Blog</a> /
+                    </div>
+                    <div class="academic-brief">
+                        Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/ros.svg">
+                        <img class="academic-label" src="../img/tags/cpp.svg">
+                        <img class="academic-label" src="../img/tags/python.svg">        
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" id="2023-rhinobird-img" src="../img/projects/2024-cotimo.gif">
+                </div>
+            </div>
             <!--<div class="academic-container" id="2024-scout">
                 <div class="academic-text">
                     <b class="academic-subtitle">
@@ -182,7 +210,7 @@ hide:
             </div>
         </div> -->
     </div><div class="academic-half">
-        <div class="academic-containers" id="course-projects">
+        <!-- <div class="academic-containers" id="course-projects">
             <h2>Course Projects</h2>
             <div class="academic-container" id="2024-avs">
                 <div class="academic-text">
@@ -275,6 +303,7 @@ hide:
                     </div>
                     <div class="academic-links">
                         <a href="https://www.shenlanxueyuan.com/course/726">Background</a> /
+                        <a href="./#2024-cotimo">CoTiMo</a>
                     </div>
                     <div class="academic-brief">
                         The course led by Professor Fei Gao and Doctor Zhepei Wang in ZJU Fast Lab, offers an in-depth exploration of Unconstrained Optimization (Quasi-Newton and Newton-CG), Constrained Optimization via Sequential Unconstrained Optimization (Penalty Method, Barrier Method, Lagrangian Relaxation), and Constrained Optimization (LDLP, LDQP, SOCP, PHR Augmented Lagrangian)
@@ -368,7 +397,7 @@ hide:
                     <img class="academic-img" src="../img/projects/knowledge-graph-construction.png">
                 </div>
             </div>
-        </div><div class="academic-containers" id="robotics-competition">
+        </div> --><div class="academic-containers" id="robotics-competition">
             <h2>Robotics Competition</h2>
             <div class="academic-container" id="2024-defiant">
                 <div class="academic-text">
