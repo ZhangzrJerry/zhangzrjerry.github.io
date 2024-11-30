@@ -21,6 +21,6 @@ hide:
 </div>
 
 
-<!-- [gantt no-groups no-weeks no-months month-width=15 month-format= (./docs/attach/gantt.json)] -->
+<!-- [gantt no-groups no-weeks no-months month-width=15 month-format= (./docs/assetss/gantt.json)] -->
 
-[timeline (./docs/attach/timeline.json)]
+[timeline (./docs/assets/timeline.json)]

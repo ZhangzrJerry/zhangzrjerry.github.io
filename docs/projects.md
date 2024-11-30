@@ -16,7 +16,7 @@ hide:
             <div class="academic-container" id="2024-cotimo">
                 <div class="academic-text">
                     <b class="academic-subtitle">
-                        CoTiMo
+                        CoTiMo - Collision-Free Smooth Path Generation + TOPP + MPC
                     </b>
                     <div class="academic-info">
                         Zirui Zhang
@@ -26,10 +26,10 @@ hide:
                     </div>
                     <div class="academic-links">
                         <a href="https://github.com/ZhangzrJerry/CoTiMo">Code</a> /
-                        <a href="./blog/2024/11/24/cotimo">Blog</a> /
+                        <a href="/blog/2024/11/24/cotimo">Blog</a> /
                     </div>
-                    <div class="academic-brief">
-                        Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control
+                    <div class="academic-brief">    
+                        The A* algorithm is used to determine a heuristic path, followed by the application of the artificial potential field method to smooth the path while avoiding collisions. Then, Time Optimal Path Parameterization is employed to label the fastest time information under acceleration and velocity constraints. Lastly, Model Predictive Control is utilized to make the robot track the trajectory.
                     </div>
                     <div class="academic-labels">
                         <img class="academic-label" src="../img/tags/ros.svg">
@@ -38,41 +38,16 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" id="2023-rhinobird-img" src="../img/projects/2024-cotimo.gif">
+                    <img class="academic-img" src="../img/projects/2024-cotimo.gif">
                 </div>
-            </div>
-            <!--<div class="academic-container" id="2024-scout">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Cyber Scouting
-                    </b>
-                    <div class="academic-info">
-                        FIRST Robotics Competition Team 8214
-                    </div>
-                    <div class="academic-date">
-                        Sep. 2024 - Present
-                    </div>
-                    <div class="academic-links">
-                    </div>
-                    <div class="academic-brief">
-                        To Be Released
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/frc-8214.svg">
-                        <img class="academic-label" src="../img/tags/vuejs.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/404.png">
-                </div>
-            </div>--><div class="academic-container" id="2023-rhinobird">
+            </div><div class="academic-container" id="2023-rb">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         Intelligent Book Recommendation and User Interest Analysis System based on Factorization Machines⭐
                     </b>
                     <div class="academic-info">
                         2023 Rhino-Bird Middle School Science Research Training Program<br>
-                        Supervisor: Prof. Chuan Shi, Beijing University of Posts and Telecommunications
+                        Supervisor: Prof. Chuan Shi, BUPT <!--Beijing University of Posts and Telecommunications-->
                     </div>
                     <div class="academic-date">
                         Jun. 2023 - Oct. 2023
@@ -91,9 +66,9 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" id="2023-rhinobird-img" src="../img/projects/2023-rhinobird-1.png" value="../img/projects/2023-rhinobird-2.png">
+                    <img class="academic-img" id="2023-rb-img" src="../img/projects/2023-rb-1.png" value="../img/projects/2023-rb-2.png">
                 </div>
-            </div><div class="academic-container" id="2022-controller">
+            </div><div class="academic-container" id="2022-sc">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         Swerve Controller - Dual Motor Drive Board
@@ -105,9 +80,9 @@ hide:
                         Sep. 2022 - Oct. 2022
                     </div>
                     <div class="academic-links">
-                        <a href="../img/projects/2022-controller-schematic.png">Schematic</a> /
-                        <a href="../img/projects/2022-controller-top.png">Layout</a> /
-                        <a href="../img/projects/2022-controller-bottom.png">Layout (bottom)</a> /
+                        <a href="../img/projects/2022-sc-schematic.png">Schematic</a> /
+                        <a href="../img/projects/2022-sc-top.png">Layout</a> /
+                        <a href="../img/projects/2022-sc-bottom.png">Layout (bottom)</a> /
                     </div>
                     <div class="academic-brief">
                         This drive board powers a swerve module with two independent motors: one for velocity, the other for steering, delivering a maximum power of 240W (2 * 12V * 10A).
@@ -118,9 +93,9 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" id="2022-controller-img" src="../img/projects/2022-controller.png" value="../img/projects/2022-controller-top.png">
+                    <img class="academic-img" id="2022-sc-img" src="../img/projects/2022-sc.png" value="../img/projects/2022-sc-top.png">
                 </div>
-            </div><div class="academic-container" id="2022-scout">
+            </div><div class="academic-container" id="2022-fdcs">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         FRC Data Collection Software⭐
@@ -133,7 +108,7 @@ hide:
                     </div>
                     <div class="academic-links">
                         <a href="https://github.com/zhangzrjerry/frc_scouting">Code</a> /
-                        <a href="../img/projects/frc-data-collection-software-gui.png">GUI</a> /
+                        <a href="../img/projects/2022-fdcs-gui.png">GUI</a> /
                     </div>
                     <div class="academic-brief">
                         The wechat miniprogram provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
@@ -146,16 +121,16 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/frc-data-collection-software.png">
+                    <img class="academic-img" id="2022-fdcs-img" src="../img/projects/2022-fdcs.png" value="../img/projects/2022-fdcs-gui.png">
                 </div>
-            </div><div class="academic-container" id="2021-balance">
+            </div><div class="academic-container" id="2021-bs">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         Balance Swerve - A Single-Wheeled Self-Balancing Omni-directional Mobile Platform
                     </b>
                     <div class="academic-info">
                         Liangyu Cai, Zihan Chen, <b>Zirui Zhang</b>, Junyong Lin, Yingpei Chen, Yiyang Lu, Jiacheng Xiao, Suqing He<br>
-                        Supervisor: Prof. Liang Chen, South China University of Technology
+                        Supervisor: Prof. Liang Chen, SCUT <!--South China University of Technology-->
                     </div>
                     <div class="academic-date">
                         Sep. 2021 - Mar. 2022
@@ -174,232 +149,14 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/balance-swerve.png">
+                    <img class="academic-img" id="2021-bs-img" src="../img/projects/2021-bs.gif" value="../img/projects/2021-bs.png">
                 </div>
             </div>
         </div>
-        <!-- <div class="academic-containers" id="demo-projects">
-            <h2>Demos</h2>
-            <div class="academic-container" id="2022-paddle">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        LOL Prediction - AI Studio Learning Competition
-                    </b>
-                    <div class="academic-info">
-                        Zirui Zhang
-                    </div>
-                    <div class="academic-date">
-                        Jul. 2022 - Mar. 2023
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://aistudio.baidu.com/competition/detail/247">Background</a> /
-                        <a href="https://github.com/zhangzrjerry/paddle-lolmp">Code</a> /
-                    </div>
-                    <div class="academic-brief">
-                        This project aims to solve the PaddlePaddle Learning Competition: League of Legends Master Prediction Challenge.
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/ai-studio.svg">
-                        <img class="academic-label" src="../img/tags/paddlepaddle.svg">
-                        <img class="academic-label" src="../img/tags/python.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/lol-prediction.png">
-                </div>
-            </div>
-        </div> -->
     </div><div class="academic-half">
-        <!-- <div class="academic-containers" id="course-projects">
-            <h2>Course Projects</h2>
-            <div class="academic-container" id="2024-avs">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Advanced Visual SLAM⭐
-                    </b>
-                    <div class="academic-info">
-                        Shenlan Xueyuan Offline Course<br>
-                        Supervisor: Dr. Yijia He, Postdoc. Xiang Gao
-                    </div>
-                    <div class="academic-date">
-                        Nov. 2024 - Dec. 2024
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/course/606">Background</a> /
-                    </div>
-                    <div class="academic-brief">
-                        To Be Released
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/cpp.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/2024-avs.png">
-                </div>
-            </div><div class="academic-container" id="2024-uav">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Unmanned Autonomous Vehicles
-                    </b>
-                    <div class="academic-info">
-                        Shenlan Xueyuan Offline Course<br>
-                        Supervisor: Mphil. Qian Ren, Mphil. Xianjing Zhang, MPhil. Chengyu Shi
-                    </div>
-                    <div class="academic-date">
-                        Oct. 2024 - Nov. 2024
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/course/729">Background</a> /
-                    </div>
-                    <div class="academic-brief">
-                        The course offers an in-depth practices in sensor calibration, sensor fusion, planning and control, etc.
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/cpp.svg">
-                        <img class="academic-label" src="../img/tags/apollo.svg">
-                        <img class="academic-label" src="../img/tags/ros.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" id="2024-uav-img" src="../img/projects/unmanned-autonomous-vehicles.png" value="../img/projects/2024-uav.png">
-                </div>
-            </div><div class="academic-container" id="2024-rgm">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Robotics Grasping and Manipulation
-                    </b>
-                    <div class="academic-info">
-                        Shenlan Xueyuan Online Course<br>
-                        Supervisor: Dr. Wei Jing
-                    </div>
-                    <div class="academic-date">
-                        Oct. 2024 - Dec. 2024
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/course/727">Background</a> /
-                    </div>
-                    <div class="academic-brief">
-                        To Be Released
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/cpp.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/robotics-grasping-and-manipulation.png">
-                </div>
-            </div><div class="academic-container" id="2024-nor">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Numerical Optimization in Robotics⭐
-                    </b>
-                    <div class="academic-info">
-                        Shenlan Xueyuan Online Course<br>
-                        Supervisor: Prof. Fei Gao, Dr. Zhepei Wang
-                    </div>
-                    <div class="academic-date">
-                        Oct. 2024 - Dec. 2024
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/course/726">Background</a> /
-                        <a href="./#2024-cotimo">CoTiMo</a>
-                    </div>
-                    <div class="academic-brief">
-                        The course led by Professor Fei Gao and Doctor Zhepei Wang in ZJU Fast Lab, offers an in-depth exploration of Unconstrained Optimization (Quasi-Newton and Newton-CG), Constrained Optimization via Sequential Unconstrained Optimization (Penalty Method, Barrier Method, Lagrangian Relaxation), and Constrained Optimization (LDLP, LDQP, SOCP, PHR Augmented Lagrangian)
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/cpp.svg">
-                        <img class="academic-label" src="../img/tags/ros.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" id="2024-nor-img" src="../img/projects/2024-nor.png" value="../img/projects/2024-nor-alm.gif">
-                </div>
-            </div><div class="academic-container" id="2024-imr">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Introduction to Mobile Robotics⭐
-                    </b>
-                    <div class="academic-info">
-                        The Hong Kong University of Science and Technology ELEC 3210<br>
-                        Supervisor: Prof. Shaojie Shen, Mphil. Yang Xu
-                    </div>
-                    <div class="academic-date">
-                        Sep. 2024 - Nov. 2024
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://seng.hkust.edu.hk/sites/default/files/IMCE/UG/Course%20Syllabus/Fall%202024-2025/ELEC%203210_Fall%202024-25.pdf">Background</a> /
-                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics">Code</a> /
-                        <a href="/blog/2024/10/21/ekf-slam-%E8%B0%83%E5%8F%82%E5%B0%8F%E8%AE%B0/"> Blog: EKF SLAM</a> /
-                    </div>
-                    <div class="academic-brief">
-                        There are three main projects through the course: Iterative Closest Points (ICP) Odometry, Extended Kalman Filter Simultaneous Localization and Mapping (EKF SLAM), and Path Planning (A Star), which cover the basic algorithms of mobile robotics.
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/hkust.svg">
-                        <img class="academic-label" src="../img/tags/cpp.svg">
-                        <img class="academic-label" src="../img/tags/ros.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/elec-3210.png">
-                </div>
-            </div><div class="academic-container" id="2023-ib3m">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Image-Based 3D Modeling
-                    </b>
-                    <div class="academic-info">
-                        Shenlan Xueyuan Online Course<br>
-                        Supervisor: Prof. Peng Lu, Dr. Tang Sui
-                    </div>
-                    <div class="academic-date">
-                        Dec. 2023 - Feb. 2024
-                    </div>
-                    <div class="academic-links">
-                        <a href="https://www.shenlanxueyuan.com/course/654">Background</a> /
-                    </div>
-                    <div class="academic-brief">
-                        The course provided by Professor Peng Lu, offers an in-depth exploration of Structured From Motrion algorithm, Dense Point Cloud Reconstruction, and Surface Reconstruction.
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/cpp.svg">
-                        <img class="academic-label" src="../img/tags/opengl.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" id="2023-ib3m-img" src="../img/projects/2023-ib3m.png" value="../img/projects/2023-ib3m-ransac.png">
-                </div>
-            </div><div class="academic-container" id="2022-yingcai">
-                <div class="academic-text">
-                    <b class="academic-subtitle">
-                        Knowledge Graph Construction based on Big Data Technology
-                    </b>
-                    <div class="academic-info">
-                        2021 Guangzhou Yingcai Middle School Science Research Training Program<br>
-                        Supervisor: Prof. Yi Cai, South China University of Technology
-                    </div>
-                    <div class="academic-date">
-                        Jan. 2022 - Aug. 2022
-                    </div>
-                    <div class="academic-links">
-                        <a href="http://jyj.gz.gov.cn/gk/zfxxgkml/qt/gs/qt/content/post_7980438.html">Background</a> /
-                    </div>
-                    <div class="academic-brief">
-                        This project was delivered by the 2021 Guangzhou Yingcai Middle School Science Research Training Program and Professor Yi Cai in SCUT.
-                    </div>
-                    <div class="academic-labels">
-                        <img class="academic-label" src="../img/tags/neo4j.svg">
-                    </div>
-                </div>
-                <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/knowledge-graph-construction.png">
-                </div>
-            </div>
-        </div> --><div class="academic-containers" id="robotics-competition">
+        <div class="academic-containers" id="robotics-competition">
             <h2>Robotics Competition</h2>
-            <div class="academic-container" id="2024-defiant">
+            <div class="academic-container" id="2024-frc">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         FRC 2024 Robot - Defiant⭐
@@ -424,9 +181,9 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/defiant-2024.png">
+                    <img class="academic-img" src="../img/projects/2024-frc.png">
                 </div>
-            </div><div class="academic-container" id="2023-yuan">
+            </div><div class="academic-container" id="2023-frc">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         FRC 2023 Robot - Yuan Bot⭐
@@ -451,9 +208,9 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/yuan-bot.png">
+                    <img class="academic-img" src="../img/projects/2023-frc.png">
                 </div>
-            </div><div class="academic-container" id="2022-kylin">
+            </div><div class="academic-container" id="2022-frc">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         FRC 2022 Robot - Kylin
@@ -477,9 +234,9 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/kylin-2022.png">
+                    <img class="academic-img" src="../img/projects/2022-frc.png">
                 </div>
-            </div><div class="academic-container" id="2021-kylin">
+            </div><div class="academic-container" id="2021-frc">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         FRC 2021 Robot - Kylin⭐
@@ -504,9 +261,9 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/kylin-2021.png">
+                    <img class="academic-img" src="../img/projects/2021-frc.png">
                 </div>
-            </div><div class="academic-container" id="2020-kylin">
+            </div><div class="academic-container" id="2020-frc">
                 <div class="academic-text">
                     <b class="academic-subtitle">
                         FRC 2020 Robot - Kylin
@@ -530,9 +287,216 @@ hide:
                     </div>
                 </div>
                 <div class="academic-imgcontainer">
-                    <img class="academic-img" src="../img/projects/kylin-2020.png">
+                    <img class="academic-img" src="../img/projects/2020-frc.png">
                 </div>
             </div>
         </div>
+        <div class="academic-containers" id="course-projects">
+            <h2>Course Projects</h2>
+            <div class="academic-container" id="2024-awg">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Aircraft War Game
+                    </b>
+                    <div class="academic-info">
+                        COMP 2611 - Computer Organization<br>
+                        Supervisor: Prof. Xin Li, HKUST
+                    </div>
+                    <div class="academic-date">
+                        Nov. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="../attach/2024-awg-code.s">Code</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/embedded.svg">
+                        <img class="academic-label" src="../img/tags/mips.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-awg.gif">
+                </div>
+            </div><div class="academic-container" id="2024-astar">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        A* Path Planning
+                    </b>
+                    <div class="academic-info">
+                        ELEC 3210 - Introduction to Mobile Robotics<br>
+                        Supervisor: Prof. Shaojie Shen, HKUST
+                    </div>
+                    <div class="academic-date">
+                        Nov. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics/tree/main/project3_a_star">Code</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/ros.svg">
+                        <img class="academic-label" src="../img/tags/cpp.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-astar.png">
+                </div>
+            </div><div class="academic-container" id="2024-ip">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Inverted Pendulum
+                    </b>
+                    <div class="academic-info">
+                        ELEC 3200 - System Modeling, Analysis and Control<br>
+                        Supervisor: Prof. Ling Shi, HKUST
+                    </div>
+                    <div class="academic-date">
+                        Nov. 2024
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/control.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-ip.gif">
+                </div>
+            </div><div class="academic-container" id="2024-ml">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Magnetic Levitation
+                    </b>
+                    <div class="academic-info">
+                        ELEC 3200 - System Modeling, Analysis and Control<br>
+                        Supervisor: Prof. Ling Shi, HKUST
+                    </div>
+                    <div class="academic-date">
+                        Nov. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="/blog/2024/11/05/elec3200-lab1-report/">Report</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/control.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-ml.png">
+                </div>
+            </div><div class="academic-container" id="2024-tt">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Trajectory Tracking (MPC)
+                    </b>
+                    <div class="academic-info">
+                        Shenlan - Numerical Optimization in Robotics<br>
+                        Supervisor: Dr. Zhepei Wang, Prof. Fei Gao, ZJU
+                    </div>
+                    <div class="academic-date">
+                        Oct. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics/tree/main/demo4_mpc_alm">Code</a> /
+                        <a href="/blog/2024/10/28/trajectory-tracking-task/">Blog</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/python.svg">
+                        <img class="academic-label" src="../img/tags/control.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-tt.gif">
+                </div>
+            </div><div class="academic-container" id="2024-ekf">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        EKF SLAM
+                    </b>
+                    <div class="academic-info">
+                        ELEC 3210 - Introduction to Mobile Robotics<br>
+                        Supervisor: Prof. Shaojie Shen, HKUST
+                    </div>
+                    <div class="academic-date">
+                        Oct. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics/tree/main/project2_ekf_slam">Code</a> /
+                        <a href="/blog/2024/10/21/ekf-slam/">Blog</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/ros.svg">
+                        <img class="academic-label" src="../img/tags/cpp.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-ekf.png">
+                </div>
+            </div><div class="academic-container" id="2024-icp">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        ICP Odometry
+                    </b>
+                    <div class="academic-info">
+                        ELEC 3210 - Introduction to Mobile Robotics<br>
+                        Supervisor: Prof. Shaojie Shen, HKUST
+                    </div>
+                    <div class="academic-date">
+                        Sep. 2024
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics/tree/main/project1_icp_odom">Code</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/ros.svg">
+                        <img class="academic-label" src="../img/tags/cpp.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2024-icp.png">
+                </div>
+            </div><div class="academic-container" id="2023-ransac">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Random Sample Consensus
+                    </b>
+                    <div class="academic-info">
+                        Shenlan - Image-Based 3D Modeling<br>
+                        Supervisor: Prof. Peng Lu, BUPT
+                    </div>
+                    <div class="academic-date">
+                        Dec. 2023
+                    </div>
+                    <div class="academic-links">
+                        <a href="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics/tree/main/demo2_sift+ransac">Code</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/opengl.svg">
+                        <img class="academic-label" src="../img/tags/cpp.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2023-ransac.png">
+                </div>
+            </div><div class="academic-container" id="2022-kgc">
+                <div class="academic-text">
+                    <b class="academic-subtitle">
+                        Knowledge Graph Construction
+                    </b>
+                    <div class="academic-info">
+                        2021 Guangzhou Yingcai Middle School Science Research Training Program<br>
+                        Supervisor: Prof. Yi Cai, SCUT<!--South China University of Technology-->
+                    </div>
+                    <div class="academic-date">
+                        Jan. 2022 - Aug. 2022
+                    </div>
+                    <div class="academic-links">
+                        <a href="http://jyj.gz.gov.cn/gk/zfxxgkml/qt/gs/qt/content/post_7980438.html">Background</a> /
+                    </div>
+                    <div class="academic-labels">
+                        <img class="academic-label" src="../img/tags/neo4j.svg">
+                    </div>
+                </div>
+                <div class="academic-imgcontainer">
+                    <img class="academic-img" src="../img/projects/2022-kgc.png">
+                </div>
+            </div>
+        </div> 
     </div>
 </div>
