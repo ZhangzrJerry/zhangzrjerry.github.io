@@ -14,7 +14,7 @@
         <link rel="prev" href="../../05/elec3200-lab1-report/">
       
       
-        <link rel="next" href="../elec3200/">
+        <link rel="next" href="../cotimo/">
       
       
       <link rel="icon" href="../../../../../img/favicon.ico">
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comp-2711-quick-notes" class="md-skip">
+        <a href="#discrete-math-quick-notes" class="md-skip">
           Skip to content
         </a>
       
@@ -643,6 +643,42 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#linear-congruences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Congruences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chinese-remainder-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chinese Remainder Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repeated-squaring-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Repeated Squaring Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fermat-little-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      ==Fermat Little Theorem==
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -665,7 +701,7 @@
         
 
 
-<h1 id="comp-2711-quick-notes">COMP 2711 Quick Notes</h1>
+<h1 id="discrete-math-quick-notes">Discrete Math Quick Notes</h1>
 <!-- more -->
 
 <h2 id="number-theory">Number Theory</h2>
@@ -790,8 +826,60 @@ a=bq+r
 \]</div>
 <blockquote>
 <p><strong>Example</strong>: <span class="arithmatex">\(a=4,m=9\)</span></p>
-<p>Step 1: <span class="arithmatex">\(9=2\cdot4+1\)</span></p>
+<p><em>Step 1</em>:  Linear Combination</p>
+<div class="arithmatex">\[1=9-2\cdot4\]</div>
+<p><em>Step 2</em>: </p>
+<div class="arithmatex">\[-2\equiv7\bmod9\]</div>
 </blockquote>
+<h4 id="linear-congruences">Linear Congruences</h4>
+<div class="arithmatex">\[
+ax\equiv b\bmod m, \gcd(a,m)=1,x=?
+\]</div>
+<div class="arithmatex">\[
+a^{-1}ax\equiv a^{-1}b\bmod m
+\]</div>
+<p>If <span class="arithmatex">\(\gcd(a,m)\neq1\)</span>, multi solutions or no solution</p>
+<h4 id="chinese-remainder-theorem">Chinese Remainder Theorem</h4>
+<div class="arithmatex">\[
+\forall x,y\in\set{m_1,m_2,\cdots,m_n}, \gcd(x,y)=1
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+x\equiv a_1&amp;\bmod m_1 \\
+x\equiv a_2&amp;\bmod m_2 \\
+\vdots \\
+x\equiv a_n&amp;\bmod m_n
+\end{aligned}
+\]</div>
+<div class="arithmatex">\[
+m=m_1m_2\cdots m_n
+\]</div>
+<div class="arithmatex">\[
+M_k=\frac m{m_k}, k=1,2,\dots,n
+\]</div>
+<div class="arithmatex">\[
+\forall\gcd(m_k,M_k)=1,\ y_kM_k\equiv1\bmod m_k
+\]</div>
+<div class="arithmatex">\[
+x=a_1M_1y_1+a_2M_2y_2+\cdots+a_nM_ny_n
+\]</div>
+<div class="arithmatex">\[
+x\equiv a_1\cdot m_1\cdot m_1^{-1}+a_2\cdot m_2\cdot m_2^{-1}+\cdots+a_n\cdot m_n\cdot m_n^{-1} \bmod m
+\]</div>
+<h4 id="repeated-squaring-method">Repeated Squaring Method</h4>
+<blockquote>
+<p><strong>Example</strong>: evaluate <span class="arithmatex">\(2048^{13}\bmod2050\)</span></p>
+<div class="arithmatex">\[\begin{aligned}2048^{2^0}\bmod2050&amp;=2048\\2048^{2^1}\bmod2050&amp;=4\\2048^{2^2}\bmod2050&amp;=16\\2048^{2^3}\bmod2050&amp;=256\\\end{aligned}\]</div>
+<div class="arithmatex">\[13=2^0+2^2+2^3\]</div>
+<div class="arithmatex">\[2048^{13}\equiv2048^{2^3}\cdot2048^{2^2}\cdot2048^{2^0}\equiv2048\cdot16\cdot256\equiv8\bmod2050\]</div>
+</blockquote>
+<h4 id="fermat-little-theorem">==Fermat Little Theorem==</h4>
+<div class="arithmatex">\[
+\forall p\in{\mathbf P},p\nmid a
+\]</div>
+<div class="arithmatex">\[
+a^{p-1}\equiv1\bmod p
+\]</div>
 
 
 
