@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Camera Calibration</title>
+</head>
+
+<body>
+    <script>
+        window.onload = function () {
+            const res = prompt("rows cols size(mm)", "6 10 20").split(" ");
+            for (let i = 0; i < res[0]; i++) {
+                for (let j = 0; j < res[1]; j++) {
+                    var div = document.createElement("div");
+                    div.style.width = res[2] + "mm";
+                    div.style.height = res[2] + "mm";
+                    div.style.position = "absolute";
+                    div.style.left = (j * res[2]) + "mm";
+                    div.style.top = (i * res[2]) + "mm";
+                    div.style.display = "inline-block";
+                    if ((i + j) % 2 == 0) {
+                        div.className = "black-box";
+                    } else {
+                        div.className = "white-box";
+                    }
+                    document.getElementById("camera-calib-main").appendChild(div);
+                }
+            }
+            let element = document.getElementById("camera-calib-brief");
+            element.innerHTML = res[0] + " x " + res[1] + ": " + res[2] + "mm";
+        };
+    </script>
+
+    <style>
+        #camera-calib-main {
+            left: 5%;
+            top: 5%;
+            right: 5%;
+            bottom: 5%;
+            overflow: hidden;
+            position: absolute;
+            width: 90%;
+            height: 90%;
+        }
+
+        #camera-calib-brief {
+            bottom: 0%;
+            position: absolute;
+        }
+
+        .black-box {
+            background-color: black;
+        }
+
+        .white-box {
+            background-color: white;
+        }
+    </style>
+
+    <div id="camera-calib-main">
+    </div>
+
+    <div id="camera-calib-brief">
+    </div>
+
+</body>
+
+</html>
