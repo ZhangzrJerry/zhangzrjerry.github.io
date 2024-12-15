@@ -9,6 +9,7 @@ nav:
   - Home: index.md
   - Resume: resume/index.md
   - Projects: projects.md
+  - Tools: tools/index.md
   - Blogs: blog/index.md
   - Connect: connect.md
 
