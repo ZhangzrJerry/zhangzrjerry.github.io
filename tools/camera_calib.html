@@ -8,7 +8,7 @@
 <body>
     <script>
         window.onload = function () {
-            const res = prompt("rows cols size(mm)", "6 10 20").split(" ");
+            const res = prompt("Please adjust the page zoom ratio to 100% and enter rows(#), cols(#), size(mm)", "6 10 20").split(" ");
             for (let i = 0; i < res[0]; i++) {
                 for (let j = 0; j < res[1]; j++) {
                     var div = document.createElement("div");
