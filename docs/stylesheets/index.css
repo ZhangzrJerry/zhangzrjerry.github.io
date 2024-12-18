@@ -19,6 +19,11 @@
     font-weight: bold;
 }
 
+.home-brief {
+    width: 75%;
+    max-width: 1000px;
+}
+
 .home-sign {
     font-size: 1.05em;
     font-style: italic;
@@ -28,30 +33,4 @@
 
 .home-link {
     margin-top: 7px;
-}
-
-/* .jvectormap-container {
-    border-radius: 20px;
-}
-
-.index-map {
-    margin-top: 10px;
-    width: 250px !important;
-    height: 123px;
-}
-
-.index-link {
-    margin-top: 5px;
-} */
-
-.connect-map {
-    width: 400px !important;
-    border-radius: 20px;
-}
-
-.connect {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
 }

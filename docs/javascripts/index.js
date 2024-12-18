@@ -7,19 +7,6 @@ window.onload = function () {
 }
 
 function listen() {
-    if (document.getElementById('resume-corec-detail')) {
-        document.getElementById('resume-corec-img').addEventListener('click', () => {
-            if (document.getElementById('resume-corec-detail').style.display === 'block') {
-                document.getElementById('resume-corec-detail').style.display = 'none';
-                document.getElementById('resume-corec-img').style.transform = 'rotate(45deg)';
-                print(0, 'resume-corec-img', 'collapsed');
-            } else {
-                document.getElementById('resume-corec-detail').style.display = 'block';
-                document.getElementById('resume-corec-img').style.transform = 'rotate(0deg)';
-                print(0, 'resume-corec-img', 'expanded');
-            }
-        });
-    }
     if (document.getElementsByClassName('academic-img').length > 0) {
         x = document.getElementsByClassName('academic-img');
         for (i = 0; i < x.length; i++) {
@@ -116,13 +103,14 @@ function print(type, object, message) {
 const predefined = {
     "timelinecolor": [
         "#e8deed",
-        // "#fff6CF",
-        // "#E0EAFB",
         "#EDDDF4",
+        "#E0EFFF",
         "#EAEAEA",
         "#E0F6FF",
         "#b78026",
         "#e6e4e2",
-        "#E7F7E5"
+        "#F0F0F0",
+        "#b78026",
+        "#FE0000"
     ]
 }

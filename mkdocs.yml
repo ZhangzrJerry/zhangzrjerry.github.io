@@ -7,7 +7,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Resume: resume/index.md
+  - Resume: resume.md
   - Projects: projects.md
   - Tools: tools/index.md
   - Blogs: blog/index.md
@@ -40,17 +40,6 @@ theme:
     - content.image.lightbox
     - content.card
   language: en
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
 
 extra_css:
   - stylesheets/index.css

@@ -32,56 +32,8 @@ hide:
             </div>    
         </div>
         <div class="resume-detail">
-            <ul>
-                <li>
-                    CGA: --/4.3
-                    <a href="./hkust">[Details]</a>
-                </li>
-                <li class="resume-corec">
-                    <div style="display:flex">
-                        Core Courses: 
-                        <div class="resume-corec-img" id="resume-corec-img">
-                            <img src="../img/icons/circle-xmark-regular.svg"></img>
-                        </div>
-                    </div><div class="resume-corec-detail" id="resume-corec-detail">
-                        <div class="resume-corec-container">
-                            <div class="resume-corec-column">
-                                <b>Mathematics</b>
-                                <div class="resume-corec-column-detail">
-                                    1. Numerical Optimization in Robotics<sup>*</sup><br>
-                                </div>
-                            </div>
-                            <div class="resume-corec-column resume-corec-middle">
-                                <b>Robotics</b>
-                                <div class="resume-corec-column-detail">
-                                    1. System Model, Analysis and Control (<b>-</b>)<br>
-                                    2. Introduction to Mobile Robotics (<b>au</b><sup>2</sup>)<br>
-                                    3. Robotics Grasping and Manipulation<sup>*</sup><br>
-                                    4. Unmanned Autonomous Vehicles<sup>*</sup><br>
-                                    5. Advanced Visual SLAM<sup>*</sup><br>
-                                </div>
-                            </div>
-                            <div class="resume-corec-column">
-                                <b>Algorithms</b>
-                                <div class="resume-corec-column-detail">
-                                    1. Image-based 3D Modeling<sup>*</sup><br>
-                                    2. Design and Analysis of Algorithm (<b>AU</b><sup>1</sup>)<br>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="resume-corec-split" />
-                        <div class="resume-corec-note">
-                            1. <i>audit</i><br>
-                            2. <i>audit without enrolling via system</i><br>
-                            *. <i>shenlan xueyuan course</i> <a href="/projects/#course-projects">[details]</a><br>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <!-- You are an Asian, not a Bsian! -->
         </div>
-    </div>
-    <div class="resume-container">
+    </div><div class="resume-container">
         <div class="resume-brief">
             <div class="resume-icon">
                 <img src="../img/resume/gdgzez.png" class="resume-img"></img>
@@ -96,17 +48,11 @@ hide:
             </div>
         </div>
         <div class="resume-detail">
-            <!-- <ul>
-                <li>
-                    CNCEE: 658/750 (Gaokao)
-                    <a href="./gdgzez">[Details]</a>
-                </li>
-            </ul> -->
         </div>
     </div>
 </div>
 
-## Professional Experience
+## Experience
 
 <div>
    <div class="resume-container" id="ni">
@@ -116,7 +62,7 @@ hide:
             </div>
             <div class="resume-left">
                 <b> Next Innovation </b>
-                <br> Part Time; Robotics Engineer, Program Mentor
+                <br> Part Time; Robotics Engineer
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
@@ -125,34 +71,14 @@ hide:
         </div>
         <div class="resume-detail">
         </div>
-    </div>
-    <!-- <div class="resume-container">
-        <div class="resume-brief">
-            <div class="resume-icon">
-                <img src="../img/resume/makers.png" class="resume-img"></img>
-            </div>
-            <div class="resume-left">
-                <b> MakerX Technology Co., Ltd. </b>
-                <br> Startup, Control Systems Engineer
-            </div>
-            <div class="resume-right">
-                <b> Guangzhou, China </b>
-                <br> Aug. 2024 - Aug. 2024
-            </div>
-        </div>
-        <div class="resume-detail">
-            <ul>
-                <li>Established the very company that focused on technology and innovation about robots.</li>
-            </ul>
-        </div>
-    </div> --><div class="resume-container">
+    </div><div class="resume-container">
         <div class="resume-brief" id="rb">
             <div class="resume-icon resume-research">
                 <img src="../img/resume/rhinobird.png" class="resume-img"></img>
             </div>
             <div class="resume-left">
                 <b> Rhino-Bird Middle School Science Research Training Program </b>
-                <br> Research;
+                <br> Research
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
@@ -169,7 +95,7 @@ hide:
     </div>
 </div>
 
-## Community Involvement
+## Involvement
 
 <div>
     <div class="resume-container" id="frc8214">
@@ -305,26 +231,3 @@ hide:
         </li>
     </ul>
 </div>
-
-<!--<div class="resume-container">
-    <div class="resume-brief">
-        <div class="resume-icon">
-            <img src="../img/resume/shenlan.png" class="resume-img"></img>
-        </div>
-        <div class="resume-left">
-            <b> Shenlan Xueyuan Offline Practice Program </b>
-            <br> Practice Program;
-        </div>
-        <div class="resume-right">
-            <b> Huzhou, China </b>
-            <br> Nov. 2024
-        </div>
-    </div>
-    <div class="resume-detail">
-        <ul>
-            <li>
-            Unmanned Autonomous Vehicles, Huzhou Institute of Zhejiang University
-            </li>
-        </ul>
-    </div>
-</div>-->
