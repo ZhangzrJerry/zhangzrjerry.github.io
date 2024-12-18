@@ -1,44 +1,62 @@
 [
     {
         "title": "Next Innovation",
-        "content": "[2024.09] <b>Robotics Engineer</b> from Sep. 2024 to Present (Part-time)",
+        "content": "Robotics Engineer<br><i>Sep. 2024 - Present</i>",
         "sub_title": "2024 SEP",
         "icon": "../img/resume/ni.png"
     },
     {
         "title": "FIRST Robotics Competition Team 8214",
-        "content": "[2024.09] <b>Program Mentor</b> from Sep. 2024 to Present",
+        "content": "Program Mentor<br><i>Sep. 2024 - Present</i>",
         "sub_title": "2024 SEP",
         "icon": "../img/resume/frc8214.png"
     },
     {
+        "title": "The Hong Kong University of Science and Technology",
+        "content": "Undergraduate Student<br><i>Sep. 2024 - Present</i>",
+        "sub_title": "2024 SEP",
+        "icon": "../img/resume/hkust.png"
+    },
+    {
         "title": "FIRST Robotics Competition Team 6399",
-        "content": "[2024.08] <b>Engineering Inspiration Award</b> in World Robot Contest Championships 2024 - Beijing FRC Program China Offseason Event<br>[2024.07] <b>Program Mentor</b> from Jul. 2024 to Aug. 2024",
+        "content": "Program Mentor<br><i>Jul. 2024 - Aug. 2024</i>",
         "sub_title": "2024 JUL",
         "icon": "../img/resume/frc6399.png"
     },
     {
         "title": "Rhino-Bird Middle School Science Research Training Program",
-        "content": "[2023.10] <b>Excellent Award</b> in 2023 Rhino-Bird Middle School Science Research Training Program<br>[2023.07] <b>Project</b> in Intelligent Book Recommendation and User Interest Analysis System based on Factorization Machines<br>[2023.06] <b>Research</b> from Jun. 2023 to Oct. 2023",
+        "content": "Recommendation System Research<br><i>Jun. 2023 - Oct. 2023</i>",
         "sub_title": "2023 JUN",
         "icon": "../img/resume/rhinobird.png"
     },
     {
         "title": "Guangzhou No.2 High School",
-        "content": "[2024.06] <b>Project</b> in Turing Complete - Build a CPU from scratch<br>[2023.12] <b>Course</b> in Image-Based 3D Modelings<br>[2022.10] <b>Course</b> in Math Fundamentals in Robotics<br>[2022.08] <b>2nd Prize</b> in the 8th National Youth Science Popularization Innovation Experiment and Works Competition (第八届全国青年科普创新实验暨作品大赛全国总决赛)<br>[2022.06] <b>Excellent Award</b> in the 8th China International College Students' \"Internet+\" Innovation and Entrepreneurship Competition, Seed Track, Guangdong Division (第八届中国国际“互联网+”大学生创新创业大赛广东省分赛萌芽赛道)<br>[2022.05] <b>1st Prize</b> in the 4th South China University of Technology Middle School Student Structural Design Invitational Competition (“中建二局·建证匠心杯”第四届华南理工大学中学生结构设计邀请赛)<br>[2022.03] <b>Course</b> in Math Fundamentals in AI<br>[2022.01] <b>Research</b> in 2021 Guangzhou Yingcai Middle School Science Research Training Program (2021学年广州市中学生“英才计划”科技特训营)<br>[2021.09] <b>Student</b> from Sep. 2021 to Jun. 2024",
+        "content": "Senior High School Student<br><i>Sep. 2021 - Jun. 2024</i>",
         "sub_title": "2021 SEP",
         "icon": "../img/resume/gdgzez.png"
     },
     {
         "title": "FIRST Robotics Competition Team 8811",
-        "content": "[2022.08] <b>3rd Prize</b> in 2023 Indiemicro Robotics Competition Exchange Event<br>[2022.03] <b>Project</b> in FRC Data Collection Software<br>[2021.09] <b>Youth Mentor</b> from Sep.2021 to Aug. 2023<br>[2021.09] <b>Founder</b> of Team 8811, raised over $14,000",
+        "content": "Founder & Youth Mentor<br><i>Sep. 2021 - Aug. 2023</i>",
         "sub_title": "2021 SEP",
         "icon": "../img/resume/frc8811.png"
     },
     {
         "title": "FIRST Robotics Competition Team 8011",
-        "content": "[2022.12] <b>Excellence in Engineering Award</b> in 2022 Hangzhou Regional<br>[2022.09] <b>Project</b> in Swerve Controller<br>[2021.09] <b>Project</b> in Balance Swerve<br>[2021.05] <b>Rank 18</b> in 2021 Robotics Championship China<br>[2021.03] <b>Rookie Game Changer Award</b> in 2021 INFINITE RECHARGE At Home Challenge<br>[2021.02] <b>Team Captain</b> from Feb. 2021 to Jan. 2022<br>[2020.12] <b>Championship</b> in 2020 We RoboStar<br>[2020.09] <b>Program Leader</b> from Sep. 2020 to Jan. 2021",
+        "content": "Team Captain<br><i>Sep. 2019 - Jun. 2023</i>",
         "sub_title": "2019 SEP",
         "icon": "../img/resume/frc8011.png"
+    },
+    {
+        "title": "广州市越秀区二中应元学校",
+        "content": "Junior High School Student<br><i>Sep. 2018 - Jun. 2021</i>",
+        "sub_title": "2018 SEP",
+        "icon": "../img/resume/gdgzez.png"
+    },
+    {
+        "title": "Amateur Radio Direction Finding",
+        "content": "Participant<br><i>Sep. 2016 - Nov. 2019</i>",
+        "sub_title": "2016 SEP",
+        "icon": "../img/resume/ezardf.png"
     }
 ]

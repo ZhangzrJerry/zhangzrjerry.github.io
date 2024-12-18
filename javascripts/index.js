@@ -103,13 +103,14 @@ function print(type, object, message) {
 const predefined = {
     "timelinecolor": [
         "#e8deed",
-        // "#fff6CF",
-        // "#E0EAFB",
         "#EDDDF4",
+        "#E0EAFB",
         "#EAEAEA",
         "#E0F6FF",
         "#b78026",
         "#e6e4e2",
-        "#E7F7E5"
+        "#E7F7E5",
+        "#b78026",
+        "#FE0000"
     ]
 }
