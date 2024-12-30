@@ -104,12 +104,13 @@ const predefined = {
     "timelinecolor": [
         "#e8deed",
         "#EDDDF4",
-        "#E0EAFB",
+        "#E0EFFF",
         "#EAEAEA",
         "#E0F6FF",
-        "#b78026",
+        "#efedeb",
         "#e6e4e2",
-        "#E7F7E5",
+        "#b78026",
+        "#F0F0F0",
         "#b78026",
         "#FE0000"
     ]

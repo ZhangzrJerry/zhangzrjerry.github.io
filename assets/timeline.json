@@ -25,21 +25,27 @@
     },
     {
         "title": "Rhino-Bird Middle School Science Research Training Program",
-        "content": "Recommendation System Research<br><i>Jun. 2023 - Oct. 2023</i>",
+        "content": "Research Intern<br><i>Jun. 2023 - Oct. 2023</i>",
         "sub_title": "2023 JUN",
         "icon": "../img/resume/rhinobird.png"
     },
     {
-        "title": "Guangzhou No.2 High School",
-        "content": "Senior High School Student<br><i>Sep. 2021 - Jun. 2024</i>",
-        "sub_title": "2021 SEP",
-        "icon": "../img/resume/gdgzez.png"
+        "title": "Guangzhou Yingcai Middle School  Science Research Training Camp",
+        "content": "Research Trainee<br><i>Jan. 2022 - Aug. 2022</i>",
+        "sub_title": "2022 JAN",
+        "icon": "../img/resume/yingcai.png"
     },
     {
         "title": "FIRST Robotics Competition Team 8811",
         "content": "Founder & Youth Mentor<br><i>Sep. 2021 - Aug. 2023</i>",
         "sub_title": "2021 SEP",
         "icon": "../img/resume/frc8811.png"
+    },
+    {
+        "title": "Guangzhou No.2 High School",
+        "content": "Senior High School Student<br><i>Sep. 2021 - Jun. 2024</i>",
+        "sub_title": "2021 SEP",
+        "icon": "../img/resume/gdgzez.png"
     },
     {
         "title": "FIRST Robotics Competition Team 8011",
