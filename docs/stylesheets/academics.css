@@ -68,6 +68,11 @@
     font: "Times New Roman", Times, serif;
 }
 
+.academic-brief p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 .academic-imgcontainer {
     width: 23%;
     min-width: 160px;

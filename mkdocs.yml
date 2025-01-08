@@ -74,8 +74,6 @@ extra:
     social:
         - icon: fontawesome/regular/envelope
           link: https://zzhangje@connect.ust.hk
-        # - icon: fontawesome/brands/zhihu
-        #   link: https://www.zhihu.com/people/zhang-zi-rui-99-77
         - icon: fontawesome/brands/bilibili
           link: https://space.bilibili.com/504273533
         - icon: fontawesome/brands/linkedin

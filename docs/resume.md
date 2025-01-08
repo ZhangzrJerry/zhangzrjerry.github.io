@@ -78,7 +78,7 @@ hide:
             </div>
             <div class="resume-left">
                 <b> Rhino-Bird Middle School Science Research Training Program </b>
-                <br> Research
+                <br> Research Intern
             </div>
             <div class="resume-right">
                 <b> Guangzhou, China </b>
@@ -88,7 +88,28 @@ hide:
         <div class="resume-detail">
             <ul>
                 <li>
-                Mainly took part in model training and backend database developing, and my project "<a href="/projects/#2023-rhinobird" style="color:black;"><b>Intelligent Book Recommendation and User Interest Analysis System Based on Factorization Machines</b></a>" won the 2023 Excellent Award.
+                Supervised by Prof. Chuan Shi (BUPT), I mainly took part in model training and backend database developing, and project "<b>Intelligent Book Recommendation and User Interest Analysis System Based on Factorization Machines</b>" won the Excellent Award.
+                </li>
+            </ul>
+        </div>
+    </div><div class="resume-container">
+        <div class="resume-brief" id="rb">
+            <div class="resume-icon resume-research">
+                <img src="../img/resume/yingcai.png" class="resume-img"></img>
+            </div>
+            <div class="resume-left">
+                <b> Guangzhou Yingcai Middle School Science Research Training Camp </b>
+                <br> Research Trainee
+            </div>
+            <div class="resume-right">
+                <b> Guangzhou, China </b>
+                <br> Jan. 2022 - Aug. 2022
+            </div>
+        </div>
+        <div class="resume-detail">
+            <ul>
+                <li>
+                    Supervised by Prof. Yi Cai (SCUT) and focused on the construction of knowledge graph
                 </li>
             </ul>
         </div>
@@ -134,7 +155,7 @@ hide:
         <div class="resume-detail">
             <ul>
                 <li>
-                Responsible for the development of the FRC robotics control system, provided programming instruction to the team, and successfully led the team to <a href="/projects/#2024-defiant" style="color:black;"><b>Engineering Inspiration Award</b></a> in the World Robot Contest Championships 2024 - Beijing FRC Program China Offseason Event. (Off-Season Demo Team Number: 9975)
+                Responsible for the development of the FRC robotics control system, provided programming instruction to the team, and successfully led the team to <b>Engineering Inspiration Award</b> in the World Robot Contest Championships 2024 - Beijing FRC Program China Offseason Event. (Off-Season Demo Team Number: 9975)
                 </li>
             </ul>
         </div>
@@ -159,7 +180,7 @@ hide:
                 Established the team in my senior high school, <b>raised over $14,000</b> by contacting FIRST, my senior high school, and five technological companies.
                 </li>
                 <li>
-                Conducted over 60 weekly studies and 3 holiday training programs for our team and finally won the <a href="/projects/#2023-yuan" style="color:black;"><b>3rd Prize</b></a> in 2023 FRC Off-season China. 
+                Conducted over 60 weekly studies and 3 holiday training programs for our team and finally won the <b>3rd Prize</b> in 2023 FRC Off-season China. 
                 </li>
             </ul>
         </div>
@@ -180,13 +201,13 @@ hide:
         </div>
         <div class="resume-detail">
             <ul>
-                <li>Led the team to <a href="/projects/#2020-kylin" style="color:black;"><b>Championship</b></a> in the 2020 We RoboStar League as the Program Leader and simultaneously managed the team's Engineering Journal.
+                <li>Led the team to <b>Championship</b> in the 2020 We RoboStar Robotics League as the Program Leader and simultaneously managed the team's Engineering Journal.
                 </li>
                 <li>
-                As team captain, steered the team to <a href="/projects/#2021-kylin" style="color:black;"><b>Rookie Game Changer Award</b></a> in the 2021 INFINITE RECHARGE At Home Challenge and Rank 18 in the 2021 Robotics Championship China.
+                As team captain, steered the team to <b>Rookie Game Changer Award</b> in the 2021 INFINITE RECHARGE At Home Challenge and Rank 18 in the 2021 Robotics Championship China.
                 </li>
                 <li>
-                Won <a href="/projects/#2022-kylin" style="color:black;"><b>Excellence in Engineering Award</b></a> with my teamates in 2022 Hangzhou Regional.
+                Won <b>Excellence in Engineering Award</b> with my teamates in 2022 Hangzhou Regional.
                 </li>
             </ul>
         </div>
@@ -227,7 +248,7 @@ hide:
         </li>
         <li>
             <b>Champion</b>;
-            2020 WE RoboStar Youth Robotics League
+            2020 WE RoboStar Robotics League
         </li>
     </ul>
 </div>
