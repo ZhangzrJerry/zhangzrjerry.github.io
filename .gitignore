@@ -1,6 +1,4 @@
 venv/*
 
-overrides/partials/comments.html
-
 trash/*
 site/*

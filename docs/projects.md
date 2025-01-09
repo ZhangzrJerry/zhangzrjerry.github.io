@@ -26,6 +26,7 @@ hide:
                 </div>
                 <div class="academic-brief">
                     <p>For FRC 2025 game rules, the mission of the robot is to place the coral, convey the algae, and hang on the cage.</p>
+                    <p>🔮 Mechanism-level Action Visualization</p>
                     <p>👾 Custom Scouting App <a href="./#2024-cs">Cyber Scout</a></p>
                     <p>🕹️ Custom Node Selection Panel <a href="./#2025-cs">Cyber Selector</a></p>
                 </div>
@@ -33,8 +34,7 @@ hide:
                     <img class="academic-label" src="../img/tags/frc-8214.svg">
                     <img class="academic-label" src="../img/tags/reefscape.svg">
                     <img class="academic-label" src="../img/tags/java.svg">
-                    <img class="academic-label" src="../img/tags/koishi.svg">
-                    <img class="academic-label" src="../img/tags/nt4.svg">
+                    <img class="academic-label" src="../img/tags/ascope.svg">
                 </div>
             </div>
             <div class="academic-imgcontainer">
@@ -57,6 +57,7 @@ hide:
                 </div>
                 <div class="academic-brief">
                     <p>For FRC 2024 game rules, the mission of the robot is to collect the note and shoot to the speaker or to the amp.</p>
+                    <p>⚙️ AprilTag based VO and IMU Coupled Localization</p>
                     <p>🏆 Engineering Inspiration Award <i>in 2024 FRC Off-season China</i></p>
                 </div>
                 <div class="academic-labels">
@@ -122,7 +123,6 @@ hide:
                     <img class="academic-label" src="../img/tags/frc-8811.svg">
                     <img class="academic-label" src="../img/tags/rapid-react.svg">
                     <img class="academic-label" src="../img/tags/java.svg">
-                    <img class="academic-label" src="../img/tags/wxml.svg">
                 </div>
             </div>
             <div class="academic-imgcontainer">
@@ -258,6 +258,7 @@ hide:
                     <a href="../../img/projects/2025-cs-high-contrast.png">GUI (High Contrast)</a> /
                 </div>
                 <div class="academic-brief">
+                Mainly responsible for GUI design and front end development.
                 </div>
                 <div class="academic-labels">
                     <img class="academic-label" src="../../img/tags/frc-8214.svg">
