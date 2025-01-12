@@ -2,3 +2,5 @@ venv/*
 
 trash/*
 site/*
+
+docs/blog/blog/*

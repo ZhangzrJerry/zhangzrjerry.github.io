@@ -16,7 +16,7 @@ hide:
   <div class="home-link">
     <a href="./resume">Resume</a> /
     <a href="./projects">Projects</a> /
-    <a href="./blog/">Blogs</a>
+    <a href="https://github.com/zhangzrjerry">Github</a>
   </div>
 </div>
 

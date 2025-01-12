@@ -27,8 +27,8 @@ hide:
                 <div class="academic-brief">
                     <p>For FRC 2025 game rules, the mission of the robot is to place the coral, convey the algae, and hang on the cage.</p>
                     <p>🔮 Mechanism-level Action Visualization</p>
-                    <p>👾 Custom Scouting App <a href="./#2024-cs">Cyber Scout</a></p>
                     <p>🕹️ Custom Node Selection Panel <a href="./#2025-cs">Cyber Selector</a></p>
+                    <!-- <p>👾 Custom Scouting App <a href="./#2024-cs">Cyber Scout</a></p> -->
                 </div>
                 <div class="academic-labels">
                     <img class="academic-label" src="../img/tags/frc-8214.svg">
@@ -254,8 +254,9 @@ hide:
                     Jan. 2025
                 </div>
                 <div class="academic-links">
-                    <a href="../../img/projects/2025-cs-macaron.png">GUI (Macaron)</a> /
-                    <a href="../../img/projects/2025-cs-high-contrast.png">GUI (High Contrast)</a> /
+                    <a href="../../img/projects/2025-cs-guim.png">GUI (Macaron)</a> /
+                    <a href="../../img/projects/2025-cs-guih.png">GUI (High Contrast)</a> /
+                    <a href="../../img/projects/2025-cs-arch.png">Architecture</a> /
                 </div>
                 <div class="academic-brief">
                 Mainly responsible for GUI design and front end development.
@@ -267,7 +268,7 @@ hide:
                 </div>
             </div>
             <div class="academic-imgcontainer">
-                <img class="academic-img" src="../../img/404.png">
+                <img class="academic-img" src="../../img/projects/2025-cs.png">
             </div>
         </div><div class="academic-container" id="2024-cotimo">
             <div class="academic-text">
@@ -295,7 +296,7 @@ hide:
             <div class="academic-imgcontainer">
                 <img class="academic-img" src="../img/projects/2024-cotimo.gif">
             </div>
-        </div><div class="academic-container" id="2024-cs">
+        </div><!--<div class="academic-container" id="2024-cs">
             <div class="academic-text">
                 <b class="academic-subtitle">
                     Cyber Scout
@@ -319,7 +320,7 @@ hide:
             <div class="academic-imgcontainer">
                 <img class="academic-img" src="../../img/404.png">
             </div>
-        </div><div class="academic-container" id="2022-sc">
+        </div>--><div class="academic-container" id="2022-sc">
             <div class="academic-text">
                 <b class="academic-subtitle">
                     Swerve Controller: Dual Motor Drive Board
