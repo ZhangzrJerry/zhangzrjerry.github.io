@@ -1,0 +1,311 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\smallicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Zirui Zhang}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/zirui-zhang-924958319/}{Zirui Zhang} | 
+    \socialicon{\faGithub} \href{https://github.com/zhangzrjerry}{ZhangzrJerry} | 
+    \socialicon{\faOrcid} \href{https://orcid.org/0009-0008-4156-1652}{0009-0008-4156-1652}
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{Hong Kong / Guangzhou / Shenzhen - China}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Hong Kong University of Science and Technology}{Hong Kong, China}
+{Bachelor of Engineering}{Sep. 2024 - Present}
+\resumeItemListStart
+\item GPA: 3.69/4.30
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {{Next Innovation STEM Center [\href{https://nifornextinnovation.com}{\textcolor{darkblue}{\faIcon{globe}}}]}}{Guangzhou, China}
+      {Robotics Engineer}{Sep. 2024 - Present}
+      \resumeItemListStart
+        \item Responsible for the development of planning and control in locomotion robot
+      \resumeItemListEnd 
+  \resumeSubheading
+    {{Rhino-Bird Middle School Science Research Training Program [\href{https://ur.tencent.com/}{\textcolor{darkblue}{\faIcon{globe}}}]}}{Remote}
+    {Research Intern}{Jun. 2023 - Oct. 2023}
+    \resumeItemListStart
+      \item Supervised by Professor Chuan Shi from BUPT
+      \item Developed an intelligent book recommendation system to improve the accuracy of public library services
+      \item Won the Excellent Award in 2023 Rhino-Bird Middle School Science Research Training Program
+    \resumeItemListEnd
+  \resumeSubheading
+    {{Guangzhou Yingcai Middle School Science Research Training Program [\href{https://jyj.gz.gov.cn/gkmlpt/content/7/7875/post_7875383.html}{\textcolor{darkblue}{\faIcon{globe}}}]}}{Guangzhou, China}
+    {Research Trainee}{Jan. 2022 - Aug. 2022}
+    \resumeItemListStart
+      \item Supervised by Professor Yi Cai from SCUT
+      \item Focused on the construction of knowledge graph
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {FRC 2024 Robot - Defiant}
+  {Tools: JAVA, AprilTag}
+  {Jun. 2024 - Aug. 2024}
+  {{}[\href{https://www.bilibili.com/video/BV1pbWCejEUi}{\textcolor{darkblue}{\faVideo}}]}
+\resumeItemListStart
+  \item Mainly responsible for the development of AprilTag based VO and IMU Coupled Localization
+\resumeItemListEnd
+
+\resumeProject
+  {Intelligent Book Recommendation and User Interest Analysis System}
+  {Tools: Flask, PaddlePaddle}
+  {Jun. 2023 - Oct. 2023}
+  {{}[\href{https://github.com/ZhangzrJerry/RhinoBird}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Mainly responsible for model training and back-end database development
+\resumeItemListEnd
+
+\resumeProject
+  {A Single-Wheeled Self-Balancing Omni-directional Mobile Platform}
+  {Tools: SolidWorks, LCEDA, C++}
+  {Sep. 2021 - Mar. 2022}
+  {{}[\href{https://patents.google.com/patent/CN115107901A/en}{\textcolor{darkblue}{\faFile}}]}
+\resumeItemListStart
+  \item Mainly responsible for control algorithms and embedded development
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Involvement}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {FIRST Robotics Competition Team 8214 [\href{https://www.thebluealliance.com/team/8214}{\textcolor{darkblue}{\faIcon{globe}}}]}
+  {Program Mentor}
+  {Sep. 2024 - Present}
+  {Guangzhou, China}
+\resumeItemListStart
+  \item Responsible for the development of the FRC robotics control system
+\resumeItemListEnd
+
+\resumeProject
+  {FIRST Robotics Competition Team 6399 [\href{https://www.thebluealliance.com/team/6399}{\textcolor{darkblue}{\faIcon{globe}}}]}
+  {Program Mentor}
+  {Jul. 2024 - Aug. 2024}
+  {Guangzhou, China}
+\resumeItemListStart
+  \item Responsible for the development of the FRC robotics control system and provided programming instruction to the team
+\resumeItemListEnd
+
+\resumeProject
+  {FIRST Robotics Competition Team 8811 [\href{https://www.thebluealliance.com/team/8811}{\textcolor{darkblue}{\faIcon{globe}}}]}
+  {Founder, Youth Mentor}
+  {Sep. 2021 - Aug. 2023}
+  {Guangzhou, China}
+\resumeItemListStart
+  \item Established the team in my senior high school and raised over \$14,000 in the first year
+  \item Conducted over 60 weekly studies and 3 holiday training programs for our team in 2 years
+\resumeItemListEnd
+
+\resumeProject
+  {FIRST Robotics Competition Team 8011 [\href{https://www.thebluealliance.com/team/8011}{\textcolor{darkblue}{\faIcon{globe}}}]}
+  {Team Captain, Program Leader}
+  {Sep. 2019 - Jun. 2023}
+  {Guangzhou, China}
+\resumeItemListStart
+  \item Led the team to the Champion in the 2020 We RoboStar Robotics League as the Program Leader
+  \item Steered the team to Rookie Game Changer Award in the 2021 INFINITE RECHARGE At Home Challenge
+  \item Won the Excellence in Engineering Award with my teamates in 2022 Hangzhou Regional
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+\section{\textbf{Patents and Publications} \hfill \textcolor{darkblue}{\scriptsize C=Conference, J=Journal, P=Patent, S=Software, T=Thesis}}
+\vspace{0.2mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+
+\item[\textbf{[P.1]}] Liangyu Cai, Zihan Chen, Zirui Zhang et al. (2022). \href{https://patents.google.com/patent/CN115107901A/en}{\textbf{Single-wheel balance motion device}}. China National Intellectual Property Administration, Patent No. CN115107901A. Publication Date: 2022-09-27.
+
+\end{enumerate}
+
+\end{document}
