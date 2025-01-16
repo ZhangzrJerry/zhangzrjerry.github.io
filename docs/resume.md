@@ -10,9 +10,9 @@ hide:
     <h2>
         <b>
         Zirui ZHANG
-        </b>
+        </b>&nbsp
+        <a href="../assets/resume.pdf"><img src="../img/icons/file-pdf-regular.svg" style="width:0.7em;"></a>
     </h2>
-    <a href="../assets/resume.pdf">[ PDF ]</a>
 </div>
 
 ## Education
@@ -109,7 +109,7 @@ hide:
         </div>
         <div class="resume-detail">
             <ul>
-                <li>Supervised by Prof. Yi Cai from SCUT</li>
+                <li>Supervised by Professor Yi Cai from SCUT</li>
                 <li>Focused on the construction of knowledge graph</li>
             </ul>
         </div>

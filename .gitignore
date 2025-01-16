@@ -1,6 +1,9 @@
-venv/*
-
 trash/*
 site/*
 
 docs/blog/blog/*
+
+# LaTeX
+*.aux
+*.log
+*.out
