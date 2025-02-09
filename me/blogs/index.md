@@ -6,5 +6,5 @@
   _2025.02.08_{style=float:right}<br>
   _TOPP based motion planner for robotic arm_
 - [CoTiMo Planner Code Report](./pnc/cotimo-planner)
-  _2024.11.31_{style=float:right} <br>
+  _2024.11.24_{style=float:right} <br>
   _TOPP based motion planner for omnidirectional mobility_

@@ -1,4 +1,8 @@
-# FRC Projects
+# In FRC
+
+My FRC career started in 2020. In 2020 season, I won **_Champion_** in the We RoboStar League as program leader in team 8011. In 2021 season, I won **_Rookie Game Changer Award_** in INFINITE RECHARGE At Home Challenge as team captain. In 2022 season, I established the very 8811 with the former captain from team 6386. However, Hangzhou Regional changed to online, so we don't have any competition this year. In 2023 season, we attend 2023 FRC Off-season China (2022 Game Rule) and won the **_3rd Prize_**.
+
+In 2024 season, I jonined team 6399, and led the team to **_Engineering Inspiration Award_** as a program mentor. I am currently a program mentor in team 8214.
 
 ## Annual Robot
 
@@ -10,7 +14,7 @@
 
 ### 2024 Defiant
 
-<RightImg src="/img/projects/frc/2024.png" width="30%" />
+<RightImg src="/img/about/frc/2024.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=9keeDyFxzY4) /
 [Recap](https://www.bilibili.com/video/BV1pbWCejEUi) /
@@ -25,20 +29,20 @@ For FRC 2024 game rules, the mission of the robot is to collect the Note (squish
 
 ### 2022 Yuan Bot
 
-<RightImg src="/img/projects/frc/2023.png" width="30%" />
+<RightImg src="/img/about/frc/2023.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
 [Preview](https://www.bilibili.com/video/BV1RW4y1M72Y) /
 
 For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
 
-:dart: Custom Scouting App: [Yuan Scout](#yuan-scout)
+:dart: Custom Scouting App: [Yuan Scout](#yuan-scout-frc-data-collection-software)
 
 ---
 
 ### 2022 Kylin
 
-<RightImg src="/img/projects/frc/2022.png" width="30%" />
+<RightImg src="/img/about/frc/2022.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
 
@@ -50,7 +54,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ### 2021 Kylin
 
-<RightImg src="/img/projects/frc/2021.png" width="30%" />
+<RightImg src="/img/about/frc/2021.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=I77Dz9pfds4) /
 [Recap](https://www.bilibili.com/video/BV1WQ4y1z7DM/) /
@@ -63,7 +67,7 @@ For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (
 
 ### 2020 Kylin
 
-<RightImg src="/img/projects/frc/2020.png" width="30%" />
+<RightImg src="/img/about/frc/2020.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=gmiYWTmFRVE) /
 
@@ -75,7 +79,7 @@ For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (
 
 ### Cyber Planner: TOPP based Arm Motion Planner
 
-<RightImg src="/img/projects/frc/2025-cp.png" width="30%" />
+<RightImg src="/img/about/frc/2025-cp.png" width="30%" />
 
 [Source Code]() /
 [Report]() /
@@ -92,10 +96,10 @@ Cyber Planner is based on a finite convex polygon set representation of objects,
 
 ### Yuan Scout: FRC Data Collection Software
 
-<RightImg src="/img/projects/frc/2022-ys.png" width="30%" />
+<RightImg src="/img/about/frc/2022-ys.png" width="30%" />
 
 [Source Code](https://github.com/frc8811/FRC_SCOUTING) /
-[GUI](/img/projects/frc/2022-ys-gui.png)
+[GUI](/img/about/frc/2022-ys-gui.png)
 
 The wechat miniprogram provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
 

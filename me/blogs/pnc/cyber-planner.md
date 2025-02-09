@@ -1,16 +1,16 @@
 # Report for Cyber Planner Code Report
 
+We have already launched our report for **Cyber Planner** from [Next Innovation STEM Center](https://nifornextinnovation.com/assets/resources/cyber-planner.pdf). You can also find a copy [here](../../../assets/me/blogs/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
+
+<CenteredImg src="https://nifornextinnovation.com/image/resources/cyber-planner.jpg" width=50% />
+
+While **Cyber Planner Code Report v0.1.0 (C++ Version)** is mainly focused on the Math derivation, **Report for Cyber Planner Code Report** emphasize the corresponding code of the equation and highlight some details in the implementation. I believe it would bring you a different perspective to our work and enhance your understaning in numerical optimization.
+
 <Badges>
 <img src="/img/tags/frc-8214.svg">
 <img src="/img/tags/cpp.svg">
 <a href="https://github.com/frcnextinnovation/cyber-planner-2025"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/frcnextinnovation/cyber-planner-2025"></a>
 </Badges>
-
-We have already launched our report for **Cyber Planner** via the website of [Next Innovation](https://nifornextinnovation.com/assets/resources/cyber-planner.pdf). You can also find a copy [here](../../../assets/me/blogs/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
-
-<CenteredImg src="https://nifornextinnovation.com/image/resources/cyber-planner.jpg" width=50% />
-
-While **Cyber Planner Code Report v0.1.0 (C++ Version)** is mainly focused on the Math derivation, **Report for Cyber Planner Code Report** emphasize the corresponding code of the equation and highlight some details in the implementation. I believe it would bring you a different perspective to our work and enhance your understaning in numerical optimization.
 
 ## Convex Polytope Set
 

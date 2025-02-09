@@ -73,12 +73,14 @@ export default defineConfig({
           items: [
             { text: 'Bio', link: '/me/about/' },
             { text: 'Resume', link: '/me/about/resume' },
+            { text: 'Projects', link: '/me/about/projects' },
             {
-              text: 'Projects', items: [
-                { text: 'Projects', link: '/me/about/projects/projects' },
-                { text: 'FRC Projects', link: '/me/about/projects/frc' }
-              ]
-            }, { text: 'Friendly Links', link: '/me/about/friends' }
+              text: 'In FRC', link: '/me/about/frc'
+            },
+            {
+              text: 'In HKUST', link: '/me/about/hkust'
+            },
+            { text: 'Friendly Links', link: '/me/about/friends' }
           ]
         }, {
           text: 'Blogs',
@@ -88,6 +90,7 @@ export default defineConfig({
               text: 'PnC',
               items: [
                 { text: 'Cyber Planner', link: '/me/blogs/pnc/cyber-planner' },
+                { text: 'CoTiMo Planner', link: '/me/blogs/pnc/cotimo-planner' }
               ],
               collapsed: true
             }

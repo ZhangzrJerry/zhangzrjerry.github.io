@@ -27,7 +27,3 @@ features:
     details: A TOPP based Arm Motion Planner
     link: /me/blogs/pnc/cyber-planner
 ---
-
-<div style="display:none;">
-<img src="//www.clustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff">
-</div>
