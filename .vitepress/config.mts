@@ -26,17 +26,12 @@ const customElementsForMathjax = [
   'ms',
   'mscarries',
   'mscarry',
-  'mscarries',
   'msgroup',
   'mstack',
-  'mlongdiv',
   'msline',
-  'mstack',
   'mspace',
   'msqrt',
   'msrow',
-  'mstack',
-  'mstack',
   'mstyle',
   'msub',
   'msup',
@@ -47,49 +42,11 @@ const customElementsForMathjax = [
   'mtr',
   'munder',
   'munderover',
-  'semantics',
-  'math',
-  'mi',
-  'mn',
-  'mo',
-  'ms',
-  'mspace',
-  'mtext',
-  'menclose',
-  'merror',
-  'mfenced',
-  'mfrac',
-  'mpadded',
-  'mphantom',
-  'mroot',
-  'mrow',
-  'msqrt',
-  'mstyle',
-  'mmultiscripts',
-  'mover',
-  'mprescripts',
-  'msub',
-  'msubsup',
-  'msup',
-  'munder',
-  'munderover',
-  'none',
-  'maligngroup',
-  'malignmark',
-  'mtable',
-  'mtd',
-  'mtr',
-  'mlongdiv',
-  'mscarries',
-  'mscarry',
-  'msgroup',
-  'msline',
-  'msrow',
-  'mstack',
-  'maction',
   'semantics',
   'annotation',
   'annotation-xml',
+  'mprescripts',
+  'none'
 ];
 
 // https://vitepress.dev/reference/site-config
@@ -154,7 +111,12 @@ export default defineConfig({
 
   markdown: {
     config: (md) => {
-      md.use(mathjax3);
+      md.use(mathjax3, {
+        tex: {
+          inlineMath: [['$', '$']],
+          displayMath: [['$$', '$$']]
+        }
+      });
     }
   },
 
