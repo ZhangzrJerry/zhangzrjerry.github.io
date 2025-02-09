@@ -97,9 +97,9 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-      { icon: 'orcid', link: 'https://orcid.org/0000-0000-0000-0000' },
-      { icon: 'linkedin', link: 'https://linkedin.com/in/you' }
+      { icon: 'github', link: 'https://github.com/zhangzrjerry' },
+      { icon: 'orcid', link: 'https://orcid.org/0009-0008-4156-1652' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/zirui-zhang-924958319/' }
     ]
   },
 
