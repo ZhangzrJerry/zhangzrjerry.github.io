@@ -126,5 +126,7 @@ export default defineConfig({
         isCustomElement: tag => customElementsForMathjax.includes(tag),
       },
     },
-  }
+  },
+
+  ignoreDeadLinks: true
 })

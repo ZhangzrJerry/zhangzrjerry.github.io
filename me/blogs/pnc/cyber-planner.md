@@ -1,8 +1,8 @@
 # Report for Cyber Planner Code Report
 
 <Badges>
-<img src="../../../img/tags/frc-8214.svg">
-<img src="../../../img/tags/cpp.svg">
+<img src="/img/tags/frc-8214.svg">
+<img src="/img/tags/cpp.svg">
 <a href="https://github.com/frcnextinnovation/cyber-planner-2025"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/frcnextinnovation/cyber-planner-2025"></a>
 </Badges>
 

@@ -1,5 +1,5 @@
 <p align="center">
-  <img class="home-cover" src="../../img/icon-round.jpg" width="30%" style="margin-bottom:25px;">
+  <img class="home-cover" src="/img/icon-round.jpg" width="30%" style="margin-bottom:25px;">
 </p>
 
 Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology). I am currently working as a robotics engineer in Next Innovation STEM Center and a program mentor for FRC 8214. I am also an alumni in FRC (FIRST Robotics Competition) from 8011, 8811, 6399, 8214.

@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
+    "build": "vitepress build && cp -r ./img ./assets ./.vitepress/dist/",
     "preview": "vitepress preview"
   }
 }
