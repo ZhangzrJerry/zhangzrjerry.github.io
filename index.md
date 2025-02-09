@@ -20,7 +20,7 @@ features:
       light: ./img/icon/light-first.png
     title: FRC Alumni
     details: See my FRC experience and related projects here
-    link: /me/about/projects/frc
+    link: /me/about/frc
   - title: Cyber Planner
     icon:
       src: ./img/icon/unicorn.png
