@@ -30,7 +30,7 @@ const frcmembers = [
     orgLink: 'https://github.com/frcnextinnovation',
     desc: '',
     links: [
-      {icon:'github', link:'https://github.com/flowerst-0416.png'},
+      {icon:'github', link:'https://github.com/flowerst-0416'},
       {icon: 'orcid', link:'https://orcid.org/0009-0007-7552-3913'},
       {icon:'googlescholar', link:'https://scholar.google.com/citations?user=0C7Zg4QAAAAJ&hl'},
       {icon: 'homepage', link: 'https://fujunruan.com'}
@@ -57,6 +57,17 @@ const frcmembers = [
     desc: '',
     links: [
       {icon:'github', link:'https://github.com/mirrorcy'}
+    ]
+  },
+  {
+    avatar: 'https://github.com/boring180.png',
+    name: 'Borong',
+    title: 'Alumni',
+    org: 'FRC5449',
+    desc: '',
+    links: [
+      { icon: 'github', link: 'https://github.com/boring180' },
+      { icon: 'homepage', link: 'https://boring180.github.io/' }
     ]
   }
 ]
