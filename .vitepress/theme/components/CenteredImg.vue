@@ -7,10 +7,15 @@
 
 <style>
 .centered-img>p {
-    margin-top: 0.5em;
     line-height: 1;
     color: hsl(0, 0%, 30%);
     font-size: 0.9em;
+
+}
+
+.centered-img>img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 </style>
 

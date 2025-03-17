@@ -3,7 +3,7 @@
 ## Perception
 
 - [Classic Feature Descriptors](./perception/feature-descriptors.md)_2025.02.xx_{style=float:right}<br>
-  _Summary of classic feature descriptors_
+  _Summary of classic feature descriptors from vision to point cloud_
 
 ## PnC
 

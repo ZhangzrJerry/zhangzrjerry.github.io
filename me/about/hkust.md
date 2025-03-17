@@ -24,6 +24,8 @@
 
 :::
 
-::: details 2025 Spring: _Physical Oceanography, et al._
-
+::: details 2025 Spring: _Networked Sensing, Physical Oceanography, et al._
+|Code|Title|Credit(s)|Grade|
+|:-:|-|:-:|:-:|
+|ELEC 5650|Introduction to Networked Sensing, Estimation and Control|3||
 :::

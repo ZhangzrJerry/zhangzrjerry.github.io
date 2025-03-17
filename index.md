@@ -6,6 +6,7 @@ hero:
   name: "ZhangzrJerry"
   text: "My Personal Website"
   tagline: 星辰轮转
+  # image: https://github.com/ZhangzrJerry/ZhangzrJerry/raw/main/metrics.left.svg
   actions:
     - theme: brand
       text: About Me
@@ -27,3 +28,6 @@ features:
     details: A TOPP based Arm Motion Planner
     link: /me/blogs/pnc/cyber-planner
 ---
+
+<br><br>
+<Giscus />

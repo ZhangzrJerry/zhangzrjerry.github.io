@@ -87,10 +87,18 @@ export default defineConfig({
           items: [
             { text: 'Index', link: '/me/blogs/' },
             {
+              text: 'Perception',
+              items: [
+                // { text: 'Feature Descriptors', link: '/me/blogs/perception/feature-descriptors' },
+              ],
+              collapsed: true
+            },
+            {
               text: 'PnC',
               items: [
+                // { text: 'Classic Control', link: '/me/blogs/pnc/elec-3200' },
+                { text: 'CoTiMo Planner', link: '/me/blogs/pnc/cotimo-planner' },
                 { text: 'Cyber Planner', link: '/me/blogs/pnc/cyber-planner' },
-                { text: 'CoTiMo Planner', link: '/me/blogs/pnc/cotimo-planner' }
               ],
               collapsed: true
             }

@@ -2,9 +2,11 @@
   <img class="home-cover" src="/img/icon-round.jpg" width="30%" style="margin-bottom:25px;">
 </p>
 
-Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology). I am currently working as a robotics engineer in Next Innovation STEM Center and a program mentor for FRC 8214. I am also an alumni in FRC (FIRST Robotics Competition) from 8011, 8811, 6399, 8214.
+Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology). I am currently working in Cheng Kar-Shun Robotics Institute and Next Innovation STEM Center. I am also an alumni in FRC (FIRST Robotics Competition) from 8011, 8811, 6399, 8214 (currently a program mentor).
 
-:house: Personal Website [zhangzrjerry.github.io](https://zhangzrjerry.github.io)
+:house: Personal Page [zhangzrjerry.github.io](https://zhangzrjerry.github.io)
+
+:microscope: Research in [Cheng Kar-Shun Robotics Institute](https://ri.hkust.edu.hk/)
 
 :briefcase: Working in [Next Innovation STEM Center](https://nifornextinnovation.com/)
 
@@ -12,5 +14,4 @@ Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology)
 
 :mortar_board: [HKUST](https://hkust.edu.hk/)(UG) 28' · [广州二中](https://www.gdgzez.com.cn/)(High School) 24'
 
-<p>
-<a href="https://clustrmaps.com/site/1c2qy"  title="ClustrMaps"><CenteredImg src="//www.clustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff" width=30% /></a></p>
+<p><a href="https://clustrmaps.com/site/1c2qy"  title="ClustrMaps"><CenteredImg src="//www.clustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff" width=30% /></a></p>
