@@ -16,6 +16,8 @@
 |MATH 1013|Calculus IB|3|B|
 |**TOTAL**||19|3.694|
 
+> _P_: pass
+>
 > _PP_: proceed to pass
 >
 > _AU_: audit
