@@ -87,8 +87,9 @@ export default defineConfig({
           items: [
             { text: 'Index', link: '/me/blogs/' },
             {
-              text: 'Perception',
+              text: 'Sense',
               items: [
+                { text: 'VINS Initialization', link: '/me/blogs/sense/vins-initialization' },
                 // { text: 'Feature Descriptors', link: '/me/blogs/perception/feature-descriptors' },
               ],
               collapsed: true

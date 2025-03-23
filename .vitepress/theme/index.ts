@@ -14,7 +14,7 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'layout-bottom': () => h('div', { style: { display: 'none' } }, [
-        h('img', { src: '//www.clustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff' })
+        // h('img', { src: '//www.c~lustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff' })
       ])
     })
   },
