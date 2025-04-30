@@ -3,12 +3,11 @@
     "markdown-it": "^14.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "unocss": "^65.4.3",
-    "vitepress": "^1.6.3",
-    "cross-env": "^7.0.3"
+    "vitepress": "^1.6.3"
   },
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build && cross-env-shell \"if [ \"$OSTYPE\" = \"msys\" ]; then xcopy /E /I /Y public .vitepress\\dist\\public; else cp -r ./public ./.vitepress/dist/; fi\"",
+    "build": "vitepress build && cp -r ./public ./.vitepress/dist/",
     "preview": "vitepress preview"
   }
 }
