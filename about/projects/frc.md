@@ -8,7 +8,7 @@ In 2024 season, I jonined team 6399, and led the team to **_Engineering Inspirat
 
 ### 2025 Trouble & Sideway
 
-<RightImg src="../img/frc/2025.png" width="30%" />
+<RightImg src="/public/about/frc/2025.png" width="30%" />
 
 For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC pipe) or the Algae (rubber ball) and place.
 
@@ -25,7 +25,7 @@ For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC p
 
 ### 2024 Defiant
 
-<RightImg src="../img/frc/2024.png" width="30%" />
+<RightImg src="/public/about/frc/2024.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=9keeDyFxzY4) /
 [Recap](https://www.bilibili.com/video/BV1pbWCejEUi) /
@@ -38,7 +38,7 @@ For FRC 2024 game rules, the mission of the robot is to collect the Note (squish
 
 ### 2022 Yuan Bot
 
-<RightImg src="../img/frc/2023.png" width="30%" />
+<RightImg src="/public/about/frc/2023.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
 [Preview](https://www.bilibili.com/video/BV1RW4y1M72Y) /
@@ -49,7 +49,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ### 2022 Kylin
 
-<RightImg src="../img/frc/2022.png" width="30%" />
+<RightImg src="/public/about/frc/2022.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
 
@@ -59,7 +59,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ### 2021 Kylin
 
-<RightImg src="../img/frc/2021.png" width="30%" />
+<RightImg src="/public/about/frc/2021.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=I77Dz9pfds4) /
 [Recap](https://www.bilibili.com/video/BV1WQ4y1z7DM/) /
@@ -70,7 +70,7 @@ For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (
 
 ### 2020 Kylin
 
-<RightImg src="../img/frc/2020.png" width="30%" />
+<RightImg src="/public/about/frc/2020.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=gmiYWTmFRVE) /
 
@@ -82,7 +82,7 @@ For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (
 
 ### Command Bot: A Command-Based Robot Framework
 
-<RightImg src="../img/frc/2025-cb.png" width="30%" />
+<RightImg src="/public/about/frc/2025-cb.png" width="30%" />
 
 [Source Code](https://github.com/zhangzrjerry/commandbot) /
 [Demo](https://www.bilibili.com/video/BV1CzZaYSE1W/) /
@@ -98,10 +98,10 @@ Command Bot is a framework with standardized hardware **interfaces**, factory-pa
 
 ### Cyber Selector: Custom Node Selection Panel
 
-<RightImg src="../img/frc/2025-cs.png" width="30%" />
+<RightImg src="/public/about/frc/2025-cs.png" width="30%" />
 
-[GUI (High Contrast)](../img/frc/2025-cs-guih.png) /
-[GUI (Macaroon)](../img/frc/2025-cs-guim.png) /
+[GUI (High Contrast)](/public/about/frc/2025-cs-guih.png) /
+[GUI (Macaroon)](/public/about/frc/2025-cs-guim.png) /
 
 Cyber ​​Selector is a custom node selection panel for selecting item placement, setting robot states, and indicating remaining time.
 
@@ -113,7 +113,7 @@ Cyber ​​Selector is a custom node selection panel for selecting item placeme
 
 ### Cyber Planner: TOPP based Arm Motion Planner
 
-<RightImg src="../img/frc/2025-cp.png" width="30%" />
+<RightImg src="/public/about/frc/2025-cp.png" width="30%" />
 
 [Source Code](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
 [Report](/public/assets/cyber-planner.pdf) /
@@ -128,10 +128,10 @@ Cyber Planner is based on a finite convex polygon set representation of objects,
 
 ### Yuan Scout: FRC Data Collection Software
 
-<RightImg src="../img/frc/2022-ys.png" width="30%" />
+<RightImg src="/public/about/frc/2022-ys.png" width="30%" />
 
 [Source Code](https://github.com/frc8811/FRC_SCOUTING) /
-[GUI](../img/frc/2022-ys-gui.png) /
+[GUI](/public/about/frc/2022-ys-gui.png) /
 
 The wechat miniprogram provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
 

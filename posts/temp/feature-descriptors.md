@@ -15,7 +15,7 @@ However, experiments show that different visual descriptors tend to have similar
 The results of the experiments prompt us to ponder, what kind of descriptor do we truly need? This question is also the motivation behind writing this blog, which reviews classic visual and point cloud descriptors.
 
 <Badges>
-	<img src="/img/tags/perception.svg" />
+	<img src="/public/tags/sense.svg" />
 </Badges>
 
 ## Visual Descriptors

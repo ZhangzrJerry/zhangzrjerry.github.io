@@ -6,14 +6,14 @@ EKF 通过均值和协方差矩阵估计机器人状态和地图，但协方差�
 
 EIF 使用信息矩阵（逆协方差矩阵）和信息向量描述高斯分布，更新步骤复杂度为  $\mathcal O(m^2)$，优于 EKF。然而，时间预测步骤仍为  $\mathcal O(n^2)$，且均值恢复需要  $\mathcal O(n^3)$  的矩阵求逆，限制了其在大规模环境中的应用。
 
-<CenteredImg src="/img/blogs/eseif-slam/2.png" width="75%" />
+<CenteredImg src="/public/posts/eseif-slam/2.png" width="75%" />
 
 SEIF 利用信息矩阵的稀疏性，将非对角元素近似为零，显著降低了更新和时间预测的计算成本，接近常数复杂度。但这种近似往往造成滤波器的过分自信，同时它依赖稀疏性和均值估计的近似求解，使得在实际应用中仍面临挑战。
 
 ESEIF 则通过信息矩阵的稀疏性，显著降低了计算复杂度，相比 EKF 在保持估计精度的同时实现了更高的计算效率；其核心思想是通过主动断开弱机器人-地标链接来强制稀疏化，从而在大规模环境中实现近常数时间复杂度的 SLAM 解决方案，同时避免了 SEIF 的全局不一致性问题。
 
 <Badges>
-<img src="/img/tags/sense.svg">
+<img src="/public/tags/sense.svg">
 </Badges>
 
 ## Gaussian Probability
