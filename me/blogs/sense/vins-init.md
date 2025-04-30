@@ -4,7 +4,7 @@
 
 利用松耦合的方式对齐 IMU 与视觉
 
-<CenteredImg src="/img/blogs/vins-initialization/1.png" width="65%" />
+<CenteredImg src="/img/blogs/vins-init/1.png" width="65%" />
 
 IMU 测量模型有
 
@@ -169,7 +169,7 @@ $$
 
 $\tilde{\mathbf g}^{c_0}$ 为 $2.15$ 中求得的重力向量，记 $\frac{\tilde{\mathbf g}^{c_0}}{||\tilde{\mathbf g}^{c_0}||}$ 为 $\hat{\bar{\mathbf g}}^{c_0}$
 
-<CenteredImg src="/img/blogs/vins-initialization/2.png" width="65%" />
+<CenteredImg src="/img/blogs/vins-init/2.png" width="65%" />
 
 可以通过如下方式找到一组基底垂直于 $\hat{\bar{\mathbf g}}^{c_0}$
 
@@ -214,4 +214,4 @@ $$
 
 作者通过实验指出二者加速度计偏置 $\mathbf b^a$ 和相机与 IMU 间的平移向量 $\mathbf p_{bc}$ 对系统精度影响极小，可以不在初始化中显式优化
 
-<CenteredImg src="/img/blogs/vins-initialization/3.png" width="65%" />
+<CenteredImg src="/img/blogs/vins-init/3.png" width="65%" />

@@ -1,6 +1,6 @@
 <template>
     <div align="center" class="centered-img">
-        <img :src="src" :alt="alt" :width="width" style="border-radius: 10px;" />
+        <img :src="src" :alt="alt" :width="width" :style="{ borderRadius: borderRadius }" />
         <p>{{ text }}</p>
     </div>
 </template>
@@ -38,11 +38,16 @@ const props = defineProps({
     text: {
         type: String,
         default: '',
-    }
+    },
+    borderRadius: {
+        type: String,
+        default: '10px',
+    },
 });
 
 const src = withBase(props.src);
 const width = props.width;
 const alt = props.alt;
 const text = props.text;
+const borderRadius = props.borderRadius;
 </script>

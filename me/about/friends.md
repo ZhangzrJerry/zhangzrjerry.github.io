@@ -17,7 +17,6 @@ const frcmembers = [
     title: 'Co-founder',
     org: 'FRC8811',
     orgLink: 'https://github.com/frc8811',
-    desc: 'co-op in Rhino-Bird',
     links: [
       { icon: 'github', link: 'https://github.com/edward-yue-peng' }
     ]
@@ -60,8 +59,20 @@ const frcmembers = [
     ]
   },
   {
+    avatar: 'https://github.com/Waipok-Fu.png',
+    name: 'Waipok Fu',
+    title: 'Program Mentor',
+    org: 'FRC8214',
+    orgLink: 'https://github.com/frcnextinnovation',
+    desc: '',
+    links: [
+      {icon:'github', link:'https://github.com/waipok-fu'},
+      {icon:'homepage', link:'waipok-fu.github.io'}
+    ]
+  },
+  {
     avatar: 'https://github.com/boring180.png',
-    name: 'Borong',
+    name: 'Borong Xu',
     title: 'Alumni',
     org: 'FRC5449',
     desc: '',

@@ -73,14 +73,14 @@ export default defineConfig({
           items: [
             { text: 'Bio', link: '/me/about/' },
             { text: 'Resume', link: '/me/about/resume' },
+            {
+              text: 'Publication', link: '/me/about/academic.html#publications'
+            },
             { text: 'Projects', link: '/me/about/projects' },
             {
-              text: 'In FRC', link: '/me/about/frc'
+              text: 'FRC Experience', link: '/me/about/frc'
             },
-            {
-              text: 'In HKUST', link: '/me/about/hkust'
-            },
-            { text: 'Friendly Links', link: '/me/about/friends' }
+            { text: 'Connections', link: '/me/about/friends' }
           ]
         }, {
           text: 'Blogs',
@@ -89,7 +89,8 @@ export default defineConfig({
             {
               text: 'Sense',
               items: [
-                { text: 'VINS Initialization', link: '/me/blogs/sense/vins-initialization' },
+                { text: 'ESEIF SLAM', link: '/me/blogs/sense/eseif-slam' },
+                { text: 'VINS Initialization', link: '/me/blogs/sense/vins-init' },
                 // { text: 'Feature Descriptors', link: '/me/blogs/perception/feature-descriptors' },
               ],
               collapsed: true

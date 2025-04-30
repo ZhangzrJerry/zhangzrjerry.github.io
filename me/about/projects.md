@@ -1,6 +1,6 @@
 # Projects
 
-See more FRC Projects in [In FRC](./frc)
+See more FRC Projects in [FRC Experience](./frc)
 
 ### CoTiMo Planner: TOPP based motion planner
 

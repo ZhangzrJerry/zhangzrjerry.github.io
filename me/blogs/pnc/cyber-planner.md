@@ -1,6 +1,6 @@
 # Report for Cyber Planner Code Report
 
-We have already launched our report for **Cyber Planner** from [Next Innovation STEM Center](https://nifornextinnovation.com/assets/resources/cyber-planner.pdf). You can also find a copy [here](../../../assets/me/blogs/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
+We have already launched our report for **Cyber Planner** from [Next Innovation STEM Center](https://nifornextinnovation.com/assets/resources/cyber-planner.pdf). You can also find a copy [here](/assets/blogs/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
 
 <CenteredImg src="https://nifornextinnovation.com/image/resources/cyber-planner.jpg" width=55% />
 

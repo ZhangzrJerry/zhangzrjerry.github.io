@@ -1,4 +1,4 @@
-# In FRC
+# FRC Experience
 
 My FRC career started in 2020. In 2020 season, I won **_Champion_** in the We RoboStar League as program leader in team 8011. In 2021 season, I won **_Rookie Game Changer Award_** in INFINITE RECHARGE At Home Challenge as team captain. In 2022 season, I established the very 8811 with the former captain from team 6386. However, Hangzhou Regional changed to online, so we don't have any competition this year. In 2023 season, we attend 2023 FRC Off-season China (2022 Game Rule) and won the **_3rd Prize_**.
 
@@ -112,7 +112,7 @@ Cyber ​​Selector is a custom node selection panel for selecting item placeme
 <RightImg src="/img/about/frc/2025-cp.png" width="30%" />
 
 [Source Code](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
-[Report](/assets/me/blogs/cyber-planner.pdf) /
+[Report](/assets/blogs/cyber-planner.pdf) /
 
 Cyber Planner is based on a finite convex polygon set representation of objects, Lipschitz continuous artificial potential field, and time-optimal path parameterization.
 

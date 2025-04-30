@@ -1,12 +1,14 @@
 # My Resume
 
-_v2025.02.08_{style="float:right"}
+_Last Updated: March 2025_{style="float:right"}
 
 ## Education
 
 ### [The Hong Kong University of Science and Technology](https://hkust.edu.hk/)
 
 **Bachelor of Engineering** _Sep. 2024 - Present_{style="float: right"}
+
+- [View my curriculums at HKUST ->](./academic.html#beng-in-hkust)
 
 ### [Guangzhou No.2 High School](https://www.gdgzez.com.cn/)
 
@@ -22,45 +24,54 @@ _v2025.02.08_{style="float:right"}
 
 **Research Intern** _Jun. 2023 - Oct. 2023_{style="float:right"}
 
-Supervised by Professor Chuan Shi from BUPT, I developed an intelligent book recommendation system to improve the accuracy of public library services and the project won the **_Excellent Award_**.
+- Designed and implemented an intelligent book recommendation system under Prof. Chuan Shi (BUPT).
+- The project enhance the accurancy in personalized recommendations and won the **_Excellent Award_**.
 
 ### [Guangzhou Yingcai Middle School Science Research Training Program](https://jyj.gz.gov.cn/gkmlpt/content/7/7875/post_7875383.html#244)
 
 **Research Trainee** _Jan. 2022 - Aug. 2022_{style="float:right"}
 
-Supervised by Professor Yi Cai from SCUT, and focused on the construction of knowledge graph.
+- Focused on the construction of knowledge graph under Prof. Yi Cai (SCUT)
 
-## Involvements
+## Involvement
 
-### [FIRST Robotics Competition Team 8214](https://www.thebluealliance.com/team/8214)
+### [FIRST Robotics Competition](https://www.firstinspires.org/robotics/frc)
 
-**Program Mentor** _Sep. 2024 - Present_{style="float:right"}
+**FRC Alumni** _Sep. 2019 - Present_{style="float:right"}
 
-### [FIRST Robotics Competition Team 6399](https://www.thebluealliance.com/team/6399)
+-
+- [View my complete experience in FRC ->](./frc)
 
-**Program Mentor** _Jul. 2024 - Aug. 2024_{style="float:right"}
+## Latest Work [Publications ➣](./academic.html/#publications){style="float:right"}
 
-Responsible for the development of the FRC robotics control system, provided programming instruction to the team and led the team to **_Engineering Inspiration Award_** in the WRCC 2024 - Beijing FRC Program China Off-season Event.
+### Cyber Planner: TOPP based Arm Motion Planner
 
-### [FIRST Robotics Competition Team 8811](https://www.thebluealliance.com/team/8811)
+<RightImg src="/img/about/frc/2025-cp.png" width="30%" />
 
-**Founder** _Sep. 2021 - Aug. 2023_{style="float:right"}
+[Source Code](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
+[Report](/assets/blogs/cyber-planner.pdf) /
 
-Established the team in my senior high school, raised over $14,000 in the first year and conducted over 60 weekly studies and 3 holiday training programs for our team in 2 years.
+Cyber Planner is based on a finite convex polygon set representation of objects, Lipschitz continuous artificial potential field, and time-optimal path parameterization.
 
-### [FIRST Robotics Competition Team 8011](https://www.thebluealliance.com/team/8011)
+<Badges>
+    <img src="/img/tags/frc-8214.svg">
+    <img src="/img/tags/cpp.svg">
+    <a href="https://github.com/frcnextinnovation/cyber-planner-2025"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/frcnextinnovation/cyber-planner-2025"></a>
+</Badges>
 
-**Team Captain** _Sep. 2019 - Jul. 2023s_{style="float:right"}
+---
 
-Team Captain in the 2021 Season and steered the team to the **_Rookie Game Changer Award_** in the 2021 INFINITE RECHARGE At Home Challenge. Won the **_Champion_** in the 2020 We RoboStar Robotics League as the Program Leader and the **_Excellence in Engineering Award_** in 2022 Hangzhou Regional.
+<RightImg src="/img/about/projects/2022-bs.gif" width=20% />
 
-## Publications
+### Balance Swerve: A Single-wheeled Omni-directional Mobile Platform
 
-**C**=_Conference_, **J**=_Journal_, **R**=_Report_
+[Patent](https://patents.google.com/patent/CN115107901A) /
 
-**[R.3]** Zirui Zhang, Yan Chen, Ruoqi Xu, et al. (2025). [Cyber Planner Code Report v0.1.0 (C++ Version)](https://nifornextinnovation.com/assets/resources/cyber-planner.pdf). Next Innovation STEM Center.
+The platform is equipped with an omni-directional wheel and a balancing mechanism.
 
-**[R.2]** Zirui Zhang and Yue Peng. (2023). **Intelligent Book Recommendation and User Interest Analysis System
-Based on Factorization Machines**. 2023 Tencent Rhino-Bird Middle School Science Research Training Proogram
+<Badges>
+  <img src="/img/tags/embedded.svg">
+  <img src="/img/tags/control.svg">
+</Badges>
 
-**[R.1]** Zirui Zhang and Yue Peng. (2023). **Book Borrowing Duration Prediction Based on Embedded Vectors and Hybrid Neural Networks**. 2023 Tencent Rhino-Bird Middle School Science Research Training Proogram
+---

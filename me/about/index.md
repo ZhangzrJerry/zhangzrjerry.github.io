@@ -2,7 +2,7 @@
   <img class="home-cover" src="/img/icon-round.jpg" width="30%" style="margin-bottom:25px;">
 </p>
 
-Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology). I am currently working in Cheng Kar-Shun Robotics Institute and Next Innovation STEM Center. I am also an alumni in FRC (FIRST Robotics Competition) from 8011, 8811, 6399, 8214 (currently a program mentor).
+Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology). I am currently working in Cheng Kar-Shun Robotics Institute and Next Innovation STEM Center. I am also an alumni in FRC (FIRST Robotics Competition) from 8011, 8811, 6399, 8214 and 9635.
 
 :house: Personal Page [zhangzrjerry.github.io](https://zhangzrjerry.github.io)
 
