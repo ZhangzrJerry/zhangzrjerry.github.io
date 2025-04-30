@@ -59,53 +59,66 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/me/about' },
-      { text: 'Blogs', link: '/me/blogs' }
+      {
+        text: 'About',
+        items: [
+          { text: 'Bio', link: '/about/' },
+          { text: 'Resume', link: '/about/personal/resume' },
+          { text: 'Projects', link: '/about/projects/projects' },
+          { text: 'Publications', link: '/about/personal/academic#publications' },
+          { text: 'Connections', link: '/about/social/friends' }
+        ]
+      },
+      { text: 'Posts', link: '/posts' }
     ],
     search: {
       'provider': 'local',
     },
 
     sidebar: {
-      '/me/': [
+      '/about/': [
         {
           text: 'About',
           items: [
-            { text: 'Bio', link: '/me/about/' },
-            { text: 'Resume', link: '/me/about/resume' },
-            {
-              text: 'Publication', link: '/me/about/academic.html#publications'
-            },
-            { text: 'Projects', link: '/me/about/projects' },
-            {
-              text: 'FRC Experience', link: '/me/about/frc'
-            },
-            { text: 'Connections', link: '/me/about/friends' }
+            { text: 'Bio', link: '/about/' },
+            { text: 'Resume', link: '/about/personal/resume' },
+            { text: 'Academic', link: '/about/academic/academic' }
           ]
-        }, {
-          text: 'Blogs',
+        },
+        {
+          text: 'Projects',
           items: [
-            { text: 'Index', link: '/me/blogs/' },
-            {
-              text: 'Sense',
-              items: [
-                { text: 'ESEIF SLAM', link: '/me/blogs/sense/eseif-slam' },
-                { text: 'VINS Initialization', link: '/me/blogs/sense/vins-init' },
-                // { text: 'Feature Descriptors', link: '/me/blogs/perception/feature-descriptors' },
-              ],
-              collapsed: true
-            },
-            {
-              text: 'PnC',
-              items: [
-                // { text: 'Classic Control', link: '/me/blogs/pnc/elec-3200' },
-                { text: 'CoTiMo Planner', link: '/me/blogs/pnc/cotimo-planner' },
-                { text: 'Cyber Planner', link: '/me/blogs/pnc/cyber-planner' },
-              ],
-              collapsed: true
-            }
+            { text: 'Projects', link: '/about/projects/projects' },
+            { text: 'FRC', link: '/about/projects/frc' },
+          ]
+        },
+        {
+          text: 'Social',
+          items: [
+            { text: 'Connections', link: '/about/social/friends' }
           ]
         }
+      ],
+      '/posts/': [{
+        text: 'Blogs',
+        items: [
+          { text: 'Index', link: '/posts/' },
+          {
+            text: '2025',
+            items: [
+              // { text: 'ESEIF SLAM', link: '/posts/2025/eseif-slam' },
+              { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
+            ]
+          },
+          {
+            text: '2024',
+            items: [
+              { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' },
+              { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
+            ]
+          }
+        ]
+      }
       ]
     },
 
