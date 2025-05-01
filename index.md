@@ -64,6 +64,11 @@ features:
     details: For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
     link: /about/projects/frc.html#_2022-yuan-bot
 
+  - title: Yingcai Program
+    icon:
+      src: ./public/icon/guangzhou-yingcai.png
+    details: Focused on the construction of knowledge graph in Guangzhou Yingcai Middle School Science Research Training Program.
+
   - title: Kylin 2022
     icon:
       src: ./public/icon/rapid-react.png
