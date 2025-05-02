@@ -107,14 +107,16 @@ export default defineConfig({
             text: '2025',
             items: [
               // { text: 'ESEIF SLAM', link: '/posts/2025/eseif-slam' },
+              { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
               { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
             ]
           },
           {
             text: '2024',
             items: [
-              { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' },
               { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
+              { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' },
+              { text: 'Rotation Representation', link: '/posts/2024/rotation-representation' },
             ]
           }
         ]

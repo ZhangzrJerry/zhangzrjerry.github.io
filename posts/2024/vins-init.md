@@ -1,6 +1,10 @@
-# Robust Initialization of VINS
+# Robust Initialization of Visual-Inertial System
 
 > T. Qin and S. Shen, “Robust initialization of monocular visual-inertial estimation on aerial robots,” in _2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)_, Vancouver, BC: IEEE, Sep. 2017, pp. 4225–4232. doi: [10.1109/IROS.2017.8206284](https://doi.org/10.1109/IROS.2017.8206284).
+
+<Badges>
+	<img src="/public/tags/sense.svg" />
+</Badges>
 
 利用松耦合的方式对齐 IMU 与视觉
 
@@ -44,7 +48,7 @@ s\bar{\mathbf p}_{c_0b_k} &= s\bar{\mathbf p}_{c_0c_k} - \mathbf R_{c_0b_k}\math
 \end{aligned}
 $$
 
-### 估计外参数 $\mathbf q_{bc}$
+## 估计外参数 $\mathbf q_{bc}$
 
 对于相邻时刻 $k,k+1$ 的 IMU 旋转积分 $\mathbf q_{b_kb_{k+1}}$ 和视觉测量 $\mathbf q_{c_kc_{k+1}}$
 
@@ -79,7 +83,7 @@ $$
 
 利用奇异值分解可解得 $\mathbf q_{bc}$
 
-### 估计陀螺仪偏置
+## 估计陀螺仪偏置
 
 标定得到 $\mathbf q_{bc}$ 后，利用旋转约束，可估计处陀螺仪偏置
 
@@ -119,7 +123,7 @@ $$
 
 解得 $\delta\mathbf b^g$ 后，重新计算预积分项 $\hat{\boldsymbol\alpha}_{b_kb_k+1}, \hat{\boldsymbol\beta}_{b_kb_{k+1}},\hat{\mathbf q}_{b_kb_{k+1}}$
 
-### 初始化速度、重力和尺度因子
+## 初始化速度、重力和尺度因子
 
 所有我们希望估计的变量包括
 
@@ -159,7 +163,7 @@ $$
 
 同样可以通过 Chologky 分解求得
 
-### 重力向量优化
+## 重力向量优化
 
 在重力模长已知的情况下，重力向量实际自由度为 $2$，可以利用球面坐标进行参数化
 
@@ -200,7 +204,7 @@ $$
 
 利用最小二乘对 $\mathcal X_I^k$ 进一步优化
 
-### 视觉惯性对齐
+## 视觉惯性对齐
 
 根据旋转的性质和李代数的指数映射，我们可以构建从 $c_0$ 系到 $w$ 系的旋转矩阵 $\mathbf R_{wc_0}$
 
@@ -210,7 +214,7 @@ $$
 
 接着为所有 $c_0$ 系为坐标系的向量左乘 $\mathbf R_{wc_0}$，同时将非米制的 $\bar{\mathbf p}$ 通过尺度因子 $s$ 恢复为 $\mathbf p$
 
-### 未估计的参数
+## 未估计的参数
 
 作者通过实验指出二者加速度计偏置 $\mathbf b^a$ 和相机与 IMU 间的平移向量 $\mathbf p_{bc}$ 对系统精度影响极小，可以不在初始化中显式优化
 

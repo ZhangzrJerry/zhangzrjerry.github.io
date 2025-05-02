@@ -1,4 +1,4 @@
-# CoTiMo Planner Code Report
+# CoTiMo Planner Implementation Report
 
 ![](https://github.com/ZhangzrJerry/CoTiMo/raw/main/assets/result.gif)
 

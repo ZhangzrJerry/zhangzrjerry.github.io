@@ -1,10 +1,10 @@
-# Report for Cyber Planner Code Report
+# Cyber Planner Implementation Report
 
 We have already released our report [here](/public/assets/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
 
 <CenteredImg src="/public/posts/cyber-planner/cover.jpg" width=55% />
 
-While **Cyber Planner Code Report v0.1.0 (C++ Version)** is mainly focused on the Math derivation, **Report for Cyber Planner Code Report** emphasize the corresponding code of the equation and highlight some details in the implementation. I believe it would bring you a different perspective to our work and enhance your understaning in numerical optimization.
+While **Cyber Planner Code Report v0.1.0 (C++ Version)** is mainly focused on the Math derivation, **Cyber Planner Implementation Report** emphasize the corresponding code of the equation and highlight some details in the implementation. I believe it would bring you a different perspective to our work and enhance your understaning in numerical optimization.
 
 <Badges>
 <img src="/public/tags/frc-8214.svg">
