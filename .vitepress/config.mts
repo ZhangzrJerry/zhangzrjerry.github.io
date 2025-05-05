@@ -106,7 +106,15 @@ export default defineConfig({
           {
             text: '2025',
             items: [
-              // { text: 'ESEIF SLAM', link: '/posts/2025/eseif-slam' },
+              // {
+              //   text: 'ELEC 5650', items: [
+              //     { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
+              //     { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
+              //     { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
+              //     { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
+              //   ]
+              // },
+              { text: 'SEIF SLAM', link: '/posts/2025/seif-slam' },
               { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
               { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
             ]

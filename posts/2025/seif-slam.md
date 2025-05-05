@@ -1,4 +1,4 @@
-# ESEIF for Feature-based SLAM
+# Sparsity Extended Information Filter SLAM
 
 > M. R. Walter, R. M. Eustice, and J. J. Leonard, “Exactly Sparse Extended Information Filters for Feature-based SLAM,” _The International Journal of Robotics Research_, vol. 26, no. 4, pp. 335–359, Apr. 2007, doi: [10.1177/0278364906075026](https://doi.org/10.1177/0278364906075026).
 
@@ -6,11 +6,9 @@ EKF 通过均值和协方差矩阵估计机器人状态和地图，但协方差�
 
 EIF 使用信息矩阵（逆协方差矩阵）和信息向量描述高斯分布，更新步骤复杂度为  $\mathcal O(m^2)$，优于 EKF。然而，时间预测步骤仍为  $\mathcal O(n^2)$，且均值恢复需要  $\mathcal O(n^3)$  的矩阵求逆，限制了其在大规模环境中的应用。
 
-<CenteredImg src="/public/posts/eseif-slam/2.png" width="75%" />
+<CenteredImg src="/public/posts/seif-slam/2.png" width="75%" />
 
 SEIF 利用信息矩阵的稀疏性，将非对角元素近似为零，显著降低了更新和时间预测的计算成本，接近常数复杂度。但这种近似往往造成滤波器的过分自信，同时它依赖稀疏性和均值估计的近似求解，使得在实际应用中仍面临挑战。
-
-ESEIF 则通过信息矩阵的稀疏性，显著降低了计算复杂度，相比 EKF 在保持估计精度的同时实现了更高的计算效率；其核心思想是通过主动断开弱机器人-地标链接来强制稀疏化，从而在大规模环境中实现近常数时间复杂度的 SLAM 解决方案，同时避免了 SEIF 的全局不一致性问题。
 
 <Badges>
 <img src="/public/tags/sense.svg">
@@ -34,7 +32,7 @@ $$
 
 在标准形式中，边缘化操作只需从均值向量和协方差矩阵中移除相应的元素。然而在规范形式中，边缘化操作需要计算**舒尔补**，计算复杂度较高。条件化则相反，在标准形式中操作较为复杂，在规范形式下则相对简单。
 
-<CenteredImg src="/img/blogs/eseif-slam/1.png" width="75%" />
+<CenteredImg src="/public/posts/seif-slam/1.png" width="75%" />
 
 ### Implied Conditional Independence
 
@@ -58,7 +56,7 @@ $$
 
 > “The meaning of a zero in an inverse covariance matrix (at location $i, j$) is conditional on all the other variables, these two variables $i$ and $j$ are independent. ... So positive off-diagonal terms in the covariance matrix always describe positive correlation; but the off-diagonal terms in the inverse covariance matrix can’t be interpreted that way. The sign of an element $(i, j)$ in the inverse covariance matrix does not tell you about the correlation between those two variables.” (MacKay and Cb, 2006, p. 4)
 
-<CenteredImg src="/img/blogs/eseif-slam/2.png" width="75%" borderRadius="0" />
+<CenteredImg src="/public/posts/seif-slam/2.png" width="75%" borderRadius="0" />
 
 如果信息矩阵中的非对角元素为零，即 $\lambda_{ij} = 0 \Leftrightarrow \Psi_{ij}(\xi_i, \xi_j) = 1$，这意味着两个节点之间没有边约束，表明 $\xi_i$ 和 $\xi_j$ 条件独立。相反，如果非对角元素不为零，则表明 $\xi_i$ 和 $\xi_j$ 之间存在一条边约束，其强度正比于 $\lambda_{ij}$。这种关系很好地体现在无向图中，直观地反映了变量之间的条件独立性。使用规范形式的一个主要好处是，信息矩阵 $\Lambda$  提供了马尔可夫场的显式结构表示，清晰地揭示了变量之间的依赖关系。关于协方差矩阵和信息矩阵的更多深入理解，可以参考 David J.C. MacKay 2006 年的手稿 _The Humble Gaussian Distribution_.
 
@@ -133,7 +131,7 @@ p(\hat{\boldsymbol\xi}_{t+1}|\mathbf z_{1:t},\mathbf u_{1:t+1}) &= p(\mathbf x_{
 \end{aligned}
 $$
 
-<CenteredImg src="/img/blogs/eseif-slam/3.png" width="60%" borderRadius="0" />
+<CenteredImg src="/public/posts/seif-slam/3.png" width="60%" borderRadius="0" />
 
 新的状态估计服从更新后的高斯分布
 
@@ -209,19 +207,9 @@ $$
 
 虽然 EIF 能高效处理新观测的增量更新，但通过边缘化旧位姿时产生的全连接问题会导致信息矩阵迅速稠密化，使得运动预测的计算复杂度达到 $\mathcal O(n^2)$ 量级。边缘化过程会在新位姿与被移除旧位姿关联的所有特征 $\mathbf m^+$ 之间建立新的信息连接，导致信息矩阵稠密化。但由于这些新连接通常具有较弱的关联强度，这为通过稀疏化近似来维持计算效率提供了可能，即保留强连接舍弃弱连接。
 
-### First Estimates Jacobian
+## Sparse Extended Information Filter
 
-在黄国权老师 2008 年的论文 _Analysis and improvement of the consistency of extended Kalman filter based SLAM_ 分析了 EKF-SLAM 的一致性问题，重点指出 FEJ 技术的缺失导致线性化点不一致，从而引发协方差低估和滤波器过度自信。通过引入 FEJ 方法，在状态估计和观测更新时固定雅可比矩阵的线性化点，有效减少了 EKF 因递归线性化带来的误差累积，显著提升了 SLAM 系统的理论一致性。
-
-在 Tue-Cuong Dong-Si 和 Anastasios I. Mourikis 两人 2012 年的论文 _Consistency analysis for sliding-window visual odometry_ 中证明了在边际化过程中看似信息增加，实则增加了雅可比矩阵的秩和产生了虚假信息，让滤波器的可信度下降，造成可观性的退化。FEJ 方法通过使用首次估计值对非线性函数进行线性化，避免了秩的增加和虚假信息的产生，尽管这造成了线性化精确程度的失准，不过这种损失在非线性程度不高的系统中并不显著
-
-$$
-\text{rank}(\mathbf J_k^\text{mar}) = \text{rank}(\mathbf J_k^\text{ba}) + 3
-$$
-
-## Exactly Sparse Extended Information Filter
-
-### Sparse Extended Information Filter
+### Active Sparsity Maintenance
 
 记原先激活后续变为被动的特征为 $\mathbf m^0$，则地图被划分为 $\mathbf M=\set{\mathbf m^0,\mathbf m^+,\mathbf m^-}$ 三部分。下图表明通过主动控制激活特征断开，可以有效控制信息矩阵的稀疏性。而对与机器无关联的地标 $\mathcal m^-$，我们可以任意给出估计 $\boldsymbol\phi$，但实际上如果用了非均值的估计会使 SEIF 失准。
 
@@ -234,7 +222,7 @@ $$
 \end{aligned}
 $$
 
-<CenteredImg src="/img/blogs/eseif-slam/3.png" width="60%" borderRadius="0" />
+<CenteredImg src="/public/posts/seif-slam/3.png" width="60%" borderRadius="0" />
 
 ### Discussion on Overconfidence
 
@@ -279,5 +267,3 @@ $$
 $$
 
 只有在 $\rho_{ab}=\rho_{ac}\rho_{bc}$ 时 $\bar\Sigma-\Sigma$ 半正定，否则强制稀疏化会导致信息矩阵过于自信，即信息矩阵被过度强化，导致估计的协方差比实际小。
-
-### Exactly Sparse Extended Information Filter

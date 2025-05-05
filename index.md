@@ -17,7 +17,10 @@ hero:
 
 features:
   - title: Command Bot
-    icon: 🤖
+    icon:
+      🤖
+      # light: /public/icon/first-light.png
+      # dark: /public/icon/first-dark.png
     details: A command-based robot framework with standardized hardware interfaces and factory-patterned subsystems.
     link: https://github.com/zhangzrJerry/commandbot
 
@@ -29,7 +32,8 @@ features:
 
   - title: Cyber Planner
     icon:
-      src: /public/icon/cyber-unicorn.png
+      light: /public/icon/cyber-unicorn.png
+      dark: /public/icon/cyber-unicorn-gray.png
     details: A time optimal arm motion planner with collision avoidance and electrical limits applied on motors.
     link: https://github.com/frcnextinnovation/cyber-planner-2025
 
@@ -37,7 +41,7 @@ features:
     icon:
       src: /public/icon/cotimo-planner.png
     details: A collision-free smooth path generation and time-optimal path parameterization palnner with model predictive control.
-    link: https://github.com/zhangzrjerry/cotimo-planner
+    link: https://github.com/zhangzrjerry/cotimo
 
   - title: Defiant
     icon:
