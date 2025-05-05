@@ -23,6 +23,8 @@ For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC p
 
 :trophy: Autonomous Award in 2025 İstanbul Regional and Industrial Design Award sponsored by General Motors in 2025 Shanghai Regional (8214)
 
+---
+
 ### 2024 Defiant
 
 <RightImg src="/public/about/frc/2024.png" width="30%" />
@@ -36,6 +38,8 @@ For FRC 2024 game rules, the mission of the robot is to collect the Note (squish
 
 :trophy: Engineering Inspiration Award in 2024 FRC Off-season China
 
+---
+
 ### 2022 Yuan Bot
 
 <RightImg src="/public/about/frc/2023.png" width="30%" />
@@ -47,6 +51,8 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 :dart: Custom Scouting App: [Yuan Scout](#yuan-scout-frc-data-collection-software)
 
+---
+
 ### 2022 Kylin
 
 <RightImg src="/public/about/frc/2022.png" width="30%" />
@@ -56,6 +62,8 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
 
 :trophy: Excellence in Engineering Award in 2022 FRC Hangzhou Regional
+
+---
 
 ### 2021 Kylin
 
@@ -67,6 +75,8 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (foam ball) and shoot to the power port.
 
 :trophy: Rookie Game Changer Award in 2021 INFINITE RECHARGE At Home Challenge
+
+---
 
 ### 2020 Kylin
 
@@ -96,6 +106,8 @@ Command Bot is a framework with standardized hardware **interfaces**, factory-pa
     <a href="https://img.shields.io/github/stars/zhangzrjerry/commandbot"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhangzrjerry/commandbot"></a>
 </Badges>
 
+---
+
 ### Cyber Selector: Custom Node Selection Panel
 
 <RightImg src="/public/about/frc/2025-cs.png" width="30%" />
@@ -111,6 +123,8 @@ Cyber ​​Selector is a custom node selection panel for selecting item placeme
     <img src="/public/tags/nt4.svg">
 </Badges>
 
+---
+
 ### Cyber Planner: TOPP based Arm Motion Planner
 
 <RightImg src="/public/about/frc/2025-cp.png" width="30%" />
@@ -125,6 +139,8 @@ Cyber Planner is based on a finite convex polygon set representation of objects,
     <img src="/public/tags/cpp.svg">
     <a href="https://github.com/frcnextinnovation/cyber-planner-2025"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/frcnextinnovation/cyber-planner-2025"></a>
 </Badges>
+
+---
 
 ### Yuan Scout: FRC Data Collection Software
 

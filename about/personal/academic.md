@@ -11,4 +11,4 @@ Based on Factorization Machines**. 2023 Tencent Rhino-Bird Middle School Science
 
 **[R.1]** Zirui Zhang and Yue Peng. (2023). **Book Borrowing Duration Prediction Based on Embedded Vectors and Hybrid Neural Networks**. 2023 Tencent Rhino-Bird Middle School Science Research Training Proogram
 
-## Talks
+<!-- ## Talks -->
