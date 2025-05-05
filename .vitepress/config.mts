@@ -53,7 +53,7 @@ const customElementsForMathjax = [
 export default defineConfig({
   title: "ZhangzrJerry",
   description: "My Personal Website",
-  head: [['link', { rel: 'icon', href: '/img/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/public/favicon.ico' }]],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -106,14 +106,14 @@ export default defineConfig({
           {
             text: '2025',
             items: [
-              // {
-              //   text: 'ELEC 5650', items: [
-              //     { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
-              //     { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
-              //     { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
-              //     { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
-              //   ]
-              // },
+              {
+                text: 'ELEC 5650', items: [
+                  { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
+                  { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
+                  { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
+                  { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
+                ]
+              },
               { text: 'SEIF SLAM', link: '/posts/2025/seif-slam' },
               { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
               { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
