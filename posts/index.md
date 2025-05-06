@@ -1,6 +1,6 @@
 # Blog Posts
 
-<!-- ## Lecture Notes
+## Lecture Notes
 
 - [ELEC 5650 - Networked Sensing, Estimation and Control](./2025/elec-5650) ⭐
   _May. 2025_{style=float:right}<br>
@@ -10,13 +10,13 @@
 
 - [ELEC 5650 - Mathematic Tools](./2025/elec-5650/math-tools)
   _Mar. 2025_{style=float:right}<br>
-  _Cover the necessary Math tools for basic estimation and control_ -->
+  _Cover the necessary Math tools for basic estimation and control_
 
 ## PnC &nbsp;<img src="/public/tags/control.svg" style="display:inline; vertical-align:middle; height:1em;">
 
-<!-- - [ELEC 5650 - Linear Quadratic Regulator](./2025/elec-5650/lqr) ⭐
+- [ELEC 5650 - Linear Quadratic Regulator](./2025/elec-5650/lqr) ⭐
   _Apr. 2025_{style=float:right}<br>
-  _Deviate LQR and LQG from Dynamic Programming and optimization_ -->
+  _Deviate LQR and LQG from Dynamic Programming and optimization_
 
 - [Cyber Planner Implementation Report](./2025/cyber-planner)
   _Jan. 2025_{style=float:right}<br>
@@ -34,13 +34,13 @@
 
 ## Perception &nbsp;<img src="/public/tags/sense.svg" style="display:inline; vertical-align:middle; height:1em;">
 
-<!-- - [ELEC 5650 - Kalman Filter](./2025/elec-5650/kalman-filter) ⭐
+- [ELEC 5650 - Kalman Filter](./2025/elec-5650/kalman-filter) ⭐
   _May. 2025_{style=float:right}<br>
   _Deviate Kalman Filter from three perspectives: geometry, probability, and optimization_
 
 - [ELEC 5650 - Estimation Theory](./2025/elec-5650/estimation)
   _Mar. 2025_{style=float:right}<br>
-  _Include topics from MAP, MMSE, ML, LMMSE, Least Square Estimation, and so on_ -->
+  _Include topics from MAP, MMSE, ML, LMMSE, Least Square Estimation, and so on_
 
 - [Sparsity Extended Information Filter SLAM](./2025/seif-slam)
   _Mar. 2025_{style=float:right}<br>
