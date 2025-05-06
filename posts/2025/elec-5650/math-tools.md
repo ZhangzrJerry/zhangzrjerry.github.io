@@ -4,7 +4,7 @@
 >
 > &nbsp;_-- by Norbert Wiener_{style="float:right"}
 
-<CenteredImg src="/public/posts/elec-5650/lmmse.png" width=75% />
+<CenteredImg src="/public/posts/elec-5650/linear-algebra.png" width=50% />
 
 This is the lecture notes for "ELEC 5650: Networked Sensing, Estimation and Control" in the 2024-25 Spring semester, delivered by Prof. Ling Shi at HKUST. In this session, we will cover essential mathematical tools and concepts from linear algebra, matrix theory, and system theory that are fundamental to networked sensing, estimation, and control.
 

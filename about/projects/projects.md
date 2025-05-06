@@ -7,7 +7,7 @@
 [Source Code](https://github.com/zhangzrJerry/CoTiMo/) /
 [Report](/posts/2024/cotimo-planner) /
 
-CoTiMo means Collision-Free Smooth Path Generation, Time-Optimal Path Parameterization, and Model Predictive Control
+CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Parameterization, and Model Predictive Control
 
 <Badges>
   <img src="/public/tags/ros.svg">

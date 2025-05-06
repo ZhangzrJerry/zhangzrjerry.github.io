@@ -4,7 +4,7 @@
 >
 > &nbsp;_-- by Norbert Wiener_{style="float:right"}
 
-<CenteredImg src="/public/posts/elec-5650/kf.png" width=85% />
+<CenteredImg src="/public/posts/elec-5650/kf.png" width=75% />
 
 This is the lecture notes for "ELEC 5650: Networked Sensing, Estimation and Control" in the 2024-25 Spring semester, delivered by Prof. Ling Shi at HKUST. In this session, we will deviate Kalman Filter from three different perspectives: Geometric, Probabilistic, and Optimization approaches. Each perspective provides unique insights into understanding and implementing the Kalman Filter algorithm.
 

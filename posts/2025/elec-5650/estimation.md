@@ -4,7 +4,7 @@
 >
 > &nbsp;_-- by Norbert Wiener_{style="float:right"}
 
-<CenteredImg src="/public/posts/elec-5650/cover.png" width=75% />
+<CenteredImg src="/public/posts/elec-5650/probability.png" width=50% />
 
 This is the lecture notes for "ELEC 5650: Networked Sensing, Estimation and Control" in the 2024-25 Spring semester, delivered by Prof. Ling Shi at HKUST. In this session, we will explore fundamental concepts and techniques in estimation theory, including maximum a posteriori (MAP) estimation, minimum mean squared error (MMSE) estimation, maximum likelihood (ML) estimation, weighted least squares estimation, and linear minimum mean square error (LMMSE) estimation.
 
@@ -176,7 +176,7 @@ $$
 e=Fy
 $$
 
-<CenteredImg src="/public/posts/elec-5650/lmmse.png" width = 80% />
+<CenteredImg src="/public/posts/elec-5650/gs-process.svg" width = 90% />
 
 Then the covariance can be calculated by
 

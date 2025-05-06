@@ -4,7 +4,7 @@
 >
 > &nbsp;_-- by Norbert Wiener_{style="float:right"}
 
-<CenteredImg src="/public/posts/elec-5650/lqg.png" width=60% />
+<CenteredImg src="/public/posts/elec-5650/lqg.png" width=75% />
 
 This is the lecture notes for 'ELEC 5650: Networked Sensing, Estimation and Control' in the 2024-25 Spring semester, delivered by Prof. Ling Shi at HKUST. In this session, we will cover Linear Quadratic Regulator (LQR) theory and its applications in control systems.
 
@@ -259,7 +259,7 @@ $$
 
 By seperation principle, we can decomposed the problem to an optimal estimatior and an optimal controller.
 
-<CenteredImg src="/public/posts/elec-5650/lqg.png" width="50%" />
+<CenteredImg src="/public/posts/elec-5650/lqg.png" width="75%" />
 
 ### Kalman Filter
 

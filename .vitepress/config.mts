@@ -112,7 +112,8 @@ export default defineConfig({
                   { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
                   { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
                   { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
-                ]
+                ],
+                'link': '/posts/2025/elec-5650'
               },
               { text: 'SEIF SLAM', link: '/posts/2025/seif-slam' },
               { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
