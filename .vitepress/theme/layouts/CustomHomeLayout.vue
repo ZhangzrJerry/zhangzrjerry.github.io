@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { VPHomeHero, VPHomeFeatures, VPHomeContent } from 'vitepress/theme'
 import { useData } from 'vitepress'
+import CustomHomeNews from '../components/CustomHomeNews.vue'
 
 const { frontmatter, theme } = useData()
 </script>

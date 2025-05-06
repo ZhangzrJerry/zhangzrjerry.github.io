@@ -8,7 +8,7 @@ import CenteredImg from './components/CenteredImg.vue'
 import RightImg from './components/RightImg.vue'
 import Badges from './components/Badges.vue'
 import Giscus from './components/Giscus.vue'
-import CustomHomeLayout from './components/CustomHomeLayout.vue'
+import CustomHomeLayout from './layouts/CustomHomeLayout.vue'
 
 export default {
   extends: DefaultTheme,
