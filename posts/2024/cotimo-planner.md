@@ -7,8 +7,8 @@ CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Param
 This report provides a detailed explanation of the planner's core algorithmic implementations, covering key modules such as path generation, time parameterization, and model predictive control.
 
 <Badges>
-<img src="/public/tags/ros.svg">
-<img src="/public/tags/cpp.svg">
+<img src="/tags/ros.svg">
+<img src="/tags/cpp.svg">
 <a href="https://github.com/zhangzrjerry/cotimo"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhangzrjerry/cotimo"></a>
 </Badges>
 
@@ -18,7 +18,7 @@ This report provides a detailed explanation of the planner's core algorithmic im
 
 For a group of certain points $(x_{0,1},x_{0,2},\cdots,x_{0,m}),(x_{1,1},x_{1,2},\cdots,x_{1,m}), (x_{2,1},x_{2,2},\cdots,x_{2,m}), \cdots, (x_{n,1},x_{n,2},\cdots,x_{n,m})$, we want to find a smooth enough curve that passes all these points to achieve the interpolation goal. To do so, we can use piecewise cubic functions to fitting the points.
 
-<CenteredImg src="/public/posts/cotimo-planner/1.svg" />
+<CenteredImg src="/posts/cotimo-planner/1.svg" />
 
 Let's talk about a specific dimention $k$ first. To simplify the denotation, we let $x_i=x_{i,k}$. For a set of $n+1$ points $(x_{0,k},x_{1,k},x_{2,k},\cdots,x_{n,k})$ and for the $i$-th piece of the spline, we can represent it by
 
@@ -171,7 +171,7 @@ $$
 \end{aligned}
 $$
 
-<CenteredImg src="/public/posts/cotimo-planner/2.gif" width="50%" />
+<CenteredImg src="/posts/cotimo-planner/2.gif" width="50%" />
 
 By SOCP, we can obtain the distance vector
 
@@ -406,7 +406,7 @@ $\gamma$ is the growth rate of $\rho$ and $\beta$ is the upper bound of $\rho$, 
 
 ### Swerve Kinematic Model
 
-<RightImg src="/public/posts/cotimo-planner/3.webp" width="40%" />
+<RightImg src="/posts/cotimo-planner/3.webp" width="40%" />
 
 A simple omnidirectional platform is mecanum wheel chassis. But for a FRC player, a swerve chassis is what we need.
 
@@ -466,8 +466,8 @@ The method to solve this objective function is similar to the PHR ALM method men
 
 ## Reference
 
-|                  Image                   | Link                                                                                                  |
-| :--------------------------------------: | ----------------------------------------------------------------------------------------------------- |
-| ![](/public/posts/cotimo-planner/1.svg)  | https://mathworld.wolfram.com/images/eps-svg/CubicSpline_700.svg                                      |
-| ![](/public/posts/cotimo-planner/2.gif)  | https://www.tandfonline.com/cms/asset/bc9fed8a-15a8-49ee-96be-ce81ead2a54b/tgis_a_1988088_f0001_b.gif |
-| ![](/public/posts/cotimo-planner/3.webp) | https://www.freshconsulting.com/wp-content/uploads/2023/02/image-1536x1022.png                        |
+|               Image               | Link                                                                                                  |
+| :-------------------------------: | ----------------------------------------------------------------------------------------------------- |
+| ![](/posts/cotimo-planner/1.svg)  | https://mathworld.wolfram.com/images/eps-svg/CubicSpline_700.svg                                      |
+| ![](/posts/cotimo-planner/2.gif)  | https://www.tandfonline.com/cms/asset/bc9fed8a-15a8-49ee-96be-ce81ead2a54b/tgis_a_1988088_f0001_b.gif |
+| ![](/posts/cotimo-planner/3.webp) | https://www.freshconsulting.com/wp-content/uploads/2023/02/image-1536x1022.png                        |

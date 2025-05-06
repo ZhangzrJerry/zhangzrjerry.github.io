@@ -1,14 +1,14 @@
 # Cyber Planner Implementation Report
 
-We have already released our report [here](/public/assets/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
+We have already released our report [here](/assets/cyber-planner.pdf). And the source code is available in our [Github repository](https://github.com/frcnextinnovation/Cyber-Planner-2025).
 
-<CenteredImg src="/public/posts/cyber-planner/cover.jpg" width=55% />
+<CenteredImg src="/posts/cyber-planner/cover.jpg" width=55% />
 
 While **Cyber Planner Code Report v0.1.0 (C++ Version)** is mainly focused on the Math derivation, **Cyber Planner Implementation Report** emphasize the corresponding code of the equation and highlight some details in the implementation. I believe it would bring you a different perspective to our work and enhance your understaning in numerical optimization.
 
 <Badges>
-<img src="/public/tags/frc-8214.svg">
-<img src="/public/tags/cpp.svg">
+<img src="/tags/frc-8214.svg">
+<img src="/tags/cpp.svg">
 <a href="https://github.com/frcnextinnovation/cyber-planner-2025"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/frcnextinnovation/cyber-planner-2025"></a>
 </Badges>
 
@@ -20,7 +20,7 @@ $$
 Ax\preceq b
 $$
 
-<CenteredImg src="/public/posts/cyber-planner/1.svg" width=30% />
+<CenteredImg src="/posts/cyber-planner/1.svg" width=30% />
 
 ### Distance from Point to Polytope
 
@@ -36,7 +36,7 @@ $$
 \min_{x\in\mathcal S} ||x-p||^2
 $$
 
-<CenteredImg src="/public/posts/cyber-planner/2.gif"  width=50% />
+<CenteredImg src="/posts/cyber-planner/2.gif"  width=50% />
 
 It refers to the Eq. 6 in report and can be solved by LDQP (Low Dimensional Quadratic Programming) easily.
 
@@ -291,7 +291,7 @@ void getGridMap(ObjectType type, std::vector<std::vector<double>>& map) {
 
 After gaining a heuristic path, we are going to smooth it and minimize it's stretch energy. The stretch energy can be integrated by the second derivative of the cubic spline interpolated path. However, although the term of the stretch energy and the exponential of the negative distance between two polygons can form a Lipschitz continuous function, but the gradient of the function cannot be solved in analytical form. The numerical form consume too much time and is not practical.
 
-<CenteredImg src="/public/posts/cyber-planner/3.svg" width=30% />
+<CenteredImg src="/posts/cyber-planner/3.svg" width=30% />
 
 So we use another approximation method to smooth the path, which is presented in the Eq. 8 in the report. $||x_i-\bar x_i||^2_\Sigma$ is the prior term obtained by A\* search. The Mahalanobis distance is used because the units of the dimensions in configuration space are different and the L2 norm is meaningless. Squaring ensures differential flatness.
 
@@ -494,8 +494,8 @@ rho = std::min(rho * (1 + GAMMA), BETA);
 
 ## Reference
 
-|                 Image                  | Link                                                                                                  |
-| :------------------------------------: | ----------------------------------------------------------------------------------------------------- |
-| ![](/public/posts/cyber-planner/1.svg) | https://mathworld.wolfram.com/images/eps-svg/PolyhedronConvex_1000.svg                                |
-| ![](/public/posts/cyber-planner/2.gif) | https://www.tandfonline.com/cms/asset/bc9fed8a-15a8-49ee-96be-ce81ead2a54b/tgis_a_1988088_f0001_b.gif |
-| ![](/public/posts/cyber-planner/3.svg) | https://mathworld.wolfram.com/images/eps-svg/CubicSpline_700.svg                                      |
+|              Image              | Link                                                                                                  |
+| :-----------------------------: | ----------------------------------------------------------------------------------------------------- |
+| ![](/posts/cyber-planner/1.svg) | https://mathworld.wolfram.com/images/eps-svg/PolyhedronConvex_1000.svg                                |
+| ![](/posts/cyber-planner/2.gif) | https://www.tandfonline.com/cms/asset/bc9fed8a-15a8-49ee-96be-ce81ead2a54b/tgis_a_1988088_f0001_b.gif |
+| ![](/posts/cyber-planner/3.svg) | https://mathworld.wolfram.com/images/eps-svg/CubicSpline_700.svg                                      |

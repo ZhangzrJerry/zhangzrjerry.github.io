@@ -6,13 +6,13 @@
   _May. 2025_{style=float:right}<br>
   _Lecture Notes for ELEC 5650 in the 2024-25 Spring by Prof. Ling Shi at HKUST_
 
-## Math &nbsp;<img src="/public/tags/math.svg" style="display:inline; vertical-align:middle; height:1em;">
+## Math &nbsp;<img src="/tags/math.svg" style="display:inline; vertical-align:middle; height:1em;">
 
 - [ELEC 5650 - Mathematic Tools](./2025/elec-5650/math-tools)
   _Mar. 2025_{style=float:right}<br>
   _Cover the necessary Math tools for basic estimation and control_
 
-## PnC &nbsp;<img src="/public/tags/control.svg" style="display:inline; vertical-align:middle; height:1em;">
+## PnC &nbsp;<img src="/tags/control.svg" style="display:inline; vertical-align:middle; height:1em;">
 
 - [ELEC 5650 - Linear Quadratic Regulator](./2025/elec-5650/lqr) ⭐
   _Apr. 2025_{style=float:right}<br>
@@ -26,13 +26,13 @@
   _Nov. 2024_{style=float:right} <br>
   _TOPP-based motion planning for omnidirectional mobile robots_
 
-## Robotics &nbsp;<img src="/public/tags/robotics.svg" style="display:inline; vertical-align:middle; height:1em;">
+## Robotics &nbsp;<img src="/tags/robotics.svg" style="display:inline; vertical-align:middle; height:1em;">
 
 - [Rotation Representations in Robotics](./2024/rotation-representation)
   _Sep. 2024_{style=float:right}<br>
   _Introduce four types of rotation representation: Euler angles, axis angle, quaternions, and rotation matrix_
 
-## Perception &nbsp;<img src="/public/tags/sense.svg" style="display:inline; vertical-align:middle; height:1em;">
+## Perception &nbsp;<img src="/tags/sense.svg" style="display:inline; vertical-align:middle; height:1em;">
 
 - [ELEC 5650 - Kalman Filter](./2025/elec-5650/kalman-filter) ⭐
   _May. 2025_{style=float:right}<br>

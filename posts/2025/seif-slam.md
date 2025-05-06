@@ -6,12 +6,12 @@ EKF 通过均值和协方差矩阵估计机器人状态和地图，但协方差�
 
 EIF 使用信息矩阵（逆协方差矩阵）和信息向量描述高斯分布，更新步骤复杂度为  $\mathcal O(m^2)$，优于 EKF。然而，时间预测步骤仍为  $\mathcal O(n^2)$，且均值恢复需要  $\mathcal O(n^3)$  的矩阵求逆，限制了其在大规模环境中的应用。
 
-<CenteredImg src="/public/posts/seif-slam/2.png" width="75%" />
+<CenteredImg src="/posts/seif-slam/2.png" width="75%" />
 
 SEIF 利用信息矩阵的稀疏性，将非对角元素近似为零，显著降低了更新和时间预测的计算成本，接近常数复杂度。但这种近似往往造成滤波器的过分自信，同时它依赖稀疏性和均值估计的近似求解，使得在实际应用中仍面临挑战。
 
 <Badges>
-<img src="/public/tags/sense.svg">
+<img src="/tags/sense.svg">
 </Badges>
 
 ## Gaussian Probability
@@ -32,7 +32,7 @@ $$
 
 在标准形式中，边缘化操作只需从均值向量和协方差矩阵中移除相应的元素。然而在规范形式中，边缘化操作需要计算**舒尔补**，计算复杂度较高。条件化则相反，在标准形式中操作较为复杂，在规范形式下则相对简单。
 
-<CenteredImg src="/public/posts/seif-slam/1.png" width="75%" />
+<CenteredImg src="/posts/seif-slam/1.png" width="75%" />
 
 ### Implied Conditional Independence
 
@@ -56,7 +56,7 @@ $$
 
 > “The meaning of a zero in an inverse covariance matrix (at location $i, j$) is conditional on all the other variables, these two variables $i$ and $j$ are independent. ... So positive off-diagonal terms in the covariance matrix always describe positive correlation; but the off-diagonal terms in the inverse covariance matrix can’t be interpreted that way. The sign of an element $(i, j)$ in the inverse covariance matrix does not tell you about the correlation between those two variables.” (MacKay and Cb, 2006, p. 4)
 
-<CenteredImg src="/public/posts/seif-slam/2.png" width="75%" borderRadius="0" />
+<CenteredImg src="/posts/seif-slam/2.png" width="75%" borderRadius="0" />
 
 如果信息矩阵中的非对角元素为零，即 $\lambda_{ij} = 0 \Leftrightarrow \Psi_{ij}(\xi_i, \xi_j) = 1$，这意味着两个节点之间没有边约束，表明 $\xi_i$ 和 $\xi_j$ 条件独立。相反，如果非对角元素不为零，则表明 $\xi_i$ 和 $\xi_j$ 之间存在一条边约束，其强度正比于 $\lambda_{ij}$。这种关系很好地体现在无向图中，直观地反映了变量之间的条件独立性。使用规范形式的一个主要好处是，信息矩阵 $\Lambda$  提供了马尔可夫场的显式结构表示，清晰地揭示了变量之间的依赖关系。关于协方差矩阵和信息矩阵的更多深入理解，可以参考 David J.C. MacKay 2006 年的手稿 _The Humble Gaussian Distribution_.
 
@@ -131,7 +131,7 @@ p(\hat{\boldsymbol\xi}_{t+1}|\mathbf z_{1:t},\mathbf u_{1:t+1}) &= p(\mathbf x_{
 \end{aligned}
 $$
 
-<CenteredImg src="/public/posts/seif-slam/3.png" width="60%" borderRadius="0" />
+<CenteredImg src="/posts/seif-slam/3.png" width="60%" borderRadius="0" />
 
 新的状态估计服从更新后的高斯分布
 
@@ -222,7 +222,7 @@ $$
 \end{aligned}
 $$
 
-<CenteredImg src="/public/posts/seif-slam/3.png" width="60%" borderRadius="0" />
+<CenteredImg src="/posts/seif-slam/3.png" width="60%" borderRadius="0" />
 
 ### Discussion on Overconfidence
 
