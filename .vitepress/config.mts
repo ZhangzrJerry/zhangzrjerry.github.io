@@ -53,7 +53,7 @@ const customElementsForMathjax = [
 export default defineConfig({
   title: "ZhangzrJerry",
   description: "My Personal Website",
-  head: [['link', { rel: 'icon', href: '/public/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

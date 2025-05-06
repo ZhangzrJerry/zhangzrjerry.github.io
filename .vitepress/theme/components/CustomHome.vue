@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { VPHomeHero, VPHomeFeatures, VPHomeContent } from 'vitepress/theme'
 import { useData } from 'vitepress'
-import CustomHomeNews from '../components/CustomHomeNews.vue'
+import CustomHomeFeatures from './CustomHomeFeatures.vue'
 
 const { frontmatter, theme } = useData()
 </script>
@@ -31,9 +31,9 @@ const { frontmatter, theme } = useData()
     <slot name="home-hero-after" />
 
     <slot name="home-features-before" />
-    <VPHomeFeatures>
+    <CustomHomeFeatures>
       <slot name="features" />
-    </VPHomeFeatures>
+    </CustomHomeFeatures>
     <slot name="home-features-after" />
 
     <VPHomeContent v-if="frontmatter.markdownStyles !== false">

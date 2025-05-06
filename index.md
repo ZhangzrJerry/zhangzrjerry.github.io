@@ -21,6 +21,7 @@ features:
       🤖
       # light: /public/icon/first-light.png
       # dark: /public/icon/first-dark.png
+    img: /about/frc/2020.png
     details: A command-based robot framework with standardized hardware interfaces and factory-patterned subsystems.
     link: https://github.com/zhangzrJerry/commandbot
 
