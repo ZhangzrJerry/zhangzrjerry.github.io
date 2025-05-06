@@ -35,8 +35,9 @@ defineProps<{
                     {{ linkText }} <span class="vpi-arrow-right link-text-icon" />
                 </p>
             </div>
-
+            <!-- <div class="image-container"> -->
             <img v-if="img" :src="img" :alt="title" class="image" />
+            <!-- </div> -->
         </article>
     </VPLink>
 </template>
@@ -49,6 +50,7 @@ defineProps<{
     height: 100%;
     background-color: var(--vp-c-bg-soft);
     transition: border-color 0.25s, background-color 0.25s;
+    overflow: hidden;
 }
 
 .CustomCard.link:hover {
@@ -60,6 +62,7 @@ defineProps<{
     flex-direction: column;
     padding: 24px;
     height: 100%;
+    position: relative;
 }
 
 .box> :deep(.VPImage) {
@@ -83,6 +86,7 @@ defineProps<{
     line-height: 24px;
     font-size: 16px;
     font-weight: 600;
+    z-index: 1;
 }
 
 .details {
@@ -91,6 +95,7 @@ defineProps<{
     line-height: 24px;
     font-size: 14px;
     font-weight: 500;
+    z-index: 1;
     color: var(--vp-c-text-2);
 }
 
@@ -108,5 +113,34 @@ defineProps<{
 
 .link-text-icon {
     margin-left: 6px;
+}
+
+.light {
+    --mask-color: #000;
+}
+
+.dark {
+    --mask-color: #fff;
+}
+
+.image {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    mask-image: linear-gradient(90deg,
+            transparent 0%,
+            var(--mask-color, white) 400px,
+            var(--mask-color, white) calc(100%),
+            transparent 100%);
+    -webkit-mask-image:
+        linear-gradient(90deg,
+            transparent 0%,
+            var(--mask-color, white) 400px,
+            var(--mask-color, white) calc(100%),
+            transparent 100%);
+
 }
 </style>
