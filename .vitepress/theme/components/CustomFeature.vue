@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { DefaultTheme } from 'vitepress/theme'
 import { VPImage, VPLink } from 'vitepress/theme'
-import { computed, ref, onMounted, onUnmounted } from 'vue'
 
 defineOptions({
-    name: 'CustomCard'
+    name: 'CustomFeature'
 })
 
-const props = defineProps<{
+defineProps<{
+    icon?: DefaultTheme.FeatureIcon
     img?: string
     title: string
     details?: string
@@ -16,47 +16,17 @@ const props = defineProps<{
     rel?: string
     target?: string
 }>()
-
-const imgRef = ref<HTMLImageElement | null>(null)
-const imgWidth = ref(0)
-
-const rightPadding = computed(() => {
-    if (!props.img) return '32px'
-    return `${imgWidth.value + 16}px`
-})
-
-const onImageLoad = () => {
-    if (imgRef.value) {
-        imgWidth.value = imgRef.value.width
-    }
-}
-
-let resizeObserver: ResizeObserver | null = null
-
-onMounted(() => {
-    if (props.img && imgRef.value) {
-        resizeObserver = new ResizeObserver(entries => {
-            for (const entry of entries) {
-                if (entry.target === imgRef.value) {
-                    imgWidth.value = entry.contentRect.width
-                }
-            }
-        })
-        resizeObserver.observe(imgRef.value)
-    }
-})
-
-onUnmounted(() => {
-    if (resizeObserver) {
-        resizeObserver.disconnect()
-    }
-})
-
 </script>
 
 <template>
-    <VPLink class="CustomCard" :href="link" :rel :target :no-icon="true" :tag="link ? 'a' : 'div'">
-        <article class="box" :style="{ paddingRight: rightPadding }">
+    <VPLink class="CustomFeature" :href="link" :rel :target :no-icon="true" :tag="link ? 'a' : 'div'">
+        <article class="box">
+            <div v-if="typeof icon === 'object' && icon.wrap" class="icon">
+                <VPImage :image="icon" :alt="icon.alt" :height="icon.height || 48" :width="icon.width || 48" />
+            </div>
+            <VPImage v-else-if="typeof icon === 'object'" :image="icon" :alt="icon.alt" :height="icon.height || 48"
+                :width="icon.width || 48" />
+            <div v-else-if="icon" class="icon" v-html="icon"></div>
             <h2 class="title" v-html="title"></h2>
             <p v-if="details" class="details" v-html="details"></p>
 
@@ -65,14 +35,16 @@ onUnmounted(() => {
                     {{ linkText }} <span class="vpi-arrow-right link-text-icon" />
                 </p>
             </div>
+            <!-- <div class="image-container"> -->
+            <img v-if="img" :src="img" :alt="title" class="image" />
+            <!-- </div> -->
         </article>
-        <img v-if="img" ref="imgRef" :src="img" :alt="title" class="image" @load="onImageLoad" />
     </VPLink>
 </template>
 
 <style scoped>
-.CustomCard {
-    display: flex;
+.CustomFeature {
+    display: block;
     border: 1px solid var(--vp-c-bg-soft);
     border-radius: 12px;
     height: 100%;
@@ -81,14 +53,14 @@ onUnmounted(() => {
     overflow: hidden;
 }
 
-.CustomCard.link:hover {
+.CustomFeature.link:hover {
     border-color: var(--vp-c-brand-1);
 }
 
 .box {
     display: flex;
     flex-direction: column;
-    padding: 24px 32px 32px 32px;
+    padding: 24px;
     height: 100%;
     position: relative;
 }
@@ -97,9 +69,22 @@ onUnmounted(() => {
     margin-bottom: 20px;
 }
 
-.title {
-    line-height: 32px;
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: var(--vp-c-default-soft);
+    width: 48px;
+    height: 48px;
     font-size: 24px;
+    transition: background-color 0.25s;
+}
+
+.title {
+    line-height: 24px;
+    font-size: 16px;
     font-weight: 600;
     z-index: 1;
 }
@@ -136,29 +121,33 @@ onUnmounted(() => {
     right: 1px;
     height: 100%;
     object-fit: cover;
-    opacity: 0.9;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    opacity: 0.5;
     mask-image: linear-gradient(90deg,
             transparent 0%,
-            var(--vp-c-bg-soft) calc(2%),
+            var(--vp-c-bg-soft) 400px,
             var(--vp-c-bg-soft) calc(100%),
             transparent 100%);
     -webkit-mask-image:
         linear-gradient(90deg,
             transparent 0%,
-            var(--vp-c-bg-soft) calc(2%),
+            var(--vp-c-bg-soft) 400px,
             var(--vp-c-bg-soft) calc(100%),
             transparent 100%);
+
 }
 
-@media (max-width: 1080px) {
-    .image {
-        display: none;
-    }
-
-    .box {
-        padding-right: 32px !important;
-    }
+.CustomFeature:hover .image {
+    opacity: 0.85;
+    mask-image: linear-gradient(90deg,
+            transparent 0%,
+            var(--vp-c-bg-soft) 200px,
+            var(--vp-c-bg-soft) calc(100%),
+            transparent 100%);
+    -webkit-mask-image:
+        linear-gradient(90deg,
+            transparent 0%,
+            var(--vp-c-bg-soft) 200px,
+            var(--vp-c-bg-soft) calc(100%),
+            transparent 100%);
 }
 </style>

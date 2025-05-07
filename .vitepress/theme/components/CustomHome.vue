@@ -2,6 +2,7 @@
 import { VPHomeHero, VPHomeFeatures, VPHomeContent } from 'vitepress/theme'
 import { useData } from 'vitepress'
 import CustomHomeFeatures from './CustomHomeFeatures.vue'
+import CustomHomeCards from './CustomHomeCards.vue'
 
 const { frontmatter, theme } = useData()
 </script>
@@ -29,6 +30,8 @@ const { frontmatter, theme } = useData()
       </template>
     </VPHomeHero>
     <slot name="home-hero-after" />
+
+    <CustomHomeCards />
 
     <slot name="home-features-before" />
     <CustomHomeFeatures>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import CustomCards from './CustomCards.vue'
+import CustomFeatures from './CustomFeatures.vue'
 
 const { frontmatter: fm } = useData()
 </script>
 
 <template>
-    <CustomCards v-if="fm.features" class="VPHomeFeatures" :features="fm.features" />
+    <CustomFeatures v-if="fm.features" class="CustomFeatures" :features="fm.features" />
 </template>
