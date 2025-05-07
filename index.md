@@ -6,7 +6,7 @@ hero:
   name: "ZhangzrJerry's"
   text: "Personal Website"
   tagline: 星辰轮转 & L'éternel tour des constellations
-  # image: https://github.com/ZhangzrJerry/ZhangzrJerry/raw/main/metrics.left.svg
+  image: none
   actions:
     - theme: brand
       text: About Me
