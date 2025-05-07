@@ -143,4 +143,19 @@ defineProps<{
             transparent 100%);
 
 }
+
+.CustomCard:hover .image {
+    opacity: 0.85;
+    mask-image: linear-gradient(90deg,
+            transparent 0%,
+            var(--mask-color, white) 200px,
+            var(--mask-color, white) calc(100%),
+            transparent 100%);
+    -webkit-mask-image:
+        linear-gradient(90deg,
+            transparent 0%,
+            var(--mask-color, white) 200px,
+            var(--mask-color, white) calc(100%),
+            transparent 100%);
+}
 </style>

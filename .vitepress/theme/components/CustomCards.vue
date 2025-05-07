@@ -23,6 +23,12 @@ const grid = computed(() => {
 
     if (!length) {
         return
+    } else {
+        return 'grid-3'
+    }
+
+    if (!length) {
+        return
     } else if (length === 2) {
         return 'grid-2'
     } else if (length === 3) {

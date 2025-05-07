@@ -82,6 +82,14 @@ features:
     img: /features/knowledge-graph.png
     details: Focused on the construction of knowledge graph in Guangzhou Yingcai Middle School Science Research Training Program.
 
+  - title: Balance Swerve
+    icon:
+      light: /icon/kylin-light.png
+      dark: /icon/kylin-dark.png
+    img: /about/projects/2022-bs.gif
+    details: It is a single-wheeled omni-directional mobile platform with a balancing mechanism.
+    link: /about/projects/projects.html#balance-swerve-a-single-wheeled-omni-directional-mobile-platform
+
   - title: Kylin 2022
     icon:
       light: /icon/rapid-react-light.png
