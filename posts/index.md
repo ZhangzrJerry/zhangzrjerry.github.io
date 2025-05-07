@@ -6,11 +6,23 @@
   _May. 2025_{style=float:right}<br>
   _Lecture Notes for ELEC 5650 in the 2024-25 Spring by Prof. Ling Shi at HKUST_
 
+- [COMP 2711 - Discrete Mathematical Tools for Computer Science](./2024/comp-2711.md)
+  _Dec. 2024_{style=float:right}<br>
+  _Review Notes for COMP 2711 in the 2024-25 Fall at HKUST_
+
+- [ELEC 3200 - System Modeling, Analysis and Control](./2024/elec-3200.md)
+  _Nov. 2024_{style=float:right}<br>
+  _Cheat Sheets for ELEC 3200 in the 2024-25 Fall at HKUST_
+
 ## Math &nbsp;<img src="/tags/math.svg" style="display:inline; vertical-align:middle; height:1em;">
 
 - [ELEC 5650 - Mathematic Tools](./2025/elec-5650/math-tools)
   _Mar. 2025_{style=float:right}<br>
   _Cover the necessary Math tools for basic estimation and control_
+
+- [COMP 2711 - Discrete Mathematical Tools for Computer Science](./2024/comp-2711.md)
+  _Dec. 2024_{style=float:right}<br>
+  _Review Notes for COMP 2711 in the 2024-25 Fall at HKUST_
 
 ## PnC &nbsp;<img src="/tags/control.svg" style="display:inline; vertical-align:middle; height:1em;">
 
@@ -21,6 +33,10 @@
 - [Cyber Planner Implementation Report](./2025/cyber-planner)
   _Jan. 2025_{style=float:right}<br>
   _TOPP-based motion planning for robotic manipulators_
+
+- [ELEC 3200 - System Modeling, Analysis and Control](./2024/elec-3200.md)
+  _Nov. 2024_{style=float:right}<br>
+  _Cheat Sheets for ELEC 3200 in the 2024-25 Fall at HKUST_
 
 - [CoTiMo Planner Implementation Report](./2024/cotimo-planner)
   _Nov. 2024_{style=float:right} <br>

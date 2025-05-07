@@ -17,10 +17,7 @@ hero:
 
 features:
   - title: Command Bot
-    icon:
-      🤖
-      # light: /icon/first-light.png
-      # dark: /icon/first-dark.png
+    icon: 🤖
     img: /features/command-bot.png
     details: A command-based robot framework with standardized hardware interfaces and factory-patterned subsystems.
     link: https://github.com/zhangzrJerry/commandbot
