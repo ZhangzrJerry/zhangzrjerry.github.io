@@ -2,13 +2,13 @@
 
 We always aim to find feature descriptors that are invariant to luminance, scaling, translation, and rotation, allowing for better performance in tasks such as feature matching and bundle adjustment.
 
-> “We wish to identify locations in image scale space that are invariant with respect to image translation, scaling, and rotation, and are minimally affected by noise and small distortions.” (Lowe, 1999, p. 2)
+> "We wish to identify locations in image scale space that are invariant with respect to image translation, scaling, and rotation, and are minimally affected by noise and small distortions." (Lowe, 1999, p. 2)
 
 However, experiments show that different visual descriptors tend to have similar rates of outliers in feature matching, and the precision differences brought by the application of different feature descriptors in Visual SLAM are negligible.
 
-<!-- > “The accuracy achieved is similar for SIFT and SURF. In contrast, ORB features turn out to be less accurate and also less reliable: Using ORB, the trajectory estimation failed for two of the nine sequences. This could not be resolved by adapting the parameters of the feature detector to find more keypoints.” (Endres et al., 2012, p. 1695)
+<!-- > "The accuracy achieved is similar for SIFT and SURF. In contrast, ORB features turn out to be less accurate and also less reliable: Using ORB, the trajectory estimation failed for two of the nine sequences. This could not be resolved by adapting the parameters of the feature detector to find more keypoints." (Endres et al., 2012, p. 1695)
 
-> “In general, we see an increased accuracy with a lower speed, as could be expected. SIFT performs best at all speeds, BRIEF mostly performs better than the other binary descriptors. The feature extraction time (see Tab. I), therefore does not seem to significantly affect the accuracy.” (Hartmann et al., 2013, p. 60) -->
+> "In general, we see an increased accuracy with a lower speed, as could be expected. SIFT performs best at all speeds, BRIEF mostly performs better than the other binary descriptors. The feature extraction time (see Tab. I), therefore does not seem to significantly affect the accuracy." (Hartmann et al., 2013, p. 60) -->
 
 <CenteredImg src="https://github.com/ZhangzrJerry/Introduction-to-Mobile-Robotics/raw/main/results/ransac.png" width=60% />
 
@@ -35,7 +35,7 @@ Next, according to the gradient direction of the pixels, the product of the grad
 
 <CenteredImg src="/posts/visual-feature/1.jpg" width=60% />
 
-> “First the image gradient magnitudes and orientations are sampled around the keypoint location, using the scale of the keypoint to select the level of Gaussian blur for the image. In order to achieve orientation invariance, the coordinates of the descriptor and the gradient orientations are rotated relative to the keypoint orientation.” (Lowe, 2004, p. 15)
+> "First the image gradient magnitudes and orientations are sampled around the keypoint location, using the scale of the keypoint to select the level of Gaussian blur for the image. In order to achieve orientation invariance, the coordinates of the descriptor and the gradient orientations are rotated relative to the keypoint orientation." (Lowe, 2004, p. 15)
 
 To pursue rotation invariance, all gradients are rotated so that the main gradient (the one with the longest magnitude) points upward. At the same time, to avoid errors caused by luminance changes, gradient magnitudes that exceed a certain threshold are clipped and then normalized.
 
@@ -55,7 +55,7 @@ Around the feature point, a square box with a side length of $20s$ is taken, and
 
 The idea behind BRIEF is very straightforward.
 
-> “Our approach is inspired by earlier work [9, 15] that showed that image patches could be effectively classified on the basis of a relatively small number of pairwise intensity comparisons.” (Hutchison et al., 2010, p. 3)
+> "Our approach is inspired by earlier work [9, 15] that showed that image patches could be effectively classified on the basis of a relatively small number of pairwise intensity comparisons." (Hutchison et al., 2010, p. 3)
 
 Define the binary intensity comparison test as
 
@@ -104,6 +104,53 @@ g_x\\g_y
 $$
 
 Similarly, to pursue rotation invariance, all points are rotated around the feature point, and then a boolean descriptor is constructed from the short-range pairs based on binary intensity tests, similar to BRIEF.
+
+## Experimental Results
+
+Several studies have evaluated the performance of different feature descriptors in Visual SLAM applications. Here we summarize some key findings:
+
+### Performance Evaluation of Visual SLAM Using Several Feature Extractors
+
+In a study by Klippenstein and Zhang (2009), Harris, KLT, and SIFT were evaluated using average normalized error and accumulated uncertainty metrics:
+
+$$
+\bar\epsilon_k = \frac1N\sum_{i=1}^N|| \mathbf r_k^{(i)} - \hat{\mathbf r}_k^{(i)} ||_{\Sigma_{r,k}^{-1}}^2
+$$
+
+$$
+\overline{\text{AU}} = \frac1N\sum_{i=1}^N\sum_{k=1}^{N_s}\frac43\pi\sqrt{\det(\Sigma_{k,r})}
+$$
+
+<CenteredImg src="/posts/visual-feature/exp1-1.png" width=75% />
+<CenteredImg src="/posts/visual-feature/exp1-2.png" width=75% />
+
+The results showed that in most indoor scenarios, there were no significant differences in accumulated uncertainty among the three feature extractors. The average normalized error followed similar trends, with nearly identical performance. SIFT showed slightly better performance in terms of accumulated uncertainty, though the study did not include feature matching comparisons.
+
+### Evaluation of RGB-D SLAM System
+
+Endres et al. (2012) conducted experiments on the FR1 dataset and found that:
+
+- SIFT performed well but was computationally expensive
+- ORB was computationally efficient and handled viewpoint changes well
+- SURF required careful threshold adjustment to maintain an appropriate number of feature points
+- Too few SURF features led to inaccurate motion estimation and failures
+- Too many features slowed down matching and increased false positives
+
+<CenteredImg src="/posts/visual-feature/exp2.png" width=100% />
+
+The study also revealed that when there were incorrect edges in the graph, the mapping results deteriorated. The authors suggested future improvements in keypoint matching strategies, such as adding feature dictionaries, pruning unmatched features, and directly using keypoints as landmarks for nonlinear optimization.
+
+### Comparison of Feature Descriptors for Visual SLAM
+
+Hartmann et al. (2013) conducted experiments on both RGBD datasets and their own datasets, finding that:
+
+- SIFT achieved the best performance but was the most computationally intensive
+- BRIEF performed best among binary descriptors
+- In most cases, the choice of descriptor had minimal impact on accuracy
+
+<CenteredImg src="/posts/visual-feature/exp3.png" width=80% />
+
+These experimental results suggest that while different feature descriptors have their own characteristics, their impact on the overall performance of Visual SLAM systems might be less significant than initially thought. The choice of descriptor should be based on a balance between computational efficiency and the specific requirements of the application.
 
 ## Reference
 
