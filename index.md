@@ -124,15 +124,3 @@ features:
     details: For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (foam ball) and shoot to the power port.
     link: /about/projects/frc.html#_2020-kylin
 ---
-
-<script setup>
-import { h } from 'vue'
-
-const MapComponent = () => {
-  return h('div', { style: { display: 'none' } }, [
-    h('img', { src: '//www.clustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff' })
-  ])
-}
-</script>
-
-<MapComponent />
