@@ -1,6 +1,6 @@
 # Blog Posts
 
-## Lecture Notes
+## Lectures
 
 - [ELEC 5650 - Networked Sensing, Estimation and Control](./2025/elec-5650) ⭐
   _May. 2025_{style=float:right}<br>
@@ -48,7 +48,7 @@
   _Sep. 2024_{style=float:right}<br>
   _Introduce four types of rotation representation: Euler angles, axis angle, quaternions, and rotation matrix_
 
-## Perception &nbsp;<img src="/tags/sense.svg" style="display:inline; vertical-align:middle; height:1em;">
+## Sense &nbsp;<img src="/tags/sense.svg" style="display:inline; vertical-align:middle; height:1em;">
 
 - [ELEC 5650 - Kalman Filter](./2025/elec-5650/kalman-filter) ⭐
   _May. 2025_{style=float:right}<br>
@@ -64,6 +64,9 @@
 
 - [Classic Visual Feature Descriptors](./2025/visual-feature)_Feb. 2025_{style=float:right}<br>
   _Comprehensive analysis of classical visual feature descriptors: from SIFT to BRIEF_
+
+- [A Continuous-time Representation for VINS](./2024/spline-fusion)_Dec. 2024_{style=float:right}<br>
+  _Reading notes of_ "Spline Fusion: A continuous-time representation for visual-inertial fusion with application to rolling shutter cameras"
 
 - [Robust Initialization of Visual-Inertial System](./2024/vins-init)_Dec. 2024_{style=float:right}<br>
   _Reading notes of_ "Robust initialization of monocular visual-inertial estimation on aerial robots"

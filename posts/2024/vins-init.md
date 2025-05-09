@@ -2,13 +2,13 @@
 
 > T. Qin and S. Shen, “Robust initialization of monocular visual-inertial estimation on aerial robots,” in _2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)_, Vancouver, BC: IEEE, Sep. 2017, pp. 4225–4232. doi: [10.1109/IROS.2017.8206284](https://doi.org/10.1109/IROS.2017.8206284).
 
+这篇文章提出了一种鲁棒的视觉惯性系统初始化方法，通过松耦合的方式对齐 IMU 与视觉数据，主要解决了外参数标定、陀螺仪偏置估计、速度重力尺度和视觉惯性对齐等关键问题。
+
 <Badges>
 	<img src="/tags/sense.svg" />
 </Badges>
 
-利用松耦合的方式对齐 IMU 与视觉
-
-<CenteredImg src="/posts/vins-init/1.png" width="65%" />
+## 问题建模
 
 IMU 测量模型有
 
@@ -18,6 +18,8 @@ $$
 \hat{\mathbf a} &= \mathbf R_{bw}(\mathbf a^w+\mathbf g^w)+\mathbf b^a+\mathbf n^a
 \end{aligned}
 $$
+
+<CenteredImg src="/posts/vins-init/1.png" width="65%" />
 
 预积分
 

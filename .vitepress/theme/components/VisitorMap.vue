@@ -25,12 +25,6 @@ onUnmounted(() => {
 
 <style scoped>
 .visitor-map {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0;
-}
-
-#clustrmaps-container {
-    min-height: 200px;
+    display: none;
 }
 </style>

@@ -125,6 +125,7 @@ export default defineConfig({
             items: [
               { text: 'Number Theory', link: '/posts/2024/comp-2711' },
               { text: 'Classic Control', link: '/posts/2024/elec-3200' },
+              { text: 'Spline Fusion', link: '/posts/2024/spline-fusion' },
               { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
               { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' },
               { text: 'Rotation Representation', link: '/posts/2024/rotation-representation' },
