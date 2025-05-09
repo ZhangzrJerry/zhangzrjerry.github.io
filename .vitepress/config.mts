@@ -101,8 +101,8 @@ export default defineConfig({
       ],
       '/posts/': [{
         text: 'Blogs',
+        link: '/posts/',
         items: [
-          { text: 'Index', link: '/posts/' },
           {
             text: '2025',
             items: [
@@ -123,8 +123,9 @@ export default defineConfig({
           {
             text: '2024',
             items: [
-              { text: 'Number Theory', link: '/posts/2024/comp-2711' },
-              { text: 'Classic Control', link: '/posts/2024/elec-3200' },
+              { text: 'COMP 2711', link: '/posts/2024/comp-2711' },
+              { text: 'ELEC 3200', link: '/posts/2024/elec-3200' },
+              { text: 'Gauge Handling', link: '/posts/2024/gauge-handling' },
               { text: 'Spline Fusion', link: '/posts/2024/spline-fusion' },
               { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
               { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' },

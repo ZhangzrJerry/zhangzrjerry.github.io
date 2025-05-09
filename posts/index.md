@@ -62,11 +62,18 @@
   _Mar. 2025_{style=float:right}<br>
   _Reading Notes of_ "Exactly Sparse Extended Information Filters for Feature-based SLAM"
 
-- [Classic Visual Feature Descriptors](./2025/visual-feature)_Feb. 2025_{style=float:right}<br>
+- [Classic Visual Feature Descriptors](./2025/visual-feature)
+  _Feb. 2025_{style=float:right}<br>
   _Comprehensive analysis of classical visual feature descriptors: from SIFT to BRIEF_
 
-- [A Continuous-time Representation for VINS](./2024/spline-fusion)_Dec. 2024_{style=float:right}<br>
+- [Handling Gauge Freedom in VINS](./2024/gauge-handling.md)
+  _Dec. 2024_{style=float:right}<br>
+  _Reading notes of_ "On the Comparison of Gauge Freedom Handling in Optimization-Based Visual-Inertial State Estimation"
+
+- [A Continuous-time Representation for VINS](./2024/spline-fusion)
+  _Dec. 2024_{style=float:right}<br>
   _Reading notes of_ "Spline Fusion: A continuous-time representation for visual-inertial fusion with application to rolling shutter cameras"
 
-- [Robust Initialization of Visual-Inertial System](./2024/vins-init)_Dec. 2024_{style=float:right}<br>
+- [Robust Initialization of Visual-Inertial System](./2024/vins-init)
+  _Dec. 2024_{style=float:right}<br>
   _Reading notes of_ "Robust initialization of monocular visual-inertial estimation on aerial robots"
