@@ -1,4 +1,4 @@
-# Innovations in BIM-based Robot Localization
+# Innovations in BIM-based Localization
 
 In the classic SLAM context, the process involves simultaneous mapping and localization (SLAM), meaning that the map is built incrementally while the robot's location is estimated.
 
@@ -121,7 +121,23 @@ Based on the resolution of $0.15{\rm m}$ for translation and $1.0{\rm deg}$ for 
 
 <CenteredImg src="/posts/bim-localization/Pasted image 20250510132257.png" width="75%" />
 
-Af
+To determine the optimal transformation aligning a LiDAR submap with a BIM model, an occupancy-aware confidence score is proposed. The BIM wall point cloud $\mathcal{P}_B$​ is rasterized into a 2D grid $\mathcal{M}$ with resolution $s_r$​, where occupied cells are set to 1 and free cells to 0: $\mathcal{M}=\phi(\mathcal{P}_B,s_r)$. To account for as-built deviations, $\mathcal{M}$ is dilated using a kernel of size $k_d$​, producing a score field $\mathcal{M}_d$​ where cell values decrease linearly with distance to the nearest occupied cell. The score evaluates alignment using two components: an award score sasa​ and a penalty score spsp​. The award score rewards matches between non-ground submap points $Q_{ng}$ and BIM walls:
+
+$$s_a=\sum_{q\in Q_{ng}}\mathcal{M}_d(ϕ(q,s_r))$$
+
+The penalty score penalizes ground submap points $Q_g$ overlapping with BIM walls:
+
+$$
+s_p=\sum_{q\in Q_g}\mathcal{M}_d(\phi(q,s_r))
+$$
+
+The final confidence score combines these components
+
+$$
+s=\frac{s_a-\lambda\cdot s_p}{|Q_{ng}|}
+$$
+
+where $\lambda$ balances their contributions, and normalization by $|Q_{ng}$ ensures robustness to submap size. This score avoids biases from unmatched free spaces or real-world objects not in the BIM, providing a reliable measure of alignment quality.
 
 <CenteredImg src="/posts/bim-localization/Pasted image 20250510010153.png" width="75%" />
 

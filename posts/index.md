@@ -1,5 +1,4 @@
 <script setup>
-// import PostData from './com'
 const posts = [
     {
         time: 'May. 2025',
@@ -12,9 +11,9 @@ const posts = [
     {
         time: 'May. 2025',
         type: 'thesis',
-        title: 'Innovations in BIM-based Robot Localization',
+        title: 'Innovations in BIM-based Localization',
         detail: 'Reading Notes of three BIM-based Localization theories by Prof. Huan Yin',
-        tags: ['sense', 'robotics'],
+        tags: ['sense'],
         url: '/posts/2025/bim-localization'
     },
     {
@@ -54,7 +53,7 @@ const posts = [
         type: 'thesis',
         title: 'Sparsity Extended Information Filter SLAM',
         detail: 'Reading Notes of "Exactly Sparse Extended Information Filters for Feature-based SLAM"',
-        tags: ['sense', 'robotics'],
+        tags: ['sense'],
         url: '/posts/2025/seif-slam'
     },
     {
