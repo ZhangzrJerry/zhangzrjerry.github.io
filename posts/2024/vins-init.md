@@ -1,3 +1,11 @@
+---
+title:
+detail:
+month:
+type:
+tags:
+---
+
 # Robust Initialization of Visual-Inertial System
 
 > T. Qin and S. Shen, “Robust initialization of monocular visual-inertial estimation on aerial robots,” in _2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)_, Vancouver, BC: IEEE, Sep. 2017, pp. 4225–4232. doi: [10.1109/IROS.2017.8206284](https://doi.org/10.1109/IROS.2017.8206284).

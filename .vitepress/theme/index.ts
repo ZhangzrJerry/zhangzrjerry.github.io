@@ -10,7 +10,7 @@ import Badges from './components/Badges.vue'
 import Giscus from './components/Giscus.vue'
 import CustomHomeLayout from './components/CustomHome.vue'
 import VisitorMap from './components/VisitorMap.vue'
-
+import BetterTable from './components/BetterTable.vue'
 export default {
   extends: DefaultTheme,
   Layout: () => {
@@ -25,5 +25,6 @@ export default {
     app.component('Giscus', Giscus);
     app.component('custom-home', CustomHomeLayout);
     app.component('VisitorMap', VisitorMap);
+    app.component('BetterTable', BetterTable);
   }
 } satisfies Theme

@@ -107,6 +107,10 @@ export default defineConfig({
             text: '2025',
             items: [
               {
+                text: 'BIM Localization',
+                link: '/posts/2025/bim-localization'
+              },
+              {
                 text: 'ELEC 5650', items: [
                   { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
                   { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
@@ -134,6 +138,23 @@ export default defineConfig({
           }
         ]
       }
+      ],
+      '/leetcode/': [
+        {
+          text: 'Leetcode',
+          link: '/leetcode'
+        },
+        {
+          text: 'Collections',
+          items: [
+            { text: 'Sliding Window', link: '/leetcode/sliding-window' }
+          ]
+        },
+        {
+          text: 'Problems',
+          items: [],
+          collapsed: true
+        }
       ]
     },
 
@@ -154,8 +175,8 @@ export default defineConfig({
     config: (md) => {
       md.use(mathjax3, {
         tex: {
-          inlineMath: [['$', '$']],
-          displayMath: [['$$', '$$']]
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\(', '\\)'], ['\\begin{equation}', '\\end{equation}']]
         }
       });
     }

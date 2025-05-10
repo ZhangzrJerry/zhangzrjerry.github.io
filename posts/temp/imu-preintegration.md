@@ -1,6 +1,4 @@
-C. Forster, L. Carlone, F. Dellaert, and D. Scaramuzza, “On-Manifold Preintegration for Real-Time Visual--Inertial Odometry,” _IEEE Trans. Robot._, vol. 33, no. 1, pp. 1–21, Feb. 2017, doi: [10.1109/TRO.2016.2597321](https://doi.org/10.1109/TRO.2016.2597321). ==TODO==
-
-感觉这篇的数学表示很详细，结合之前李群李代数的笔记，小小重新推一遍
+C. Forster, L. Carlone, F. Dellaert, and D. Scaramuzza, “On-Manifold Preintegration for Real-Time Visual--Inertial Odometry,” _IEEE Trans. Robot._, vol. 33, no. 1, pp. 1–21, Feb. 2017, doi: [10.1109/TRO.2016.2597321](https://doi.org/10.1109/TRO.2016.2597321).
 
 ##### 特殊正交群 $SO(3)$
 

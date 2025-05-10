@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@types/node": "^22.15.17",
     "markdown-it": "^14.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "unocss": "^65.4.3",

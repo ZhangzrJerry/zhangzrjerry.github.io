@@ -1,0 +1,3 @@
+Although I am a Robotics student, I struggle to grasp the insights behind advanced algorithms or implement them effectively. My limited programming skills-especially in **graphs**, **trees**, and **dynamic programming**-hinder my project progress. For example, when working on a descriptor for the loop closure problem, I can’t properly implement algorithms that generate complex descriptors for each feature point. This weakness limits my ability to research sophisticated algorithms that often require pseudocode-level abstraction.
+
+To improve, I’ve decided to strengthen my programming foundations by practicing on LeetCode. I even created a new account, resetting all progress to start fresh.
