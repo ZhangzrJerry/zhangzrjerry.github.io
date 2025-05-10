@@ -51,6 +51,7 @@ const customElementsForMathjax = [
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/',
   title: "ZhangzrJerry",
   description: "My Personal Website",
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
@@ -179,6 +180,9 @@ export default defineConfig({
           displayMath: [['$$', '$$'], ['\\(', '\\)'], ['\\begin{equation}', '\\end{equation}']]
         }
       });
+    },
+    image: {
+      lazyLoading: true
     }
   },
 

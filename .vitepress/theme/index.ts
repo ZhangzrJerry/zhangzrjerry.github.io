@@ -11,11 +11,13 @@ import Giscus from './components/Giscus.vue'
 import CustomHomeLayout from './components/CustomHome.vue'
 import VisitorMap from './components/VisitorMap.vue'
 import BetterTable from './components/BetterTable.vue'
+import { Analytics } from '@vercel/analytics/vue'
+
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(VisitorMap)
+      'layout-bottom': () => [h(VisitorMap), h(Analytics)],
     })
   },
   enhanceApp({ app, router, siteData }) {
