@@ -11,13 +11,19 @@ import Giscus from './components/Giscus.vue'
 import CustomHomeLayout from './components/CustomHome.vue'
 import VisitorMap from './components/VisitorMap.vue'
 import BetterTable from './components/BetterTable.vue'
-import { Analytics } from '@vercel/analytics/vue'
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => [h(VisitorMap), h(Analytics)],
+      'layout-bottom': () => [
+        h(VisitorMap),
+        h('script', {
+          defer: true,
+          src: 'https://cloud.umami.is/script.js',
+          'data-website-id': '61765fc4-2042-401e-801b-d8032e948a83'
+        })
+      ],
     })
   },
   enhanceApp({ app, router, siteData }) {
