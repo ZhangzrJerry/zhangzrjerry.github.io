@@ -2,19 +2,27 @@
 const posts = [
     {
         time: 'May. 2025',
-        type: 'lecture',
-        title: 'ELEC 5650 - Networked Sensing, Estimation and Control',
-        detail: 'Lecture Notes for ELEC 5650 in the 2024-25 Spring by Prof. Ling Shi at HKUST',
-        tags: ['control', 'hkust'],
-        url: '/posts/2025/elec-5650'
+        type:'thesis',
+        title: '🌟 Detailed derivation of On-Manifold IMU Preintegration',
+        detail:'Reading notes of "On-Manifold Preintegration for Real-Time Visual--Inertial Odometry"',
+        tags:['math','robotics'],
+        url:'/posts/2025/imu-preintegration'
     },
     {
         time: 'May. 2025',
         type: 'thesis',
         title: 'Innovations in BIM-based Localization',
         detail: 'Reading Notes of three BIM-based Localization theories by Prof. Huan Yin',
-        tags: ['sense'],
+        tags: ['sense', 'robotics'],
         url: '/posts/2025/bim-localization'
+    },
+    {
+        time: 'May. 2025',
+        type: 'lecture',
+        title: '🌟 ELEC 5650 - Networked Sensing, Estimation and Control',
+        detail: 'Lecture Notes for ELEC 5650 in the 2024-25 Spring by Prof. Ling Shi at HKUST',
+        tags: ['control', 'sense', 'hkust'],
+        url: '/posts/2025/elec-5650'
     },
     {
         time: 'May. 2025',
@@ -53,7 +61,7 @@ const posts = [
         type: 'thesis',
         title: 'Sparsity Extended Information Filter SLAM',
         detail: 'Reading Notes of "Exactly Sparse Extended Information Filters for Feature-based SLAM"',
-        tags: ['sense'],
+        tags: ['math', 'sense'],
         url: '/posts/2025/seif-slam'
     },
     {
