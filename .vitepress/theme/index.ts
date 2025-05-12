@@ -11,6 +11,8 @@ import Giscus from './components/Giscus.vue'
 import CustomHomeLayout from './components/CustomHome.vue'
 import VisitorMap from './components/VisitorMap.vue'
 import BetterTable from './components/BetterTable.vue'
+import { SpeedInsights } from '@vercel/speed-insights/vue'
+import { Analytics } from '@vercel/analytics/vue'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -23,7 +25,7 @@ export default {
           defer: true,
           src: 'https://cloud.umami.is/script.js',
           'data-website-id': '61765fc4-2042-401e-801b-d8032e948a83'
-        }), VisitorMap]
+        }), VisitorMap, SpeedInsights, Analytics]
     })
   },
   enhanceApp({ app, router, siteData }) {

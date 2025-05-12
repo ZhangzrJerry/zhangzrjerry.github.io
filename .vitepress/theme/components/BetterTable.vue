@@ -252,7 +252,8 @@ td {
 
 .post-time.active,
 .post-title.active {
-    color: #000;
+    color: var(--vp-c-text-title);
+    font-weight: 700;
 }
 
 .post-detail {
@@ -304,11 +305,6 @@ select {
     font-size: 0.875rem;
 }
 
-
-select[multiple] {
-    height: 100px;
-}
-
 th {
     position: relative;
 }
@@ -327,6 +323,7 @@ th {
     align-items: center;
     width: 10%;
     border: none;
+    border-radius: 0;
 }
 
 .filter-table select {
@@ -336,6 +333,10 @@ th {
     justify-content: center;
     text-align: center;
     height: 100%;
+    background-color: var(--vp-c-bg-soft);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
     scrollbar-width: none;
 }
 

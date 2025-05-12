@@ -108,6 +108,10 @@ export default defineConfig({
             text: '2025',
             items: [
               {
+                text: 'IMU Preintegration',
+                link: '/posts/2025/imu-preintegration'
+              },
+              {
                 text: 'BIM Localization',
                 link: '/posts/2025/bim-localization'
               },

@@ -1,8 +1,19 @@
-> C. Forster, L. Carlone, F. Dellaert, and D. Scaramuzza, “On-Manifold Preintegration for Real-Time Visual--Inertial Odometry,” _IEEE Trans. Robot._, vol. 33, no. 1, pp. 1–21, Feb. 2017, doi: [10.1109/TRO.2016.2597321](https://doi.org/10.1109/TRO.2016.2597321).
+# Detailed derivation of On-Manifold IMU Preintegration
+
+> - C. Forster, L. Carlone, F. Dellaert, and D. Scaramuzza, “On-Manifold Preintegration for Real-Time Visual--Inertial Odometry,” _IEEE Trans. Robot._, vol. 33, no. 1, pp. 1–21, Feb. 2017, doi: [10.1109/TRO.2016.2597321](https://doi.org/10.1109/TRO.2016.2597321).
 >
-> Z. Yang and S. Shen, “Monocular Visual–Inertial State Estimation With Online Initialization and Camera–IMU Extrinsic Calibration,” IEEE Trans. Automat. Sci. Eng., vol. 14, no. 1, pp. 39–51, Jan. 2017, doi: 10.1109/TASE.2016.2550621.
+> - Z. Yang and S. Shen, “Monocular Visual–Inertial State Estimation With Online Initialization and Camera–IMU Extrinsic Calibration,” IEEE Trans. Automat. Sci. Eng., vol. 14, no. 1, pp. 39–51, Jan. 2017, doi: 10.1109/TASE.2016.2550621.
+
+Inertial Measurement Unit (IMU) preintegration is a fundamental technique in visual-inertial odometry that efficiently combines high-frequency IMU measurements between keyframes. This approach, pioneered by Forster et al. and Yang et al., formulates the integration process on the manifold of rigid body motions $SE(3)$, addressing the nonlinear nature of 3D rotations through Lie group theory.
 
 <CenteredImg src="/posts/imu-preintegration/2.png" width=90% />
+
+The key innovation lies in separating the integration of IMU measurements from the global state, enabling computationally efficient optimization by precomputing relative motion constraints. This derivation details the mathematical foundations, including the special orthogonal group $SO(3)$, perturbation models, uncertainty representation on manifolds, and the complete preintegration theory that handles sensor biases and noise characteristics while maintaining real-time performance. The resulting preintegrated terms serve as constraints in factor graph optimization frameworks for robust state estimation.
+
+<Badges>
+<img src="/tags/math.svg">
+<img src="/tags/robotics.svg">
+</Badges>
 
 ## Special Orthology Group $SO(3)$
 
