@@ -139,4 +139,4 @@ const posts = [
 ]
 </script>
 
-<BetterTable :data="posts" />
+<BetterTable4Post :data="posts" />
