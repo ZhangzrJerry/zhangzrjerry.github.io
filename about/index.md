@@ -11,5 +11,3 @@ Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology)
 :earth_asia: [FIRST Robotics Competition](https://www.firstinspires.org/robotics/frc) alumni in team [9635](https://www.thebluealliance.com/team/9635), [8214](https://www.thebluealliance.com/team/8214), [6399](https://www.thebluealliance.com/team/6399), [8811](https://www.thebluealliance.com/team/8811) and [8011](https://www.thebluealliance.com/team/8011)
 
 :mortar_board: [HKUST](https://hkust.edu.hk/)(UG) 28' · [广州二中](https://www.gdgzez.com.cn/)(High School) 24'
-
-<p><a href="https://clustrmaps.com/site/1c2qy"  title="ClustrMaps"><CenteredImg src="//www.clustrmaps.com/map_v2.png?d=N1xcGfMiyGqEOR9TZz2PRIL6pBhRmMh98RoCJonFmW4&cl=ffffff" width=30% /></a></p>

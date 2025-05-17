@@ -5,7 +5,7 @@ const frcmembers = [
   {
     avatar: 'https://github.com/laytcai.png',
     name: 'Layton Cai',
-    // title: 'Co-founder',
+    title: 'Captain',
     org: 'FRC8011',
     links: [
       { icon: 'github', link: 'https://github.com/laytcai' }

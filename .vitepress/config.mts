@@ -80,17 +80,17 @@ export default defineConfig({
       '/about/': [
         {
           text: 'About',
+          link: '/about/',
           items: [
-            { text: 'Bio', link: '/about/' },
             { text: 'Resume', link: '/about/personal/resume' },
             { text: 'Academic', link: '/about/personal/academic' }
           ]
         },
         {
           text: 'Projects',
+          link: '/about/projects/projects',
           items: [
-            { text: 'Projects', link: '/about/projects/projects' },
-            { text: 'FRC', link: '/about/projects/frc' },
+            { text: 'FRC Robots', link: '/about/projects/frc' },
           ]
         },
         {
@@ -102,65 +102,63 @@ export default defineConfig({
       ],
       '/posts/': [{
         text: 'Blogs',
-        link: '/posts/',
+        link: '/posts/'
+      },
+      {
+        text: 'SLAM',
+        collapsed: false,
         items: [
+          { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
           {
-            text: '2025',
-            items: [
-              {
-                text: 'IMU Preintegration',
-                link: '/posts/2025/imu-preintegration'
-              },
-              {
-                text: 'BIM Localization',
-                link: '/posts/2025/bim-localization'
-              },
-              {
-                text: 'ELEC 5650', items: [
-                  { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
-                  { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
-                  { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
-                  { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
-                ],
-                'link': '/posts/2025/elec-5650'
-              },
-              { text: 'SEIF SLAM', link: '/posts/2025/seif-slam' },
-              { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
-              { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
-            ]
+            text: 'IMU Preintegration', link: '/posts/2025/imu-preintegration'
           },
+          { text: 'Spline Fusion', link: '/posts/2024/spline-fusion' },
+          { text: 'SEIF SLAM', link: '/posts/2025/seif-slam' },
+          { text: 'Gauge Handling', link: '/posts/2024/gauge-handling' },
+        ]
+      },
+      {
+        text: 'PnC',
+        collapsed: false,
+        items: [
+          { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
+          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' }
+        ]
+      },
+      {
+        text: 'Notes',
+        collapsed: false,
+        items: [
+          { text: 'COMP 2711', link: '/posts/2024/comp-2711' },
+          { text: 'ELEC 3200', link: '/posts/2024/elec-3200' },
           {
-            text: '2024',
+            text: 'ELEC 5650',
+            collapsed: true,
             items: [
-              { text: 'COMP 2711', link: '/posts/2024/comp-2711' },
-              { text: 'ELEC 3200', link: '/posts/2024/elec-3200' },
-              { text: 'Gauge Handling', link: '/posts/2024/gauge-handling' },
-              { text: 'Spline Fusion', link: '/posts/2024/spline-fusion' },
-              { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
-              { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' },
-              { text: 'Rotation Representation', link: '/posts/2024/rotation-representation' },
-            ]
+              { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
+              { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
+              { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
+              { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
+            ],
+            'link': '/posts/2025/elec-5650'
           }
         ]
+      },
+      {
+        text: 'Uncategorized',
+        collapsed: false,
+        items: [
+          {
+            text: 'BIM Localization',
+            link: '/posts/2025/bim-localization'
+          },
+          { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
+          { text: 'Rotation Representation', link: '/posts/2024/rotation-representation' },
+        ]
       }
-      ],
-      '/leetcode/': [
-        {
-          text: 'Leetcode',
-          link: '/leetcode'
-        },
-        {
-          text: 'Collections',
-          items: [
-            { text: 'Sliding Window', link: '/leetcode/sliding-window' }
-          ]
-        },
-        {
-          text: 'Problems',
-          items: [],
-          collapsed: true
-        }
       ]
+
+
     },
 
     socialLinks: [

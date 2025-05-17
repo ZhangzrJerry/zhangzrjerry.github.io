@@ -1,4 +1,4 @@
-# Projects
+# Uncategorized Projects
 
 ### CoTiMo Planner: TOPP based motion planner
 

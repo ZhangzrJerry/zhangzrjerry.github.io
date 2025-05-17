@@ -1,4 +1,4 @@
-# FRC Experience
+# FRC Robots
 
 My FRC career started in 2020. In 2020 season, I won **_Champion_** in the We RoboStar League as program leader in team 8011. In 2021 season, I won **_Rookie Game Changer Award_** in INFINITE RECHARGE At Home Challenge as team captain. In 2022 season, I established the very 8811 with the former captain from team 6386. However, Hangzhou Regional changed to online, so we don't have any competition this year. In 2023 season, we attend 2023 FRC Off-season China (2022 Game Rule) and won the **_3rd Prize_**.
 
@@ -19,9 +19,9 @@ For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC p
 
 :joystick: Custom Node Selection Panel: [Cyber Selector](#cyber-selector-custom-node-selection-panel)
 
-:trophy: Regional Finalists and Creativity Award sponsored by Rockwell Automation in 2025 Bosphorus Regional (9635)
+:trophy: Regional Finalists and Creativity Award in 2025 Bosphorus Regional (9635)
 
-:trophy: Autonomous Award in 2025 İstanbul Regional and Industrial Design Award sponsored by General Motors in 2025 Shanghai Regional (8214)
+:trophy: Autonomous Award in 2025 İstanbul Regional and Industrial Design Award in 2025 Shanghai Regional (8214)
 
 ---
 
