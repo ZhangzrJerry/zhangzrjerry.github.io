@@ -64,13 +64,13 @@ export default defineConfig({
         text: 'About',
         items: [
           { text: 'Bio', link: '/about/' },
-          { text: 'Resume', link: '/about/personal/resume' },
-          { text: 'Projects', link: '/about/projects/projects' },
-          { text: 'Publications', link: '/about/personal/academic#publications' },
-          { text: 'Connections', link: '/about/social/friends' }
+          { text: 'Resume', link: '/about/personal/resume.html' },
+          { text: 'Projects', link: '/about/projects/projects.html' },
+          { text: 'Publications', link: '/about/personal/academic.html#publications' },
+          { text: 'Connections', link: '/about/social/friends.html' }
         ]
       },
-      { text: 'Posts', link: '/posts' }
+      { text: 'Posts', link: '/posts/' }
     ],
     search: {
       'provider': 'local',
@@ -82,21 +82,21 @@ export default defineConfig({
           text: 'About',
           link: '/about/',
           items: [
-            { text: 'Resume', link: '/about/personal/resume' },
-            { text: 'Academic', link: '/about/personal/academic' }
+            { text: 'Resume', link: '/about/personal/resume.html' },
+            { text: 'Academic', link: '/about/personal/academic.html' }
           ]
         },
         {
           text: 'Projects',
-          link: '/about/projects/projects',
+          link: '/about/projects/projects.html',
           items: [
-            { text: 'FRC Robots', link: '/about/projects/frc' },
+            { text: 'FRC Robots', link: '/about/projects/frc.html' },
           ]
         },
         {
           text: 'Social',
           items: [
-            { text: 'Connections', link: '/about/social/friends' }
+            { text: 'Connections', link: '/about/social/friends.html' }
           ]
         }
       ],
@@ -108,39 +108,39 @@ export default defineConfig({
         text: 'SLAM',
         collapsed: false,
         items: [
-          { text: 'VINS Initialization', link: '/posts/2024/vins-init' },
+          { text: 'VINS Initialization', link: '/posts/2024/vins-init.html' },
           {
-            text: 'IMU Preintegration', link: '/posts/2025/imu-preintegration'
+            text: 'IMU Preintegration', link: '/posts/2025/imu-preintegration.html'
           },
-          { text: 'Spline Fusion', link: '/posts/2024/spline-fusion' },
-          { text: 'SEIF SLAM', link: '/posts/2025/seif-slam' },
-          { text: 'Gauge Handling', link: '/posts/2024/gauge-handling' },
+          { text: 'Spline Fusion', link: '/posts/2024/spline-fusion.html' },
+          { text: 'SEIF SLAM', link: '/posts/2025/seif-slam.html' },
+          { text: 'Gauge Handling', link: '/posts/2024/gauge-handling.html' },
         ]
       },
       {
         text: 'PnC',
         collapsed: false,
         items: [
-          { text: 'Cyber Planner', link: '/posts/2025/cyber-planner' },
-          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner' }
+          { text: 'Cyber Planner', link: '/posts/2025/cyber-planner.html' },
+          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' }
         ]
       },
       {
         text: 'Notes',
         collapsed: false,
         items: [
-          { text: 'COMP 2711', link: '/posts/2024/comp-2711' },
-          { text: 'ELEC 3200', link: '/posts/2024/elec-3200' },
+          { text: 'COMP 2711', link: '/posts/2024/comp-2711.html' },
+          { text: 'ELEC 3200', link: '/posts/2024/elec-3200.html' },
           {
             text: 'ELEC 5650',
             collapsed: true,
+            link: '/posts/2025/elec-5650/',
             items: [
-              { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools' },
-              { text: 'Estimation', link: '/posts/2025/elec-5650/estimation' },
-              { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter' },
-              { text: 'LQR', link: '/posts/2025/elec-5650/lqr' }
-            ],
-            'link': '/posts/2025/elec-5650'
+              { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools.html' },
+              { text: 'Estimation', link: '/posts/2025/elec-5650/estimation.html' },
+              { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter.html' },
+              { text: 'LQR', link: '/posts/2025/elec-5650/lqr.html' }
+            ]
           }
         ]
       },
@@ -150,10 +150,10 @@ export default defineConfig({
         items: [
           {
             text: 'BIM Localization',
-            link: '/posts/2025/bim-localization'
+            link: '/posts/2025/bim-localization.html'
           },
-          { text: 'Visual Feature', link: '/posts/2025/visual-feature' },
-          { text: 'Rotation Representation', link: '/posts/2024/rotation-representation' },
+          { text: 'Visual Feature', link: '/posts/2025/visual-feature.html' },
+          { text: 'Rotation Representation', link: '/posts/2024/rotation-representation.html' },
         ]
       }
       ]
