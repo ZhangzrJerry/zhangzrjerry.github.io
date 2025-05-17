@@ -1,8 +1,16 @@
 # FRC Robots
 
-My FRC career started in 2020. In 2020 season, I won **_Champion_** in the We RoboStar League as program leader in team 8011. In 2021 season, I won **_Rookie Game Changer Award_** in INFINITE RECHARGE At Home Challenge as team captain. In 2022 season, I established the very 8811 with the former captain from team 6386. However, Hangzhou Regional changed to online, so we don't have any competition this year. In 2023 season, we attend 2023 FRC Off-season China (2022 Game Rule) and won the **_3rd Prize_**.
+Over six years in the FIRST Robotics Competition (FRC), I evolved from a motivated rookie to a strategic leader, accumulating regional finalists, world championship qualifications, and 10+ awards across 6 seasons.
 
-In 2024 season, I jonined team 6399, and led the team to **_Engineering Inspiration Award_** as a program mentor. I am currently a program mentor in team 8214 and 9635.
+<CenteredImg src="/about/frc/flag.jpg" width=50% />
+
+Starting in 2020 as program leader of Team 8011, I served as the program leader for Team 8011 and won the **_Championship_** in the We RoboStar League. In the 2021 season, as team captain, I earned the **_Rookie Game Changer Award_** for our innovative technologies and professional spirits during the INFINITE RECHARGE At Home Challenge.
+
+In 2022, I **_co-founded Team 8811_** alongside the former captain of Team 6386. Unfortunately, the Hangzhou Regional shifted to an online format, so we could not compete that year. However, in the 2023 season, we competed in the 2023 FRC Off-Season China and secured a **_3rd Prize_**.
+
+For the 2024 season, I joined Team 6399 as a programming mentor and guided the team to win the **_Engineering Inspiration Award_**. In 2025, I contributed to both Team 8214 and Team 9635. Across four regionals, we achieved one Finalist placement and three additional awards. Both teams advanced to the Houston Championship, with Team 8214 reaching the **_Division Finalist as alliance captain_** and earning the **_Industrial Design Award_**.
+
+Though I’ve since retired from FRC, my passion for robotics remains as strong as ever.
 
 ## Annual Robot
 
