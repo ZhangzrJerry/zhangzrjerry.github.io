@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build && cp -r ./public ./.vitepress/dist/",
+    "build": "vitepress build",
     "preview": "vitepress preview"
   },
   "dependencies": {

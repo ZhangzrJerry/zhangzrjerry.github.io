@@ -55,6 +55,7 @@ export default defineConfig({
   title: "ZhangzrJerry",
   description: "My Personal Website",
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  srcDir: 'src',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
