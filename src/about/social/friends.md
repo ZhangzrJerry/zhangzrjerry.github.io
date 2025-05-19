@@ -55,8 +55,7 @@ const frcmembers = [
     orgLink: 'https://github.com/frcnextinnovation',
     desc: '',
     links: [
-      {icon:'github', link:'https://github.com/mirrorcy'},
-      {icon:'github', link:'a'}
+      {icon:'github', link:'https://github.com/mirrorcy'}
     ]
   },
   {
