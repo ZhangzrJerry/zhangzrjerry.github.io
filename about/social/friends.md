@@ -67,7 +67,7 @@ const frcmembers = [
     desc: '',
     links: [
       {icon:'github', link:'https://github.com/waipok-fu'},
-      {icon:'homepage', link:'waipok-fu.github.io'}
+      {icon:'homepage', link:'https://waipok-fu.github.io'}
     ]
   },
   {
