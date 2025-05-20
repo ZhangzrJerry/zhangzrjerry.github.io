@@ -1,4 +1,18 @@
-# Uncategorized Projects
+# Project List
+
+### FRC Robots and Related Projects [\[view\]](/projects/frc.html){style="float:right;"}
+
+<!-- TODO: -->
+
+<RightImg src="/projects/projects/2024-cotimo.gif" width=30% />
+
+CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Parameterization, and Model Predictive Control.
+
+<Badges>
+  <img src="/tags/first.svg">
+</Badges>
+
+## :paperclip: Uncategorized Projects
 
 ### CoTiMo Planner: TOPP based motion planner
 

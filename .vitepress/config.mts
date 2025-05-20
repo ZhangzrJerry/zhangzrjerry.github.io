@@ -68,8 +68,8 @@ export default defineConfig({
       {
         text: 'Projects',
         items: [
-          { text: 'FRC Robots', link: '/projects/frc.html' },
-          { text: 'Uncategorized', link: '/projects/projects.html' }
+          { text: 'Projects', link: '/projects/' },
+          { text: 'FRC Robots', link: '/projects/frc.html' }
         ]
       },
       { text: 'Posts', link: '/posts/' }

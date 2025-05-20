@@ -84,7 +84,7 @@ $$
 
 <!-- ##  Positive Definite
 
-Already very familiar, omit #TODO: finish it -->
+Already very familiar, omit -->
 
 ## Matrix Inversion Lemma
 

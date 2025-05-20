@@ -218,4 +218,4 @@ $$
 \end{aligned}
 $$
 
-<!-- #TODO: Prove $\langle x_{k+1},e_i\rangle=\langle x_k,e_i\rangle,\forall i\in[1,k]$ -->
+<!-- Prove $\langle x_{k+1},e_i\rangle=\langle x_k,e_i\rangle,\forall i\in[1,k]$ -->

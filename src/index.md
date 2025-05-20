@@ -33,14 +33,14 @@ features:
     icon: 🤖
     img: /projects/frc/2025-cb-square.png
     details: A command-based robot framework with standardized hardware interfaces and factory-patterned subsystems.
-    link: https://github.com/zhangzrJerry/commandbot
+    link: /projects/frc.html/#command-bot-a-command-based-robot-framework
 
   - title: Sideway
     icon:
       src: /icon/reefscape.gif
     img: /projects/frc/2025-square.png
     details: For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC pipe) or the Algae (rubber ball) and place.
-    link: /about/projects/frc.html#_2025-trouble-sideway
+    link: /projects/frc.html#_2025-trouble-sideway
 
   - title: Cyber Planner
     icon:
@@ -48,13 +48,13 @@ features:
       dark: /icon/cyber-unicorn-gray.png
     img: /projects/frc/2025-cp-square.png
     details: A time optimal arm motion planner with collision avoidance and electrical limits applied on motors.
-    link: https://github.com/frcnextinnovation/cyber-planner-2025
+    link: /projects/frc.html#cyber-planner-topp-based-arm-motion-planner
 
   - title: CoTiMo Planner
     icon: 🥏
     img: /projects/projects/2024-cotimo-square.png
     details: A collision-free smooth path generation and time-optimal path parameterization palnner with model predictive control.
-    link: https://github.com/zhangzrjerry/cotimo
+    link: /projects/#cotimo-planner-topp-based-motion-planner
 
   - title: Defiant
     icon:
@@ -62,21 +62,21 @@ features:
       dark: /icon/crescendo-dark.png
     img: /projects/frc/2024-square.png
     details: For FRC 2024 game rules, the mission of the robot is to collect the Note (squishy ring) and shoot to the speaker or to the amplifier.
-    link: /about/projects/frc.html#_2024-defiant
+    link: /projects/frc.html#_2024-defiant
 
   - title: Yuan Library
     icon:
       src: /icon/rhino-bird.png
     img: /projects/projects/2023-rb-square.png
     details: An intelligent book recommendation and user interest analysis system based on factorization machine.
-    link: https://github.com/zhangzrjerry/rhinobird
+    link: /projects/#yuan-library-intelligent-book-recommendation-system
 
   - title: Yuan Scout
     icon:
       src: /icon/frc-yuan.png
     img: /projects/frc/2022-ys-square.png
     details: A wechat miniprogram for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
-    link: https://github.com/frc8811/frc_scouting
+    link: /projects/frc.html#yuan-scout-frc-data-collection-software
 
   - title: Yuan Bot
     icon:
@@ -84,7 +84,7 @@ features:
       dark: /icon/rapid-react-dark.png
     img: /projects/frc/2023-square.png
     details: For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
-    link: /about/projects/frc.html#_2022-yuan-bot
+    link: /projects/frc.html#_2022-yuan-bot
 
   - title: Yingcai Program
     icon:
@@ -98,7 +98,7 @@ features:
       dark: /icon/kylin-dark.png
     img: /projects/projects/2022-bs.gif
     details: It is a single-wheeled omni-directional mobile platform with a balancing mechanism.
-    link: /about/projects/projects.html#balance-swerve-a-single-wheeled-omni-directional-mobile-platform
+    link: /projects/#balance-swerve-a-single-wheeled-omni-directional-mobile-platform
 
   - title: Kylin 2022
     icon:
@@ -106,7 +106,7 @@ features:
       dark: /icon/rapid-react-dark.png
     img: /projects/frc/2022-square.png
     details: For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
-    link: /about/projects/frc.html#_2022-kylin
+    link: /projects/frc.html#_2022-kylin
 
   - title: Kylin 2021
     icon:
@@ -114,7 +114,7 @@ features:
       dark: /icon/infinite-recharge-dark.png
     img: /projects/frc/2021-square.png
     details: For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (foam ball) and shoot to the power port.
-    link: /about/projects/frc.html#_2021-kylin
+    link: /projects/frc.html#_2021-kylin
 
   - title: Kylin 2020
     icon:
@@ -122,5 +122,5 @@ features:
       dark: /icon/infinite-recharge-dark.png
     img: /projects/frc/2020-square.png
     details: For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (foam ball) and shoot to the power port.
-    link: /about/projects/frc.html#_2020-kylin
+    link: /projects/frc.html#_2020-kylin
 ---

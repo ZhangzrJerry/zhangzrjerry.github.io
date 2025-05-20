@@ -37,7 +37,8 @@ Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology)
 
 **FRC Alumni** _Sep. 2019 - Present_{style="float:right"}
 
-- View my full experience in [FRC ->](./projects/frc)
+- Led and mentored five FRC teams over six seasons (2020-2025).
+- View my full experience in [FRC ->](/projects/frc)
 
 ## :books: Publications
 
