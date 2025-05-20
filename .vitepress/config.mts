@@ -63,12 +63,13 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       {
         text: 'About',
+        link: '/about/',
+      },
+      {
+        text: 'Projects',
         items: [
-          { text: 'Bio', link: '/about/' },
-          { text: 'Resume', link: '/about/personal/resume.html' },
-          { text: 'Projects', link: '/about/projects/projects.html' },
-          { text: 'Publications', link: '/about/personal/academic.html#publications' },
-          { text: 'Connections', link: '/about/social/friends.html' }
+          { text: 'FRC Robots', link: '/projects/frc.html' },
+          { text: 'Uncategorized', link: '/projects/projects.html' }
         ]
       },
       { text: 'Posts', link: '/posts/' }
@@ -78,29 +79,6 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/about/': [
-        {
-          text: 'About',
-          link: '/about/',
-          items: [
-            { text: 'Resume', link: '/about/personal/resume.html' },
-            { text: 'Academic', link: '/about/personal/academic.html' }
-          ]
-        },
-        {
-          text: 'Projects',
-          link: '/about/projects/projects.html',
-          items: [
-            { text: 'FRC Robots', link: '/about/projects/frc.html' },
-          ]
-        },
-        {
-          text: 'Social',
-          items: [
-            { text: 'Connections', link: '/about/social/friends.html' }
-          ]
-        }
-      ],
       '/posts/': [{
         text: 'Blogs',
         link: '/posts/'

@@ -2,7 +2,7 @@
 
 ### CoTiMo Planner: TOPP based motion planner
 
-<RightImg src="/about/projects/2024-cotimo.gif" width=30% />
+<RightImg src="/projects/projects/2024-cotimo.gif" width=30% />
 
 [Source Code](https://github.com/zhangzrJerry/CoTiMo/) /
 [Report](/posts/2024/cotimo-planner) /
@@ -19,7 +19,7 @@ CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Param
 
 ### Yuan Library: Intelligent Book Recommendation System
 
-<RightImg src="/about/projects/2023-rb.png" width=30% />
+<RightImg src="/projects/projects/2023-rb.png" width=30% />
 
 [Background](https://cloud.tencent.com/developer/article/2258040) /
 [Source Code](https://github.com/ZhangzrJerry/RhinoBird) /
@@ -36,7 +36,7 @@ The project aims to improve the accuracy and personalization of public library s
 
 ---
 
-<RightImg src="/about/projects/2022-bs.gif" width=20% />
+<RightImg src="/projects/projects/2022-bs.gif" width=20% />
 
 ### Balance Swerve: A Single-wheeled Omni-directional Mobile Platform
 
@@ -53,11 +53,11 @@ The platform is equipped with an omni-directional wheel and a balancing mechanis
 
 ### Swerve Controller: A Dual Motors Drive Board
 
-<RightImg src="/about/projects/2022-sc.png" width=30% />
+<RightImg src="/projects/projects/2022-sc.png" width=30% />
 
-[Schematic](/about/projects/2022-sc-schematic.png) /
-[Layout](/about/projects/2022-sc-top.png) /
-[Layout (bottom)](/about/projects/2022-sc-bottom.png) /
+[Schematic](/projects/projects/2022-sc-schematic.png) /
+[Layout](/projects/projects/2022-sc-top.png) /
+[Layout (bottom)](/projects/projects/2022-sc-bottom.png) /
 
 This drive board powers a swerve module with two independent motors: one for velocity, the other for steering, delivering a maximum power of 240W (2 \* 12V \* 10A).
 

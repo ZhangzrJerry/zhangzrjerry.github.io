@@ -2,21 +2,21 @@
 
 Over six years in the FIRST Robotics Competition (FRC), I evolved from a motivated rookie to a strategic leader, accumulating regional finalists, world championship qualifications, and 10+ awards across 6 seasons.
 
-<CenteredImg src="/about/frc/flag.jpg" width=50% />
+<CenteredImg src="/projects/frc/flag.jpg" width=50% />
 
 Starting in 2020 as program leader of Team 8011, I served as the program leader for Team 8011 and won the **_Championship_** in the We RoboStar League. In the 2021 season, as team captain, I earned the **_Rookie Game Changer Award_** for our innovative technologies and professional spirits during the INFINITE RECHARGE At Home Challenge.
 
-In 2022, I **_co-founded Team 8811_** alongside the former captain of Team 6386. Unfortunately, the Hangzhou Regional shifted to an online format, so we could not compete that year. However, in the 2023 season, we competed in the 2023 FRC Off-Season China and secured a **_3rd Prize_**.
+In 2022, I **co-founded Team 8811** alongside the former captain of Team 6386. Unfortunately, the Hangzhou Regional shifted to an online format, so we could not compete that year. However, in the 2023 season, we competed in the 2023 FRC Off-Season China and secured a **_3rd Prize_**.
 
-For the 2024 season, I joined Team 6399 as a programming mentor and guided the team to win the **_Engineering Inspiration Award_**. In 2025, I contributed to both Team 8214 and Team 9635. Across four regionals, we achieved one Finalist placement and three additional awards. Both teams advanced to the Houston Championship, with Team 8214 reaching the **_Division Finalist as alliance captain_** and earning the **_Industrial Design Award_**.
+For the 2024 season, I joined Team 6399 as a **Programming Mentor** and guided the team to win the **_Engineering Inspiration Award_**. In 2025, I contributed to both Team 8214 and Team 9635. Across four regionals, we achieved one Finalist placement and three additional awards. Both teams advanced to the Houston Championship, with Team 8214 reaching the **_Division Finalist as alliance captain_** and earning the **_Industrial Design Award_**.
 
 Though I’ve since retired from FRC, my passion for robotics remains as strong as ever.
 
-## Annual Robots
+## :rocket: Annual Robots
 
 ### 2025 Trouble & Sideway
 
-<RightImg src="/about/frc/2025.png" width="30%" />
+<RightImg src="/projects/frc/2025.png" width="30%" />
 
 For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC pipe) or the Algae (rubber ball) and place.
 
@@ -35,7 +35,7 @@ For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC p
 
 ### 2024 Defiant
 
-<RightImg src="/about/frc/2024.png" width="30%" />
+<RightImg src="/projects/frc/2024.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=9keeDyFxzY4) /
 [Recap](https://www.bilibili.com/video/BV1pbWCejEUi) /
@@ -50,7 +50,7 @@ For FRC 2024 game rules, the mission of the robot is to collect the Note (squish
 
 ### 2022 Yuan Bot
 
-<RightImg src="/about/frc/2023.png" width="30%" />
+<RightImg src="/projects/frc/2023.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
 [Preview](https://www.bilibili.com/video/BV1RW4y1M72Y) /
@@ -63,7 +63,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ### 2022 Kylin
 
-<RightImg src="/about/frc/2022.png" width="30%" />
+<RightImg src="/projects/frc/2022.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
 
@@ -75,7 +75,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ### 2021 Kylin
 
-<RightImg src="/about/frc/2021.png" width="30%" />
+<RightImg src="/projects/frc/2021.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=I77Dz9pfds4) /
 [Recap](https://www.bilibili.com/video/BV1WQ4y1z7DM/) /
@@ -88,7 +88,7 @@ For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (
 
 ### 2020 Kylin
 
-<RightImg src="/about/frc/2020.png" width="30%" />
+<RightImg src="/projects/frc/2020.png" width="30%" />
 
 [Background](https://www.youtube.com/watch?v=gmiYWTmFRVE) /
 
@@ -96,11 +96,11 @@ For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (
 
 :trophy: Champion in 2020 WE RoboStar Robotics League
 
-## Related Projects
+## :flying_saucer: Related Projects
 
 ### Command Bot: A Command-Based Robot Framework
 
-<RightImg src="/about/frc/2025-cb.png" width="30%" />
+<RightImg src="/projects/frc/2025-cb.png" width="30%" />
 
 [Source Code](https://github.com/zhangzrjerry/commandbot) /
 [Demo](https://www.bilibili.com/video/BV1CzZaYSE1W/) /
@@ -118,10 +118,10 @@ Command Bot is a framework with standardized hardware **interfaces**, factory-pa
 
 ### Cyber Selector: Custom Node Selection Panel
 
-<RightImg src="/about/frc/2025-cs.png" width="30%" />
+<RightImg src="/projects/frc/2025-cs.png" width="30%" />
 
-[GUI (High Contrast)](/about/frc/2025-cs-guih.png) /
-[GUI (Macaroon)](/about/frc/2025-cs-guim.png) /
+[GUI (High Contrast)](/projects/frc/2025-cs-guih.png) /
+[GUI (Macaroon)](/projects/frc/2025-cs-guim.png) /
 
 Cyber ​​Selector is a custom node selection panel for selecting item placement, setting robot states, and indicating remaining time.
 
@@ -135,7 +135,7 @@ Cyber ​​Selector is a custom node selection panel for selecting item placeme
 
 ### Cyber Planner: TOPP based Arm Motion Planner
 
-<RightImg src="/about/frc/2025-cp.png" width="30%" />
+<RightImg src="/projects/frc/2025-cp.png" width="30%" />
 
 [Source Code](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
 [Report](/assets/cyber-planner.pdf) /
@@ -152,10 +152,10 @@ Cyber Planner is based on a finite convex polygon set representation of objects,
 
 ### Yuan Scout: FRC Data Collection Software
 
-<RightImg src="/about/frc/2022-ys.png" width="30%" />
+<RightImg src="/projects/frc/2022-ys.png" width="30%" />
 
 [Source Code](https://github.com/frc8811/FRC_SCOUTING) /
-[GUI](/about/frc/2022-ys-gui.png) /
+[GUI](/projects/frc/2022-ys-gui.png) /
 
 The wechat miniprogram provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
 
@@ -164,3 +164,94 @@ The wechat miniprogram provides a separate account for every team to collect, up
     <img src="/tags/wxml.svg">
     <a href="https://img.shields.io/github/stars/frc8811/frc_scouting"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/frc8811/frc_scouting"></a>
 </Badges>
+
+## :bicyclist: Connections
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const frcmembers = [
+  {
+    avatar: 'https://github.com/laytcai.png',
+    name: 'Layton Cai',
+    title: 'Captain',
+    org: 'FRC8011',
+    links: [
+      { icon: 'github', link: 'https://github.com/laytcai' }
+    ]
+  },
+  {
+    avatar: 'https://github.com/edward-yue-peng.png',
+    name: 'Yue Peng',
+    title: 'Co-founder',
+    org: 'FRC8811',
+    orgLink: 'https://github.com/frc8811',
+    links: [
+      { icon: 'github', link: 'https://github.com/edward-yue-peng' }
+    ]
+  },
+  {
+    avatar: 'https://github.com/flowerst-0416.png',
+    name: 'Fujun Ruan',
+    title: 'Mentor',
+    org: 'FRC8214',
+    orgLink: 'https://github.com/frcnextinnovation',
+    desc: '',
+    links: [
+      {icon:'github', link:'https://github.com/flowerst-0416'},
+      {icon: 'orcid', link:'https://orcid.org/0009-0007-7552-3913'},
+      {icon:'googlescholar', link:'https://scholar.google.com/citations?user=0C7Zg4QAAAAJ&hl'},
+      {icon: 'homepage', link: 'https://fujunruan.com'}
+    ]
+  },
+  {
+    avatar: 'https://github.com/rockyxrq.png',
+    name: 'Rocky Xu',
+    title: 'Program Mentor',
+    org: 'FRC8214',
+    orgLink: 'https://github.com/frcnextinnovation',
+    desc: '',
+    links: [
+      { icon: 'github', link: 'https://github.com/rockyxrq' },
+      { icon: 'homepage', link: 'https://www.rocky-xrq.com/' }
+    ]
+  },
+  {
+    avatar: 'https://github.com/mirrorcy.png',
+    name: 'MirrorCY',
+    title: 'Program Mentor',
+    org: 'FRC8214',
+    orgLink: 'https://github.com/frcnextinnovation',
+    desc: '',
+    links: [
+      {icon:'github', link:'https://github.com/mirrorcy'}
+    ]
+  },
+  {
+    avatar: 'https://github.com/Waipok-Fu.png',
+    name: 'Waipok Fu',
+    title: 'Program Mentor',
+    org: 'FRC8214',
+    orgLink: 'https://github.com/frcnextinnovation',
+    desc: '',
+    links: [
+      {icon:'github', link:'https://github.com/waipok-fu'},
+      {icon:'homepage', link:'https://waipok-fu.github.io'}
+    ]
+  },
+  {
+    avatar: 'https://github.com/boring180.png',
+    name: 'Borong Xu',
+    title: 'Alumni',
+    org: 'FRC5449',
+    desc: '',
+    links: [
+      { icon: 'github', link: 'https://github.com/boring180' },
+      { icon: 'homepage', link: 'https://boring180.github.io/' }
+    ]
+  }
+]
+
+</script>
+
+<VPTeamMembers size="small" :members="frcmembers" />
