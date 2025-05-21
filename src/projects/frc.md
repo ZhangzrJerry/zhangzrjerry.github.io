@@ -169,45 +169,16 @@ The wechat miniprogram provides a separate account for every team to collect, up
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
-import { VPTeamPage, VPTeamPageTitle } from 'vitepress/theme'
-import { people } from '/global.ts'
+import  { People } from '/scripts/people.ts'
 
 const frcmembers = [
-  {
-    ...people['liangyucai'],
-    title: 'Captain',
-    org: 'FRC8011'
-  },
-  {
-    ...people['yuepeng'],
-    title: 'Co-founder',
-    org:'FRC8811'
-  },
-  {
-    ...people['fujunruan'],
-    title:'Mentor',
-    org:'FRC8214'
-  },
-  {
-    ...people['ruoqixu'],
-    title:'Mentor',
-    org:'FRC8214'
-  },
-  {
-    ...people['yanchen'],
-    title:'Mentor',
-    org:'FRC8214'
-  },
-  {
-    ...people['weibofu'],
-    title:'Youth Mentor',
-    org:'FRC8214'
-  },
-  {
-    ...people['borongxu'],
-    title:'Alumni',
-    org:'FRC5449'
-  }
+  People.liangyucai.updateOrg("FRC8011").updateTitle("Captain").get(),
+  People.yuepeng.updateOrg("FRC8811").updateTitle("Co-founder").get(),
+  People.fujunruan.updateOrg("FRC8214").updateTitle("Mentor").get(),
+  People.ruoqixu.updateOrg("FRC8214").updateTitle("Mentor").get(),
+  People.yanchen.updateOrg("FRC8214").updateTitle("Mentor").get(),
+  People.weibofu.updateOrg("FRC8214").updateTitle("Youth Mentor").get(),
+  People.borongxu.updateOrg("FRC5449").updateTitle("Alumni").get(),
 ]
 </script>
 
