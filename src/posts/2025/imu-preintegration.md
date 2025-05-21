@@ -96,7 +96,7 @@ The **logarithmic map** $ \log : SO(3) \to \mathfrak{so}(3) $ extracts the axis-
 $$
 \boldsymbol{\phi} = \log(R)^\vee = \frac{\|\boldsymbol{\phi}\|}{2 \sin \|\boldsymbol{\phi}\|} \begin{bmatrix}
 r_{32} - r_{23} \\
-r*{13} - r_{31} \\
+r_{13} - r_{31} \\
 r_{21} - r_{12}
 \end{bmatrix} \tag{5}
 $$
