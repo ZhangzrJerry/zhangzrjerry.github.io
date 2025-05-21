@@ -1,6 +1,6 @@
 # Project List
 
-### FRC Robots and Related Projects [\[view\]](/projects/frc.html){style="float:right;"}
+<!-- ### FRC Robots and Related Projects [\[view\]](/projects/frc.html){style="float:right;"}
 
 <!-- TODO: -->
 
@@ -10,7 +10,7 @@ CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Param
 
 <Badges>
   <img src="/tags/first.svg">
-</Badges>
+</Badges> -->
 
 ## :paperclip: Uncategorized Projects
 
