@@ -46,7 +46,7 @@ export namespace People {
         avatar: 'https://github.com/laytcai.png',
         name: 'Layton Cai',
         links: [
-            { icon: 'github', link: 'https://github.com/laytcai' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/laytcai' }
         ]
     });
 
@@ -54,7 +54,7 @@ export namespace People {
         avatar: 'https://github.com/edward-yue-peng.png',
         name: 'Yue Peng',
         links: [
-            { icon: 'github', link: 'https://github.com/edward-yue-peng' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/edward-yue-peng' }
         ]
     });
 
@@ -62,10 +62,10 @@ export namespace People {
         avatar: 'https://github.com/flowerst-0416.png',
         name: 'Fujun Ruan',
         links: [
-            { icon: 'github', link: 'https://github.com/flowerst-0416' },
-            { icon: 'orcid', link: 'https://orcid.org/0009-0007-7552-3913' },
-            { icon: 'googlescholar', link: 'https://scholar.google.com/citations?user=0C7Zg4QAAAAJ&hl' },
-            { icon: 'homepage', link: 'https://fujunruan.com' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/flowerst-0416' },
+            { icon: 'orcid', link: '/redirect.html?link=https://orcid.org/0009-0007-7552-3913' },
+            { icon: 'googlescholar', link: '/redirect.html?link=https://scholar.google.com/citations?user=0C7Zg4QAAAAJ&hl' },
+            { icon: 'homepage', link: '/redirect.html?link=https://fujunruan.com' }
         ]
     });
 
@@ -73,8 +73,8 @@ export namespace People {
         avatar: 'https://github.com/rockyxrq.png',
         name: 'Rocky Xu',
         links: [
-            { icon: 'github', link: 'https://github.com/rockyxrq' },
-            { icon: 'homepage', link: 'https://www.rocky-xrq.com/' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/rockyxrq' },
+            { icon: 'homepage', link: '/redirect.html?link=https://www.rocky-xrq.com/' }
         ]
     });
 
@@ -82,7 +82,7 @@ export namespace People {
         avatar: 'https://github.com/mirrorcy.png',
         name: 'MirrorCY',
         links: [
-            { icon: 'github', link: 'https://github.com/mirrorcy' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/mirrorcy' }
         ]
     });
 
@@ -90,8 +90,8 @@ export namespace People {
         avatar: 'https://github.com/Waipok-Fu.png',
         name: 'Waipok Fu',
         links: [
-            { icon: 'github', link: 'https://github.com/waipok-fu' },
-            { icon: 'homepage', link: 'https://waipok-fu.github.io' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/waipok-fu' },
+            { icon: 'homepage', link: '/redirect.html?link=https://waipok-fu.github.io' }
         ]
     });
 
@@ -99,8 +99,8 @@ export namespace People {
         avatar: 'https://github.com/boring180.png',
         name: 'Borong Xu',
         links: [
-            { icon: 'github', link: 'https://github.com/boring180' },
-            { icon: 'homepage', link: 'https://boring180.github.io/' }
+            { icon: 'github', link: '/redirect.html?link=https://github.com/boring180' },
+            { icon: 'homepage', link: '/redirect.html?link=https://boring180.github.io/' }
         ]
     });
 }

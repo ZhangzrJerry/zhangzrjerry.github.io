@@ -20,8 +20,8 @@ Though I’ve since retired from FRC, my passion for robotics remains as strong 
 
 For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC pipe) or the Algae (rubber ball) and place.
 
-[Background](https://www.youtube.com/watch?v=YWbxcjlY9JY) /
-[Recap](https://www.bilibili.com/video/BV141QGYHEo8) /
+[Background](/redirect.html?link=https://www.youtube.com/watch?v=YWbxcjlY9JY) /
+[Recap](/redirect.html?link=https://www.bilibili.com/video/BV141QGYHEo8) /
 
 :crystal_ball: Mechanism-level Action Visualization based on TF tree
 
@@ -37,8 +37,8 @@ For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC p
 
 <RightImg src="/projects/frc/2024.png" width="30%" />
 
-[Background](https://www.youtube.com/watch?v=9keeDyFxzY4) /
-[Recap](https://www.bilibili.com/video/BV1pbWCejEUi) /
+[Background](/redirect.html?link=https://www.youtube.com/watch?v=9keeDyFxzY4) /
+[Recap](/redirect.html?link=https://www.bilibili.com/video/BV1pbWCejEUi) /
 
 For FRC 2024 game rules, the mission of the robot is to collect the Note (squishy ring) and shoot to the speaker or to the amplifier.
 
@@ -52,8 +52,8 @@ For FRC 2024 game rules, the mission of the robot is to collect the Note (squish
 
 <RightImg src="/projects/frc/2023.png" width="30%" />
 
-[Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
-[Preview](https://www.bilibili.com/video/BV1RW4y1M72Y) /
+[Background](/redirect.html?link=https://www.youtube.com/watch?v=LgniEjI9cCM) /
+[Preview](/redirect.html?link=https://www.bilibili.com/video/BV1RW4y1M72Y) /
 
 For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
 
@@ -65,7 +65,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 <RightImg src="/projects/frc/2022.png" width="30%" />
 
-[Background](https://www.youtube.com/watch?v=LgniEjI9cCM) /
+[Background](/redirect.html?link=https://www.youtube.com/watch?v=LgniEjI9cCM) /
 
 For FRC 2022 game rules, the mission of the robot is to collect and shoot the CARGO (oversized tennis ball) to the hub.
 
@@ -77,8 +77,8 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 <RightImg src="/projects/frc/2021.png" width="30%" />
 
-[Background](https://www.youtube.com/watch?v=I77Dz9pfds4) /
-[Recap](https://www.bilibili.com/video/BV1WQ4y1z7DM/) /
+[Background](/redirect.html?link=https://www.youtube.com/watch?v=I77Dz9pfds4) /
+[Recap](/redirect.html?link=https://www.bilibili.com/video/BV1WQ4y1z7DM/) /
 
 For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (foam ball) and shoot to the power port.
 
@@ -90,7 +90,7 @@ For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (
 
 <RightImg src="/projects/frc/2020.png" width="30%" />
 
-[Background](https://www.youtube.com/watch?v=gmiYWTmFRVE) /
+[Background](/redirect.html?link=https://www.youtube.com/watch?v=gmiYWTmFRVE) /
 
 For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (foam ball) and shoot to the power port.
 
@@ -102,8 +102,8 @@ For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (
 
 <RightImg src="/projects/frc/2025-cb.png" width="30%" />
 
-[Source Code](https://github.com/zhangzrjerry/commandbot) /
-[Demo](https://www.bilibili.com/video/BV1CzZaYSE1W/) /
+[Source Code](/redirect.html?link=https://github.com/zhangzrjerry/commandbot) /
+[Demo](/redirect.html?link=https://www.bilibili.com/video/BV1CzZaYSE1W/) /
 
 Command Bot is a framework with standardized hardware **interfaces**, factory-patterned **subsystems** and command-based **control flow**. Enabling flexible hardware abstraction and seamless switching between real and simulated environments.
 
@@ -137,7 +137,7 @@ Cyber ​​Selector is a custom node selection panel for selecting item placeme
 
 <RightImg src="/projects/frc/2025-cp.png" width="30%" />
 
-[Source Code](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
+[Source Code](/redirect.html?link=https://github.com/frcnextinnovation/Cyber-Planner-2025) /
 [Report](/assets/cyber-planner.pdf) /
 
 Cyber Planner is based on a finite convex polygon set representation of objects, Lipschitz continuous artificial potential field, and time-optimal path parameterization.
@@ -154,7 +154,7 @@ Cyber Planner is based on a finite convex polygon set representation of objects,
 
 <RightImg src="/projects/frc/2022-ys.png" width="30%" />
 
-[Source Code](https://github.com/frc8811/FRC_SCOUTING) /
+[Source Code](/redirect.html?link=https://github.com/frc8811/FRC_SCOUTING) /
 [GUI](/projects/frc/2022-ys-gui.png) /
 
 The wechat miniprogram provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
