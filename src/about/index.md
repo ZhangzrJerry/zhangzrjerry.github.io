@@ -2,7 +2,7 @@
   <img class="home-cover" src="/icon-round.jpg" width="30%" style="margin-bottom:25px;">
 </p>
 
-Hi! I am Zirui Zhang from HKUST (Hong Kong University of Science and Technology). I am currently working in Cheng Kar-Shun Robotics Institute. I am also an alumni in FRC (FIRST Robotics Competition).
+Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HKUST). I work at the Cheng Kar-Shun Robotics Institute and am also an alumnus of the FIRST Robotics Competition (FRC).
 
 ## :mortar_board: Education
 

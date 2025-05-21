@@ -2,8 +2,9 @@
 
 <!-- If there is no response, please click. -->
 
-<script>
-if (typeof window !== 'undefined') {
+<script setup>
+import { onMounted } from 'vue';
+onMounted(() => {
     const params = new URLSearchParams(window.location.search);
     const link = params.get('link');
     if (link) {
@@ -11,5 +12,5 @@ if (typeof window !== 'undefined') {
     } else {
         window.location.replace('/');
     }
-}
+});
 </script>
