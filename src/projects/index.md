@@ -2,8 +2,6 @@
 
 <!-- ### FRC Robots and Related Projects [\[view\]](/projects/frc.html){style="float:right;"}
 
-<!-- TODO: -->
-
 <RightImg src="/projects/projects/2024-cotimo.gif" width=30% />
 
 CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Parameterization, and Model Predictive Control.
