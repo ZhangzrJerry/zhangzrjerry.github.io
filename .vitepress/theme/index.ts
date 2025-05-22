@@ -21,11 +21,15 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'layout-bottom': () =>
-        isDev ? null : [h('script', {
-          defer: true,
-          src: 'https://cloud.umami.is/script.js',
-          'data-website-id': '61765fc4-2042-401e-801b-d8032e948a83'
-        }), VisitorMap, SpeedInsights, Analytics]
+        isDev ? null : [
+          h('script', {
+            defer: true,
+            src: 'https://cloud.umami.is/script.js',
+            'data-website-id': '61765fc4-2042-401e-801b-d8032e948a83',
+            style: 'display:none'
+          }),
+          h('div', { style: 'display:none' }, [h(VisitorMap), h(SpeedInsights), h(Analytics)])
+        ]
     })
   },
   enhanceApp({ app, router, siteData }) {

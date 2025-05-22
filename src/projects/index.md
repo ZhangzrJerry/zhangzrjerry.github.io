@@ -1,6 +1,6 @@
 # Project List
 
-<!-- ### FRC Robots and Related Projects [\[view\]](/projects/frc.html){style="float:right;"}
+<!-- ### FRC Robots[\[view\]](/projects/frc.html){style="float:right;"}
 
 <RightImg src="/projects/projects/2024-cotimo.gif" width=30% />
 

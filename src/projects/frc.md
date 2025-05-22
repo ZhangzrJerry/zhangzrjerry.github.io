@@ -1,10 +1,10 @@
-# FRC Robots and Related Projects
+# FRC Robots
 
 Over six years in the FIRST Robotics Competition (FRC), I evolved from a motivated rookie to a strategic leader, accumulating regional finalists, world championship qualifications, and 10+ awards across 6 seasons.
 
 <CenteredImg src="/projects/frc/flag.jpg" width=50% />
 
-Starting in 2020 as program leader of Team 8011, I served as the program leader for Team 8011 and won the **_Championship_** in the We RoboStar League. In the 2021 season, as team captain, I earned the **_Rookie Game Changer Award_** for our innovative technologies and professional spirits during the INFINITE RECHARGE At Home Challenge.
+Starting in 2020, I served as the program leader for Team 8011 and won the **_Championship_** in the We RoboStar League. In the 2021 season, as team captain, I earned the **_Rookie Game Changer Award_** for our innovative technologies and professional spirits during the INFINITE RECHARGE At Home Challenge.
 
 In 2022, I **co-founded Team 8811** alongside the former captain of Team 6386. Unfortunately, the Hangzhou Regional shifted to an online format, so we could not compete that year. However, in the 2023 season, we competed in the 2023 FRC Off-Season China and secured a **_3rd Prize_**.
 

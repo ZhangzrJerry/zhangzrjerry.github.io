@@ -12,7 +12,7 @@ const posts = [
         time: 'May. 2025',
         type: 'thesis',
         title: 'Innovations in BIM-based Localization',
-        detail: 'Reading Notes of three BIM-based Localization theories by Prof. Huan Yin',
+        detail: 'Reading Notes of three BIM-based Localization theses by Prof. Huan Yin',
         tags: ['sense', 'robotics'],
         url: '/posts/2025/bim-localization'
     },
