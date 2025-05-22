@@ -13,7 +13,7 @@ hero:
       link: /about
     - theme: alt
       text: Github
-      link: /redirect.html?link=https://github.com/zhangzrjerry
+      link: https://github.com/zhangzrjerry
 
 cards:
   - title: Industrial Design Award in 2025 Galileo Division

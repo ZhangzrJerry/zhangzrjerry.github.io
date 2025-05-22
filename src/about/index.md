@@ -6,26 +6,26 @@ Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HK
 
 ## :mortar_board: Education
 
-### [The Hong Kong University of Science and Technology](/redirect.html?link=https://hkust.edu.hk/)
+### [The Hong Kong University of Science and Technology](https://hkust.edu.hk/)
 
 **BEng in Electronic Engineering** _Sep. 2024 - Present_{style="float: right"}
 
 <!-- - [View my curriculums at HKUST ->](./academic.html#beng-in-hkust) -->
 
-### [Guangzhou No.2 High School](/redirect.html?link=https://www.gdgzez.com.cn/)
+### [Guangzhou No.2 High School](https://www.gdgzez.com.cn/)
 
 **Chinese High School Diploma** _Sep. 2021 - Jun. 2024_{style="float:right"}
 
 ## :briefcase: Experience
 
-### [Rhino-Bird Middle School Science Research Training Program](/redirect.html?link=https://ur.tencent.com/)
+### [Rhino-Bird Middle School Science Research Training Program](https://ur.tencent.com/)
 
 **Research Intern** _Jun. 2023 - Oct. 2023_{style="float:right"}
 
 - Designed and implemented an intelligent book recommendation system under Prof. Chuan Shi (BUPT).
 - The project enhance the accurancy in personalized recommendations and won the **_Excellent Award_**.
 
-### [Guangzhou Yingcai Middle School Science Research Training Program](/redirect.html?link=https://jyj.gz.gov.cn/gkmlpt/content/7/7875/post_7875383.html#244)
+### [Guangzhou Yingcai Middle School Science Research Training Program](https://jyj.gz.gov.cn/gkmlpt/content/7/7875/post_7875383.html#244)
 
 **Research Trainee** _Jan. 2022 - Aug. 2022_{style="float:right"}
 
@@ -33,7 +33,7 @@ Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HK
 
 ## :earth_asia: Involvement
 
-### [FIRST Robotics Competition](/redirect.html?link=https://www.firstinspires.org/robotics/frc)
+### [FIRST Robotics Competition](https://www.firstinspires.org/robotics/frc)
 
 **FRC Alumni** _Sep. 2019 - Present_{style="float:right"}
 

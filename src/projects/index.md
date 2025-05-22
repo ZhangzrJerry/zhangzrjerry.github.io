@@ -16,7 +16,7 @@ CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Param
 
 <RightImg src="/projects/projects/2024-cotimo.gif" width=30% />
 
-[Source Code](/redirect.html?link=https://github.com/zhangzrJerry/CoTiMo/) /
+[Source Code](https://github.com/zhangzrJerry/CoTiMo/) /
 [Report](/posts/2024/cotimo-planner) /
 
 CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Parameterization, and Model Predictive Control
@@ -33,8 +33,8 @@ CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Param
 
 <RightImg src="/projects/projects/2023-rb.png" width=30% />
 
-[Background](/redirect.html?link=https://cloud.tencent.com/developer/article/2258040) /
-[Source Code](/redirect.html?link=https://github.com/ZhangzrJerry/RhinoBird) /
+[Background](https://cloud.tencent.com/developer/article/2258040) /
+[Source Code](https://github.com/ZhangzrJerry/RhinoBird) /
 
 The project aims to improve the accuracy and personalization of public library services.
 
@@ -52,7 +52,7 @@ The project aims to improve the accuracy and personalization of public library s
 
 ### Balance Swerve: A Single-wheeled Omni-directional Mobile Platform
 
-[Patent](/redirect.html?link=https://patents.google.com/patent/CN115107901A) /
+[Patent](https://patents.google.com/patent/CN115107901A) /
 
 The platform is equipped with an omni-directional wheel and a balancing mechanism.
 
