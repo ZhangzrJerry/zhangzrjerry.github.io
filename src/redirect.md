@@ -8,7 +8,7 @@ onMounted(() => {
     const params = new URLSearchParams(window.location.search);
     const link = params.get('link');
     if (link) {
-        window.location.replace(link);
+        window.location.href = link;
     } else {
         window.location.replace('/');
     }
