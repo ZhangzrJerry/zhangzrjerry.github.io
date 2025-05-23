@@ -100,7 +100,6 @@ export default defineConfig({
         text: 'PnC',
         collapsed: false,
         items: [
-          { text: 'Cyber Planner', link: '/posts/2025/cyber-planner.html' },
           { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' }
         ]
       },

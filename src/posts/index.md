@@ -73,14 +73,6 @@ const posts = [
         url: '/posts/2025/visual-feature'
     },
     {
-        time: 'Jan. 2025',
-        type: 'project',
-        title: 'Cyber Planner Implementation Report',
-        detail: 'TOPP-based motion planning for robotic manipulators',
-        tags: ['control', 'robotics'],
-        url: '/posts/2025/cyber-planner'
-    },
-    {
         time: 'Dec. 2024',
         type: 'lecture',
         title: 'COMP 2711 - Discrete Mathematical Tools for Computer Science',
