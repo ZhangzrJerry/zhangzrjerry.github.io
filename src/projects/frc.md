@@ -1,4 +1,4 @@
-# FRC Robots
+# FIRST Robotics Competition
 
 Over six years in the FIRST Robotics Competition (FRC), I evolved from a motivated rookie to a strategic leader, accumulating regional finalists, world championship qualifications, and 10+ awards across 6 seasons.
 
@@ -102,7 +102,7 @@ For FRC 2020 game rules, the mission of the robot is to collect the Power Cell (
 
 <RightImg src="/projects/frc/2025-cb.png" width="30%" />
 
-[Source Code](https://github.com/zhangzrjerry/commandbot) /
+[Github](https://github.com/zhangzrjerry/commandbot) /
 [Demo](https://www.bilibili.com/video/BV1CzZaYSE1W/) /
 
 Command Bot is a framework with standardized hardware **interfaces**, factory-patterned **subsystems** and command-based **control flow**. Enabling flexible hardware abstraction and seamless switching between real and simulated environments.
@@ -137,7 +137,7 @@ Cyber ​​Selector is a custom node selection panel for selecting item placeme
 
 <RightImg src="/projects/frc/2025-cp.png" width="30%" />
 
-[Source Code](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
+[Github](https://github.com/frcnextinnovation/Cyber-Planner-2025) /
 [Report](/assets/cyber-planner.pdf) /
 
 Cyber Planner is based on a finite convex polygon set representation of objects, Lipschitz continuous artificial potential field, and time-optimal path parameterization.
@@ -154,7 +154,7 @@ Cyber Planner is based on a finite convex polygon set representation of objects,
 
 <RightImg src="/projects/frc/2022-ys.png" width="30%" />
 
-[Source Code](https://github.com/frc8811/FRC_SCOUTING) /
+[Github](https://github.com/frc8811/FRC_SCOUTING) /
 [GUI](/projects/frc/2022-ys-gui.png) /
 
 The wechat miniprogram provides a separate account for every team to collect, upload, browse, contrast, analyze, and export data during the FRC match.
@@ -169,7 +169,7 @@ The wechat miniprogram provides a separate account for every team to collect, up
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
-import  { People } from '/scripts/people.ts'
+import  { People } from '/global/people.ts'
 
 const frcmembers = [
   People.liangyucai.updateOrg("FRC8011").updateTitle("Captain").get(),

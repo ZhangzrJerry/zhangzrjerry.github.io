@@ -61,15 +61,11 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      {
-        text: 'About',
-        link: '/about/',
-      },
+      { text: 'About', link: '/about/' },
       {
         text: 'Projects',
         items: [
-          { text: 'Projects', link: '/projects/' },
-          { text: 'FRC Robots', link: '/projects/frc.html' }
+          { text: 'FRC', link: '/projects/frc.html' }
         ]
       },
       { text: 'Posts', link: '/posts/' }

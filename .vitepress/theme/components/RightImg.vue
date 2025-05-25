@@ -1,5 +1,5 @@
 <template>
-    <img :src="src" :width="width" class="RightImg" />
+    <img :src="src" :width="width" :class="['RightImg', { 'no-shadow': !boxShadow }]" />
 </template>
 
 <style>
@@ -8,6 +8,9 @@
     border-radius: 10px;
     float: right;
     margin: 12px;
+}
+.RightImg.no-shadow {
+    box-shadow: none;
 }
 </style>
 
@@ -22,9 +25,14 @@ const props = defineProps({
     width: {
         type: String,
         default: '30%',
+    },
+    boxShadow: {
+        type: Boolean,
+        default: true,
     }
 });
 
 const src = withBase(props.src);
 const width = props.width;
+const boxShadow = props.boxShadow;
 </script>

@@ -13,6 +13,7 @@ import VisitorMap from './components/VisitorMap.vue'
 import BetterTable4Post from './components/BetterTable4Post.vue'
 import { SpeedInsights } from '@vercel/speed-insights/vue'
 import { Analytics } from '@vercel/analytics/vue'
+import BetterPublications from './components/BetterPublications.vue'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -40,5 +41,6 @@ export default {
     app.component('custom-home', CustomHomeLayout);
     app.component('VisitorMap', VisitorMap);
     app.component('BetterTable4Post', BetterTable4Post);
+    app.component('BetterPublications', BetterPublications)
   }
 } satisfies Theme

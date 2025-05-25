@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { VPHomeHero, VPHomeFeatures, VPHomeContent } from 'vitepress/theme'
 import { useData } from 'vitepress'
 import CustomHomeFeatures from './CustomHomeFeatures.vue'
 import CustomHomeCards from './CustomHomeCards.vue'
+import CustomHomeHero from './CustomHomeHero.vue'
+import { VPHomeHero } from 'vitepress/theme'
 
 const { frontmatter, theme } = useData()
 </script>
@@ -11,8 +12,8 @@ const { frontmatter, theme } = useData()
   <div class="CustomHome" :class="{
     'external-link-icon-enabled': theme.externalLinkIcon
   }">
-    <slot name="home-hero-before" />
-    <VPHomeHero>
+    <CustomHomeHero>
+      <slot name="home-hero-before" />
       <template #home-hero-info-before>
         <slot name="home-hero-info-before" />
       </template>
@@ -22,13 +23,11 @@ const { frontmatter, theme } = useData()
       <template #home-hero-info-after>
         <slot name="home-hero-info-after" />
       </template>
-      <template #home-hero-actions-after>
-        <slot name="home-hero-actions-after" />
-      </template>
+
       <template #home-hero-image>
         <slot name="home-hero-image" />
       </template>
-    </VPHomeHero>
+    </CustomHomeHero>
     <slot name="home-hero-after" />
 
     <CustomHomeCards />
@@ -39,21 +38,11 @@ const { frontmatter, theme } = useData()
     </CustomHomeFeatures>
     <slot name="home-features-after" />
 
-    <VPHomeContent v-if="frontmatter.markdownStyles !== false">
-      <Content />
+    <!-- <VPHomeContent v-if="frontmatter.markdownStyles !== false">
+      <Content class="CustomContent" />
     </VPHomeContent>
-    <Content v-else />
+    <Content v-else /> -->
   </div>
 </template>
 
-<style scoped>
-.CustomHome {
-  margin-bottom: 96px;
-}
-
-@media (min-width: 768px) {
-  .CustomHome {
-    margin-bottom: 128px;
-  }
-}
-</style>
+<style scoped></style>

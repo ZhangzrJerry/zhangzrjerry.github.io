@@ -114,6 +114,21 @@ onUnmounted(() => {
     color: var(--vp-c-text-2);
 }
 
+@media (max-width: 640px) {
+    .box {
+        padding: 18px 24px 24px 24px;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .details {
+        display: none;
+    }
+}
+
 .link-text {
     padding-top: 8px;
 }

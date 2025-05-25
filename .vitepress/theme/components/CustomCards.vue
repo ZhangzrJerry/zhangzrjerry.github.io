@@ -209,6 +209,14 @@ onUnmounted(() => {
     opacity: 0.3;
 }
 
+@media (max-width: 640px) {
+    .nav-button {
+        width: 30px;
+        font-size: 24px;
+    }
+
+}
+
 .prev {
     left: -3px;
 }
@@ -240,8 +248,16 @@ onUnmounted(() => {
     opacity: 0.4;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     padding: 0;
+}
+
+@media (max-width: 640px) {
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+
 }
 
 .dot:hover {

@@ -76,6 +76,7 @@ const grid = computed(() => {
 .container {
     margin: 0 auto;
     max-width: 1152px;
+    margin-bottom: 24px;
 }
 
 .items {
