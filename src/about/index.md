@@ -1,5 +1,5 @@
 <p align="center">
-  <img class="home-cover" src="/icon-round.jpg" width="30%" style="margin-bottom:25px;">
+  <img class="home-cover" src="/icon-round.jpg" width="25%" style="margin-bottom:25px;">
 </p>
 
 <div class="bio">
@@ -21,6 +21,6 @@ const publications = [
 <style scoped>
 .bio p {
   line-height: 1.35;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 </style>
