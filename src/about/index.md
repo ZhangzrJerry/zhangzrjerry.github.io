@@ -20,9 +20,7 @@ const publications = [
 
 <style scoped>
 .bio p {
-  line-height: 1.3;
-}
-.bio p{
-  margin:0 !important;
+  line-height: 1.35;
+  margin-bottom: 1rem;
 }
 </style>
