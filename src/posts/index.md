@@ -28,7 +28,7 @@ const posts = [
         time: 'May. 2025',
         type: 'lecture',
         title: 'ELEC 5650 @ Kalman Filter',
-        detail: 'Deviate Kalman Filter from three perspectives: geometry, probability, and optimization',
+        detail: 'Derivate Kalman Filter from three perspectives: geometry, probability, and optimization',
         tags: ['sense', 'hkust'],
         url: '/posts/2025/elec-5650/kalman-filter'
     },
@@ -36,7 +36,7 @@ const posts = [
         time: 'Apr. 2025',
         type: 'lecture',
         title: 'ELEC 5650 @ Linear Quadratic Regulator',
-        detail: 'Deviate LQR and LQG from Dynamic Programming and optimization',
+        detail: 'Derivate LQR and LQG from Dynamic Programming and optimization',
         tags: ['control', 'hkust'],
         url: '/posts/2025/elec-5650/lqr'
     },
@@ -44,7 +44,7 @@ const posts = [
         time: 'Mar. 2025',
         type: 'lecture',
         title: 'ELEC 5650 @ Mathematic Tools',
-        detail: 'Cover the necessary Math tools for basic estimation and control',
+        detail: 'Cover the necessary Math tools for networked estimation and control',
         tags: ['math', 'hkust'],
         url: '/posts/2025/elec-5650/math-tools'
     },
@@ -76,7 +76,7 @@ const posts = [
         time: 'Dec. 2024',
         type: 'lecture',
         title: 'COMP 2711 - Discrete Mathematical Tools for Computer Science',
-        detail: 'Review Notes for COMP 2711 in the 2024-25 Fall at HKUST',
+        detail: 'Review notes for COMP 2711 in the 2024-25 Fall at HKUST',
         tags: ['math', 'hkust'],
         url: '/posts/2024/comp-2711'
     },

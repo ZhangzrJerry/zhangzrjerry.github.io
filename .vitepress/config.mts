@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import UnoCSS from 'unocss/vite'
 import mathjax3 from 'markdown-it-mathjax3'
 
 const customElementsForMathjax = [
@@ -144,7 +143,6 @@ export default defineConfig({
 
   vite: {
     plugins: [
-      UnoCSS(),
     ],
   },
 

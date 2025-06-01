@@ -100,11 +100,11 @@ function highlight(inner: string): string {
 .publication-links a {
     margin-right: 0.5rem;
     font-size: 0.95rem;
-    color: #1971ff;
+    color: #2e80f2;
 }
 
 .publication-links a:hover {
-    color: #0045bc;
+    color: #0040af;
 }
 
 .publication-details {
@@ -117,7 +117,7 @@ function highlight(inner: string): string {
 <style>
 .publication-venue .highlight {
     font-weight: bold;
-    color: #d04eff;
+    color: #ff82b2;
     font-style: italic;
 }
 
