@@ -29,6 +29,18 @@ cards:
     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
+  - title: Echo Quill
+    icon: 📜
+    # img: /icon/equill.png
+    details: A smart, structured logger for Python, ideal for tracking hyperparameters and experiment results.
+    link: https://github.com/ZhangzrJerry/EchoQuill
+
+  - title: Tacto PRO
+    icon: ☝️
+    img: /icon/tactopro.png
+    details: A lightweight wrapper designed to streamline the creation of TACTO simulations, significantly reducing code complexity and boilerplate.
+    link: https://github.com/ZhangzrJerry/TactoPro
+
   - title: Command Bot
     icon: 🤖
     img: /projects/frc/2025-cb-square.png
