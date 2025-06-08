@@ -29,12 +29,6 @@ cards:
     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
-  - title: Echo Quill
-    icon: 📜
-    # img: /icon/equill.png
-    details: A smart, structured logger for Python, ideal for tracking hyperparameters and experiment results.
-    link: https://github.com/ZhangzrJerry/EchoQuill
-
   - title: Tacto PRO
     icon: ☝️
     img: /icon/tactopro.png
@@ -45,7 +39,7 @@ features:
     icon: 🤖
     img: /projects/frc/2025-cb-square.png
     details: A command-based robot framework with standardized hardware interfaces and factory-patterned subsystems.
-    link: /projects/frc.html/#command-bot-a-command-based-robot-framework
+    link: /projects/frc.html#command-bot-a-command-based-robot-framework
 
   - title: Sideway
     icon:
@@ -66,7 +60,7 @@ features:
     icon: 🥏
     img: /projects/projects/2024-cotimo-square.png
     details: A collision-free smooth path generation and time-optimal path parameterization palnner with model predictive control.
-    link: /projects/#cotimo-planner-topp-based-motion-planner
+    link: https://zhangzrjerry.github.io/CoTiMo
 
   - title: Defiant
     icon:
@@ -81,7 +75,7 @@ features:
       src: /icon/rhino-bird.png
     img: /projects/projects/2023-rb-square.png
     details: An intelligent book recommendation and user interest analysis system based on factorization machine.
-    link: /projects/#yuan-library-intelligent-book-recommendation-system
+    link: /projects#yuan-library-intelligent-book-recommendation-system
 
   - title: Yuan Scout
     icon:
