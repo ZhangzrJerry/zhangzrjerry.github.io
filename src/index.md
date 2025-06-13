@@ -60,7 +60,7 @@ features:
     icon: 🥏
     img: /projects/projects/2024-cotimo-square.png
     details: A collision-free smooth path generation and time-optimal path parameterization palnner with model predictive control.
-    link: https://zhangzrjerry.github.io/CoTiMo
+    link: /posts/2024/cotimo-planner.html
 
   - title: Defiant
     icon:

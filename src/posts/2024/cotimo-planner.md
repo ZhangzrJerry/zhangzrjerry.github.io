@@ -12,6 +12,10 @@ This report provides a detailed explanation of the planner's core algorithmic im
 <a href="https://github.com/zhangzrjerry/cotimo"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhangzrjerry/cotimo"></a>
 </Badges>
 
+## Slide
+
+<Revealjs src="https://zhangzrjerry.github.io/CoTiMo" />
+
 ## Collision-Free Smooth Path Generation
 
 ### Cubic Spline
