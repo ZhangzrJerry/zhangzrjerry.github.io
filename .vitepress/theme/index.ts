@@ -14,6 +14,7 @@ import Revealjs from './components/Revealjs.vue'
 import BetterPublications from './components/BetterPublications.vue'
 import { SpeedInsights } from '@vercel/speed-insights/vue'
 import { Analytics } from '@vercel/analytics/vue'
+import BetterExperiences from './components/BetterExperiences.vue'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -43,5 +44,6 @@ export default {
     app.component('BetterTable4Post', BetterTable4Post);
     app.component('BetterPublications', BetterPublications)
     app.component('Revealjs', Revealjs);
+    app.component('BetterExperiences', BetterExperiences);
   }
 } satisfies Theme

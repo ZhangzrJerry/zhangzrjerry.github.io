@@ -6,11 +6,23 @@ export interface Link {
 }
 
 export interface Publication {
+    key: string
     image: string
     title: string
     venue: string
     authors: string[]
-    links: Link[]
+    links?: Link[]
+    details: string
+}
+
+export interface Experience {
+    key: string
+    icon: string
+    title: string
+    company: string
+    start: string
+    end?: string
+    links?: Link[]
     details: string
 }
 

@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 <p align="center">
   <img class="home-cover" src="/icon-round.jpg" width="25%" style="margin-bottom:25px;">
 </p>
@@ -9,14 +13,16 @@ Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HK
 </div>
 
 <script setup>
-import { Publications } from "../global/publications.ts"
-
-const publications = [
-  Publications.rhinobird_23
-]
+import { About } from "../global/about.ts"
 </script>
 
-<BetterPublications :publications="publications" />
+<h2>Experience</h2>
+<BetterExperiences :experiences="About.experiences" />
+
+<!-- <BetterPublications :publications="publications" /> -->
+
+<h2>Projects</h2>
+<BetterPublications :publications="About.projects" />
 
 <style scoped>
 .bio p {

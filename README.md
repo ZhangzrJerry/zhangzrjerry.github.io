@@ -1,0 +1,9 @@
+- [ ] Experience
+  - CKSRI
+  - Rhino Bird
+  - FRC
+- [ ] Publications
+- [ ] projects
+  - CoTiMo Planner
+  - Library
+  - Balance Swerve
