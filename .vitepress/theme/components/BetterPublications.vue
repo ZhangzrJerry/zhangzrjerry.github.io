@@ -57,7 +57,6 @@ function highlight(inner: string): string {
 @media (max-width: 768px) {
     .publication-image {
         width: 22.5%;
-        margin-right: 0.5rem;
     }
 }
 

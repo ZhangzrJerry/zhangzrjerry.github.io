@@ -54,8 +54,7 @@ function highlight(inner: string): string {
 
 @media (max-width: 768px) {
     .experience-icon {
-        width: 22.5%;
-        margin-right: 0.5rem;
+        width: 60px;
     }
 }
 
