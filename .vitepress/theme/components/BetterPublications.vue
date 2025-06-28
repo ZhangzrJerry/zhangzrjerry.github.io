@@ -122,7 +122,6 @@ function highlight(inner: string): string {
 
 .publication-authors .highlight {
     font-weight: bold;
-    color: #444;
     text-decoration: underline;
 }
 </style>

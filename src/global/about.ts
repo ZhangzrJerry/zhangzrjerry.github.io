@@ -21,7 +21,6 @@ export namespace About {
             start: 'Jun. 2023',
             end: 'Oct. 2023',
             links: [
-                { label: 'Project Page', url: 'https://cloud.tencent.com/developer/article/2308943' },
                 { label: 'Tencent UR', url: 'https://ur.tencent.com/' }
             ],
             details: 'Focused on recommendation system under Prof. Chuan Shi (BUPT).'

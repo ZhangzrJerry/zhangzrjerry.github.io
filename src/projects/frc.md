@@ -1,3 +1,7 @@
+---
+aside: false
+---
+
 # FIRST Robotics Competition
 
 Over six years in the FIRST Robotics Competition (FRC), I evolved from a motivated rookie to a strategic leader, accumulating regional finalists, world championship qualifications, and 10+ awards across 6 seasons.
