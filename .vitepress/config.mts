@@ -138,7 +138,11 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/zhangzrjerry' },
       { icon: 'orcid', link: 'https://orcid.org/0009-0008-4156-1652' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/zirui-zhang-924958319/' }
-    ]
+    ],
+
+    outline: {
+      level: [2, 3]
+    }
   },
 
   vite: {

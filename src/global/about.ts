@@ -55,7 +55,7 @@ export namespace About {
         {
             key: '2023-rb',
             image: '/projects/projects/2023-rb.png',
-            title: 'Intelligent Book Recommendation and User Interest Analysis System Based on Factorization Machines',
+            title: 'Intelligent Book Recommendation System',
             venue: '==Excellent Award== of 2023 Rhino-Bird Middle School Science Research Training Program',
             authors: ['==Zirui Zhang==', 'Yue Peng'],
             links: [

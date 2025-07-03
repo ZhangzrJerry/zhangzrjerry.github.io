@@ -16,6 +16,13 @@ For the 2024 season, I joined Team 6399 as a **Programming Mentor** and guided t
 
 Though I’ve since retired from FRC, my passion for robotics remains as strong as ever.
 
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+    <PlayerBilibili videoId="BV1WQ4y1z7DM" borderRadius=10px />
+    <PlayerBilibili videoId="BV1RW4y1M72Y" borderRadius=10px />
+    <PlayerBilibili videoId="BV1pbWCejEUi" borderRadius=10px />
+    <PlayerBilibili videoId="BV141QGYHEo8" borderRadius=10px />
+</div>
+
 ## :rocket: Annual Robots
 
 ### 2025 Trouble & Sideway
