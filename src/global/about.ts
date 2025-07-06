@@ -42,13 +42,25 @@ export namespace About {
 
     export const projects: Publication[] = [
         {
+            key: '2025-commandbot',
+            image: '/projects/soul-pivot/main.jpg',
+            title: 'Soul Pivot',
+            venue: ['==Autonomous Award== in 2025 FRC İstanbul Regional'],
+            authors: [],
+            links: [
+                { label: 'Project Page', url: '/projects/soul-pivot' }
+            ],
+            details: 'Interface-driven subsystems with state machines expose minimal APIs and atomic commands, enabling hardware-agnostic robotics through composable, orchestratable behaviors.'
+        },
+        {
             key: '2024-cotimo',
             image: '/projects/projects/2024-cotimo.gif',
             title: 'CoTiMo Planner',
             venue: '',
             authors: [],
             links: [
-                { label: 'GitHub', url: 'https://github.com/zhangzrjerry/cotimo' }
+                { label: 'GitHub', url: 'https://github.com/zhangzrjerry/cotimo' },
+                { label: 'Slide', url: 'https://zhangzrjerry.github.io/CoTiMo' }
             ],
             details: 'CoTiMo stands for Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control.'
         },

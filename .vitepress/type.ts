@@ -9,7 +9,7 @@ export interface Publication {
     key: string
     image: string
     title: string
-    venue: string
+    venue: string | String[]
     authors: string[]
     links?: Link[]
     details: string

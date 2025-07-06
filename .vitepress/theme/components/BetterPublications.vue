@@ -6,7 +6,13 @@
             <div class="publication-content">
                 <h2 class="publication-title">{{ publication.title }}</h2>
                 <div class="publication-venue">
-                    <div v-html="highlight(publication.venue)"></div>
+                    <div v-if="Array.isArray(publication.venue)">
+                        <span v-for="(venue, idx) in publication.venue" :key="idx">
+                            <span v-html="highlight(venue.toString())"></span>
+                            <br v-if="idx < publication.venue.length - 1" />
+                        </span>
+                    </div>
+                    <div v-else v-html="highlight(publication.venue)"></div>
                 </div>
                 <div class="publication-authors">
                     <span v-for="(author, idx) in publication.authors" :key="idx">

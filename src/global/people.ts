@@ -3,7 +3,7 @@ import { Person } from "../../.vitepress/type";
 
 export namespace People {
     export const zhangzrjerry: Person = new Person({
-        avatar: '/public/photo.png',
+        avatar: '/gallery/2023-shanghai.png',
         name: 'Zirui Zhang',
         links: [
             { icon: 'github', link: 'https://github.com/zhangzrjerry' },
