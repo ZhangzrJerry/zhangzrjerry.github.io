@@ -60,6 +60,7 @@ export namespace About {
             authors: [],
             links: [
                 { label: 'GitHub', url: 'https://github.com/zhangzrjerry/cotimo' },
+                { label: 'Details', url: '/posts/2024/cotimo-planner.html' },
                 { label: 'Slide', url: 'https://zhangzrjerry.github.io/CoTiMo' }
             ],
             details: 'CoTiMo stands for Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control.'
