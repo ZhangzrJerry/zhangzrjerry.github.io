@@ -75,7 +75,7 @@ export default defineConfig({
 
     sidebar: {
       '/posts/': [{
-        text: 'Blogs',
+        text: 'Posts',
         link: '/posts/'
       },
       {
@@ -130,8 +130,6 @@ export default defineConfig({
         ]
       }
       ]
-
-
     },
 
     socialLinks: [
