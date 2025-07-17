@@ -36,7 +36,7 @@ $$
 
 更普遍地，我们用 $R = \begin{pmatrix}r_{11} & r_{12} & r_{13} \\ r_{21} & r_{22} & r_{23} \\ r_{31} & r_{32} & r_{33} \\ \end{pmatrix}$ 来表示一个旋转矩阵
 
-<RightImg src="/posts/rotation-representation/1.svg" width=35% />
+<RightImg src="/posts/2024/rotation-representation/1.svg" width=35% />
 
 接下来我们推导绕任一轴旋转的旋转矩阵的表达形式
 
@@ -371,6 +371,6 @@ $$
 
 ## 参考资料
 
-|                   影响                    | 来源                                                                                                                                        |
-| :---------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](/posts/rotation-representation/1.svg) | https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula#/media/File:Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg |
+|                      影响                      | 来源                                                                                                                                        |
+| :--------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](/posts/2024/rotation-representation/1.svg) | https://en.wikipedia.org/wiki/Rodrigues%27_rotation_formula#/media/File:Orthogonal_decomposition_unit_vector_rodrigues_rotation_formula.svg |
