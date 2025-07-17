@@ -42,7 +42,7 @@ export namespace About {
 
     export const projects: Publication[] = [
         {
-            key: '2025-commandbot',
+            key: '2025-soulpivot',
             image: '/projects/soul-pivot/main.jpg',
             title: 'Soul Pivot',
             venue: ['==Autonomous Award== in 2025 FRC İstanbul Regional'],
