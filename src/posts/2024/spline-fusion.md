@@ -12,7 +12,7 @@
 
 相比离散时域，在连续时域上表示有助于融合高帧率的传感器和异步时间戳的设备。对卷帘相机的研究尚未成熟，现有的工作主要集中在如何消除卷帘相机的畸变，而后复用标准全局快门相机的 SLAM 模型，这种解耦合的处理方式增加了无法修正的偏差。
 
-<CenteredImg src="/posts/spline-fusion/camera.png" width=75% />
+<CenteredImg src="/posts/2024/spline-fusion/camera.png" width=75% />
 
 单目视觉系统存在 7 自由度不可观：6 自由度姿态+尺度，一种方法通过回环检测和序列图松弛对尺度显式参数化，另一种方法是加入可以测量绝对尺度的设备。在本文中作者使用了惯性单元。相比过往建立在欧拉角上的数学表示，作者引入李群和李代数上的旋转表示避免了奇异点，同时能够更好地近似最小扭矩的轨迹。
 
@@ -94,4 +94,4 @@ $$
 
 这一系统表现出了良好的自校准的能力
 
-<CenteredImg src="/posts/spline-fusion/result.png" width=75% />
+<CenteredImg src="/posts/2024/spline-fusion/result.png" width=75% />
