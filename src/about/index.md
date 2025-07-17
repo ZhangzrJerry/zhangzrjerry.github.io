@@ -38,6 +38,12 @@ import { About } from "../global/about.ts"
 - **Excellent Award** - The 8th China International College Students' "Internet+" Innovation and Entrepreneurship Competition (Seed Track, Guangdong Division, 2022)
 - **Rookie Game Changer Award** - <span class="frc">FRC</span> INFINITE RECHARGE At Home Challenge (Team 8011, 2021)
 - **Event Winners** - WE RoboStar Robotics League (<span class="frc">FRC</span> Offseason, Team 8011, 2020)
+- **Place 1** - US and Region II <span class="ardf">ARDF</span> Championships (2m Classic, M-14, 2019)
+- **Place 2** - US and Region II <span class="ardf">ARDF</span> Championships (FoxOring Classic, M-14, 2019)
+- **Place 4** - National Student <span class="ardf">ARDF</span> Championship (Guangzhou Educational Competition, Sprints, M-15, 2019)
+- **1st Prize** - Guangdong <span class="ardf">ARDF</span> Open Tournament (144MHz, M-15, 2019)
+- **Place 1** - 11th Suyuan Cup Guangdong Student <span class="ardf">ARDF</span> Elite Competition (3.5MHz & 144MHz Combined, M-15, 2019)
+- **Place 2** - 5th Cross-Strait <span class="ardf">ARDF</span> Elite Competition (80m Relay, M-16, 2019)
 
 <style scoped>
 .bio p {
@@ -53,6 +59,12 @@ import { About } from "../global/about.ts"
 
 .frc{
   color: var(--vp-c-red-2);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.ardf{
+  color: var(--vp-c-indigo-2);
   font-style: italic;
   font-weight: bold;
 }
