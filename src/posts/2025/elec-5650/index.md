@@ -4,7 +4,7 @@
 >
 > &nbsp;_-- by Norbert Wiener_{style="float:right"}
 
-<CenteredImg src="/posts/elec-5650/kf.png" width=75% />
+<CenteredImg src="/posts/2025/elec-5650/kf.png" width=75% />
 
 This is the lecture notes for "ELEC 5650: Networked Sensing, Estimation and Control" in the 2024-25 Spring semester, delivered by Prof. Ling Shi at HKUST. The notes covered fundamental concepts in networked systems, including necessary mathematical tools, estimation theory, Kalman Filter, and Linear Quadratic Regulator.
 
@@ -22,10 +22,10 @@ This is the lecture notes for "ELEC 5650: Networked Sensing, Estimation and Cont
 
 ## Reference
 
-|                  Image                   | Source                                                                                    |
-| :--------------------------------------: | ----------------------------------------------------------------------------------------- |
-| ![](/posts/elec-5650/linear-algebra.png) | https://en.wikipedia.org/wiki/Linear_algebra                                              |
-|  ![](/posts/elec-5650/probability.png)   | https://en.wikipedia.org/wiki/Joint_probability_distribution                              |
-|   ![](/posts/elec-5650/gs-process.svg)   | https://interactivetextbooks.tudelft.nl/linear-algebra/Chapter7/GramSchmidt.html          |
-|       ![](/posts/elec-5650/kf.png)       | https://ww2.mathworks.cn/videos/series/understanding-kalman-filters.html                  |
-|      ![](/posts/elec-5650/lqg.png)       | https://www.mathworks.com/help/control/getstart/linear-quadratic-gaussian-lqg-design.html |
+|                     Image                     | Source                                                                                    |
+| :-------------------------------------------: | ----------------------------------------------------------------------------------------- |
+| ![](/posts/2025/elec-5650/linear-algebra.png) | https://en.wikipedia.org/wiki/Linear_algebra                                              |
+|  ![](/posts/2025/elec-5650/probability.png)   | https://en.wikipedia.org/wiki/Joint_probability_distribution                              |
+|   ![](/posts/2025/elec-5650/gs-process.svg)   | https://interactivetextbooks.tudelft.nl/linear-algebra/Chapter7/GramSchmidt.html          |
+|       ![](/posts/2025/elec-5650/kf.png)       | https://ww2.mathworks.cn/videos/series/understanding-kalman-filters.html                  |
+|      ![](/posts/2025/elec-5650/lqg.png)       | https://www.mathworks.com/help/control/getstart/linear-quadratic-gaussian-lqg-design.html |

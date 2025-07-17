@@ -6,7 +6,7 @@
 
 Inertial Measurement Unit (IMU) preintegration is a fundamental technique in visual-inertial odometry that efficiently combines high-frequency IMU measurements between keyframes. This approach, pioneered by Forster et al. and Yang et al., formulates the integration process on the manifold of rigid body motions $SE(3)$, addressing the nonlinear nature of 3D rotations through Lie group theory.
 
-<CenteredImg src="/posts/imu-preintegration/2.png" width=90% />
+<CenteredImg src="/posts/2025/imu-preintegration/2.png" width=90% />
 
 The key innovation lies in separating the integration of IMU measurements from the global state, enabling computationally efficient optimization by precomputing relative motion constraints. This derivation details the mathematical foundations, including the special orthogonal group $SO(3)$, perturbation models, uncertainty representation on manifolds, and the complete preintegration theory that handles sensor biases and noise characteristics while maintaining real-time performance. The resulting preintegrated terms serve as constraints in factor graph optimization frameworks for robust state estimation.
 

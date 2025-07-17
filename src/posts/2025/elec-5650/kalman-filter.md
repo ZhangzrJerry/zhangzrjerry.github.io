@@ -4,7 +4,7 @@
 >
 > &nbsp;_-- by Norbert Wiener_{style="float:right"}
 
-<CenteredImg src="/posts/elec-5650/kf.png" width=75% />
+<CenteredImg src="/posts/2025/elec-5650/kf.png" width=75% />
 
 This is the lecture notes for "ELEC 5650: Networked Sensing, Estimation and Control" in the 2024-25 Spring semester, delivered by Prof. Ling Shi at HKUST. In this session, we will deviate Kalman Filter from three different perspectives: Geometric, Probabilistic, and Optimization approaches. Each perspective provides unique insights into understanding and implementing the Kalman Filter algorithm.
 
@@ -61,7 +61,7 @@ $$
 
 The Geometric perspective views Kalman Filter as a Linear Minimum Mean Square Error (LMMSE) estimator, which is rooted in orthogonal projection theory in Hilbert space. The key insight is that the Kalman Filter's innovation term $e_k$ is orthogonal to all past observations $\mathcal{Y}_{k-1}$, ensuring the **new information being incorporated is statistically independent of previous measurements**, thus maintaining the estimator's optimality.
 
-<CenteredImg src="/posts/elec-5650/lmmse.png" width = 80% />
+<CenteredImg src="/posts/2025/elec-5650/lmmse.png" width = 80% />
 
 ### Time Update
 

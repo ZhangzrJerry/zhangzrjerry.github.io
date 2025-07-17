@@ -33,23 +33,23 @@ $$
 
 Next, according to the gradient direction of the pixels, the product of the gradient magnitudes is added to the histogram with weights based on the normal distribution probability of the distance from the center point. The direction in the histogram that corresponds to the interval from the maximum value to the 80% of maximum value is identified as the orientation of the feature point (if there are multiple candidate directions within this interval, then multiple feature points with the same other attributes are created and assigned these directions).
 
-<CenteredImg src="/posts/visual-feature/1.jpg" width=60% />
+<CenteredImg src="/posts/2025/visual-feature/1.jpg" width=60% />
 
 > "First the image gradient magnitudes and orientations are sampled around the keypoint location, using the scale of the keypoint to select the level of Gaussian blur for the image. In order to achieve orientation invariance, the coordinates of the descriptor and the gradient orientations are rotated relative to the keypoint orientation." (Lowe, 2004, p. 15)
 
 To pursue rotation invariance, all gradients are rotated so that the main gradient (the one with the longest magnitude) points upward. At the same time, to avoid errors caused by luminance changes, gradient magnitudes that exceed a certain threshold are clipped and then normalized.
 
-<CenteredImg src="/posts/visual-feature/2.png" width=60% />
+<CenteredImg src="/posts/2025/visual-feature/2.png" width=60% />
 
 ## SURF: Speeded Up Robust Features
 
 Compared to SIFT, which uses histograms to find the main orientation, SURF determines the main orientation of the feature point by calculating the Harr wavelet responses within a radius of $6s$ around the feature point, weighing and accumulating the $x$ and $y$ direction responses within $60$ degree sectors.
 
-<CenteredImg src="/posts/visual-feature/3.jpg" width=60% />
+<CenteredImg src="/posts/2025/visual-feature/3.jpg" width=60% />
 
 Around the feature point, a square box with a side length of $20s$ is taken, and its orientation is aligned with the main orientation of the feature point. This box is divided into $16$ sub-regions, and for each sub-region, the Haar wavelet features of $25$ pixels relative to the main orientation are calculated, including the sum of the horizontal and vertical values and absolute values.
 
-<CenteredImg src="/posts/visual-feature/4.png" width=40% />
+<CenteredImg src="/posts/2025/visual-feature/4.png" width=40% />
 
 ## BRIEF: Binary Robust Independent Elementary Features
 
@@ -72,13 +72,13 @@ $$
 f_{n_d}(\mathbf p) = \sum_{1\le i\le n_d}2^{i-1}\cdot\tau(\mathbf p;\mathbf x_i,\mathbf y_i)
 $$
 
-<CenteredImg src="/posts/visual-feature/5.jpg" width=60% />
+<CenteredImg src="/posts/2025/visual-feature/5.jpg" width=60% />
 
 ## BRISK: Binary Robust Invariant Scalable Keypoints
 
 BRISK basically continues the idea of binary intensity tests.
 
-<CenteredImg src="/posts/visual-feature/6.png" />
+<CenteredImg src="/posts/2025/visual-feature/6.png" />
 
 For $N$ feature points, consider forming $N\cdot(N-1)/2$ pairs of points, and their gradients are given by the luminance difference:
 
@@ -121,8 +121,8 @@ $$
 \overline{\text{AU}} = \frac1N\sum_{i=1}^N\sum_{k=1}^{N_s}\frac43\pi\sqrt{\det(\Sigma_{k,r})}
 $$
 
-<CenteredImg src="/posts/visual-feature/exp1-1.png" width=75% />
-<CenteredImg src="/posts/visual-feature/exp1-2.png" width=75% />
+<CenteredImg src="/posts/2025/visual-feature/exp1-1.png" width=75% />
+<CenteredImg src="/posts/2025/visual-feature/exp1-2.png" width=75% />
 
 The results showed that in most indoor scenarios, there were no significant differences in accumulated uncertainty among the three feature extractors. The average normalized error followed similar trends, with nearly identical performance. SIFT showed slightly better performance in terms of accumulated uncertainty, though the study did not include feature matching comparisons.
 
@@ -136,7 +136,7 @@ Endres et al. (2012) conducted experiments on the FR1 dataset and found that:
 - Too few SURF features led to inaccurate motion estimation and failures
 - Too many features slowed down matching and increased false positives
 
-<CenteredImg src="/posts/visual-feature/exp2.png" width=100% />
+<CenteredImg src="/posts/2025/visual-feature/exp2.png" width=100% />
 
 The study also revealed that when there were incorrect edges in the graph, the mapping results deteriorated. The authors suggested future improvements in keypoint matching strategies, such as adding feature dictionaries, pruning unmatched features, and directly using keypoints as landmarks for nonlinear optimization.
 
@@ -148,17 +148,17 @@ Hartmann et al. (2013) conducted experiments on both RGBD datasets and their own
 - BRIEF performed best among binary descriptors
 - In most cases, the choice of descriptor had minimal impact on accuracy
 
-<CenteredImg src="/posts/visual-feature/exp3.png" width=80% />
+<CenteredImg src="/posts/2025/visual-feature/exp3.png" width=80% />
 
 These experimental results suggest that while different feature descriptors have their own characteristics, their impact on the overall performance of Visual SLAM systems might be less significant than initially thought. The choice of descriptor should be based on a balance between computational efficiency and the specific requirements of the application.
 
 ## Reference
 
-|              Image               | Link                                                                                                                                                                                                               |
-| :------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ![](/posts/visual-feature/1.jpg) | https://miro.medium.com/v2/0*HrkMSiOEvpWjyq2N.jpg                                                                                                                                                                  |
-| ![](/posts/visual-feature/2.png) | https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6keFD3eBZBqtWStykos5pZimIdojq2hIfJJEdOIneS7ssXf2YyNvlkMuVcXK-SE7gCp2VO1Aqj3-eGme-Z1lN_FW9KqT3mS-29c0PbEqbEBY5OonC089GRDemZfn92-W6Mm_OSg/s1600/sift_pic |
-| ![](/posts/visual-feature/3.jpg) | https://miro.medium.com/v2/0*UDe_M_7xSVNM8_h_.jpg                                                                                                                                                                  |
-| ![](/posts/visual-feature/4.png) | https://miro.medium.com/v2/0*nda8uDh7EYfGtbJW.png                                                                                                                                                                  |
-| ![](/posts/visual-feature/5.jpg) | https://miro.medium.com/v2/0*bTfQfO4qOxk3qL78                                                                                                                                                                      |
-| ![](/posts/visual-feature/6.png) | https://juliaimages.org/ImageFeatures.jl/v0.0.3/img/brisk_pattern.png                                                                                                                                              |
+|                 Image                 | Link                                                                                                                                                                                                               |
+| :-----------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![](/posts/2025/visual-feature/1.jpg) | https://miro.medium.com/v2/0*HrkMSiOEvpWjyq2N.jpg                                                                                                                                                                  |
+| ![](/posts/2025/visual-feature/2.png) | https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6keFD3eBZBqtWStykos5pZimIdojq2hIfJJEdOIneS7ssXf2YyNvlkMuVcXK-SE7gCp2VO1Aqj3-eGme-Z1lN_FW9KqT3mS-29c0PbEqbEBY5OonC089GRDemZfn92-W6Mm_OSg/s1600/sift_pic |
+| ![](/posts/2025/visual-feature/3.jpg) | https://miro.medium.com/v2/0*UDe_M_7xSVNM8_h_.jpg                                                                                                                                                                  |
+| ![](/posts/2025/visual-feature/4.png) | https://miro.medium.com/v2/0*nda8uDh7EYfGtbJW.png                                                                                                                                                                  |
+| ![](/posts/2025/visual-feature/5.jpg) | https://miro.medium.com/v2/0*bTfQfO4qOxk3qL78                                                                                                                                                                      |
+| ![](/posts/2025/visual-feature/6.png) | https://juliaimages.org/ImageFeatures.jl/v0.0.3/img/brisk_pattern.png                                                                                                                                              |
