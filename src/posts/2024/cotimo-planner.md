@@ -7,9 +7,10 @@ CoTiMo represents Collision-Free Smooth Path Generation, Time-Optimal Path Param
 This report provides a detailed explanation of the planner's core algorithmic implementations, covering key modules such as path generation, time parameterization, and model predictive control.
 
 <Badges>
-<img src="/tags/ros.svg">
-<img src="/tags/cpp.svg">
-<a href="https://github.com/zhangzrjerry/cotimo"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhangzrjerry/cotimo"></a>
+    <img src="/tags/ros.svg">
+    <img src="/tags/cpp.svg">
+    <a href="https://github.com/zhangzrjerry/cotimo"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhangzrjerry/cotimo"></a>
+    <a href="https://github.com/zzhangje/cotimo-planner"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zzhangje/cotimo-planner"></a>
 </Badges>
 
 ## Slide

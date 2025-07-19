@@ -42,13 +42,14 @@ export namespace About {
 
     export const projects: Publication[] = [
         {
-            key: '2025-soulpivot',
-            image: '/projects/soul-pivot/main.jpg',
-            title: 'Soul Pivot',
-            venue: ['==Autonomous Award== in 2025 FRC İstanbul Regional'],
+            key: '2025-cc',
+            image: 'https://raw.githubusercontent.com/zzhangje/ChronosChain/master/public/milk.jpg',
+            title: 'Chronos Chain',
+            venue: [],
             authors: [],
             links: [
-                { label: 'Project Page', url: '/projects/soul-pivot' }
+                { label: 'Project Page', url: '/projects/2025-cc' },
+                { label: 'GitHub', url: 'https://github.com/zzhangje/ChronosChain' }
             ],
             details: 'Interface-driven subsystems with state machines expose minimal APIs and atomic commands, enabling hardware-agnostic robotics through composable, orchestratable behaviors.'
         },
@@ -59,8 +60,8 @@ export namespace About {
             venue: '',
             authors: [],
             links: [
+                { label: 'Project Page', url: '/posts/2024/cotimo-planner.html' },
                 { label: 'GitHub', url: 'https://github.com/zhangzrjerry/cotimo' },
-                { label: 'Details', url: '/posts/2024/cotimo-planner.html' },
                 { label: 'Slide', url: 'https://zhangzrjerry.github.io/CoTiMo' }
             ],
             details: 'CoTiMo stands for Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control.'

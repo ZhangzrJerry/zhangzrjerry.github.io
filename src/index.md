@@ -29,11 +29,11 @@ cards:
     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
-  - title: Soul Pivot
+  - title: Chronos Chain
     icon: 🌀
-    img: /projects/soul-pivot/square.jpg
-    details: Modular interfaces and atomic commands enable hardware-agnostic, composable robotics.
-    link: /projects/soul-pivot.html
+    img: /icon/chronos-chain.jpg
+    details: A command-driven framework where robotic actions unfold in flawless sequence, like links in a timeless chain.
+    link: /projects/2025-cc.html
 
   - title: Tacto PRO
     icon: ☝️
