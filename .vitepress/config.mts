@@ -64,7 +64,9 @@ export default defineConfig({
       {
         text: 'Projects',
         items: [
-          { text: 'FRC', link: '/projects/frc.html' }
+          { text: '# FRC Alumnus #', link: '/projects/frc.html' },
+          { text: 'Chronos Chain', link: '/projects/2025-cc.html' },
+          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' },
         ]
       },
       { text: 'Posts', link: '/posts/' }
