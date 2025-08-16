@@ -60,11 +60,14 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/about/' },
+      { text: 'About', link: '/about.html' },
       {
         text: 'Projects',
         items: [
-          { text: 'FRC', link: '/projects/frc.html' }
+          { text: '-> <b><i>FRC Alumnus</i></b>', link: '/projects/frc.html' },
+          { text: 'Chronos Chain', link: '/projects/2025-cc.html' },
+          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' },
+          // { text: 'TacLoc [25\'RA-L]', link: '/projects/2025-tac.html' }
         ]
       },
       { text: 'Posts', link: '/posts/' }
@@ -134,8 +137,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/zhangzrjerry' },
+      { icon: 'googlescholar', link: 'https://scholar.google.com/citations?user=PCkL2rAAAAAj' },
       { icon: 'orcid', link: 'https://orcid.org/0009-0008-4156-1652' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/zirui-zhang-924958319/' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/zirui-zhang-924958319/' },
     ],
 
     outline: {

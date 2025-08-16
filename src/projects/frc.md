@@ -34,7 +34,7 @@ For FRC 2025 game rules, the mission of the robot is to collect the Coral (PVC p
 [Background](https://www.youtube.com/watch?v=YWbxcjlY9JY) /
 [Recap](https://www.bilibili.com/video/BV141QGYHEo8) /
 
-:crystal_ball: Mechanism-level Action Visualization based on TF tree
+:crystal_ball: Mechanism-level Action Visualization
 
 :joystick: Custom Node Selection Panel: [Cyber Selector](#cyber-selector-custom-node-selection-panel)
 

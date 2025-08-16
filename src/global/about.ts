@@ -11,7 +11,7 @@ export namespace About {
             links: [
                 { label: 'Home Page', url: 'https://ri.hkust.edu.hk/' },
             ],
-            details: ''
+            details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin.'
         },
         {
             key: '2023-rb',
@@ -35,9 +35,24 @@ export namespace About {
             links: [
                 { label: 'Project Page', url: '/projects/frc.html' }
             ],
-            details: 'Participated from rookie to program mentor over six years.'
+            details: 'Participated from rookie to program mentor over six years, with team 8011, 8811, 6399, 8214, and 9635.'
         }
     ];
+
+    export const publications: Publication[] = [
+        {
+            key: '2025-tac',
+            image: '',
+            title: 'TacLoc',
+            venue: '',
+            authors: [],
+            links: [{
+                'label': 'Project Page',
+                'url': '/projects/2025-tac.html'
+            }],
+            details: ""
+        }
+    ]
 
 
     export const projects: Publication[] = [

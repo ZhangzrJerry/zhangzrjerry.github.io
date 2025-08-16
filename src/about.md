@@ -13,13 +13,14 @@ Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HK
 </div>
 
 <script setup>
-import { About } from "../global/about.ts"
+import { About } from "/global/about.ts"
 </script>
 
 <h2>Experience</h2>
 <BetterExperiences :experiences="About.experiences" />
 
-<!-- <BetterPublications :publications="publications" /> -->
+<!-- <h2>Publications</h2>
+<BetterPublications :publications="About.publications" /> -->
 
 <h2>Projects</h2>
 <BetterPublications :publications="About.projects" />
@@ -27,8 +28,6 @@ import { About } from "../global/about.ts"
 ## Awards
 
 - **Championship Division Finalist & Industrial Design Award** - <span class="frc">FRC</span> Championship Galileo Division (Team 8214, 2025)
-- **Industrial Design Award** - <span class="frc">FRC</span> Shanghai Regional (Team 8214, 2025)
-- **Autonomous Award** - <span class="frc">FRC</span> İstanbul Regional (Team 8214, 2025)
 - **Regional Finalists & Creativity Award** - <span class="frc">FRC</span> Bosphorus Regional (Team 9635, 2025)
 - **Engineering Inspiration Award** - World Robot Contest Championships Beijing (<span class="frc">FRC</span> Offseason, Team 6399, 2024)
 - **Excellent Award** - <span class="venue">Rhino-Bird</span> Middle School Science Research Training Program (Tencent UR, 2023)

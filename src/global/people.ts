@@ -7,6 +7,8 @@ export namespace People {
         name: 'Zirui Zhang',
         links: [
             { icon: 'github', link: 'https://github.com/zhangzrjerry' },
+            { icon: 'googlescholar', link: 'https://scholar.google.com/citations?user=PCkL2rAAAAAj' },
+            { icon: 'homepage', link: 'https://zhangzrjerry.github.io/' },
             { icon: 'orcid', link: 'https://orcid.org/0009-0008-4156-1652' },
             { icon: 'linkedin', link: 'https://www.linkedin.com/in/zirui-zhang-924958319/' }
         ]
