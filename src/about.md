@@ -19,8 +19,8 @@ import { About } from "/global/about.ts"
 <h2>Experience</h2>
 <BetterExperiences :experiences="About.experiences" />
 
-<h2>Publications</h2>
-<BetterPublications :publications="About.publications" />
+<!-- <h2>Publications</h2>
+<BetterPublications :publications="About.publications" /> -->
 
 <h2>Projects</h2>
 <BetterPublications :publications="About.projects" />
