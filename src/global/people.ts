@@ -97,4 +97,12 @@ export namespace People {
             { icon: 'researchgate', link: 'https://www.researchgate.net/profile/Fumin-Zhang-2' },
         ]
     });
+
+    export const jiajingxie: Person = new Person({
+        avatar: 'https://github.com/kaitlyn-xie-jj.png',
+        name: 'Jiajing Xie',
+        links: [
+            { icon: 'github', link: 'https://github.com/kaitlyn-xie-jj' }
+        ]
+    });
 }
