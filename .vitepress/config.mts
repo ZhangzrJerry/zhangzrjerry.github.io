@@ -68,7 +68,7 @@ export default defineConfig({
           { text: 'Chronos Chain', link: '/projects/25-cc.html' },
           { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' },
           // { text: 'Goofia [25\'IROS]', link: '/projects/25-goofia.html' },
-          // { text: 'TacLoc [25\'RA-L]', link: '/projects/2025-tac.html' }
+          // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tac.html' }
         ]
       },
       { text: 'Posts', link: '/posts/' }
