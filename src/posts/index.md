@@ -1,6 +1,14 @@
 <script setup>
 const posts = [
     {
+        time: 'Sep. 2025',
+        type:'project',
+        title: 'Cyber Planner Report',
+        detail:'Cyber Planner: A Convex Optimization Framework for FRC Robotic Arm Trajectory Planning',
+        tags:['math','robotics'],
+        url:'/posts/2025/cyber-planner'
+    },
+    {
         time: 'May. 2025',
         type:'thesis',
         title: '🌟 Detailed derivation of On-Manifold IMU Preintegration',

@@ -41,14 +41,14 @@ export namespace About {
 
     export const publications: Publication[] = [
         {
-            key: '2025-tac',
+            key: '2025-tacloc',
             image: '',
             title: 'TacLoc',
             venue: '',
             authors: [],
             links: [{
                 'label': 'Project Page',
-                'url': '/projects/2025-tac.html'
+                'url': '/projects/25-tacloc.html'
             }],
             details: ""
         }
@@ -75,8 +75,8 @@ export namespace About {
             venue: '',
             authors: [],
             links: [
-                { label: 'Project Page', url: '/posts/2024/cotimo-planner.html' },
-                { label: 'GitHub', url: 'https://github.com/zhangzrjerry/cotimo' },
+                { label: 'Project Page', url: '/posts/2025/cyber-planner.html' },
+                { label: 'GitHub', url: 'https://github.com/zzhangje/cotimo' },
                 { label: 'Slide', url: 'https://zhangzrjerry.github.io/CoTiMo' }
             ],
             details: 'CoTiMo stands for Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control.'
