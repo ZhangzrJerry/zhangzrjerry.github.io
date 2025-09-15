@@ -9,7 +9,6 @@ import Badges from './components/Badges.vue'
 import Giscus from './components/Giscus.vue'
 import CustomHomeLayout from './components/CustomHome.vue'
 import VisitorMap from './components/VisitorMap.vue'
-import BetterTable4Post from './components/BetterTable4Post.vue'
 import Revealjs from './components/Revealjs.vue'
 import BetterPublications from './components/BetterPublications.vue'
 import { SpeedInsights } from '@vercel/speed-insights/vue'
@@ -42,7 +41,6 @@ export default {
     app.component('Giscus', Giscus);
     app.component('custom-home', CustomHomeLayout);
     app.component('VisitorMap', VisitorMap);
-    app.component('BetterTable4Post', BetterTable4Post);
     app.component('BetterPublications', BetterPublications)
     app.component('Revealjs', Revealjs);
     app.component('BetterExperiences', BetterExperiences);

@@ -33,7 +33,7 @@ features:
     icon: 🌀
     img: /icon/chronos-chain.jpg
     details: A command-driven framework where robotic actions unfold in flawless sequence, like links in a timeless chain.
-    link: /projects/2025-cc.html
+    link: /projects/25-cc.html
 
   - title: Tacto PRO
     icon: ☝️
@@ -66,7 +66,7 @@ features:
     icon: 🥏
     img: /projects/projects/2024-cotimo-square.png
     details: A collision-free smooth path generation and time-optimal path parameterization palnner with model predictive control.
-    link: /posts/2024/cotimo-planner.html
+    link: /projects/24-cotimo.html
 
   - title: Defiant
     icon:

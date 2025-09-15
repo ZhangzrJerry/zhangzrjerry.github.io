@@ -66,75 +66,18 @@ export default defineConfig({
         items: [
           { text: '-> <b><i>FRC Alumnus</i></b>', link: '/projects/frc.html' },
           { text: 'Chronos Chain', link: '/projects/25-cc.html' },
-          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' },
+          { text: 'CoTiMo Planner', link: '/projects/24-cotimo.html' },
           // { text: 'Goofia [25\'IROS]', link: '/projects/25-goofia.html' },
           // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
         ]
       },
-      { text: 'Posts', link: '/posts/' }
+      { text: 'Posts', link: 'https://zzhangje.github.io/posts' }
     ],
     search: {
       'provider': 'local',
     },
 
     sidebar: {
-      '/posts/': [{
-        text: 'Posts',
-        link: '/posts/'
-      },
-      {
-        text: 'SLAM',
-        collapsed: false,
-        items: [
-          { text: 'VINS Initialization', link: '/posts/2024/vins-init.html' },
-          {
-            text: 'IMU Preintegration', link: '/posts/2025/imu-preintegration.html'
-          },
-          { text: 'Spline Fusion', link: '/posts/2024/spline-fusion.html' },
-          { text: 'SEIF SLAM', link: '/posts/2025/seif-slam.html' },
-          { text: 'Gauge Handling', link: '/posts/2024/gauge-handling.html' },
-        ]
-      },
-      {
-        text: 'PnC',
-        collapsed: false,
-        items: [
-          { text: 'Cyber Planner', link: '/posts/2025/cyber-planner.html' },
-          { text: 'CoTiMo Planner', link: '/posts/2024/cotimo-planner.html' }
-        ]
-      },
-      {
-        text: 'Notes',
-        collapsed: false,
-        items: [
-          { text: 'COMP 2711', link: '/posts/2024/comp-2711.html' },
-          { text: 'ELEC 3200', link: '/posts/2024/elec-3200.html' },
-          {
-            text: 'ELEC 5650',
-            collapsed: true,
-            link: '/posts/2025/elec-5650/',
-            items: [
-              { text: 'Math Tools', link: '/posts/2025/elec-5650/math-tools.html' },
-              { text: 'Estimation', link: '/posts/2025/elec-5650/estimation.html' },
-              { text: 'Kalman Filter', link: '/posts/2025/elec-5650/kalman-filter.html' },
-              { text: 'LQR', link: '/posts/2025/elec-5650/lqr.html' }
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Uncategorized',
-        collapsed: false,
-        items: [
-          {
-            text: 'BIM Localization',
-            link: '/posts/2025/bim-localization.html'
-          },
-          { text: 'Visual Feature', link: '/posts/2025/visual-feature.html' },
-          { text: 'Rotation Representation', link: '/posts/2024/rotation-representation.html' },
-        ]
-      }
-      ]
     },
 
     socialLinks: [
