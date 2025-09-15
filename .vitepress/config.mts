@@ -71,7 +71,7 @@ export default defineConfig({
           // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
         ]
       },
-      { text: 'Posts', link: 'https://zzhangje.github.io/posts' }
+      { text: 'Posts', link: 'https://zzhangje.github.io/' }
     ],
     search: {
       'provider': 'local',
