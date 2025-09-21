@@ -64,10 +64,10 @@ export default defineConfig({
       {
         text: 'Projects',
         items: [
+          { text: '-> <b><i>Lecture Series</i></b>', link: '/projects/lectures.html' },
           { text: '-> <b><i>FRC Alumnus</i></b>', link: '/projects/frc.html' },
           { text: 'Chronos Chain', link: '/projects/25-cc.html' },
           { text: 'CoTiMo Planner', link: '/projects/24-cotimo.html' },
-          // { text: 'Goofia [25\'IROS]', link: '/projects/25-goofia.html' },
           // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
         ]
       },

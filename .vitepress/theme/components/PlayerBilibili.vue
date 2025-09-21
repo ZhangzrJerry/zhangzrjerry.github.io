@@ -1,5 +1,6 @@
 <template>
-    <div class="player-bilibili">
+    <div class="player-bilibili"
+        :style="{ width: width, paddingBottom: aspectRatioPadding, 'float': float, margin: margin }">
         <iframe :src="playerUrl" frameborder="0" allowfullscreen scrolling="no" class="bilibili-iframe"
             :style="{ 'border-radius': borderRadius }"></iframe>
     </div>
@@ -17,10 +18,26 @@ export default {
             type: String,
             default: "15px",
         },
+        float: {
+            type: String,
+            default: "none",
+        },
+        width: {
+            type: String,
+            default: "100%",
+        },
+        margin: {
+            type: String,
+            default: "0px",
+        }
     },
     computed: {
         playerUrl() {
             return `https://player.bilibili.com/player.html?bvid=${this.videoId}`;
+        },
+        aspectRatioPadding() {
+            // 16:9 aspect ratio -> 9 / 16 = 56.25%
+            return 0.5625 * parseFloat(this.width) + "%";
         },
     },
 };
@@ -29,9 +46,6 @@ export default {
 <style scoped>
 .player-bilibili {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 Aspect Ratio */
     height: 0;
 }
 

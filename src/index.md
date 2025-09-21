@@ -6,27 +6,30 @@ hero:
   name: "ZhangzrJerry's"
   text: "Personal Website"
   tagline: 星辰轮转 & L'éternel tour des constellations
-  image: none
+  # image: none
   actions:
     - theme: brand
       text: About Me
-      link: /about
+      link: /about.html
+    - theme: alt
+      text: Lectures
+      link: /projects/lectures.html
     - theme: alt
       text: Github
       link: https://github.com/zhangzrjerry
 
-cards:
-  - title: 2025 Industrial Design Award in Galileo Division
-    img: /gallery/2025-houston.png
-    details: '"Demonstrated industrial design principles tracking a balance being form, function and aesthetic. This team proved that mythical creatures exist, and can come in black. The robot uses a clever combination of materials, to make an elegant machine. There is no mysticism about this team and robot, they are ready for the world. Congratulations to 8214!"'
+# cards:
+#   - title: 2025 Industrial Design Award in Galileo Division
+#     img: /gallery/2025-houston.png
+#     details: '"Demonstrated industrial design principles tracking a balance being form, function and aesthetic. This team proved that mythical creatures exist, and can come in black. The robot uses a clever combination of materials, to make an elegant machine. There is no mysticism about this team and robot, they are ready for the world. Congratulations to 8214!"'
 
-  - title: 2024 Engineering Inspiration Award in WRCC
-    img: /gallery/2024-ei.png
-    details: '"工程启发奖是一个非常了不起的成就，它反映了团队通过创新思想、团队合作和社区参与，能够激励和激发他人的能力。获得该奖的团队通过对机器人技术的热爱和学习，建设了学校的教室及课程预定系统，将线下工作推动到线上，帮助学校实现数字化转型，务实的行动值得称赞。你们团队的成功不仅是你们辛勤工作和坚持不懈的体现，也是整个 FRC 社区的鼓舞力量。祝贺工程启发奖的获奖队伍 Defiant 9975，他们来自于济南外国语学校，愿这个荣誉成为未来更大成就的基石。"'
+#   - title: 2024 Engineering Inspiration Award in WRCC
+#     img: /gallery/2024-ei.png
+#     details: '"工程启发奖是一个非常了不起的成就，它反映了团队通过创新思想、团队合作和社区参与，能够激励和激发他人的能力。获得该奖的团队通过对机器人技术的热爱和学习，建设了学校的教室及课程预定系统，将线下工作推动到线上，帮助学校实现数字化转型，务实的行动值得称赞。你们团队的成功不仅是你们辛勤工作和坚持不懈的体现，也是整个 FRC 社区的鼓舞力量。祝贺工程启发奖的获奖队伍 Defiant 9975，他们来自于济南外国语学校，愿这个荣誉成为未来更大成就的基石。"'
 
-  - title: 2021 Rookie Game Changer Award in Magnesium Group
-    img: /gallery/2021-rookie.png
-    details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
+#   - title: 2021 Rookie Game Changer Award in Magnesium Group
+#     img: /gallery/2021-rookie.png
+#     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
   - title: Chronos Chain

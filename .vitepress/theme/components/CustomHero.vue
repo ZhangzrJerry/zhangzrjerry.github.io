@@ -45,7 +45,7 @@ const heroImageSlotExists = inject('hero-image-slot-exists') as Ref<boolean>
                 <slot name="home-hero-actions-after" />
             </div>
 
-            <div v-if="image || heroImageSlotExists" class="image">
+            <div v-if="true || image || heroImageSlotExists" class="image">
                 <div class="image-container">
                     <div class="image-bg" />
                     <slot name="home-hero-image">
