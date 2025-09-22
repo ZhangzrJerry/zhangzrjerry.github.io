@@ -1,6 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: custom-home
+sidebar: false
 
 hero:
   name: "ZhangzrJerry's"

@@ -1,6 +1,6 @@
----
+<!-- ---
 aside: false
----
+--- -->
 
 <p align="center">
   <img class="home-cover" src="/icon-round.jpg" width="25%" style="margin-bottom:25px;">
@@ -16,13 +16,15 @@ Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HK
 import { About } from "/global/about.ts"
 </script>
 
-<h2>Experience</h2>
+## Experience
+
 <BetterExperiences :experiences="About.experiences" />
 
 <!-- <h2>Publications</h2>
 <BetterPublications :publications="About.publications" /> -->
 
-<h2>Projects</h2>
+## Projects
+
 <BetterPublications :publications="About.projects" />
 
 ## Awards

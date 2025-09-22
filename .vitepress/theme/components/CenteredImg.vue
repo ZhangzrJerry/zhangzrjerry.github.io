@@ -1,16 +1,15 @@
 <template>
     <div align="center" class="centered-img">
         <img :src="src" :alt="alt" :width="width" :style="{ borderRadius: borderRadius }" />
-        <p>{{ text }}</p>
+        <p>{{ caption }}</p>
     </div>
 </template>
 
 <style>
 .centered-img>p {
     line-height: 1;
-    color: hsl(0, 0%, 30%);
+    color: hsl(0, 0%, 50%);
     font-size: 0.9em;
-
 }
 
 .centered-img>img {
@@ -35,7 +34,7 @@ const props = defineProps({
         type: String,
         default: '40%',
     },
-    text: {
+    caption: {
         type: String,
         default: '',
     },
@@ -48,6 +47,6 @@ const props = defineProps({
 const src = withBase(props.src);
 const width = props.width;
 const alt = props.alt;
-const text = props.text;
+const caption = props.caption;
 const borderRadius = props.borderRadius;
 </script>

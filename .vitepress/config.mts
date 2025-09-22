@@ -61,16 +61,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about.html' },
-      {
-        text: 'Projects',
-        items: [
-          { text: '-> <b><i>Lecture Series</i></b>', link: '/projects/lectures.html' },
-          { text: '-> <b><i>FRC Alumnus</i></b>', link: '/projects/frc.html' },
-          { text: 'Chronos Chain', link: '/projects/25-cc.html' },
-          { text: 'CoTiMo Planner', link: '/projects/24-cotimo.html' },
-          // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
-        ]
-      },
+      { text: 'Lecture', link: '/lecture/' },
       { text: 'Posts', link: 'https://zzhangje.github.io/' }
     ],
     search: {
@@ -78,6 +69,39 @@ export default defineConfig({
     },
 
     sidebar: {
+      '/': [
+        {
+          text: 'Projects',
+          items: [
+            { text: '<b><i>FRC Alumnus</i></b>', link: '/projects/frc.html' },
+            { text: 'Chronos Chain', link: '/projects/25-cc.html' },
+            { text: 'CoTiMo Planner', link: '/projects/24-cotimo.html' },
+            // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
+          ]
+        },
+      ],
+      '/lecture/': [
+        {
+          text: 'Control', items: [
+            { text: 'KF in 3 ways', link: '/lecture/kf3ways' },
+            { text: 'LQR in 3 ways', link: '/lecture/lqr3ways' },
+            { text: 'LQG and its Duality', link: '/lecture/lqgfatal' },
+            { text: 'RL as Control', link: '/lecture/rlascontrol' }
+          ]
+        },
+        {
+          text: 'Optimization', items: [
+            { text: 'Robust L-BFGS' },
+            { text: 'KKT & Lagrangian' },
+            // { text: 'ADMM' }
+          ]
+        },
+        {
+          text: 'Misc', items: [
+            { text: 'Intro to FRC', link: 'https://zzhangje.github.io/intro2frc/' }
+          ]
+        }
+      ]
     },
 
     socialLinks: [
@@ -102,7 +126,12 @@ export default defineConfig({
       md.use(mathjax3, {
         tex: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\(', '\\)'], ['\\begin{equation}', '\\end{equation}']]
+          displayMath: [['$$', '$$'], ['\\(', '\\)'], ['\\begin{equation}', '\\end{equation}']],
+          macros: {
+            'red': ['{\\color{red}#1}', 1],
+            'blue': ['{\\color{blue}#1}', 1],
+            'green': ['{\\color{green}#1}', 1],
+          }
         }
       });
     },
