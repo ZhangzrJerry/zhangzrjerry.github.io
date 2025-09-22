@@ -92,7 +92,7 @@ export default defineConfig({
         },
         {
           text: 'Optimization', items: [
-            { text: 'Robust L-BFGS', link: '/lecture/lbfgs' },
+            { text: 'L-BFGS Method', link: '/lecture/lbfgs' },
             { text: 'KKT & Lagrangian' },
             // { text: 'ADMM' }
           ]

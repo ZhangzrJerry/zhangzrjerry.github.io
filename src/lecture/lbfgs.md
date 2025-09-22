@@ -1,4 +1,4 @@
-# Robust Limit-memory BFGS
+# Limit-memory BFGS Method
 
 [Slide](/assets/lbfgs.pdf): TBA
 
@@ -72,9 +72,9 @@ $$
 
 where $c_1 \in (0, 1)$ is a small constant.
 
-<CenteredImg width=50% src="/pic/Pasted image 20250921214736.png" caption="Courtesy: Cornell" />
+<CenteredImg width=50% src="/pic/Pasted image 20250921214736.png" caption="Courtesy: Cornell University" />
 
-## Quasi-Newton
+## Quasi-Newton Methods
 
 ### Newton's Method: Limitations
 
@@ -114,7 +114,7 @@ The matrix $\mathbf{B}^k$ should:
 - Retain first-order curvature information.
 - Preserve the descent direction.
 
-## BFGS
+## BFGS Method
 
 ### Descent Direction
 
@@ -241,7 +241,7 @@ Typically, $c_1=10^{-4}, c_2=0.9$.
 
 <CenteredImg width=50% src="/pic/Pasted image 20250922005849.png" caption="Courtesy: Ján Kopačka" />
 
-## L-BFGS
+## L-BFGS Method
 
 ### Lewis-Overton Line Search
 
@@ -250,28 +250,25 @@ The Lewis-Overton line search is a sophisticated backtracking line search design
 1. Given search direction $\mathbf{d}^k$, current point $\mathbf{x}^k$ and gradient $\mathbf{g}^k$
 2. Initialize trial step $\alpha:=1$, $\alpha_l:=0$, $\alpha_r:=+\infty$
 3. Repeat
-   1. If $\text{AC}(\alpha)$ fails
-      1. $\alpha_r:=\alpha$
-   2. else if $\text{CC}(\alpha)$ fails
-      1. $\alpha_l:=\alpha$
-   3. else
-      1. return $\alpha$
-   4. If $\alpha_r<+\infty$:
-      1. $\alpha:=\text{CubicInterpolate}(\alpha_l, \alpha_r)\quad\text{or}\quad\alpha:=(\alpha_l+\alpha_r)/2$
-   5. else
-      1. $\alpha:=\text{CubicExtrapolate}(\alpha_l, \alpha_r)\quad\text{or}\quad\alpha:=2\alpha_l$
-   6. make sure $\alpha\in[\alpha_{\min},\alpha_{\max}]$
+   1. Update bounds:
+      - If $\text{AC}(\alpha)$ fails, set $\alpha_r := \alpha$
+      - Else if $\text{CC}(\alpha)$ fails, set $\alpha_l := \alpha$
+      - Otherwise, return $\alpha$
+   2. Update $\alpha$:
+      - If $\alpha_r < +\infty$, set $\alpha := \text{CubicInterpolate}(\alpha_l, \alpha_r)$ or $\alpha := (\alpha_l + \alpha_r) / 2$
+      - Otherwise, set $\alpha := \text{CubicExtrapolate}(\alpha_l, \alpha_r)$ or $\alpha := 2\alpha_l$
+   3. Ensure $\alpha \in [\alpha_{\min}, \alpha_{\max}]$
 
 ### Cautious Update
 
 Sometimes, when line search is inexact or the function is poorly conditioned, $(\mathbf{y}^{k})^\top \mathbf{s}^{k} > 0$ cannot gurantee. To ensure numerical stability and maintain the PD Hessian approximation, L-BFGS employs a cautious update strategy:
 
-**Skip update condition:** If the curvature condition $(\mathbf{y}^k)^\top\mathbf{s}^k > \epsilon |\mathbf{s}^k|^2$ is not satisfied where $\epsilon$ is a small positive constant $10^{-6}$, skip the update for this iteration $\mathbf{B}^{k+1}=\mathbf{B}^k$
+**Skip update condition:** If the curvature condition $(\mathbf{y}^k)^\top\mathbf{s}^k > \epsilon |\mathbf{s}^k|^2$ is not satisfied, where $\epsilon$ is a small positive constant (e.g., $10^{-6}$), skip the update for this iteration: $\mathbf{B}^{k+1} = \mathbf{B}^k$.
 
-**Powell's Damping:** If the curvature condition $(\mathbf{y}^k)^\top \mathbf{s}^k \ge \eta (\mathbf{s}^k)^\top \mathbf{B}^k \mathbf{s}^k$ is not satisfied where $\eta$ is a small positive constant $0.2$ or $0.25$
+**Powell's Damping:** If the curvature condition $(\mathbf{y}^k)^\top \mathbf{s}^k \geq \eta (\mathbf{s}^k)^\top \mathbf{B}^k \mathbf{s}^k$ is not satisfied, where $\eta$ is a small positive constant (e.g., $0.2$ or $0.25$).
 
 $$
-\theta=\frac{(1-\eta)\cdot(\mathbf{s}^k)^\top \mathbf{B}^k \mathbf{s}^k}{(\mathbf{s}^k)^\top \mathbf{B}^k \mathbf{s}^k - (\mathbf{y}^k)^\top \mathbf{s}^k},\quad\tilde{\mathbf{y}}^k=\theta\mathbf{y}^k+(1-\theta)\mathbf{B}^k\mathbf{s}^k
+\quad\tilde{\mathbf{y}}^k=\theta\mathbf{y}^k+(1-\theta)\mathbf{B}^k\mathbf{s}^k,\qquad\theta=\frac{(1-\eta)\cdot(\mathbf{s}^k)^\top \mathbf{B}^k \mathbf{s}^k}{(\mathbf{s}^k)^\top \mathbf{B}^k \mathbf{s}^k - (\mathbf{y}^k)^\top \mathbf{s}^k}
 $$
 
 Cautious updates guaranteed to have its iterates converge to a critical point if the function has bounded sublevel sets and a Lipschitz continuous gradient.
@@ -298,14 +295,11 @@ The complete L-BFGS algorithm with cautious update and Lewis-Overton line search
 
 1. Initialize $\mathbf{x}^0,\mathbf{g}^0:=\nabla f(\mathbf{x}^0)$, choose $m$
 2. For $k = 0, 1, 2, \ldots$ until convergence:
-   1. Compute search direction: $\mathbf{d}^k$ using two-loop recursion
-   1. Find step size $\alpha^k$ using Lewis-Overton line search
+   1. Compute search direction: $\mathbf{d}^k$ using **L-BFGS two-loop recursion**
+   1. Find step size $\alpha^k$ using **Lewis-Overton line search**
    1. Update: $\mathbf{x}^{k+1} = \mathbf{x}^k + \alpha^k \mathbf{d}^k$
    1. Compute $\mathbf{s}^k = \mathbf{x}^{k+1} - \mathbf{x}^k$, $\mathbf{y}^k = \nabla f(\mathbf{x}^{k+1}) - \nabla f(\mathbf{x}^k)$
-   1. If $(\mathbf{y}^k)^\top\mathbf{s}^k > \epsilon |\mathbf{s}^k|^2$:
-      1. Apply cautious update to add $(\mathbf{s}^k, \mathbf{y}^k)$ to history
-      1. If history size exceeds $m$, remove oldest pair
-   1. Else: skip update or apply damping
+   1. Apply **cautious update** to $(\{\mathbf{s}^k\}, \{\mathbf{y}^k\})$
 
 ### Open Source Implementation
 
