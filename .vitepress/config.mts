@@ -58,6 +58,7 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/icon.jpg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about.html' },

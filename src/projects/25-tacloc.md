@@ -1,7 +1,3 @@
----
-aside: false
----
-
 # TacLoc
 
 ## Slides
