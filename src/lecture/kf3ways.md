@@ -1,6 +1,6 @@
 # Kalman Filter in 3 Ways
 
-[Slide](/assets/kf3ways.pdf): Discover the Kalman Filter through the **Geometric perspective** of orthogonal projection, the **Probabilistic perspective** of Bayesian filtering, and the **Optimization perspective** of weighted least squares. _Inspired by Ling Shi's 2024-25 Spring lecture._
+[Slide](/assets/kf3ways.pdf): Discover the Kalman Filter through the **Geometric perspective** of orthogonal projection, the **Probabilistic perspective** of Bayesian filtering, and the **Optimization perspective** of weighted least squares. _Inspired by Ling Shi's 2024-25 Spring lecture "Networked Sensing, Estimation and Control"._
 
 <PlayerBilibili videoId="BV1WLp8zPEvS" />
 

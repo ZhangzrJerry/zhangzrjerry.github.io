@@ -1,6 +1,8 @@
 # Limit-memory BFGS Method
 
-[Slide](/assets/lbfgs.pdf): TBA
+[Slide](/assets/lbfgs.pdf): Starting with the **classical Newton's method**, we will examine its limitations and the improvements introduced by **quasi-Newton methods**. Finally, we will delve into the **L-BFGS algorithm**, which is particularly suited for large-scale problems. _Inspired by Dr. Zhepei Wang's Lecture "Numerical Optimization for Robotics"._
+
+<PlayerBilibili videoId="BV145J1zuEPN" />
 
 ## Introduction
 

@@ -1,6 +1,6 @@
 # Linear Quadratic Regulator in 3 Ways
 
-[Slide](/assets/lqr3ways.pdf): Explore the Linear Quadratic Regulator (LQR) through the **Indirect Shooting Method** (Pontryagin's Principle), the **Optimization Approach** (Quadratic Programming), and the **Recursive Solution** (Riccati Equation). _Inspired by Zachary Manchester's Spring 2024-25 lecture._
+[Slide](/assets/lqr3ways.pdf): Explore the Linear Quadratic Regulator (LQR) through the **Indirect Shooting Method** (Pontryagin's Principle), the **Optimization Approach** (Quadratic Programming), and the **Recursive Solution** (Riccati Equation). _Inspired by Zachary Manchester's Spring 2024-25 lecture "Optimal Control and Reinforcement Learning"._
 
 <PlayerBilibili videoId="BV19Vpbz1Eyg" />
 
