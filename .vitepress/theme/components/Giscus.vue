@@ -23,10 +23,12 @@ export default {
             script.onerror = () => {
                 console.error('Failed to load Giscus script');
             };
-            script.dataset.repo = 'zhangzrjerry/zhangzrjerry.github.io';
-            script.dataset.repoId = 'R_kgDON2lpgw';
-            script.dataset.mapping = 'number';
-            script.dataset.term = '2';
+            script.dataset.repo = "zhangzrjerry/zhangzrjerry.github.io";
+            script.dataset.repoId = "R_kgDON2lpgw";
+            script.dataset.category = "General";
+            script.dataset.categoryId = "DIC_kwDON2lpg84Cm-IG";
+            script.dataset.mapping = 'pathname';
+            script.dataset.strict = '1';
             script.dataset.reactionsEnabled = '1';
             script.dataset.emitMetadata = '0';
             script.dataset.inputPosition = 'top';

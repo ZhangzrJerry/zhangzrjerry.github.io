@@ -53,7 +53,9 @@ export default defineConfig({
   base: '/',
   title: "ZhangzrJerry",
   description: "My Personal Website",
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }], [
+    'script', { src: 'https://cn.vercount.one/js', defer: 'true' }
+  ]],
   srcDir: 'src',
 
   themeConfig: {

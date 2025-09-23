@@ -6,15 +6,16 @@ sidebar: false
 hero:
   name: "ZhangzrJerry's"
   text: "Personal Website"
-  tagline: 星辰轮转 & L'éternel tour des constellations
+  tagline: 'Visits: <span id="vercount_value_site_pv">Loading...</span>'
+  # tagline: 星辰轮转 & L'éternel tour des constellations
   # image: none
   actions:
     - theme: brand
       text: About Me
       link: /about.html
     - theme: alt
-      text: Lectures
-      link: /projects/lectures.html
+      text: Lecture
+      link: /lecture/
     - theme: alt
       text: Github
       link: https://github.com/zhangzrjerry

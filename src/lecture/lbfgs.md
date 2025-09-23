@@ -54,7 +54,7 @@ $$
 
 $\lambda > 0$ starts small and grows until **Cholesky decomposition** works.
 
-If the function is nonconvex, $\nabla^2f(\mathbf{x}^k)$ may be indefinite. To handle this, the **Bunch-Kaufman decomposition** is applied to obtain $\mathbf{L}\tilde{\mathbf{D}}\mathbf{L}^\top$ and $\tilde{\mathbf{D}}$.
+If the function is nonconvex, $\nabla^2f(\mathbf{x}^k)$ may be indefinite. To handle this, the **Bunch-Kaufman decomposition** is applied to obtain $\mathbf{L}\mathbf{D}\mathbf{L}^\top$ and $\tilde{\mathbf{D}}$.
 
 $$
 \mathbf{M}^k = \mathbf{L}\tilde{\mathbf{D}}\mathbf{L}^\top
