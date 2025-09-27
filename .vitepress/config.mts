@@ -89,13 +89,16 @@ export default defineConfig({
             { text: 'KF in 3 ways', link: '/lecture/kf3ways' },
             { text: 'LQR in 3 ways', link: '/lecture/lqr3ways' },
             { text: 'LQG and its Duality', link: '/lecture/lqgfatal' },
+            // { text: 'TOPP Planner', link: '/lecture/topp' },
+            // { text: 'Convex MPC', link: '/lecture/mpc' },
             { text: 'RL as Control', link: '/lecture/rlascontrol' }
           ]
         },
         {
           text: 'Optimization', items: [
             { text: 'L-BFGS Method', link: '/lecture/lbfgs' },
-            { text: 'KKT & Lagrangian' },
+            { text: 'Lagrangian & KKT', link: '/lecture/kkt' },
+            // { text: 'PHR Method', link: '/lecture/phr' },
             // { text: 'ADMM' }
           ]
         },
