@@ -104,7 +104,7 @@ export default defineConfig({
         },
         {
           text: 'Misc', items: [
-            { text: 'Intro to FRC', link: 'https://zzhangje.github.io/intro2frc/' }
+            { text: 'Intro to FRC', link: 'https://frc6399.github.io/intro2frc/' }
           ]
         }
       ]
