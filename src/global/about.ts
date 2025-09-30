@@ -63,7 +63,7 @@ export namespace About {
             venue: [],
             authors: [],
             links: [
-                { label: 'Project Page', url: '/projects/2025-cc.html' },
+                { label: 'Project Page', url: '/projects/25-cc.html' },
                 { label: 'GitHub', url: 'https://github.com/zzhangje/ChronosChain' }
             ],
             details: 'Interface-driven subsystems with state machines expose minimal APIs and atomic commands, enabling hardware-agnostic robotics through composable, orchestratable behaviors.'
