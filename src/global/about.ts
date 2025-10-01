@@ -64,7 +64,8 @@ export namespace About {
             authors: [],
             links: [
                 { label: 'Project Page', url: '/projects/25-cc.html' },
-                { label: 'GitHub', url: 'https://github.com/zzhangje/ChronosChain' }
+                { label: 'GitHub', url: 'https://github.com/zzhangje/ChronosChain' },
+                { label: 'Tutorial', url: 'https://zzhangje.github.io/ddocc/' }
             ],
             details: 'Interface-driven subsystems with state machines expose minimal APIs and atomic commands, enabling hardware-agnostic robotics through composable, orchestratable behaviors.'
         },
