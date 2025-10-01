@@ -78,7 +78,7 @@ export namespace About {
             links: [
                 { label: 'Project Page', url: '/projects/24-cotimo.html' },
                 { label: 'GitHub', url: 'https://github.com/zzhangje/cotimo' },
-                { label: 'Slide', url: 'https://zhangzrjerry.github.io/CoTiMo' }
+                { label: 'Slide', url: 'https://zhangzrjerry.github.io/CoTiMo/' }
             ],
             details: 'CoTiMo stands for Collision-Free Smooth Path Generation + Time Optimal Path Parameterization + Model Predictive Control.'
         },

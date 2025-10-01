@@ -68,7 +68,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ---
 
-### 2022 Kylin
+### 2022 Kirin
 
 <RightImg src="/projects/frc/2022.png" width="30%" />
 
@@ -80,7 +80,7 @@ For FRC 2022 game rules, the mission of the robot is to collect and shoot the CA
 
 ---
 
-### 2021 Kylin
+### 2021 Kirin
 
 <RightImg src="/projects/frc/2021.png" width="30%" />
 
@@ -93,7 +93,7 @@ For FRC 2021 game rules, the mission of the robot is to collect the Power Cell (
 
 ---
 
-### 2020 Kylin
+### 2020 Kirin
 
 <RightImg src="/projects/frc/2020.png" width="30%" />
 
