@@ -98,7 +98,7 @@ export default defineConfig({
           text: 'Optimization', items: [
             { text: 'L-BFGS Method', link: '/lecture/lbfgs' },
             { text: 'Lagrangian & KKT', link: '/lecture/kkt' },
-            // { text: 'PHR Method', link: '/lecture/phr' },
+            { text: 'PHR Conic ALM', link: '/lecture/conicalm' },
             // { text: 'ADMM' }
           ]
         },
