@@ -85,8 +85,14 @@ export default defineConfig({
       ],
       '/lecture/': [
         {
-          text: 'Control', items: [
+          text: 'Estimation', items: [
             { text: 'KF in 3 ways', link: '/lecture/kf3ways' },
+            { text: 'EKF & UKF', link: '/lecture/ekfukf' },
+            { text: 'Factor Graph', link: '/lecture/factorgraph' },
+          ]
+        },
+        {
+          text: 'Control', items: [
             { text: 'LQR in 3 ways', link: '/lecture/lqr3ways' },
             { text: 'LQG and its Duality', link: '/lecture/lqgfatal' },
             // { text: 'TOPP Planner', link: '/lecture/topp' },
