@@ -2,6 +2,8 @@
 
 [Slide](/assets/factorgraph.pdf): Overview of factor graphs in pose estimation, emphasizing their benefits over Kalman Filters for handling complex dependencies. Covers dynamic Bayesian networks, information forms, and smoothing for efficient state estimation.
 
+<PlayerBilibili videoId="BV1S7x1zZEVS" />
+
 ## Kalman Filter
 
 ### Markov Chain

@@ -87,7 +87,7 @@ export default defineConfig({
         {
           text: 'Estimation', items: [
             { text: 'KF in 3 ways', link: '/lecture/kf3ways' },
-            { text: 'EKF & UKF', link: '/lecture/ekfukf' },
+            { text: 'EKF & UKF & PF', link: '/lecture/ekfukfpf' },
             { text: 'Factor Graph', link: '/lecture/factorgraph' },
           ]
         },
