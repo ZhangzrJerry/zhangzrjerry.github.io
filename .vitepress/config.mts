@@ -74,6 +74,12 @@ export default defineConfig({
     sidebar: {
       '/': [
         {
+          text: 'Introduction',
+          items: [
+            { text: 'About Me', link: '/about.html' },
+          ]
+        },
+        {
           text: 'Projects',
           items: [
             { text: '<b><i>FRC Alumnus</i></b>', link: '/projects/frc.html' },
@@ -85,27 +91,16 @@ export default defineConfig({
       ],
       '/lecture/': [
         {
-          text: 'Estimation', items: [
+          text: 'Kindergarten', items: [
             { text: 'KF in 3 ways', link: '/lecture/kf3ways' },
             { text: 'EKF & UKF & PF', link: '/lecture/ekfukfpf' },
             { text: 'Factor Graph', link: '/lecture/factorgraph' },
-          ]
-        },
-        {
-          text: 'Control', items: [
             { text: 'LQR in 3 ways', link: '/lecture/lqr3ways' },
             { text: 'LQG and its Duality', link: '/lecture/lqgfatal' },
-            // { text: 'TOPP Planner', link: '/lecture/topp' },
-            // { text: 'Convex MPC', link: '/lecture/mpc' },
-            { text: 'RL as Control', link: '/lecture/rlascontrol' }
-          ]
-        },
-        {
-          text: 'Optimization', items: [
+            { text: 'RL as Control', link: '/lecture/rlascontrol' },
             { text: 'L-BFGS Method', link: '/lecture/lbfgs' },
             { text: 'Lagrangian & KKT', link: '/lecture/kkt' },
-            { text: 'PHR Conic ALM', link: '/lecture/conicalm' },
-            // { text: 'ADMM' }
+            { text: 'PHR Conic ALM', link: '/lecture/conicalm' }
           ]
         },
         {
