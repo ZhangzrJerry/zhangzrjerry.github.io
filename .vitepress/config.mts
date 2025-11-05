@@ -91,17 +91,21 @@ export default defineConfig({
       ],
       '/lecture/': [
         {
-          text: 'Kindergarten', items: [
-            { text: 'KF in 3 ways', link: '/lecture/kf3ways' },
-            { text: 'EKF & UKF & PF', link: '/lecture/ekfukfpf' },
-            { text: 'Factor Graph', link: '/lecture/factorgraph' },
-            { text: 'LQR in 3 ways', link: '/lecture/lqr3ways' },
-            { text: 'LQG and its Duality', link: '/lecture/lqgfatal' },
-            { text: 'RL as Control', link: '/lecture/rlascontrol' },
-            { text: 'L-BFGS Method', link: '/lecture/lbfgs' },
-            { text: 'Lagrangian & KKT', link: '/lecture/kkt' },
-            { text: 'PHR Conic ALM', link: '/lecture/conicalm' }
-          ]
+          text: 'Theory',
+          items: [
+            {
+              text: 'Kindergarten', items: [
+                { text: 'KF in 3 ways', link: '/lecture/kindergarten/kf3ways' },
+                { text: 'EKF & UKF & PF', link: '/lecture/kindergarten/ekfukfpf' },
+                { text: 'Factor Graph', link: '/lecture/kindergarten/factorgraph' },
+                { text: 'LQR in 3 ways', link: '/lecture/kindergarten/lqr3ways' },
+                { text: 'LQG and its Duality', link: '/lecture/kindergarten/lqgfatal' },
+                { text: 'RL as Control', link: '/lecture/kindergarten/rlascontrol' },
+                { text: 'L-BFGS Method', link: '/lecture/kindergarten/lbfgs' },
+                { text: 'Lagrangian & KKT', link: '/lecture/kindergarten/kkt' },
+                { text: 'PHR Conic ALM', link: '/lecture/kindergarten/conicalm' }
+              ], link: '/lecture/kindergarten/', collapsed: true
+            }]
         },
         {
           text: 'Misc', items: [
