@@ -108,4 +108,30 @@ export namespace About {
             details: 'The invention is a single-wheel balance motion device with an omnidirectional wheel and gear-driven steering mechanism, enabling quick multi-angle steering and high maneuverability.'
         }
     ];
+
+    export const lectures: Publication[] = [
+        {
+            key: 'lec:control',
+            image: 'lecture/control.png',
+            authors: [],
+            links: [
+                { label: 'TBA', url: '' }
+            ],
+            venue: '',
+            title: '经典控制理论：系统建模、分析与控制',
+            details: '本课程从数学模型基础出发，系统讲解控制系统的时域分析、根轨迹法和频率响应法三大核心分析方法，最终深入控制器设计。通过本课程，您将掌握分析、设计和优化控制系统的方法论，将系统思维应用于实际工程领域，真正理解如何让动态系统稳定、快速、精确地运行。'
+        },
+        {
+            key: 'lec:ctrl',
+            image: '/lecture/CtRL.png',
+            authors: [],
+            venue: '',
+            links: [
+                { label: 'Bilibili', url: 'https://www.bilibili.com/cheese/play/ss959816966' },
+                { label: 'GitHub', url: 'https://github.com/zhangzrjerry/CtRL' }
+            ],
+            title: '机器人智能控制与规划：从最优控制到强化学习',
+            details: '本课程融合世界顶尖高校课程精华，通过严谨的数学推导，系统构建从经典控制到现代强化学习的完整知识框架。课程首先夯实最优估计与控制的理论根基，深入卡尔曼滤波、LQR等核心算法；然后探讨模型预测控制、轨迹规划等工程利器；最终攀登深度强化学习高峰。'
+        }
+    ];
 }

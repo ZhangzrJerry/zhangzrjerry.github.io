@@ -23,6 +23,10 @@ import { About } from "/global/about.ts"
 <!-- <h2>Publications</h2>
 <BetterPublications :publications="About.publications" /> -->
 
+## Lectures
+
+<BetterPublications :publications="About.lectures" />
+
 ## Projects
 
 <BetterPublications :publications="About.projects" />
