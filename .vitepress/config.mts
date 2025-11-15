@@ -127,7 +127,7 @@ export default defineConfig({
               collapsed: true,
             },
             {
-              text: "Optimal Control",
+              text: "机器人智能控制与规划",
               link: "/lecture/optimal_control",
             }
           ],
@@ -136,7 +136,7 @@ export default defineConfig({
           text: "Coding",
           items: [
             {
-              text: "Java OOP",
+              text: "Java 面向对象远征",
               link: "/lecture/java_oop",
             },
           ]

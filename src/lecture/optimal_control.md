@@ -1,10 +1,3 @@
-# Optimal Control Lectures
+<!-- # 机器人智能控制与规划 -->
 
-### TBD
-
-- The Basics of Optimal Control
-- LQR Control
-- Model Predictive Control
-- Advanced Optimal Control
-- Trajectory Planning
-- Reinforcement Learning
+[![](<./image%20(3).png>)](https://www.bilibili.com/cheese/play/ss959816966)

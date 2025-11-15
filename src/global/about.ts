@@ -8,10 +8,11 @@ export namespace About {
             title: 'Research Assistant',
             company: 'HKUST Cheng Kar-Shun Robotics Institute',
             start: 'Feb. 2025',
+            end: 'Nov. 2025',
             links: [
                 { label: 'Home Page', url: 'https://ri.hkust.edu.hk/' },
             ],
-            details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin.'
+            details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin. One paper is submitted to IEEE RA-L and under review.'
         },
         {
             key: '2023-rb',
@@ -31,11 +32,11 @@ export namespace About {
             title: 'FRC Aluminum',
             company: 'FIRST Robotics Competition',
             start: 'Sep. 2019',
-            end: 'May. 2025',
+            // end: 'May. 2025',
             links: [
                 { label: 'Project Page', url: '/projects/frc.html' }
             ],
-            details: 'Participated from rookie to program mentor over six years, with team 8011, 8811, 6399, 8214, and 9635.'
+            details: 'Participated from rookie to program mentor over six years, with team 6399, 8011, 8811, 8214, and 9635.'
         }
     ];
 

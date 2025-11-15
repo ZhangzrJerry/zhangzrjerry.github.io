@@ -29,6 +29,7 @@ import { About } from "/global/about.ts"
 
 ## Awards
 
+- **3rd Place** - Soft Robotics Embodied Intelligence Challenge at <span class="venue">IROS</span> 2025
 - **Championship Division Finalist & Industrial Design Award** - <span class="frc">FRC</span> Championship Galileo Division (Team 8214, 2025)
 - **Regional Finalists & Creativity Award** - <span class="frc">FRC</span> Bosphorus Regional (Team 9635, 2025)
 - **Engineering Inspiration Award** - World Robot Contest Championships Beijing (<span class="frc">FRC</span> Offseason, Team 6399, 2024)
