@@ -125,10 +125,6 @@ export default defineConfig({
               ],
               link: "/lecture/kindergarten/",
               collapsed: true,
-            },
-            {
-              text: "机器人智能控制与规划",
-              link: "/lecture/optimal_control",
             }
           ],
         },
