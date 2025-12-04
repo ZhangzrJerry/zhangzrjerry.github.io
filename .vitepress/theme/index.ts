@@ -48,27 +48,29 @@ export default {
     app.component('PlayerBilibili', PlayerBilibili);
     app.component('ExternalGo', ExternalGo);
 
-    const rewrite = () => {
-      const as = Array.from(document.querySelectorAll('a')) as HTMLAnchorElement[]
-      const origin = window.location.origin
-      as.forEach(a => {
-        const href = a.getAttribute('href') || ''
-        if (!href) return
-        if (a.hasAttribute('data-skip-go')) return
-        if (href.startsWith('/go')) return
-        if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return
-        if (href.startsWith('http')) {
-          if (!href.startsWith(origin)) {
-            const to = encodeURIComponent(href)
-            a.setAttribute('href', `/go/?to=${to}`)
-            a.removeAttribute('target')
-            a.removeAttribute('rel')
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const rewrite = () => {
+        const as = Array.from(document.querySelectorAll('a')) as HTMLAnchorElement[]
+        const origin = window.location.origin
+        as.forEach(a => {
+          const href = a.getAttribute('href') || ''
+          if (!href) return
+          if (a.hasAttribute('data-skip-go')) return
+          if (href.startsWith('/go')) return
+          if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return
+          if (href.startsWith('http')) {
+            if (!href.startsWith(origin)) {
+              const to = encodeURIComponent(href)
+              a.setAttribute('href', `/go/?to=${to}`)
+              a.removeAttribute('target')
+              a.removeAttribute('rel')
+            }
           }
-        }
-      })
-    }
+        })
+      }
 
-    router.onAfterRouteChange = () => rewrite()
-    setTimeout(() => rewrite(), 0)
+      router.onAfterRouteChange = () => rewrite()
+      setTimeout(() => rewrite(), 0)
+    }
   }
 } satisfies Theme
