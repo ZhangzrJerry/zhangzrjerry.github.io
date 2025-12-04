@@ -36,7 +36,7 @@ export namespace About {
             links: [
                 { label: 'Project Page', url: '/projects/frc.html' }
             ],
-            details: 'Participated from rookie to program mentor over six years, with team 6399, 8011, 8811, 8214, and 9635.'
+            details: 'Participated from rookie to program mentor over six years, with team 6399, 8011, 8811, 8214, and 9635. Created team 8811 in my senior high school.'
         }
     ];
 
