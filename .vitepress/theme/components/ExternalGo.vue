@@ -1,13 +1,15 @@
 <template>
-  <div class="nf">
-    <div class="code">REDIRECT</div>
-    <div class="title">即将跳转到外部链接</div>
-    <div class="quote">{{ target }}</div>
-    <div class="actions">
-      <a :href="target" rel="noopener noreferrer" target="_blank" class="btn" data-skip-go>继续访问</a>
-      <a href="/" class="btn secondary" data-skip-go>返回首页</a>
+  <div class="NotFound">
+    <!-- <p class="code">REDIRECT</p> -->
+    <h1 class="title">即将跳转到外部链接</h1>
+    <div class="divider" />
+    <blockquote class="quote">{{ target }}</blockquote>
+    <div class="action">
+      <a class="link" :href="target" rel="noopener noreferrer" target="_blank" data-skip-go>继续访问</a>
+      <a class="link home" href="/" data-skip-go>返回首页</a>
     </div>
   </div>
+  
 </template>
 
 <script setup lang="ts">
@@ -16,13 +18,14 @@ import { onMounted, ref } from 'vue'
 const target = ref('')
 
 const normalize = (raw: string) => {
-  const s = raw.trim().replace(/^['"`]+|['"`]+$/g, '')
+  const s = decodeURIComponent(raw).trim().replace(/^['"`]+|['"`]+$/g, '')
   if (!s) return ''
   if (s.startsWith('mailto:') || s.startsWith('tel:') || s.startsWith('javascript:')) return s
   if (s.startsWith('//')) return 'https:' + s
   if (/^[a-z]+:\/\//i.test(s)) return s
   if (s.startsWith('/')) return s
   if (/^(www\.)?[\w.-]+\.[a-zA-Z]{2,}(\/.*)?$/.test(s)) return 'https://' + s
+  if (!s.includes('://') && s.includes('.')) return 'https://' + s
   return s
 }
 
@@ -41,13 +44,15 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.nf { min-height: 60vh; display: grid; place-items: center; text-align: center; gap: 12px; }
-.code { font-size: 4rem; font-weight: 900; line-height: 1; color: var(--vp-c-brand-1); }
-.title { font-size: 1.2rem; color: var(--vp-c-text-1); font-weight: 600; }
-.quote { max-width: 720px; color: var(--vp-c-text-2); word-break: break-all; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-.actions { display: flex; gap: 8px; justify-content: center; }
-.btn { display: inline-block; margin-top: 8px; padding: 10px 14px; border: 1px solid var(--vp-c-brand-1); color: var(--vp-c-brand-1); border-radius: 8px; text-decoration: none; }
-.btn:hover { background: var(--vp-c-brand-1); color: white; }
-.btn.secondary { border-color: var(--vp-c-divider); color: var(--vp-c-text-1); }
-.btn.secondary:hover { background: var(--vp-c-bg-soft); }
+.NotFound { padding: 64px 24px 96px; text-align: center; }
+@media (min-width: 768px) { .NotFound { padding: 96px 32px 168px; } }
+.code { line-height: 64px; font-size: 64px; font-weight: 600; }
+.title { padding-top: 12px; letter-spacing: 2px; line-height: 20px; font-size: 20px; font-weight: 700; }
+.divider { margin: 24px auto 18px; width: 64px; height: 1px; background-color: var(--vp-c-divider); }
+.quote { margin: 0 auto; max-width: 560px; font-size: 14px; font-weight: 500; color: var(--vp-c-text-2); word-break: break-all; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.action { padding-top: 20px; display: flex; gap: 8px; justify-content: center; }
+.link { display: inline-block; border: 1px solid var(--vp-c-brand-1); border-radius: 16px; padding: 3px 16px; font-size: 14px; font-weight: 500; color: var(--vp-c-brand-1); transition: border-color 0.25s, color 0.25s; text-decoration: none; }
+.link:hover { border-color: var(--vp-c-brand-2); color: var(--vp-c-brand-2); }
+.home { border-color: var(--vp-c-divider); color: var(--vp-c-text-1); }
+.home:hover { border-color: var(--vp-c-text-2); color: var(--vp-c-text-2); }
 </style>
