@@ -11,8 +11,6 @@ import CustomHomeLayout from './components/CustomHome.vue'
 import VisitorMap from './components/VisitorMap.vue'
 import Revealjs from './components/Revealjs.vue'
 import BetterPublications from './components/BetterPublications.vue'
-import { SpeedInsights } from '@vercel/speed-insights/vue'
-import { Analytics } from '@vercel/analytics/vue'
 import BetterExperiences from './components/BetterExperiences.vue'
 import PlayerBilibili from './components/PlayerBilibili.vue'
 import ExternalGo from './components/ExternalGo.vue'
@@ -31,7 +29,7 @@ export default {
             'data-website-id': '61765fc4-2042-401e-801b-d8032e948a83',
             style: 'display:none'
           }),
-          h('div', { style: 'display:none' }, [h(VisitorMap), h(SpeedInsights), h(Analytics)])
+          h('div', { style: 'display:none' }, [h(VisitorMap)])
         ]
     })
   },
