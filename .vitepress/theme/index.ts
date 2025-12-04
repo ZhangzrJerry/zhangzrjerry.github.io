@@ -13,7 +13,6 @@ import Revealjs from './components/Revealjs.vue'
 import BetterPublications from './components/BetterPublications.vue'
 import BetterExperiences from './components/BetterExperiences.vue'
 import PlayerBilibili from './components/PlayerBilibili.vue'
-import ExternalGo from './components/ExternalGo.vue'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -44,7 +43,6 @@ export default {
     app.component('Revealjs', Revealjs);
     app.component('BetterExperiences', BetterExperiences);
     app.component('PlayerBilibili', PlayerBilibili);
-    app.component('ExternalGo', ExternalGo);
 
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       const rewrite = () => {
