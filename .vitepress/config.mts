@@ -85,7 +85,7 @@ export default defineConfig({
             { text: "CoTiMo Planner", link: "/projects/24-cotimo.html" },
             // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
           ],
-        },
+        }
       ],
     },
 

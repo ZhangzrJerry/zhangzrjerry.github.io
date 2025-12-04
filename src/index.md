@@ -14,9 +14,6 @@ hero:
       text: About Me
       link: /about.html
     - theme: alt
-      text: Lecture
-      link: /lecture/
-    - theme: alt
       text: Github
       link: https://github.com/zhangzrjerry
 

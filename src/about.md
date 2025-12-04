@@ -8,6 +8,8 @@ aside: false
 
 <div class="bio">
 <p>
+你好，我是来自香港科技大学的张子睿。目前在香港科技大学郑家纯机器人研究所工作，同时也是 FRC 机器人竞赛的校友。
+
 Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HKUST). I work at the Cheng Kar-Shun Robotics Institute and am also an alumnus of the FIRST Robotics Competition (FRC).
 </p>
 </div>
