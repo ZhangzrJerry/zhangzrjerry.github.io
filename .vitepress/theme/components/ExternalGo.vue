@@ -13,13 +13,25 @@ import { onMounted, ref } from 'vue'
 
 const target = ref('')
 
+const normalize = (raw: string) => {
+  const s = raw.trim().replace(/^['"`]+|['"`]+$/g, '')
+  if (!s) return ''
+  if (s.startsWith('mailto:') || s.startsWith('tel:') || s.startsWith('javascript:')) return s
+  if (s.startsWith('//')) return 'https:' + s
+  if (/^[a-z]+:\/\//i.test(s)) return s
+  if (s.startsWith('/')) return s
+  if (/^(www\.)?[\w.-]+\.[a-zA-Z]{2,}(\/.*)?$/.test(s)) return 'https://' + s
+  return s
+}
+
 onMounted(() => {
   const u = new URL(window.location.href)
   const t = u.searchParams.get('to') || ''
-  target.value = t
-  if (t) {
+  const final = normalize(t)
+  target.value = final
+  if (final) {
     setTimeout(() => {
-      window.location.href = t
+      window.location.href = final
     }, 300)
   }
 })

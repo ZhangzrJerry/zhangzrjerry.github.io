@@ -58,6 +58,14 @@ export default {
           if (a.hasAttribute('data-skip-go')) return
           if (href.startsWith('/go')) return
           if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return
+          if (href.startsWith('//')) {
+            const abs = 'https:' + href
+            const to = encodeURIComponent(abs)
+            a.setAttribute('href', `/go/?to=${to}`)
+            a.removeAttribute('target')
+            a.removeAttribute('rel')
+            return
+          }
           if (href.startsWith('http')) {
             if (!href.startsWith(origin)) {
               const to = encodeURIComponent(href)
