@@ -65,7 +65,6 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/about.html" },
-      { text: "Lecture", link: "/lecture/" },
       { text: "Posts", link: "https://zzhangje.github.io/" },
     ],
     search: {
@@ -85,65 +84,6 @@ export default defineConfig({
             { text: "Chronos Chain", link: "/projects/25-cc.html" },
             { text: "CoTiMo Planner", link: "/projects/24-cotimo.html" },
             // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
-          ],
-        },
-      ],
-      "/lecture/": [
-        {
-          text: "Theory",
-          items: [
-            {
-              text: "Kindergarten",
-              items: [
-                { text: "KF in 3 ways", link: "/lecture/kindergarten/kf3ways" },
-                {
-                  text: "EKF & UKF & PF",
-                  link: "/lecture/kindergarten/ekfukfpf",
-                },
-                {
-                  text: "Factor Graph",
-                  link: "/lecture/kindergarten/factorgraph",
-                },
-                {
-                  text: "LQR in 3 ways",
-                  link: "/lecture/kindergarten/lqr3ways",
-                },
-                {
-                  text: "LQG and its Duality",
-                  link: "/lecture/kindergarten/lqgfatal",
-                },
-                {
-                  text: "RL as Control",
-                  link: "/lecture/kindergarten/rlascontrol",
-                },
-                { text: "L-BFGS Method", link: "/lecture/kindergarten/lbfgs" },
-                { text: "Lagrangian & KKT", link: "/lecture/kindergarten/kkt" },
-                {
-                  text: "PHR Conic ALM",
-                  link: "/lecture/kindergarten/conicalm",
-                },
-              ],
-              link: "/lecture/kindergarten/",
-              collapsed: true,
-            }
-          ],
-        },
-        {
-          text: "Coding",
-          items: [
-            {
-              text: "Java 面向对象远征",
-              link: "/lecture/java_oop",
-            },
-          ]
-        },
-        {
-          text: "Misc",
-          items: [
-            {
-              text: "Intro to FRC",
-              link: "https://frc6399.github.io/intro2frc/",
-            },
           ],
         },
       ],

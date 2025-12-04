@@ -44,7 +44,7 @@ features:
     icon: ☝️
     img: /icon/tactopro.png
     details: A lightweight wrapper designed to streamline the creation of TACTO simulations, significantly reducing code complexity and boilerplate.
-    link: https://github.com/ZhangzrJerry/TactoPro
+    link: /go/?to=https://github.com/ZhangzrJerry/TactoPro
 
   - title: Command Bot
     icon: 🤖

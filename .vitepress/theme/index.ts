@@ -15,6 +15,7 @@ import { SpeedInsights } from '@vercel/speed-insights/vue'
 import { Analytics } from '@vercel/analytics/vue'
 import BetterExperiences from './components/BetterExperiences.vue'
 import PlayerBilibili from './components/PlayerBilibili.vue'
+import ExternalGo from './components/ExternalGo.vue'
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -45,5 +46,29 @@ export default {
     app.component('Revealjs', Revealjs);
     app.component('BetterExperiences', BetterExperiences);
     app.component('PlayerBilibili', PlayerBilibili);
+    app.component('ExternalGo', ExternalGo);
+
+    const rewrite = () => {
+      const as = Array.from(document.querySelectorAll('a')) as HTMLAnchorElement[]
+      const origin = window.location.origin
+      as.forEach(a => {
+        const href = a.getAttribute('href') || ''
+        if (!href) return
+        if (a.hasAttribute('data-skip-go')) return
+        if (href.startsWith('/go')) return
+        if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return
+        if (href.startsWith('http')) {
+          if (!href.startsWith(origin)) {
+            const to = encodeURIComponent(href)
+            a.setAttribute('href', `/go/?to=${to}`)
+            a.removeAttribute('target')
+            a.removeAttribute('rel')
+          }
+        }
+      })
+    }
+
+    router.onAfterRouteChange = () => rewrite()
+    setTimeout(() => rewrite(), 0)
   }
 } satisfies Theme
