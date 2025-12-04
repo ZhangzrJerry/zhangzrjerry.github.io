@@ -10,6 +10,7 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import { useRouter } from 'vitepress'
 
 const target = ref('')
 
@@ -29,10 +30,17 @@ onMounted(() => {
   const t = u.searchParams.get('to') || ''
   const final = normalize(t)
   target.value = final
-  if (final) {
-    setTimeout(() => {
+  if (!final) return
+  const isExternal = /^[a-z]+:\/\//i.test(final)
+  if (isExternal) {
+    try {
+      window.location.replace(final)
+    } catch {
       window.location.href = final
-    }, 300)
+    }
+  } else {
+    const router = useRouter()
+    router.go(final)
   }
 })
 </script>
