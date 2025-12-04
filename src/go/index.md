@@ -1,9 +1,8 @@
 ---
 title: 跳转
-
+layout: page
+nav: false
+sidebar: false
 ---
 
-# 跳转
-
 <ExternalGo />
-

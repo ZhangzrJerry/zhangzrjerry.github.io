@@ -1,16 +1,17 @@
 <template>
-  <div class="go">
-    <div class="box">
-      <h2>即将跳转到外部链接</h2>
-      <p class="url">{{ target }}</p>
-      <a :href="target" rel="noopener noreferrer" target="_blank" class="btn" data-skip-go>立即前往</a>
+  <div class="nf">
+    <div class="code">REDIRECT</div>
+    <div class="title">即将跳转到外部链接</div>
+    <div class="quote">{{ target }}</div>
+    <div class="actions">
+      <a :href="target" rel="noopener noreferrer" target="_blank" class="btn" data-skip-go>继续访问</a>
+      <a href="/" class="btn secondary" data-skip-go>返回首页</a>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import { useRouter } from 'vitepress'
 
 const target = ref('')
 
@@ -31,24 +32,22 @@ onMounted(() => {
   const final = normalize(t)
   target.value = final
   if (!final) return
-  const isExternal = /^[a-z]+:\/\//i.test(final)
-  if (isExternal) {
-    try {
-      window.location.replace(final)
-    } catch {
-      window.location.href = final
-    }
-  } else {
-    const router = useRouter()
-    router.go(final)
+  try {
+    window.location.assign(final)
+  } catch {
+    window.location.href = final
   }
 })
 </script>
 
 <style scoped>
-.go { display: grid; place-items: center; min-height: 40vh; }
-.box { border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 20px; background: var(--vp-c-bg-soft); display: grid; gap: 12px; }
-.url { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; word-break: break-all; color: var(--vp-c-text-2); }
-.btn { display: inline-block; padding: 8px 12px; border: 1px solid var(--vp-c-brand-1); color: var(--vp-c-brand-1); border-radius: 8px; text-decoration: none; }
+.nf { min-height: 60vh; display: grid; place-items: center; text-align: center; gap: 12px; }
+.code { font-size: 4rem; font-weight: 900; line-height: 1; color: var(--vp-c-brand-1); }
+.title { font-size: 1.2rem; color: var(--vp-c-text-1); font-weight: 600; }
+.quote { max-width: 720px; color: var(--vp-c-text-2); word-break: break-all; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.actions { display: flex; gap: 8px; justify-content: center; }
+.btn { display: inline-block; margin-top: 8px; padding: 10px 14px; border: 1px solid var(--vp-c-brand-1); color: var(--vp-c-brand-1); border-radius: 8px; text-decoration: none; }
 .btn:hover { background: var(--vp-c-brand-1); color: white; }
+.btn.secondary { border-color: var(--vp-c-divider); color: var(--vp-c-text-1); }
+.btn.secondary:hover { background: var(--vp-c-bg-soft); }
 </style>
