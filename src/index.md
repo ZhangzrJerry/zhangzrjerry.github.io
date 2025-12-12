@@ -39,7 +39,7 @@ features:
 
   - title: Chronos Chain
     icon: 🌀
-    img: /icon/chronos-chain.jpg
+    img: /icon/chronos-chain.png
     details: A command-driven framework where robotic actions unfold in flawless sequence, like links in a timeless chain.
     link: /projects/25-cc.html
 
@@ -112,6 +112,10 @@ features:
     img: /projects/projects/2022-kg.png
     details: Focused on the construction of knowledge graph in Guangzhou Yingcai Middle School Science Research Training Program.
 
+  - title: Swerve Controller
+    icon: 🛞
+    img: /icon/sc.png
+    details: A dual-motor drive board powers a swerve module delivering a maximum power of 240W by PWM control.
   - title: Balance Swerve
     icon:
       light: /icon/kylin-light.png
