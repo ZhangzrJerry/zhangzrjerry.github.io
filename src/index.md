@@ -31,6 +31,12 @@ hero:
 #     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
+  - title: Werewolf Agents
+    icon: 🐺
+    img: /icon/werewolf-agents.png
+    details: A multi-agent Werewolf system built on AgentScope that enables self-play, replay analysis, and strategy iteration.
+    link: https://github.com/ZhangzrJerry/werewolf
+
   - title: Chronos Chain
     icon: 🌀
     img: /icon/chronos-chain.jpg
