@@ -24,7 +24,8 @@ export namespace About {
             links: [
                 { label: 'Home Page', url: 'https://ri.hkust.edu.hk/' },
             ],
-            details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin. One paper is submitted to IEEE RA-L and under review.'
+            // details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin. One paper is submitted to IEEE RA-L and under review.'
+            details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin.'
         },
         {
             key: '2023-rb',
