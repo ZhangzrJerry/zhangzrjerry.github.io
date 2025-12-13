@@ -3,6 +3,18 @@ import { Experience, Publication } from "../../.vitepress/type";
 export namespace About {
     export const experiences: Experience[] = [
         {
+            key: '2026-bdr',
+            icon: '/icon/bdr.png',
+            title: 'Intern',
+            company: 'Bright Dream Robotics Co., Ltd.',
+            start: 'Dec. 2025',
+            end: 'Jan. 2026',
+            links: [
+                { label: 'Home Page', url: 'https://www.bzlrobot.com/' },
+            ],
+            details: ''
+        },
+        {
             key: '2025-cksri',
             icon: '/icon/cksri.png',
             title: 'Research Assistant',
