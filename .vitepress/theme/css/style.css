@@ -148,3 +148,9 @@ a {
   margin-top: 0.010em;
   margin-left: 0.175em;
 }
+
+.VPHomeHero .name {
+  font-family: "Dancing Script", cursive;
+  font-weight: 999 !important;
+  letter-spacing: 0.02em !important;
+}
