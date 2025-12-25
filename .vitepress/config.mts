@@ -56,6 +56,13 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["script", { src: "https://cn.vercount.one/js", defer: "true" }],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap",
+      },
+    ],
   ],
   srcDir: "src",
 

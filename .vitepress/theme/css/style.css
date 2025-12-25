@@ -136,3 +136,15 @@
 a {
   text-decoration: none !important;
 }
+
+.VPNavBarTitle .title {
+  font-family: "Dancing Script", cursive;
+  font-weight: 999;
+  font-size: 1.35em;
+  letter-spacing: 0.02em;
+}
+
+.VPNavBarTitle .title>span {
+  margin-top: 0.010em;
+  margin-left: 0.175em;
+}
