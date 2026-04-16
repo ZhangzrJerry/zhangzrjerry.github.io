@@ -6,7 +6,7 @@ sidebar: false
 hero:
   name: "ZhangzrJerry's"
   text: "Personal Website"
-  tagline: 'Visits: <span id="vercount_value_site_pv">Loading...</span>'
+  tagline: 'Building robots, systems and communities.'
   # tagline: 星辰轮转 & L'éternel tour des constellations
   # image: none
   actions:
