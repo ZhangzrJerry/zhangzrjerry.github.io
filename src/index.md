@@ -6,7 +6,7 @@ sidebar: false
 hero:
   name: "ZhangzrJerry's"
   text: "Personal Website"
-  tagline: 'Building robots, systems and communities.'
+  tagline: "Building robots, systems and communities."
   # tagline: 星辰轮转 & L'éternel tour des constellations
   # image: none
   actions:
@@ -31,6 +31,13 @@ hero:
 #     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
+  - title: TBA
+    icon:
+      src: /icon/frc-rebuilt-gif.gif
+    img: TBA
+    details: For FRC 2026 game rules, the mission of the robot is to collect the Fuel (foam ball) and shoot to the Hub.
+    link: TBA
+
   - title: Werewolf Agents
     icon: 🐺
     img: /icon/werewolf-agents.png

@@ -12,7 +12,7 @@ export namespace About {
             links: [
                 { label: 'Home Page', url: 'https://www.bzlrobot.com/' },
             ],
-            details: ''
+            details: 'Turned research prototypes into reproducible simulation and deployment workflows for embodied navigation.'
         },
         {
             key: '2025-cksri',
@@ -24,8 +24,7 @@ export namespace About {
             links: [
                 { label: 'Home Page', url: 'https://ri.hkust.edu.hk/' },
             ],
-            // details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin. One paper is submitted to IEEE RA-L and under review.'
-            details: 'Focused on tactile perception and point cloud registration under Prof. Fumin Zhang and Prof. Huan Yin.'
+            details: 'Strengthened perception robustness through tactile sensing and point-cloud registration research under Prof. Fumin Zhang and Prof. Huan Yin.'
         },
         {
             key: '2023-rb',
@@ -37,7 +36,7 @@ export namespace About {
             links: [
                 { label: 'Tencent UR', url: 'https://ur.tencent.com/' }
             ],
-            details: 'Focused on recommendation system under Prof. Chuan Shi (BUPT).'
+            details: 'Developed and validated a recommendation prototype for personalized library services under Prof. Chuan Shi (BUPT).'
         },
         {
             key: '2020-frc',
@@ -49,22 +48,19 @@ export namespace About {
             links: [
                 { label: 'Project Page', url: '/projects/frc.html' }
             ],
-            details: 'Participated from rookie to program mentor over six years, with team 6399, 8011, 8811, 8214, and 9635. Created team 8811 in my senior high school.'
+            details: 'Led system integration and team delivery across multiple seasons, from robot build to competition execution. Created team 8811 in my senior high school.'
         }
     ];
 
     export const publications: Publication[] = [
         {
             key: '2025-tacloc',
-            image: '',
-            title: 'TacLoc',
+            image: 'https://arxiv.org/html/2603.10565v1/x1.png',
+            title: 'TacLoc: Global Tactile Localization on Objects from a Registration Perspective',
             venue: '',
-            authors: [],
-            links: [{
-                'label': 'Project Page',
-                'url': '/projects/25-tacloc.html'
-            }],
-            details: ""
+            authors: ['==Zirui Zhang==', 'Boyang Zhang', 'Fumin Zhang', 'Huan Yin'],
+            links: [{ label: 'arXiv', url: 'https://arxiv.org/abs/2603.10565' }],
+            details: 'TacLoc estimates object pose from tactile data via one-shot partial-to-full point cloud registration, using normal-guided graph pruning for efficient localization without rendered or pre-trained data.'
         }
     ]
 

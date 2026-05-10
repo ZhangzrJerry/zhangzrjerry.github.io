@@ -10,6 +10,7 @@ aside: false
 你好，我是来自香港科技大学的张子睿，同时也是 FRC 机器人竞赛和广州市第二中学的校友。
 
 Hi! I am Zirui Zhang from the Hong Kong University of Science and Technology (HKUST) and am also an alumnus of the FIRST Robotics Competition (FRC) and Guangzhou No.2 High School.
+
 </div>
 
 <script setup>
@@ -20,8 +21,8 @@ import { About } from "/global/about.ts"
 
 <BetterExperiences :experiences="About.experiences" />
 
-<!-- <h2>Publications</h2>
-<BetterPublications :publications="About.publications" /> -->
+<h2>Publications</h2>
+<BetterPublications :publications="About.publications" />
 
 <!-- ## Lectures
 <BetterPublications :publications="About.lectures" /> -->
