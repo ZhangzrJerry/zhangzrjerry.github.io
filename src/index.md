@@ -44,6 +44,8 @@ features:
     details: A multi-agent Werewolf system built on AgentScope that enables self-play, replay analysis, and strategy iteration.
     link: https://github.com/ZhangzrJerry/werewolf
 
+  - title: TacLoc
+
   - title: Chronos Chain
     icon: 🌀
     img: /icon/chronos-chain.png
