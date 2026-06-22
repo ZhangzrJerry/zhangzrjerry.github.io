@@ -89,8 +89,6 @@ export default defineConfig({
           items: [
             { text: "<b><i>FRC Alumnus</i></b>", link: "/projects/frc.html" },
             { text: "Chronos Chain", link: "/projects/25-cc.html" },
-            { text: "CoTiMo Planner", link: "/projects/24-cotimo.html" },
-            // { text: 'TacLoc [25\'RA-L]', link: '/projects/25-tacloc.html' }
           ],
         }
       ],
