@@ -21,6 +21,18 @@ Though I’ve since retired from FRC, my passion for robotics remains as strong 
 
 ## :rocket: Annual Robots
 
+### 2026 Odyssey
+
+<RightImg src="/projects/frc/2026.jpg" width="30%" />
+
+For FRC 2026 game rules, the mission of the robot is to collect the Fuel (foam ball) and shoot to the Hub.
+
+<!-- [Background](https://www.youtube.com/watch?v=5g0k1r6J3xE) / -->
+
+:heart: Supported by Chief Delphi family, see our fundraising [post](https://www.chiefdelphi.com/t/urgent-fundraising-team-6399-a-10-year-team-s-last-stand-after-customs-nightmare/517328)
+
+---
+
 ### 2025 Trouble & Sideway
 
 <RightImg src="/projects/frc/2025.png" width="30%" />

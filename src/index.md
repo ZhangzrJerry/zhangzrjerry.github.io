@@ -31,12 +31,12 @@ hero:
 #     details: '"This award celebrates a rookie team''s outstanding success this season. Their spectacular robot had to be slowed down for the camera to be able to follow its movement. The demonstration came later than expected, but it was worth to wait. Born out of CAD, kylin''s swerves across the field showing off its impressive capabilities. This team is definitely off to an excellent start. They are rookie game-changers! Rookie Game Changer Award goes to team 8011, Guangzhou wayi from Guangzhou. Congratulations!"'
 
 features:
-  - title: TBA
+  - title: Odyssey
     icon:
       src: /icon/frc-rebuilt-gif.gif
-    img: TBA
+    img: /projects/frc/2026-square.jpg
     details: For FRC 2026 game rules, the mission of the robot is to collect the Fuel (foam ball) and shoot to the Hub.
-    link: TBA
+    link: /projects/frc.html#_2026-odyssey
 
   - title: Werewolf Agents
     icon: 🐺
@@ -45,6 +45,10 @@ features:
     link: https://github.com/ZhangzrJerry/werewolf
 
   - title: TacLoc
+    icon: 🧭
+    img: /icon/tacloc.png
+    details: A lightweight and efficient localization framework for mobile robots, leveraging TACTO for enhanced performance.
+    link:
 
   - title: Chronos Chain
     icon: 🌀
