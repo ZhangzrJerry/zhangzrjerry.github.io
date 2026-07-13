@@ -55,11 +55,11 @@ export namespace About {
     export const publications: Publication[] = [
         {
             key: '2025-tacloc',
-            image: 'https://arxiv.org/html/2603.10565v1/x1.png',
+            image: '/projects/projects/x1.png',
             title: 'TacLoc: Global Tactile Localization on Objects from a Registration Perspective',
             venue: '==2026 IROS== (IEEE/RSJ International Conference on Intelligent Robots and Systems)',
             authors: ['==Zirui Zhang==', 'Boyang Zhang', 'Fumin Zhang', 'Huan Yin'],
-            links: [{ label: 'arXiv', url: 'https://arxiv.org/abs/2603.10565' }, {label:'IEEE',  url:''}],
+            links: [{ label: 'arXiv', url: 'https://arxiv.org/abs/2603.10565' }, { label: 'IEEE', url: '' }],
             details: 'TacLoc estimates object pose from tactile data via one-shot partial-to-full point cloud registration, using normal-guided graph pruning for efficient localization without rendered or pre-trained data.'
         }
     ]
