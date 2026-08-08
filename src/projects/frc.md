@@ -25,7 +25,7 @@ Though I’ve since retired from FRC, my passion for robotics remains as strong 
 
 <RightImg src="/projects/frc/2026.jpg" width="30%" />
 
-For FRC 2026 game rules, the mission of the robot is to collect the Fuel (foam ball) and shoot to the Hub.
+For FRC 2026 game rules, the mission of the robot is to collect the Fuel (foam ball) and shoot to the Hub in certain period.
 
 <!-- [Background](https://www.youtube.com/watch?v=5g0k1r6J3xE) / -->
 
