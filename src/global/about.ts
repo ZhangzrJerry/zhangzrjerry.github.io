@@ -59,7 +59,7 @@ export namespace About {
             title: 'TacLoc: Global Tactile Localization on Objects from a Registration Perspective',
             venue: '==2026 IROS== (IEEE/RSJ International Conference on Intelligent Robots and Systems)',
             authors: ['==Zirui Zhang==', 'Boyang Zhang', 'Fumin Zhang', 'Huan Yin'],
-            links: [{ label: 'arXiv', url: 'https://arxiv.org/abs/2603.10565' }, {label:'IEEE',  url:''}],
+            links: [{ label: 'arXiv', url: 'https://arxiv.org/abs/2603.10565' }, { label: 'IEEE', url: '' }, { label: 'Google Scholar', url: 'https://scholar.google.com/scholar?cluster=12212456531879698660' }],
             details: 'TacLoc estimates object pose from tactile data via one-shot partial-to-full point cloud registration, using normal-guided graph pruning for efficient localization without rendered or pre-trained data.'
         }
     ]
