@@ -32,19 +32,28 @@ hero:
 
 features:
   - title: TBA
+    icon: ❓
+    details: More projects are coming soon, stay tuned!
+
+  - title: Odyssey
     icon:
       src: /icon/frc-rebuilt-gif.gif
-    img: TBA
+    img: /projects/frc/2026-square.jpg
     details: For FRC 2026 game rules, the mission of the robot is to collect the Fuel (foam ball) and shoot to the Hub.
-    link: TBA
+    link: /projects/frc.html#_2026-odyssey
 
-  - title: Werewolf Agents
-    icon: 🐺
-    img: /icon/werewolf-agents.png
-    details: A multi-agent Werewolf system built on AgentScope that enables self-play, replay analysis, and strategy iteration.
-    link: https://github.com/ZhangzrJerry/werewolf
+  # - title: Werewolf Agents
+  #   icon: 🐺
+  #   img: /icon/werewolf-agents.png
+  #   details: A multi-agent Werewolf system built on AgentScope that enables self-play, replay analysis, and strategy iteration.
+  #   link: https://github.com/ZhangzrJerry/werewolf
 
   - title: TacLoc
+    icon:
+      src: /icon/iros26.png
+    img: /projects/projects/x1-square.png
+    details: TacLoc achieves tactile pose estimation via one-shot registration with normal-guided pruning, without rendered or pre-trained data.
+    link: /about/#publications
 
   - title: Chronos Chain
     icon: 🌀
