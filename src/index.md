@@ -33,7 +33,7 @@ hero:
 features:
   - title: TBA
     icon: ❓
-    details: More projects are coming soon, stay tuned!
+    details: More projects are coming soon, stay tuned! Or perhaps there will no longer be any independent projects, for they will slowly grow together.
 
   - title: Odyssey
     icon:
