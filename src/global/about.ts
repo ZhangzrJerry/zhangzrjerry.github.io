@@ -20,7 +20,7 @@ export namespace About {
             title: 'Research Assistant',
             company: 'HKUST Cheng Kar-Shun Robotics Institute',
             start: 'Feb. 2025',
-            end: 'Nov. 2025',
+            end: 'Aug. 2025',
             links: [
                 { label: 'Home Page', url: 'https://ri.hkust.edu.hk/' },
             ],
